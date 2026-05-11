@@ -1,0 +1,103 @@
+{
+  "snapshot_date": "2026-05-10",
+  "period_start": "2026-02-10",
+  "period_end": "2026-05-10",
+  "captured_at": "2026-05-11T07:30:00+05:30",
+  "version": 3,
+  "headline_state": "Fresh 90-day snapshot post-tag-install. GA4 Key Events firing. Phone call lead goal still in 'Needs attention'.",
+  "kpis": {
+    "totalSessions": 547,
+    "paidSessions": 62,
+    "paidPct": "11.3%",
+    "formSubmissions": 35,
+    "qualifiedForms": 22,
+    "ooaForms": 4,
+    "spamTestForms": 9,
+    "adsConversions": 2,
+    "lsaCharged": 5,
+    "lsaTotal": 8,
+    "lsaDisputed": 3,
+    "adsCost90d": "$4,483.82",
+    "adsCostDaily": "$11.95/day",
+    "ga4ActiveUsers": 485,
+    "ga4KeyEvents": 5
+  },
+  "enquiries": {
+    "lead": {
+      "total": 35,
+      "qualified": 22,
+      "ooa": 4,
+      "spamTest": 9,
+      "trackingStatus": "✓ Verified May 9"
+    },
+    "call": {
+      "total": 10,
+      "googleAds": 2,
+      "lsa": 8,
+      "telTracked": 0,
+      "trackingStatus": "⚠ Phone call lead goal: Needs attention"
+    },
+    "combined": {
+      "total": 45,
+      "qualified": 30,
+      "costPerQualified": "~$149",
+      "formToCallRatio": "3.5 : 1"
+    }
+  },
+  "spamCounts": {
+    "inbox": 1,
+    "test": 3,
+    "flamingoSpamFolder": 578
+  },
+  "sourceChart": {
+    "paid": 3,
+    "organic": 9,
+    "direct": 5,
+    "lsa": 5,
+    "referral": 2
+  },
+  "funnel": {
+    "paidSessions": 62,
+    "servicePages": 58,
+    "freeEstimate": 3,
+    "verifiedPaidConversions": 0,
+    "verifiedNote": "Tag pipeline verified working May 9 — limiter is reach, not tracking"
+  },
+  "campaignState": {
+    "activeCount": 1,
+    "pausedCount": 5,
+    "activeCampaignName": "Leads - Roofing (PC)",
+    "optimizationScore": "92.9%",
+    "bidWarning": "Bid setting limited"
+  },
+  "trackingState": {
+    "gtmContainer": "GTM-KG87WZF2",
+    "gtmLiveVersion": "Version 8",
+    "gtmTags": 10,
+    "phoneCallLeadGoal": "Needs attention",
+    "submitLeadFormGoal": "Active",
+    "newestChange": "May 9 — GA4 Event - generate_lead tag published"
+  },
+  "insights": [
+    {
+      "headline": "GA4 Key Events live for the first time",
+      "body": "Was 0 at May 8 audit. Now 5. The May 9 GA4 Event - generate_lead tag deploy (GTM Version 8) is producing real signal."
+    },
+    {
+      "headline": "Phone call lead goal still 'Needs attention'",
+      "body": "Diagnosis complete on May 9 — 4-action sprawl in Google Ads. Repair plan ready; not executed yet."
+    },
+    {
+      "headline": "Funnel fix is the bottleneck",
+      "body": "Tag pipeline verified end-to-end May 9. The reason form conversions stay at 0 is the funnel — only ~3 of 62 paid sessions reach /free-estimate/ in 30 days."
+    },
+    {
+      "headline": "Apply 75+ negative keywords",
+      "body": "Buckshot_NegativeKeywords_RECOMMENDED_BULK_UPLOAD.csv still pending application across all 6 campaigns."
+    },
+    {
+      "headline": "Active campaign at $11.95/day vs $60 cap",
+      "body": "Bid setting limited warning means Smart Bidding can't price into competitive Madison auctions."
+    }
+  ]
+}
