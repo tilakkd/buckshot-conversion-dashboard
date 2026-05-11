@@ -1,0 +1,107 @@
+{
+  "snapshot_date": "2026-05-08",
+  "period_start": "2026-04-08",
+  "period_end": "2026-05-07",
+  "captured_at": "2026-05-08T18:17:00+05:30",
+  "version": 3,
+  "headline_state": "Original deep audit. GA4 Key Events at 0. Phone call lead goal 'Needs attention'. 'Form doesn't capture GCLID' suspected (later retracted May 9).",
+  "kpis": {
+    "totalSessions": 547,
+    "paidSessions": 62,
+    "paidPct": "11.3%",
+    "formSubmissions": 35,
+    "qualifiedForms": 22,
+    "ooaForms": 4,
+    "spamTestForms": 9,
+    "adsConversions": 2,
+    "lsaCharged": 5,
+    "lsaTotal": 8,
+    "lsaDisputed": 3,
+    "adsCost90d": "$4,482.50",
+    "adsCostDaily": "$11.89/day",
+    "ga4ActiveUsers": 105,
+    "ga4KeyEvents": 0
+  },
+  "enquiries": {
+    "lead": {
+      "total": 35,
+      "qualified": 22,
+      "ooa": 4,
+      "spamTest": 9,
+      "trackingStatus": "⚠ Form GCLID capture suspect (later proven incorrect on May 9)"
+    },
+    "call": {
+      "total": 10,
+      "googleAds": 2,
+      "lsa": 8,
+      "telTracked": 0,
+      "trackingStatus": "⚠ Phone call lead goal: Needs attention"
+    },
+    "combined": {
+      "total": 45,
+      "qualified": 30,
+      "costPerQualified": "~$149",
+      "formToCallRatio": "3.5 : 1"
+    }
+  },
+  "spamCounts": {
+    "inbox": 1,
+    "test": 3,
+    "flamingoSpamFolder": 578
+  },
+  "sourceChart": {
+    "paid": 3,
+    "organic": 9,
+    "direct": 5,
+    "lsa": 5,
+    "referral": 2
+  },
+  "funnel": {
+    "paidSessions": 62,
+    "servicePages": 58,
+    "freeEstimate": 3,
+    "verifiedPaidConversions": 0,
+    "verifiedNote": "Tracking gap suspected — GCLID not captured (later retracted)"
+  },
+  "campaignState": {
+    "activeCount": 1,
+    "pausedCount": 5,
+    "activeCampaignName": "Leads - Roofing (PC)",
+    "optimizationScore": "92.1%",
+    "bidWarning": "Bid setting limited"
+  },
+  "trackingState": {
+    "gtmContainer": "GTM-KG87WZF2",
+    "gtmLiveVersion": "Version 7",
+    "gtmTags": 9,
+    "phoneCallLeadGoal": "Needs attention",
+    "submitLeadFormGoal": "Active",
+    "newestChange": "—"
+  },
+  "insights": [
+    {
+      "headline": "The /free-estimate/ form does not capture GCLID or UTM hidden fields",
+      "body": "Add hidden fields TODAY reading from URL params + _gcl_aw cookie. (Note: this finding was retracted on May 9 after live verification proved the form DOES capture GCLID correctly.)"
+    },
+    {
+      "headline": "GA4 has 0 Key Events configured",
+      "body": "Mark generate_lead as a Key Event in GA4 Admin → Events. Then import to Ads as a primary conversion action."
+    },
+    {
+      "headline": "Phone call lead goal is in 'Needs attention' status",
+      "body": "Applied to all 6 campaigns. Re-verify call tracking number, GTM event, primary/secondary status, GCLID/wbraid pass-through."
+    },
+    {
+      "headline": "Active campaign at 14% impression share — losing 62% to ad rank",
+      "body": "91 keywords, only 5 with measurable Quality Score. Average QS 2.8/10. Landing Page Experience 'Below average' on 4 of 5 measurable keywords."
+    },
+    {
+      "headline": "Competitor brand exclusion list has 5 entries; 40+ Madison-area competitor brands bleeding budget",
+      "body": "Add 40+ phrase-match competitor negatives."
+    },
+    {
+      "headline": "Active campaign spending only 20% of budget cap",
+      "body": "$11.89/day actual vs $60/day cap. 'Bid setting limited' warning + Maximize Clicks strategy = throttled."
+    }
+  ]
+}
