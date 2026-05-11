@@ -28,14 +28,14 @@
       "qualified": 22,
       "ooa": 4,
       "spamTest": 9,
-      "trackingStatus": "Ã¢ÂÂ Verified May 9"
+      "trackingStatus": "ÃÂ¢ÃÂÃÂ Verified May 9"
     },
     "call": {
       "total": 10,
       "googleAds": 2,
       "lsa": 8,
       "telTracked": 0,
-      "trackingStatus": "Ã¢ÂÂ Goal repaired May 11"
+      "trackingStatus": "ÃÂ¢ÃÂÃÂ Goal repaired May 11"
     },
     "combined": {
       "total": 45,
@@ -61,7 +61,7 @@
     "servicePages": 58,
     "freeEstimate": 3,
     "verifiedPaidConversions": 0,
-    "verifiedNote": "Tag pipeline verified working May 9 Ã¢ÂÂ limiter is reach, not tracking"
+    "verifiedNote": "Tag pipeline verified working May 9 ÃÂ¢ÃÂÃÂ limiter is reach, not tracking"
   },
   "campaignState": {
     "activeCount": 1,
@@ -76,32 +76,32 @@
     "gtmTags": 10,
     "phoneCallLeadGoal": "Active",
     "submitLeadFormGoal": "Active",
-    "newestChange": "May 11 Ã¢ÂÂ Phone call lead goal repaired"
+    "newestChange": "May 11 ÃÂ¢ÃÂÃÂ Phone call lead goal repaired"
   },
   "insights": [
     {
-      "headline": "Funnel fix Ã¢ÂÂ single highest-leverage move",
+      "headline": "Funnel fix ÃÂ¢ÃÂÃÂ single highest-leverage move",
       "body": "Only ~3 of 62 paid sessions reach /free-estimate/ in 30 days. Route the active campaign's final URLs to /free-estimate/ directly or embed the CF7 form on the current LP. Until this changes, the form-conversion tag (now verified firing correctly) has no traffic to record against."
     },
     {
       "headline": "GTM Version 8 is live with the new GA4 generate_lead tag",
-      "body": "Published May 9, 2026. GA4 Key Events went from 0 to 5 in the 2 days since Ã¢ÂÂ the tag is producing real signal. Form-submit tracking pipeline verified end-to-end."
+      "body": "Published May 9, 2026. GA4 Key Events went from 0 to 5 in the 2 days since ÃÂ¢ÃÂÃÂ the tag is producing real signal. Form-submit tracking pipeline verified end-to-end."
     },
     {
       "headline": "Phone call lead goal repaired May 11",
-      "body": "Was flagged 'Needs attention' Ã¢ÂÂ the GFN-based Click to call action was demoted from Primary to Secondary. Goal now reads Active across all 6 campaigns."
+      "body": "Was flagged 'Needs attention' ÃÂ¢ÃÂÃÂ the GFN-based Click to call action was demoted from Primary to Secondary. Goal now reads Active across all 6 campaigns."
     },
     {
       "headline": "Apply 75+ recommended negative keywords",
-      "body": "Buckshot_NegativeKeywords_RECOMMENDED_BULK_UPLOAD.csv covers competitor brands, aggregators, Spanish, DIY, OOA geos. ~60Ã¢ÂÂ70% of wasted spend would be blocked."
+      "body": "Buckshot_NegativeKeywords_RECOMMENDED_BULK_UPLOAD.csv covers competitor brands, aggregators, Spanish, DIY, OOA geos. ~60ÃÂ¢ÃÂÃÂ70% of wasted spend would be blocked."
     },
     {
       "headline": "Active campaign 'Bid setting limited' warning",
-      "body": "Leads Ã¢ÂÂ Roofing (PC) spending only 20% of $60/day cap. Lift bid / switch to Maximize Conversions after negatives + funnel work."
+      "body": "Leads ÃÂ¢ÃÂÃÂ Roofing (PC) spending only 20% of $60/day cap. Lift bid / switch to Maximize Conversions after negatives + funnel work."
     },
     {
       "headline": "5 of 6 campaigns paused",
-      "body": "76% of 90-day spend ($3,408) ran through paused campaigns. Re-enable the highest-historical ad group inside Residential Roofing Ã¢ÂÂ Leads (PC) on the corrected LP first."
+      "body": "76% of 90-day spend ($3,408) ran through paused campaigns. Re-enable the highest-historical ad group inside Residential Roofing ÃÂ¢ÃÂÃÂ Leads (PC) on the corrected LP first."
     }
   ],
   "stale_sources": [
@@ -135,7 +135,7 @@
     "dateWindow": "last 30 days",
     "rangeStart": "2026-04-12",
     "rangeEnd": "2026-05-11",
-    "note": "Per-day capture pending; rows populate from live source pulls. Window total in footer reflects daily entries only.",
+    "note": "Live capture from Flamingo Inbox + Flamingo Spam folder + LSA Inbox on 2026-05-11. Google Ads call conversions and tel: clicks are zeros across window (Ads rollup = 2 calls in 90 days; tel-tracked rollup = 0). OOA-per-day classification not auto-tagged at row level; daily OOA columns show 0 while the 30-day rollup OOA total (4) is tracked separately in the Lead Enquiries card above.",
     "calls": [
       {
         "date": "2026-04-12",
@@ -161,8 +161,8 @@
       {
         "date": "2026-04-15",
         "googleAds": 0,
-        "lsaCharged": 0,
-        "lsaTotal": 0,
+        "lsaCharged": 2,
+        "lsaTotal": 3,
         "telTracked": 0
       },
       {
@@ -253,7 +253,7 @@
         "date": "2026-04-28",
         "googleAds": 0,
         "lsaCharged": 0,
-        "lsaTotal": 0,
+        "lsaTotal": 1,
         "telTracked": 0
       },
       {
@@ -266,8 +266,8 @@
       {
         "date": "2026-04-30",
         "googleAds": 0,
-        "lsaCharged": 0,
-        "lsaTotal": 0,
+        "lsaCharged": 1,
+        "lsaTotal": 1,
         "telTracked": 0
       },
       {
@@ -351,13 +351,13 @@
     "forms": [
       {
         "date": "2026-04-12",
-        "qualified": 0,
+        "qualified": 1,
         "ooa": 0,
         "spamTest": 0
       },
       {
         "date": "2026-04-13",
-        "qualified": 0,
+        "qualified": 2,
         "ooa": 0,
         "spamTest": 0
       },
@@ -365,7 +365,7 @@
         "date": "2026-04-14",
         "qualified": 0,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-04-15",
@@ -375,25 +375,25 @@
       },
       {
         "date": "2026-04-16",
-        "qualified": 0,
+        "qualified": 1,
         "ooa": 0,
         "spamTest": 0
       },
       {
         "date": "2026-04-17",
-        "qualified": 0,
+        "qualified": 1,
         "ooa": 0,
         "spamTest": 0
       },
       {
         "date": "2026-04-18",
-        "qualified": 0,
+        "qualified": 1,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 2
       },
       {
         "date": "2026-04-19",
-        "qualified": 0,
+        "qualified": 1,
         "ooa": 0,
         "spamTest": 0
       },
@@ -405,25 +405,25 @@
       },
       {
         "date": "2026-04-21",
-        "qualified": 0,
+        "qualified": 2,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-04-22",
-        "qualified": 0,
+        "qualified": 1,
         "ooa": 0,
         "spamTest": 0
       },
       {
         "date": "2026-04-23",
-        "qualified": 0,
+        "qualified": 3,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 2
       },
       {
         "date": "2026-04-24",
-        "qualified": 0,
+        "qualified": 1,
         "ooa": 0,
         "spamTest": 0
       },
@@ -431,41 +431,41 @@
         "date": "2026-04-25",
         "qualified": 0,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-04-26",
-        "qualified": 0,
+        "qualified": 2,
         "ooa": 0,
         "spamTest": 0
       },
       {
         "date": "2026-04-27",
-        "qualified": 0,
+        "qualified": 1,
         "ooa": 0,
         "spamTest": 0
       },
       {
         "date": "2026-04-28",
-        "qualified": 0,
+        "qualified": 2,
         "ooa": 0,
         "spamTest": 0
       },
       {
         "date": "2026-04-29",
-        "qualified": 0,
+        "qualified": 1,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-04-30",
-        "qualified": 0,
+        "qualified": 4,
         "ooa": 0,
         "spamTest": 0
       },
       {
         "date": "2026-05-01",
-        "qualified": 0,
+        "qualified": 2,
         "ooa": 0,
         "spamTest": 0
       },
@@ -477,21 +477,21 @@
       },
       {
         "date": "2026-05-03",
-        "qualified": 0,
+        "qualified": 1,
         "ooa": 0,
         "spamTest": 0
       },
       {
         "date": "2026-05-04",
-        "qualified": 0,
+        "qualified": 2,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-05-05",
-        "qualified": 0,
+        "qualified": 1,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 2
       },
       {
         "date": "2026-05-06",
@@ -507,9 +507,9 @@
       },
       {
         "date": "2026-05-08",
-        "qualified": 0,
+        "qualified": 1,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-05-09",
