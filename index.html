@@ -13,6 +13,7 @@
 <meta name="yandex" content="noindex, nofollow">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="X-Robots-Tag" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <style>
 :root { color-scheme: light; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -71,6 +72,35 @@ a:hover { color: #c084fc; }
 .enq-card.combined .enq-bigbreak .bb-num.gold { color: #fbbf24; }
 .enq-card.combined .enq-bigbreak .bb-num.green { color: #4ade80; }
 .enq-card.combined .enq-bigbreak .bb-lbl { font-size: 10px; color: #8a8a95; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+.daily-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 22px; }
+.daily-card { background: #14141c; border: 1px solid #23232f; border-radius: 8px; padding: 16px 18px; }
+.daily-card.calls { border-left: 3px solid #22c55e; }
+.daily-card.forms { border-left: 3px solid #fbbf24; }
+.daily-card h2 { font-size: 14px; color: #f3f4f6; font-weight: 700; margin-bottom: 2px; letter-spacing: -0.005em; display: flex; align-items: center; gap: 7px; }
+.daily-card .daily-sub { font-size: 11.5px; color: #8a8a95; margin-bottom: 12px; }
+.daily-totalstrip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 12px; }
+.daily-totalstrip.forms { grid-template-columns: repeat(3, 1fr); }
+.daily-tot { background: #1a1a24; border: 1px solid #23232f; border-radius: 6px; padding: 8px 10px; }
+.daily-tot .lbl { font-size: 9.5px; color: #8a8a95; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 2px; }
+.daily-tot .num { font-size: 18px; font-weight: 700; color: #ffffff; line-height: 1.1; letter-spacing: -0.01em; }
+.daily-tot .num.purple { color: #a05fff; }
+.daily-tot .num.green { color: #22c55e; }
+.daily-tot .num.gold { color: #fbbf24; }
+.daily-tot .num.blue { color: #60a5fa; }
+.daily-tot .num.orange { color: #fb923c; }
+.daily-tot .num.muted { color: #9ca3af; }
+.chart-wrap { background: #0d0d14; border: 1px solid #23232f; border-radius: 6px; padding: 10px 10px 6px; margin-bottom: 12px; height: 260px; position: relative; }
+.daily-meta { font-size: 11.5px; color: #b8b8c2; margin-bottom: 12px; padding: 8px 12px; background: rgba(160, 95, 255, 0.08); border-left: 2px solid #a05fff; border-radius: 4px; line-height: 1.5; }
+.daily-table-wrap { overflow-x: auto; max-height: 280px; overflow-y: auto; border: 1px solid #23232f; border-radius: 6px; }
+.daily-table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+.daily-table th { background: #1a1a24; color: #c084fc; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; font-size: 10px; padding: 8px 10px; text-align: right; border-bottom: 1px solid #23232f; position: sticky; top: 0; z-index: 1; }
+.daily-table th:first-child, .daily-table td:first-child { text-align: left; }
+.daily-table td { padding: 6px 10px; text-align: right; color: #d4d4dd; border-bottom: 1px solid #1a1a24; }
+.daily-table tbody tr:hover { background: rgba(160, 95, 255, 0.05); }
+.daily-table tbody tr.has-data td { color: #ffffff; }
+.daily-table tbody tr.zero-day td { color: #5a5a65; }
+.daily-table tfoot td { background: #1a1a24; color: #ffffff; font-weight: 700; border-top: 2px solid #3d2960; padding: 8px 10px; }
+.daily-empty { padding: 22px; text-align: center; color: #6b6b78; font-size: 12.5px; font-style: italic; }
 .spam-strip { display: flex; gap: 10px; align-items: stretch; margin-bottom: 22px; flex-wrap: wrap; }
 .spam-tile { flex: 1; min-width: 220px; border-radius: 6px; padding: 12px 14px; }
 .spam-tile-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; display: flex; align-items: center; gap: 6px; }
@@ -105,8 +135,8 @@ a:hover { color: #c084fc; }
 .loading-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(13, 13, 20, 0.7); backdrop-filter: blur(2px); display: flex; align-items: center; justify-content: center; z-index: 100; transition: opacity 0.25s ease; }
 .loading-overlay.hidden { opacity: 0; pointer-events: none; }
 .loading-card { background: #1a1a24; border: 1px solid #3d2960; border-radius: 8px; padding: 24px 32px; color: #c084fc; font-weight: 600; }
-@media (max-width: 1100px) { .kpis { grid-template-columns: repeat(3, 1fr); } .enq-grid { grid-template-columns: 1fr; } }
-@media (max-width: 700px) { .kpis { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 1100px) { .kpis { grid-template-columns: repeat(3, 1fr); } .enq-grid { grid-template-columns: 1fr; } .daily-grid { grid-template-columns: 1fr; } }
+@media (max-width: 700px) { .kpis { grid-template-columns: repeat(2, 1fr); } .daily-totalstrip { grid-template-columns: repeat(2, 1fr); } }
 </style>
 </head>
 <body>
@@ -148,6 +178,45 @@ a:hover { color: #c084fc; }
 <div class="enq-card call"><div class="enq-title"><span class="enq-icon">📞</span> Call Enquiries</div><div class="enq-total" data-field="enquiries.call.total">—</div><div class="enq-totalsub">phone interactions across all sources</div><div class="enq-rows"><div class="enq-row"><span class="lbl">Google Ads calls <small>(call assets)</small></span><span class="val q" data-field="enquiries.call.googleAds">—</span></div><div class="enq-row"><span class="lbl">LSA phone leads</span><span class="val q" data-field="enquiries.call.lsa">—</span></div><div class="enq-row"><span class="lbl">Site tel: clicks tracked</span><span class="val muted" data-field="enquiries.call.telTracked">—</span></div><div class="enq-row" style="border-top:1px solid #23232f; padding-top:6px; margin-top:4px;"><span class="lbl">Tracking status</span><span class="val" data-field="enquiries.call.trackingStatus" style="font-size:11px;">—</span></div></div></div>
 <div class="enq-card combined"><div class="enq-title"><span class="enq-icon">🎯</span> Combined Enquiries (All Sources)</div><div class="enq-total" data-field="enquiries.combined.total">—</div><div class="enq-totalsub">total inbound enquiries in last 30 days</div><div class="enq-bigbreak"><div><div class="bb-num gold" data-field="enquiries.lead.total">—</div><div class="bb-lbl">Form leads</div></div><div><div class="bb-num green" data-field="enquiries.call.total">—</div><div class="bb-lbl">Call leads</div></div></div><div class="enq-rows" style="border-top:1px solid #23232f; padding-top:10px; margin-top:10px;"><div class="enq-row"><span class="lbl">Qualified (forms + calls)</span><span class="val q" data-field="enquiries.combined.qualified">—</span></div><div class="enq-row"><span class="lbl">Cost per qualified enquiry</span><span class="val" data-field="enquiries.combined.costPerQualified" style="font-size:13px;">—</span></div><div class="enq-row"><span class="lbl">Form-to-call ratio</span><span class="val muted" data-field="enquiries.combined.formToCallRatio">—</span></div></div></div>
 </div>
+<div class="daily-grid">
+<div class="daily-card calls">
+<h2><span>📞</span> Call Conversions by Date</h2>
+<div class="daily-sub">Daily phone leads across all sources — Google Ads call assets, LSA inbox, site tel: clicks.</div>
+<div class="daily-totalstrip">
+<div class="daily-tot"><div class="lbl">Google Ads</div><div class="num purple" id="callsTotGoogleAds">—</div></div>
+<div class="daily-tot"><div class="lbl">LSA Charged</div><div class="num green" id="callsTotLsaCharged">—</div></div>
+<div class="daily-tot"><div class="lbl">LSA Total</div><div class="num gold" id="callsTotLsaTotal">—</div></div>
+<div class="daily-tot"><div class="lbl">Tel Clicks</div><div class="num blue" id="callsTotTel">—</div></div>
+</div>
+<div class="chart-wrap"><canvas id="callsChart"></canvas></div>
+<div class="daily-meta" id="callsMeta">Loading window…</div>
+<div class="daily-table-wrap">
+<table class="daily-table" id="callsTable">
+<thead><tr><th>Date</th><th>Google Ads</th><th>LSA Charged</th><th>LSA Total</th><th>Tel Clicks</th><th>Daily Total</th></tr></thead>
+<tbody></tbody>
+<tfoot></tfoot>
+</table>
+</div>
+</div>
+<div class="daily-card forms">
+<h2><span>📝</span> Form Submissions by Date</h2>
+<div class="daily-sub">Daily Flamingo inbox submissions — qualified Madison-metro, out-of-area, spam/test.</div>
+<div class="daily-totalstrip forms">
+<div class="daily-tot"><div class="lbl">Qualified</div><div class="num green" id="formsTotQualified">—</div></div>
+<div class="daily-tot"><div class="lbl">Out of Area</div><div class="num orange" id="formsTotOoa">—</div></div>
+<div class="daily-tot"><div class="lbl">Spam / Test</div><div class="num muted" id="formsTotSpam">—</div></div>
+</div>
+<div class="chart-wrap"><canvas id="formsChart"></canvas></div>
+<div class="daily-meta" id="formsMeta">Loading window…</div>
+<div class="daily-table-wrap">
+<table class="daily-table" id="formsTable">
+<thead><tr><th>Date</th><th>Qualified</th><th>Out of Area</th><th>Spam / Test</th><th>Daily Total</th></tr></thead>
+<tbody></tbody>
+<tfoot></tfoot>
+</table>
+</div>
+</div>
+</div>
 <div class="spam-strip">
 <div class="spam-tile inbox"><div class="spam-tile-label"><span class="tab-dot spam"></span>Spam in Inbox</div><div><span class="spam-tile-num" data-field="spamCounts.inbox">—</span><span class="spam-tile-sub">post-filter entries</span></div></div>
 <div class="spam-tile test"><div class="spam-tile-label"><span class="tab-dot test"></span>Internal QA Tests</div><div><span class="spam-tile-num" data-field="spamCounts.test">—</span><span class="spam-tile-sub">QA pipeline tests</span></div></div>
@@ -155,12 +224,13 @@ a:hover { color: #c084fc; }
 </div>
 <div class="panel"><h2>Tracking + Campaign State (as of this snapshot)</h2><div class="panel-sub">GTM container, key goals, and active campaign status at the time of this snapshot.</div><div class="tracking-pills" id="trackingPills"></div></div>
 <div class="panel insights"><h2>Insights &amp; Next Actions</h2><div class="panel-sub">Prioritized by leverage. These reflect the state on the selected snapshot date.</div><ol id="insightsList"></ol></div>
-<div class="data-sources"><h3>Data Sources &amp; Refresh</h3><p><strong>Auto-refresh:</strong> Daily at 10:30 AM IST. Missed days are backfilled (Google Ads + GA4 only) on next available run.</p><p><strong>Form entries (Lead Enquiries):</strong> Flamingo Inbox via Buckshot WordPress admin.</p><p><strong>Call Enquiries:</strong> "Calls from ads" metric in Google Ads + LSA inbox + GTM-tracked tel: clicks.</p><p><strong>Sessions/events:</strong> GA4 Traffic Acquisition for property G-5X1X23VNJQ.</p><p><strong>Behavior signals:</strong> Microsoft Clarity project whxv7w4ddr (3-day rolling window).</p><p><strong>Tracking state:</strong> GTM-KG87WZF2 container, Goals tab in Google Ads.</p><p style="margin-top: 12px; padding-top: 10px; border-top: 1px solid #23232f; color: #6b6b78;"><strong>Version history:</strong> every daily refresh commits to <code style="color:#c084fc; background:#23232f; padding:1px 5px; border-radius:3px; font-size:11px;">tilakkd/buckshot-conversion-dashboard</code>. Use the date picker above to load any past day.</p></div>
+<div class="data-sources"><h3>Data Sources &amp; Refresh</h3><p><strong>Auto-refresh:</strong> Daily at 10:30 AM IST. Missed days are backfilled (Google Ads + GA4 only) on next available run.</p><p><strong>Form entries (Lead Enquiries):</strong> Flamingo Inbox via Buckshot WordPress admin.</p><p><strong>Call Enquiries:</strong> "Calls from ads" metric in Google Ads + LSA inbox + GTM-tracked tel: clicks.</p><p><strong>Sessions/events:</strong> GA4 Traffic Acquisition for property G-5X1X23VNJQ.</p><p><strong>Behavior signals:</strong> Microsoft Clarity project whxv7w4ddr (3-day rolling window).</p><p><strong>Tracking state:</strong> GTM-KG87WZF2 container, Goals tab in Google Ads.</p><p><strong>Date-wise sections:</strong> "Call Conversions by Date" and "Form Submissions by Date" read the <code style="color:#c084fc; background:#23232f; padding:1px 5px; border-radius:3px; font-size:11px;">daily.calls[]</code> and <code style="color:#c084fc; background:#23232f; padding:1px 5px; border-radius:3px; font-size:11px;">daily.forms[]</code> arrays in each snapshot JSON. Rows populate as live source pulls write per-day numbers.</p><p style="margin-top: 12px; padding-top: 10px; border-top: 1px solid #23232f; color: #6b6b78;"><strong>Version history:</strong> every daily refresh commits to <code style="color:#c084fc; background:#23232f; padding:1px 5px; border-radius:3px; font-size:11px;">tilakkd/buckshot-conversion-dashboard</code>. Use the date picker above to load any past day.</p></div>
 </div>
 <div class="loading-overlay" id="loadingOverlay"><div class="loading-card">Loading dashboard data…</div></div>
 <script>
-let manifest=null,currentData=null;
+let manifest=null,currentData=null,callsChart=null,formsChart=null;
 function get(o,p){return p.split('.').reduce((a,k)=>a!=null?a[k]:undefined,o);}
+function fmtShortDate(iso){try{return new Date(iso+'T00:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric'});}catch(e){return iso;}}
 function render(d){if(!d)return;document.querySelectorAll('[data-field]').forEach(el=>{const v=get(d,el.dataset.field);el.textContent=(v==null)?'—':v;});
 var ol=document.getElementById('insightsList');ol.innerHTML='';(d.insights||[]).forEach(ins=>{var li=document.createElement('li');var s=document.createElement('strong');s.textContent=ins.headline+'.';li.appendChild(s);li.appendChild(document.createTextNode(' '+ins.body));ol.appendChild(li);});
 var pills=document.getElementById('trackingPills');pills.innerHTML='';var t=d.trackingState||{},c=d.campaignState||{};
@@ -168,7 +238,15 @@ var pillData=[{txt:'GTM '+(t.gtmLiveVersion||'—')+' · '+(t.gtmTags||'—')+' 
 pillData.forEach(p=>{if(!p.txt)return;var sp=document.createElement('span');sp.className=p.cls;sp.textContent=p.txt;pills.appendChild(sp);});
 var dateBar=document.getElementById('currentDateDisplay');var isLatest=manifest&&d.snapshot_date===manifest.latest;var niceDate;try{niceDate=new Date(d.snapshot_date+'T00:00:00').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});}catch(e){niceDate=d.snapshot_date;}
 dateBar.innerHTML=niceDate+' <span style="color:#8a8a95; font-size:12px; margin-left:6px;">(period '+(d.period_start||'—')+' to '+(d.period_end||'—')+')</span>'+(isLatest?' <span class="badge-latest">Latest</span>':' <span class="badge-historical">Historical</span>');
-var note=document.getElementById('dateNote');var dm=(manifest&&manifest.dates||[]).find(x=>x.date===d.snapshot_date);note.textContent=dm?dm.note:'';}
+var note=document.getElementById('dateNote');var dm=(manifest&&manifest.dates||[]).find(x=>x.date===d.snapshot_date);note.textContent=dm?dm.note:'';
+renderDaily(d);}
+function renderDaily(d){var daily=(d&&d.daily)||{};var window_lbl=(daily.dateWindow||'last 30 days');var range='';if(daily.rangeStart&&daily.rangeEnd){range=' · '+fmtShortDate(daily.rangeStart)+' → '+fmtShortDate(daily.rangeEnd);}var note=daily.note?' · '+daily.note:'';document.getElementById('callsMeta').textContent='Window: '+window_lbl+range+note;document.getElementById('formsMeta').textContent='Window: '+window_lbl+range+note;renderCallsDaily(daily.calls||[]);renderFormsDaily(daily.forms||[]);}
+function renderCallsDaily(rows){var tbody=document.querySelector('#callsTable tbody'),tfoot=document.querySelector('#callsTable tfoot');tbody.innerHTML='';tfoot.innerHTML='';var tot={googleAds:0,lsaCharged:0,lsaTotal:0,telTracked:0};if(!rows.length){tbody.innerHTML='<tr><td colspan="6" class="daily-empty">No daily call data yet — per-day rows populate as future refreshes write live source numbers.</td></tr>';}else{rows.forEach(r=>{var ga=r.googleAds||0,lc=r.lsaCharged||0,lt=r.lsaTotal||0,tc=r.telTracked||0,sum=ga+lc+lt+tc;var tr=document.createElement('tr');tr.className=sum>0?'has-data':'zero-day';tr.innerHTML='<td>'+fmtShortDate(r.date)+'</td><td>'+ga+'</td><td>'+lc+'</td><td>'+lt+'</td><td>'+tc+'</td><td><strong>'+sum+'</strong></td>';tbody.appendChild(tr);tot.googleAds+=ga;tot.lsaCharged+=lc;tot.lsaTotal+=lt;tot.telTracked+=tc;});var sum=tot.googleAds+tot.lsaCharged+tot.lsaTotal+tot.telTracked;var tf=document.createElement('tr');tf.innerHTML='<td>Window total</td><td>'+tot.googleAds+'</td><td>'+tot.lsaCharged+'</td><td>'+tot.lsaTotal+'</td><td>'+tot.telTracked+'</td><td>'+sum+'</td>';tfoot.appendChild(tf);}
+document.getElementById('callsTotGoogleAds').textContent=tot.googleAds;document.getElementById('callsTotLsaCharged').textContent=tot.lsaCharged;document.getElementById('callsTotLsaTotal').textContent=tot.lsaTotal;document.getElementById('callsTotTel').textContent=tot.telTracked;
+if(callsChart){callsChart.destroy();callsChart=null;}var ctx=document.getElementById('callsChart');if(!rows.length||!window.Chart)return;callsChart=new Chart(ctx,{type:'bar',data:{labels:rows.map(r=>fmtShortDate(r.date)),datasets:[{label:'Google Ads',data:rows.map(r=>r.googleAds||0),backgroundColor:'#a05fff',stack:'a'},{label:'LSA Charged',data:rows.map(r=>r.lsaCharged||0),backgroundColor:'#22c55e',stack:'a'},{label:'LSA Total',data:rows.map(r=>r.lsaTotal||0),backgroundColor:'#fbbf24',stack:'a'},{label:'Tel Clicks',data:rows.map(r=>r.telTracked||0),backgroundColor:'#60a5fa',stack:'a'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#d4d4dd',font:{size:11},boxWidth:12}},tooltip:{mode:'index',intersect:false,backgroundColor:'#1a1a24',titleColor:'#c084fc',bodyColor:'#e7e7ed',borderColor:'#3d2960',borderWidth:1}},scales:{x:{stacked:true,ticks:{color:'#8a8a95',font:{size:10},maxRotation:0,autoSkip:true,maxTicksLimit:15},grid:{display:false}},y:{stacked:true,beginAtZero:true,ticks:{color:'#8a8a95',font:{size:10},precision:0},grid:{color:'#23232f'}}}}});}
+function renderFormsDaily(rows){var tbody=document.querySelector('#formsTable tbody'),tfoot=document.querySelector('#formsTable tfoot');tbody.innerHTML='';tfoot.innerHTML='';var tot={qualified:0,ooa:0,spamTest:0};if(!rows.length){tbody.innerHTML='<tr><td colspan="5" class="daily-empty">No daily form data yet — per-day rows populate as future refreshes write live Flamingo numbers.</td></tr>';}else{rows.forEach(r=>{var q=r.qualified||0,o=r.ooa||0,s=r.spamTest||0,sum=q+o+s;var tr=document.createElement('tr');tr.className=sum>0?'has-data':'zero-day';tr.innerHTML='<td>'+fmtShortDate(r.date)+'</td><td>'+q+'</td><td>'+o+'</td><td>'+s+'</td><td><strong>'+sum+'</strong></td>';tbody.appendChild(tr);tot.qualified+=q;tot.ooa+=o;tot.spamTest+=s;});var sum=tot.qualified+tot.ooa+tot.spamTest;var tf=document.createElement('tr');tf.innerHTML='<td>Window total</td><td>'+tot.qualified+'</td><td>'+tot.ooa+'</td><td>'+tot.spamTest+'</td><td>'+sum+'</td>';tfoot.appendChild(tf);}
+document.getElementById('formsTotQualified').textContent=tot.qualified;document.getElementById('formsTotOoa').textContent=tot.ooa;document.getElementById('formsTotSpam').textContent=tot.spamTest;
+if(formsChart){formsChart.destroy();formsChart=null;}var ctx=document.getElementById('formsChart');if(!rows.length||!window.Chart)return;formsChart=new Chart(ctx,{type:'bar',data:{labels:rows.map(r=>fmtShortDate(r.date)),datasets:[{label:'Qualified',data:rows.map(r=>r.qualified||0),backgroundColor:'#22c55e',stack:'a'},{label:'Out of Area',data:rows.map(r=>r.ooa||0),backgroundColor:'#fb923c',stack:'a'},{label:'Spam / Test',data:rows.map(r=>r.spamTest||0),backgroundColor:'#9ca3af',stack:'a'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#d4d4dd',font:{size:11},boxWidth:12}},tooltip:{mode:'index',intersect:false,backgroundColor:'#1a1a24',titleColor:'#c084fc',bodyColor:'#e7e7ed',borderColor:'#3d2960',borderWidth:1}},scales:{x:{stacked:true,ticks:{color:'#8a8a95',font:{size:10},maxRotation:0,autoSkip:true,maxTicksLimit:15},grid:{display:false}},y:{stacked:true,beginAtZero:true,ticks:{color:'#8a8a95',font:{size:10},precision:0},grid:{color:'#23232f'}}}}});}
 async function loadDate(date){var ov=document.getElementById('loadingOverlay');ov.classList.remove('hidden');try{var url=(date===manifest.latest)?'./data/current.json':'./data/history/'+date+'.json';var resp=await fetch(url,{cache:'no-store'});if(!resp.ok)throw new Error('HTTP '+resp.status);currentData=await resp.json();render(currentData);}catch(e){alert('Could not load data for '+date+': '+e.message);}finally{setTimeout(()=>ov.classList.add('hidden'),200);}}
 function buildDatePicker(){var sel=document.getElementById('dateSelect');sel.innerHTML='';(manifest.dates||[]).forEach(d=>{var opt=document.createElement('option');opt.value=d.date;opt.textContent=d.label;sel.appendChild(opt);});sel.value=manifest.latest;sel.addEventListener('change',e=>{loadDate(e.target.value);});}
 (async function(){try{var r=await fetch('./data/manifest.json',{cache:'no-store'});manifest=await r.json();buildDatePicker();await loadDate(manifest.latest);}catch(e){document.getElementById('loadingOverlay').innerHTML='<div class="loading-card" style="color:#f87171;">Failed to load: '+e.message+'</div>';}})();
