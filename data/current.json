@@ -2,7 +2,7 @@
   "snapshot_date": "2026-05-11",
   "period_start": "2026-02-10",
   "period_end": "2026-05-10",
-  "captured_at": "2026-05-11T19:30:00+05:30",
+  "captured_at": "2026-05-11T18:15:07+05:30",
   "version": 3,
   "headline_state": "Phone call lead goal repaired. All 6 account-default goals Active. Tracking pipeline fully verified.",
   "kpis": {
@@ -28,14 +28,14 @@
       "qualified": 22,
       "ooa": 4,
       "spamTest": 9,
-      "trackingStatus": "✓ Verified May 9"
+      "trackingStatus": "â Verified May 9"
     },
     "call": {
       "total": 10,
       "googleAds": 2,
       "lsa": 8,
       "telTracked": 0,
-      "trackingStatus": "✓ Goal repaired May 11"
+      "trackingStatus": "â Goal repaired May 11"
     },
     "combined": {
       "total": 45,
@@ -61,7 +61,7 @@
     "servicePages": 58,
     "freeEstimate": 3,
     "verifiedPaidConversions": 0,
-    "verifiedNote": "Tag pipeline verified working May 9 — limiter is reach, not tracking"
+    "verifiedNote": "Tag pipeline verified working May 9 â limiter is reach, not tracking"
   },
   "campaignState": {
     "activeCount": 1,
@@ -76,32 +76,59 @@
     "gtmTags": 10,
     "phoneCallLeadGoal": "Active",
     "submitLeadFormGoal": "Active",
-    "newestChange": "May 11 — Phone call lead goal repaired"
+    "newestChange": "May 11 â Phone call lead goal repaired"
   },
   "insights": [
     {
-      "headline": "Funnel fix — single highest-leverage move",
+      "headline": "Funnel fix â single highest-leverage move",
       "body": "Only ~3 of 62 paid sessions reach /free-estimate/ in 30 days. Route the active campaign's final URLs to /free-estimate/ directly or embed the CF7 form on the current LP. Until this changes, the form-conversion tag (now verified firing correctly) has no traffic to record against."
     },
     {
       "headline": "GTM Version 8 is live with the new GA4 generate_lead tag",
-      "body": "Published May 9, 2026. GA4 Key Events went from 0 to 5 in the 2 days since — the tag is producing real signal. Form-submit tracking pipeline verified end-to-end."
+      "body": "Published May 9, 2026. GA4 Key Events went from 0 to 5 in the 2 days since â the tag is producing real signal. Form-submit tracking pipeline verified end-to-end."
     },
     {
       "headline": "Phone call lead goal repaired May 11",
-      "body": "Was flagged 'Needs attention' — the GFN-based Click to call action was demoted from Primary to Secondary. Goal now reads Active across all 6 campaigns."
+      "body": "Was flagged 'Needs attention' â the GFN-based Click to call action was demoted from Primary to Secondary. Goal now reads Active across all 6 campaigns."
     },
     {
       "headline": "Apply 75+ recommended negative keywords",
-      "body": "Buckshot_NegativeKeywords_RECOMMENDED_BULK_UPLOAD.csv covers competitor brands, aggregators, Spanish, DIY, OOA geos. ~60–70% of wasted spend would be blocked."
+      "body": "Buckshot_NegativeKeywords_RECOMMENDED_BULK_UPLOAD.csv covers competitor brands, aggregators, Spanish, DIY, OOA geos. ~60â70% of wasted spend would be blocked."
     },
     {
       "headline": "Active campaign 'Bid setting limited' warning",
-      "body": "Leads – Roofing (PC) spending only 20% of $60/day cap. Lift bid / switch to Maximize Conversions after negatives + funnel work."
+      "body": "Leads â Roofing (PC) spending only 20% of $60/day cap. Lift bid / switch to Maximize Conversions after negatives + funnel work."
     },
     {
       "headline": "5 of 6 campaigns paused",
-      "body": "76% of 90-day spend ($3,408) ran through paused campaigns. Re-enable the highest-historical ad group inside Residential Roofing – Leads (PC) on the corrected LP first."
+      "body": "76% of 90-day spend ($3,408) ran through paused campaigns. Re-enable the highest-historical ad group inside Residential Roofing â Leads (PC) on the corrected LP first."
     }
-  ]
+  ],
+  "stale_sources": [
+    {
+      "source": "google_ads",
+      "reason": "No active session in scheduled-task browser; sign-in required."
+    },
+    {
+      "source": "ga4",
+      "reason": "No active session in scheduled-task browser; sign-in required."
+    },
+    {
+      "source": "microsoft_clarity",
+      "reason": "No active session in scheduled-task browser; sign-in required."
+    },
+    {
+      "source": "flamingo_inbox",
+      "reason": "No active session in scheduled-task browser; WordPress login required."
+    },
+    {
+      "source": "lsa_inbox",
+      "reason": "No active session in scheduled-task browser; sign-in required."
+    },
+    {
+      "source": "gtm",
+      "reason": "No active session in scheduled-task browser; sign-in required."
+    }
+  ],
+  "refresh_note": "Automated daily refresh ran at 2026-05-11T18:15:07+05:30. All 6 GUI sources required interactive sign-in and could not be scraped headlessly; KPIs preserved from prior snapshot. Run interactively to capture fresh numbers."
 }
