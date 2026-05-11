@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Buckshot Exteriors — Conversion Dashboard</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+<meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="slurp" content="noindex, nofollow">
+<meta name="duckduckbot" content="noindex, nofollow">
+<meta name="baiduspider" content="noindex, nofollow">
+<meta name="yandex" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="X-Robots-Tag" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #0d0d14; color: #e7e7ed; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", sans-serif; line-height: 1.5; font-size: 14px; min-height: 100%; }
+.wrap { max-width: 1280px; margin: 0 auto; padding: 28px 24px 60px; }
+a { color: #a05fff; text-decoration: none; }
+a:hover { color: #c084fc; }
+.hd { margin-bottom: 18px; }
+.hd h1 { font-size: 26px; font-weight: 700; color: #f3f4f6; letter-spacing: -0.01em; margin-bottom: 6px; }
+.hd .subtitle { font-size: 13.5px; color: #b8b8c2; margin-bottom: 4px; }
+.hd .meta { font-size: 11.5px; color: #6b6b78; }
+.date-bar { background: linear-gradient(90deg, #1d1428 0%, #1a1422 100%); border: 1px solid #3d2960; border-radius: 8px; padding: 14px 18px; margin-bottom: 18px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+.date-bar-left { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.date-bar-label { font-size: 10.5px; color: #c084fc; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+.date-bar-current { font-size: 15px; color: #ffffff; font-weight: 600; }
+.badge-latest { background: rgba(34, 197, 94, 0.18); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-left: 8px; }
+.badge-historical { background: rgba(251, 191, 36, 0.18); color: #fbbf24; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-left: 8px; }
+.date-bar select { background: #0d0d14; border: 1px solid #3d2960; color: #ffffff; padding: 7px 12px; border-radius: 6px; font-family: inherit; font-size: 13px; cursor: pointer; min-width: 280px; }
+.date-bar select:focus { outline: 2px solid #a05fff; outline-offset: 1px; }
+.date-bar-note { width: 100%; font-size: 11.5px; color: #a8a8b3; line-height: 1.45; border-top: 1px solid #3d2960; padding-top: 10px; margin-top: 4px; }
+.big-picture { background: linear-gradient(90deg, #5b21b6 0%, #4c1d95 100%); border-left: 4px solid #c084fc; padding: 18px 22px; border-radius: 8px; margin-bottom: 22px; font-size: 13.5px; line-height: 1.65; color: #f3e8ff; }
+.big-picture strong { color: #ffffff; font-weight: 700; }
+.big-picture .lbl { color: #c084fc; font-weight: 700; margin-right: 4px; }
+.kpis { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin-bottom: 22px; }
+.kpi { background: #14141c; border: 1px solid #23232f; border-radius: 8px; padding: 14px 16px; }
+.kpi .label { font-size: 10px; color: #8a8a95; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
+.kpi .value { font-size: 26px; font-weight: 700; color: #ffffff; line-height: 1.1; margin-bottom: 4px; letter-spacing: -0.02em; }
+.kpi .value.purple { color: #a05fff; }
+.kpi .value.green { color: #22c55e; }
+.kpi .value.yellow { color: #fbbf24; }
+.kpi .value.red { color: #ef4444; }
+.kpi .sub { font-size: 11px; color: #8a8a95; }
+.enq-grid { display: grid; grid-template-columns: 1fr 1fr 1.1fr; gap: 14px; margin-bottom: 22px; }
+.enq-card { background: #14141c; border: 1px solid #23232f; border-radius: 8px; padding: 16px 18px; }
+.enq-card.lead { border-left: 3px solid #fbbf24; }
+.enq-card.call { border-left: 3px solid #22c55e; }
+.enq-card.combined { border-left: 3px solid #a05fff; background: linear-gradient(135deg, #14141c 0%, #1d1428 100%); }
+.enq-card .enq-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 12px; display: flex; align-items: center; gap: 6px; }
+.enq-card.lead .enq-title { color: #fbbf24; }
+.enq-card.call .enq-title { color: #4ade80; }
+.enq-card.combined .enq-title { color: #c084fc; }
+.enq-card .enq-icon { font-size: 13px; }
+.enq-card .enq-total { font-size: 32px; font-weight: 700; color: #ffffff; line-height: 1; letter-spacing: -0.02em; margin-bottom: 4px; }
+.enq-card .enq-totalsub { font-size: 11.5px; color: #8a8a95; margin-bottom: 14px; }
+.enq-card .enq-rows { display: flex; flex-direction: column; gap: 6px; padding-top: 12px; border-top: 1px solid #23232f; }
+.enq-card .enq-row { display: flex; justify-content: space-between; align-items: baseline; font-size: 12px; }
+.enq-card .enq-row .lbl { color: #a8a8b3; }
+.enq-card .enq-row .lbl small { color: #6b6b78; font-size: 10.5px; margin-left: 4px; }
+.enq-card .enq-row .val { color: #ffffff; font-weight: 600; }
+.enq-card .enq-row .val.q { color: #4ade80; }
+.enq-card .enq-row .val.warn { color: #fb923c; }
+.enq-card .enq-row .val.muted { color: #9ca3af; }
+.enq-card.combined .enq-bigbreak { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; padding-top: 12px; border-top: 1px solid #23232f; }
+.enq-card.combined .enq-bigbreak > div { text-align: center; }
+.enq-card.combined .enq-bigbreak .bb-num { font-size: 19px; font-weight: 700; color: #ffffff; line-height: 1; margin-bottom: 4px; }
+.enq-card.combined .enq-bigbreak .bb-num.gold { color: #fbbf24; }
+.enq-card.combined .enq-bigbreak .bb-num.green { color: #4ade80; }
+.enq-card.combined .enq-bigbreak .bb-lbl { font-size: 10px; color: #8a8a95; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+.spam-strip { display: flex; gap: 10px; align-items: stretch; margin-bottom: 22px; flex-wrap: wrap; }
+.spam-tile { flex: 1; min-width: 220px; border-radius: 6px; padding: 12px 14px; }
+.spam-tile-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; display: flex; align-items: center; gap: 6px; }
+.spam-tile-num { font-size: 22px; font-weight: 700; color: #ffffff; }
+.spam-tile-sub { font-size: 11.5px; color: #a8a8b3; margin-left: 8px; }
+.spam-tile.inbox { background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.25); }
+.spam-tile.inbox .spam-tile-label { color: #f87171; }
+.spam-tile.test { background: rgba(156, 163, 175, 0.08); border: 1px solid rgba(156, 163, 175, 0.25); }
+.spam-tile.test .spam-tile-label { color: #cbd5e1; }
+.spam-tile.folder { background: rgba(160, 95, 255, 0.08); border: 1px solid rgba(160, 95, 255, 0.25); }
+.spam-tile.folder .spam-tile-label { color: #c084fc; }
+.tab-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; vertical-align: middle; }
+.tab-dot.spam { background: #f87171; box-shadow: 0 0 6px rgba(239, 68, 68, 0.5); }
+.tab-dot.test { background: #9ca3af; }
+.panel { background: #14141c; border: 1px solid #23232f; border-radius: 8px; padding: 18px 20px; margin-bottom: 18px; }
+.panel h2 { font-size: 15px; color: #f3f4f6; font-weight: 700; margin-bottom: 4px; letter-spacing: -0.01em; }
+.panel .panel-sub { font-size: 12px; color: #8a8a95; margin-bottom: 16px; }
+.insights ol { counter-reset: insight; list-style: none; padding-left: 0; }
+.insights ol li { padding: 10px 12px 10px 38px; margin-bottom: 6px; background: #1a1a24; border-radius: 6px; border: 1px solid #23232f; position: relative; font-size: 12.5px; line-height: 1.55; color: #d4d4dd; counter-increment: insight; }
+.insights ol li::before { content: counter(insight) "."; position: absolute; left: 14px; top: 10px; color: #a05fff; font-weight: 700; font-size: 13px; width: 18px; }
+.insights ol li strong { color: #ffffff; font-weight: 700; }
+.data-sources { background: #14141c; border: 1px solid #23232f; border-radius: 8px; padding: 16px 20px; font-size: 12px; color: #8a8a95; line-height: 1.8; }
+.data-sources h3 { font-size: 14px; color: #f3f4f6; margin-bottom: 8px; font-weight: 700; }
+.data-sources strong { color: #d4d4dd; font-weight: 600; }
+.quick-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.qlink { background: rgba(160, 95, 255, 0.12); color: #c084fc; border: 1px solid rgba(160, 95, 255, 0.25); border-radius: 4px; padding: 4px 10px; font-size: 11px; font-weight: 600; text-decoration: none; }
+.qlink:hover { background: rgba(160, 95, 255, 0.25); color: #ffffff; }
+.tracking-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.tpill { background: rgba(34, 197, 94, 0.12); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.25); padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+.tpill.warn { background: rgba(251, 191, 36, 0.12); color: #fbbf24; border-color: rgba(251, 191, 36, 0.25); }
+.tpill.bad { background: rgba(239, 68, 68, 0.12); color: #f87171; border-color: rgba(239, 68, 68, 0.25); }
+.loading-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(13, 13, 20, 0.7); backdrop-filter: blur(2px); display: flex; align-items: center; justify-content: center; z-index: 100; transition: opacity 0.25s ease; }
+.loading-overlay.hidden { opacity: 0; pointer-events: none; }
+.loading-card { background: #1a1a24; border: 1px solid #3d2960; border-radius: 8px; padding: 24px 32px; color: #c084fc; font-weight: 600; }
+@media (max-width: 1100px) { .kpis { grid-template-columns: repeat(3, 1fr); } .enq-grid { grid-template-columns: 1fr; } }
+@media (max-width: 700px) { .kpis { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="hd">
+<h1>Buckshot Exteriors — Conversion Dashboard</h1>
+<div class="subtitle">Cross-referenced from Google Ads + GA4 + Microsoft Clarity + Flamingo + LSA Inbox</div>
+<div class="meta">Auto-refreshed daily at 10:30 AM IST · Version history below · Search engines blocked via noindex</div>
+<div class="quick-links">
+<a class="qlink" href="https://www.buckshotexteriors.com/wp-admin/admin.php?page=flamingo_inbound" target="_blank" rel="noopener">Flamingo Inbox ↗</a>
+<a class="qlink" href="https://ads.google.com/u/1/localservices/inbox?cid=4026037149" target="_blank" rel="noopener">LSA Leads ↗</a>
+<a class="qlink" href="https://ads.google.com/aw/campaigns?campaignId=23713998408&ocid=7566413701" target="_blank" rel="noopener">Active Campaign ↗</a>
+<a class="qlink" href="https://analytics.google.com/analytics/web/?authuser=1#/a391803525p533585540/reports" target="_blank" rel="noopener">GA4 ↗</a>
+<a class="qlink" href="https://clarity.microsoft.com/projects/view/whxv7w4ddr/dashboard" target="_blank" rel="noopener">Clarity ↗</a>
+<a class="qlink" href="https://tagmanager.google.com/?authuser=1#/container/accounts/6351430209/containers/250284699/workspaces/9/tags" target="_blank" rel="noopener">GTM ↗</a>
+</div>
+</div>
+<div class="date-bar" id="dateBar">
+<div class="date-bar-left">
+<div>
+<div class="date-bar-label">📅 Viewing data from</div>
+<div class="date-bar-current" id="currentDateDisplay">Loading…</div>
+</div>
+<select id="dateSelect" aria-label="Select a date"><option value="">Loading dates…</option></select>
+</div>
+<div class="date-bar-note" id="dateNote"></div>
+</div>
+<div class="big-picture"><span class="lbl">Snapshot state:</span> <span data-field="headline_state">Loading…</span></div>
+<div class="kpis">
+<div class="kpi"><div class="label">TOTAL SESSIONS (30D)</div><div class="value" data-field="kpis.totalSessions">—</div><div class="sub">tracked by GA4</div></div>
+<div class="kpi"><div class="label">PAID SESSIONS</div><div class="value purple" data-field="kpis.paidSessions">—</div><div class="sub"><span data-field="kpis.paidPct">—</span> of total</div></div>
+<div class="kpi"><div class="label">FORM SUBMISSIONS</div><div class="value yellow" data-field="kpis.formSubmissions">—</div><div class="sub"><span data-field="kpis.qualifiedForms">—</span> qualified</div></div>
+<div class="kpi"><div class="label">ADS CONVERSIONS</div><div class="value red" data-field="kpis.adsConversions">—</div><div class="sub">call-ext only</div></div>
+<div class="kpi"><div class="label">LSA CHARGED LEADS</div><div class="value green" data-field="kpis.lsaCharged">—</div><div class="sub"><span data-field="kpis.lsaTotal">—</span> total · <span data-field="kpis.lsaDisputed">—</span> disputed</div></div>
+<div class="kpi"><div class="label">ADS COST (90D)</div><div class="value" data-field="kpis.adsCost90d">—</div><div class="sub"><span data-field="kpis.adsCostDaily">—</span></div></div>
+</div>
+<div class="enq-grid">
+<div class="enq-card lead"><div class="enq-title"><span class="enq-icon">📝</span> Lead Enquiries (Forms)</div><div class="enq-total" data-field="enquiries.lead.total">—</div><div class="enq-totalsub">form submissions in last 30 days</div><div class="enq-rows"><div class="enq-row"><span class="lbl">Qualified <small>Madison metro</small></span><span class="val q" data-field="enquiries.lead.qualified">—</span></div><div class="enq-row"><span class="lbl">Out-of-area</span><span class="val warn" data-field="enquiries.lead.ooa">—</span></div><div class="enq-row"><span class="lbl">Spam / test</span><span class="val muted" data-field="enquiries.lead.spamTest">—</span></div><div class="enq-row" style="border-top:1px solid #23232f; padding-top:6px; margin-top:4px;"><span class="lbl">Tracking status</span><span class="val" data-field="enquiries.lead.trackingStatus" style="font-size:11px;">—</span></div></div></div>
+<div class="enq-card call"><div class="enq-title"><span class="enq-icon">📞</span> Call Enquiries</div><div class="enq-total" data-field="enquiries.call.total">—</div><div class="enq-totalsub">phone interactions across all sources</div><div class="enq-rows"><div class="enq-row"><span class="lbl">Google Ads calls <small>(call assets)</small></span><span class="val q" data-field="enquiries.call.googleAds">—</span></div><div class="enq-row"><span class="lbl">LSA phone leads</span><span class="val q" data-field="enquiries.call.lsa">—</span></div><div class="enq-row"><span class="lbl">Site tel: clicks tracked</span><span class="val muted" data-field="enquiries.call.telTracked">—</span></div><div class="enq-row" style="border-top:1px solid #23232f; padding-top:6px; margin-top:4px;"><span class="lbl">Tracking status</span><span class="val" data-field="enquiries.call.trackingStatus" style="font-size:11px;">—</span></div></div></div>
+<div class="enq-card combined"><div class="enq-title"><span class="enq-icon">🎯</span> Combined Enquiries (All Sources)</div><div class="enq-total" data-field="enquiries.combined.total">—</div><div class="enq-totalsub">total inbound enquiries in last 30 days</div><div class="enq-bigbreak"><div><div class="bb-num gold" data-field="enquiries.lead.total">—</div><div class="bb-lbl">Form leads</div></div><div><div class="bb-num green" data-field="enquiries.call.total">—</div><div class="bb-lbl">Call leads</div></div></div><div class="enq-rows" style="border-top:1px solid #23232f; padding-top:10px; margin-top:10px;"><div class="enq-row"><span class="lbl">Qualified (forms + calls)</span><span class="val q" data-field="enquiries.combined.qualified">—</span></div><div class="enq-row"><span class="lbl">Cost per qualified enquiry</span><span class="val" data-field="enquiries.combined.costPerQualified" style="font-size:13px;">—</span></div><div class="enq-row"><span class="lbl">Form-to-call ratio</span><span class="val muted" data-field="enquiries.combined.formToCallRatio">—</span></div></div></div>
+</div>
+<div class="spam-strip">
+<div class="spam-tile inbox"><div class="spam-tile-label"><span class="tab-dot spam"></span>Spam in Inbox</div><div><span class="spam-tile-num" data-field="spamCounts.inbox">—</span><span class="spam-tile-sub">post-filter entries</span></div></div>
+<div class="spam-tile test"><div class="spam-tile-label"><span class="tab-dot test"></span>Internal QA Tests</div><div><span class="spam-tile-num" data-field="spamCounts.test">—</span><span class="spam-tile-sub">QA pipeline tests</span></div></div>
+<div class="spam-tile folder"><div class="spam-tile-label"><span class="tab-dot spam"></span>Flamingo Spam Folder</div><div><span class="spam-tile-num" data-field="spamCounts.flamingoSpamFolder">—</span><span class="spam-tile-sub">auto-filtered lifetime · pre-Inbox</span></div></div>
+</div>
+<div class="panel"><h2>Tracking + Campaign State (as of this snapshot)</h2><div class="panel-sub">GTM container, key goals, and active campaign status at the time of this snapshot.</div><div class="tracking-pills" id="trackingPills"></div></div>
+<div class="panel insights"><h2>Insights &amp; Next Actions</h2><div class="panel-sub">Prioritized by leverage. These reflect the state on the selected snapshot date.</div><ol id="insightsList"></ol></div>
+<div class="data-sources"><h3>Data Sources &amp; Refresh</h3><p><strong>Auto-refresh:</strong> Daily at 10:30 AM IST. Missed days are backfilled (Google Ads + GA4 only) on next available run.</p><p><strong>Form entries (Lead Enquiries):</strong> Flamingo Inbox via Buckshot WordPress admin.</p><p><strong>Call Enquiries:</strong> "Calls from ads" metric in Google Ads + LSA inbox + GTM-tracked tel: clicks.</p><p><strong>Sessions/events:</strong> GA4 Traffic Acquisition for property G-5X1X23VNJQ.</p><p><strong>Behavior signals:</strong> Microsoft Clarity project whxv7w4ddr (3-day rolling window).</p><p><strong>Tracking state:</strong> GTM-KG87WZF2 container, Goals tab in Google Ads.</p><p style="margin-top: 12px; padding-top: 10px; border-top: 1px solid #23232f; color: #6b6b78;"><strong>Version history:</strong> every daily refresh commits to <code style="color:#c084fc; background:#23232f; padding:1px 5px; border-radius:3px; font-size:11px;">tilakkd/buckshot-conversion-dashboard</code>. Use the date picker above to load any past day.</p></div>
+</div>
+<div class="loading-overlay" id="loadingOverlay"><div class="loading-card">Loading dashboard data…</div></div>
+<script>
+let manifest=null,currentData=null;
+function get(o,p){return p.split('.').reduce((a,k)=>a!=null?a[k]:undefined,o);}
+function render(d){if(!d)return;document.querySelectorAll('[data-field]').forEach(el=>{const v=get(d,el.dataset.field);el.textContent=(v==null)?'—':v;});
+var ol=document.getElementById('insightsList');ol.innerHTML='';(d.insights||[]).forEach(ins=>{var li=document.createElement('li');var s=document.createElement('strong');s.textContent=ins.headline+'.';li.appendChild(s);li.appendChild(document.createTextNode(' '+ins.body));ol.appendChild(li);});
+var pills=document.getElementById('trackingPills');pills.innerHTML='';var t=d.trackingState||{},c=d.campaignState||{};
+var pillData=[{txt:'GTM '+(t.gtmLiveVersion||'—')+' · '+(t.gtmTags||'—')+' tags',cls:'tpill'},{txt:'Phone call lead: '+(t.phoneCallLeadGoal||'—'),cls:(t.phoneCallLeadGoal==='Active'?'tpill':'tpill bad')},{txt:'Submit lead form: '+(t.submitLeadFormGoal||'—'),cls:'tpill'},{txt:'Active campaigns: '+(c.activeCount||'—')+' of '+((c.activeCount||0)+(c.pausedCount||0)),cls:'tpill'},{txt:'Optimization score: '+(c.optimizationScore||'—'),cls:'tpill'},{txt:(c.bidWarning||''),cls:(c.bidWarning?'tpill warn':'tpill')}];
+pillData.forEach(p=>{if(!p.txt)return;var sp=document.createElement('span');sp.className=p.cls;sp.textContent=p.txt;pills.appendChild(sp);});
+var dateBar=document.getElementById('currentDateDisplay');var isLatest=manifest&&d.snapshot_date===manifest.latest;var niceDate;try{niceDate=new Date(d.snapshot_date+'T00:00:00').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});}catch(e){niceDate=d.snapshot_date;}
+dateBar.innerHTML=niceDate+' <span style="color:#8a8a95; font-size:12px; margin-left:6px;">(period '+(d.period_start||'—')+' to '+(d.period_end||'—')+')</span>'+(isLatest?' <span class="badge-latest">Latest</span>':' <span class="badge-historical">Historical</span>');
+var note=document.getElementById('dateNote');var dm=(manifest&&manifest.dates||[]).find(x=>x.date===d.snapshot_date);note.textContent=dm?dm.note:'';}
+async function loadDate(date){var ov=document.getElementById('loadingOverlay');ov.classList.remove('hidden');try{var url=(date===manifest.latest)?'./data/current.json':'./data/history/'+date+'.json';var resp=await fetch(url,{cache:'no-store'});if(!resp.ok)throw new Error('HTTP '+resp.status);currentData=await resp.json();render(currentData);}catch(e){alert('Could not load data for '+date+': '+e.message);}finally{setTimeout(()=>ov.classList.add('hidden'),200);}}
+function buildDatePicker(){var sel=document.getElementById('dateSelect');sel.innerHTML='';(manifest.dates||[]).forEach(d=>{var opt=document.createElement('option');opt.value=d.date;opt.textContent=d.label;sel.appendChild(opt);});sel.value=manifest.latest;sel.addEventListener('change',e=>{loadDate(e.target.value);});}
+(async function(){try{var r=await fetch('./data/manifest.json',{cache:'no-store'});manifest=await r.json();buildDatePicker();await loadDate(manifest.latest);}catch(e){document.getElementById('loadingOverlay').innerHTML='<div class="loading-card" style="color:#f87171;">Failed to load: '+e.message+'</div>';}})();
+</script>
+</body>
+</html>
