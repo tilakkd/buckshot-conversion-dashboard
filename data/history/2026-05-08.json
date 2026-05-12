@@ -85,7 +85,7 @@
     },
     {
       "headline": "GA4 has 0 Key Events configured",
-      "body": "Mark generate_lead as a Key Event in GA4 Admin ??? Events. Then import to Ads as a primary conversion action."
+      "body": "Mark generate_lead as a Key Event in GA4 Admin - Events. Then import to Ads as a primary conversion action."
     },
     {
       "headline": "Phone call lead goal is in 'Needs attention' status",
