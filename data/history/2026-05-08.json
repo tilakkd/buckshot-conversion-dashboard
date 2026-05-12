@@ -28,14 +28,14 @@
       "qualified": 22,
       "ooa": 4,
       "spamTest": 9,
-      "trackingStatus": "⚠ Form GCLID capture suspect (later proven incorrect on May 9)"
+      "trackingStatus": "[WARN] Form GCLID capture suspect (later proven incorrect on May 9)"
     },
     "call": {
       "total": 10,
       "googleAds": 2,
       "lsa": 8,
       "telTracked": 0,
-      "trackingStatus": "⚠ Phone call lead goal: Needs attention"
+      "trackingStatus": "[WARN] Phone call lead goal: Needs attention"
     },
     "combined": {
       "total": 45,
@@ -61,7 +61,7 @@
     "servicePages": 58,
     "freeEstimate": 3,
     "verifiedPaidConversions": 0,
-    "verifiedNote": "Tracking gap suspected — GCLID not captured (later retracted)"
+    "verifiedNote": "Tracking gap suspected - GCLID not captured (later retracted)"
   },
   "campaignState": {
     "activeCount": 1,
@@ -76,7 +76,7 @@
     "gtmTags": 9,
     "phoneCallLeadGoal": "Needs attention",
     "submitLeadFormGoal": "Active",
-    "newestChange": "—"
+    "newestChange": "-"
   },
   "insights": [
     {
@@ -85,14 +85,14 @@
     },
     {
       "headline": "GA4 has 0 Key Events configured",
-      "body": "Mark generate_lead as a Key Event in GA4 Admin → Events. Then import to Ads as a primary conversion action."
+      "body": "Mark generate_lead as a Key Event in GA4 Admin ??? Events. Then import to Ads as a primary conversion action."
     },
     {
       "headline": "Phone call lead goal is in 'Needs attention' status",
       "body": "Applied to all 6 campaigns. Re-verify call tracking number, GTM event, primary/secondary status, GCLID/wbraid pass-through."
     },
     {
-      "headline": "Active campaign at 14% impression share — losing 62% to ad rank",
+      "headline": "Active campaign at 14% impression share - losing 62% to ad rank",
       "body": "91 keywords, only 5 with measurable Quality Score. Average QS 2.8/10. Landing Page Experience 'Below average' on 4 of 5 measurable keywords."
     },
     {
