@@ -1,24 +1,19 @@
 {
-  "latest": "2026-05-12",
+  "latest": "2026-05-11",
   "dates": [
     {
-      "date": "2026-05-12",
-      "label": "May 12, 2026 · Daily refresh",
-      "note": "Manual refresh on May 12 at start-of-day IST. Rolling 30-day window now Apr 13 – May 12. Several sources marked stale (interactive auth needed)."
-    },
-    {
       "date": "2026-05-11",
-      "label": "May 11, 2026 Â· Phone goal repaired",
-      "note": "Latest â all 6 account-default goals Active. GFN Click to call demoted to Secondary."
+      "label": "May 11, 2026 ÃÂ· Phone goal repaired",
+      "note": "Latest Ã¢ÂÂ all 6 account-default goals Active. GFN Click to call demoted to Secondary."
     },
     {
       "date": "2026-05-10",
-      "label": "May 10, 2026 Â· Fresh 90-day pull",
+      "label": "May 10, 2026 ÃÂ· Fresh 90-day pull",
       "note": "Post-tag-install. GA4 Key Events firing. Account totals 349 clicks / $4,483.82."
     },
     {
       "date": "2026-05-08",
-      "label": "May 8, 2026 Â· Pre-tag-install",
+      "label": "May 8, 2026 ÃÂ· Pre-tag-install",
       "note": "Original audit. 0 GA4 Key Events. Phone call lead goal in 'Needs attention'."
     }
   ]
