@@ -1,10 +1,10 @@
 {
-  "snapshot_date": "2026-05-12",
+  "snapshot_date": "2026-05-11",
   "period_start": "2026-02-10",
-  "period_end": "2026-05-12",
-  "captured_at": "2026-05-12T05:08:02.581+05:30",
+  "period_end": "2026-05-10",
+  "captured_at": "2026-05-11T18:15:07+05:30",
   "version": 3,
-  "headline_state": "Day just started in IST. GA4 Today: 0 events / 0 users (early morning). Tracking state unchanged from May 11 repair.",
+  "headline_state": "Phone call lead goal repaired. All 6 account-default goals Active. Tracking pipeline fully verified.",
   "kpis": {
     "totalSessions": 547,
     "paidSessions": 62,
@@ -107,36 +107,43 @@
   "stale_sources": [
     {
       "source": "google_ads",
-      "reason": "Today (May 12) captured at start-of-day IST; values are 0 because the day hasn't accumulated activity yet."
+      "reason": "No active session in scheduled-task browser; sign-in required."
     },
     {
       "source": "ga4",
-      "reason": "GA4 confirmed: 0 events / 0 users / 0 key events / 0 new users for May 12 as of capture time. 1 active user in last 30 min (operator)."
-    },
-    {
-      "source": "flamingo_inbox",
-      "reason": "WordPress admin requires interactive login; today's form count not captured. Daily.forms entry uses 0; will retry on next run."
-    },
-    {
-      "source": "lsa_inbox",
-      "reason": "LSA inbox not captured this run; daily.calls.lsaCharged/lsaTotal entries use 0."
+      "reason": "No active session in scheduled-task browser; sign-in required."
     },
     {
       "source": "microsoft_clarity",
-      "reason": "Not re-captured; behavior data unchanged in snapshot."
+      "reason": "No active session in scheduled-task browser; sign-in required."
+    },
+    {
+      "source": "flamingo_inbox",
+      "reason": "No active session in scheduled-task browser; WordPress login required."
+    },
+    {
+      "source": "lsa_inbox",
+      "reason": "No active session in scheduled-task browser; sign-in required."
     },
     {
       "source": "gtm",
-      "reason": "Container state assumed unchanged (Version 8 / 10 tags / Phone call lead Active)."
+      "reason": "No active session in scheduled-task browser; sign-in required."
     }
   ],
-  "refresh_note": "Manual refresh on May 12 at start-of-day IST. GA4 confirmed via Chrome; other sources need interactive auth on next run to capture daily increments. The daily-window has been rolled forward correctly.",
+  "refresh_note": "Automated daily refresh ran at 2026-05-11T18:15:07+05:30. All 6 GUI sources required interactive sign-in and could not be scraped headlessly; KPIs preserved from prior snapshot. Run interactively to capture fresh numbers.",
   "daily": {
     "dateWindow": "last 30 days",
-    "rangeStart": "2026-04-13",
-    "rangeEnd": "2026-05-12",
-    "note": "Rolling 30-day window. May 12 entry captured at start-of-day IST (likely 0s).",
+    "rangeStart": "2026-04-12",
+    "rangeEnd": "2026-05-11",
+    "note": "Live capture from Flamingo Inbox + Flamingo Spam folder + LSA Inbox on 2026-05-11. Google Ads call conversions and tel: clicks are zeros across window (Ads rollup = 2 calls in 90 days; tel-tracked rollup = 0). OOA-per-day classification not auto-tagged at row level; daily OOA columns show 0 while the 30-day rollup OOA total (4) is tracked separately in the Lead Enquiries card above.",
     "calls": [
+      {
+        "date": "2026-04-12",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
       {
         "date": "2026-04-13",
         "googleAds": 0,
@@ -339,16 +346,15 @@
         "lsaCharged": 0,
         "lsaTotal": 0,
         "telTracked": 0
-      },
-      {
-        "date": "2026-05-12",
-        "googleAds": 0,
-        "lsaCharged": 0,
-        "lsaTotal": 0,
-        "telTracked": 0
       }
     ],
     "forms": [
+      {
+        "date": "2026-04-12",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 0
+      },
       {
         "date": "2026-04-13",
         "qualified": 2,
@@ -519,12 +525,6 @@
       },
       {
         "date": "2026-05-11",
-        "qualified": 0,
-        "ooa": 0,
-        "spamTest": 0
-      },
-      {
-        "date": "2026-05-12",
         "qualified": 0,
         "ooa": 0,
         "spamTest": 0
