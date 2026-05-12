@@ -28,14 +28,14 @@
       "qualified": 22,
       "ooa": 4,
       "spamTest": 9,
-      "trackingStatus": "✓ Verified May 9"
+      "trackingStatus": "[OK] Verified May 9"
     },
     "call": {
       "total": 10,
       "googleAds": 2,
       "lsa": 8,
       "telTracked": 0,
-      "trackingStatus": "⚠ Phone call lead goal: Needs attention"
+      "trackingStatus": "[WARN] Phone call lead goal: Needs attention"
     },
     "combined": {
       "total": 45,
@@ -61,7 +61,7 @@
     "servicePages": 58,
     "freeEstimate": 3,
     "verifiedPaidConversions": 0,
-    "verifiedNote": "Tag pipeline verified working May 9 — limiter is reach, not tracking"
+    "verifiedNote": "Tag pipeline verified working May 9 - limiter is reach, not tracking"
   },
   "campaignState": {
     "activeCount": 1,
@@ -76,7 +76,7 @@
     "gtmTags": 10,
     "phoneCallLeadGoal": "Needs attention",
     "submitLeadFormGoal": "Active",
-    "newestChange": "May 9 — GA4 Event - generate_lead tag published"
+    "newestChange": "May 9 - GA4 Event - generate_lead tag published"
   },
   "insights": [
     {
@@ -85,11 +85,11 @@
     },
     {
       "headline": "Phone call lead goal still 'Needs attention'",
-      "body": "Diagnosis complete on May 9 — 4-action sprawl in Google Ads. Repair plan ready; not executed yet."
+      "body": "Diagnosis complete on May 9 - 4-action sprawl in Google Ads. Repair plan ready; not executed yet."
     },
     {
       "headline": "Funnel fix is the bottleneck",
-      "body": "Tag pipeline verified end-to-end May 9. The reason form conversions stay at 0 is the funnel — only ~3 of 62 paid sessions reach /free-estimate/ in 30 days."
+      "body": "Tag pipeline verified end-to-end May 9. The reason form conversions stay at 0 is the funnel - only ~3 of 62 paid sessions reach /free-estimate/ in 30 days."
     },
     {
       "headline": "Apply 75+ negative keywords",
