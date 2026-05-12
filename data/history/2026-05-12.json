@@ -1,0 +1,534 @@
+{
+  "snapshot_date": "2026-05-12",
+  "period_start": "2026-02-10",
+  "period_end": "2026-05-12",
+  "captured_at": "2026-05-12T05:08:02.581+05:30",
+  "version": 3,
+  "headline_state": "Day just started in IST. GA4 Today: 0 events / 0 users (early morning). Tracking state unchanged from May 11 repair.",
+  "kpis": {
+    "totalSessions": 547,
+    "paidSessions": 62,
+    "paidPct": "11.3%",
+    "formSubmissions": 35,
+    "qualifiedForms": 22,
+    "ooaForms": 4,
+    "spamTestForms": 9,
+    "adsConversions": 2,
+    "lsaCharged": 5,
+    "lsaTotal": 8,
+    "lsaDisputed": 3,
+    "adsCost90d": "$4,483.82",
+    "adsCostDaily": "$11.95/day",
+    "ga4ActiveUsers": 485,
+    "ga4KeyEvents": 5
+  },
+  "enquiries": {
+    "lead": {
+      "total": 35,
+      "qualified": 22,
+      "ooa": 4,
+      "spamTest": 9,
+      "trackingStatus": "â Verified May 9"
+    },
+    "call": {
+      "total": 10,
+      "googleAds": 2,
+      "lsa": 8,
+      "telTracked": 0,
+      "trackingStatus": "â Goal repaired May 11"
+    },
+    "combined": {
+      "total": 45,
+      "qualified": 30,
+      "costPerQualified": "~$149",
+      "formToCallRatio": "3.5 : 1"
+    }
+  },
+  "spamCounts": {
+    "inbox": 1,
+    "test": 3,
+    "flamingoSpamFolder": 578
+  },
+  "sourceChart": {
+    "paid": 3,
+    "organic": 9,
+    "direct": 5,
+    "lsa": 5,
+    "referral": 2
+  },
+  "funnel": {
+    "paidSessions": 62,
+    "servicePages": 58,
+    "freeEstimate": 3,
+    "verifiedPaidConversions": 0,
+    "verifiedNote": "Tag pipeline verified working May 9 ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ limiter is reach, not tracking"
+  },
+  "campaignState": {
+    "activeCount": 1,
+    "pausedCount": 5,
+    "activeCampaignName": "Leads - Roofing (PC)",
+    "optimizationScore": "92.9%",
+    "bidWarning": "Bid setting limited"
+  },
+  "trackingState": {
+    "gtmContainer": "GTM-KG87WZF2",
+    "gtmLiveVersion": "Version 8",
+    "gtmTags": 10,
+    "phoneCallLeadGoal": "Active",
+    "submitLeadFormGoal": "Active",
+    "newestChange": "May 11 ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Phone call lead goal repaired"
+  },
+  "insights": [
+    {
+      "headline": "Funnel fix ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ single highest-leverage move",
+      "body": "Only ~3 of 62 paid sessions reach /free-estimate/ in 30 days. Route the active campaign's final URLs to /free-estimate/ directly or embed the CF7 form on the current LP. Until this changes, the form-conversion tag (now verified firing correctly) has no traffic to record against."
+    },
+    {
+      "headline": "GTM Version 8 is live with the new GA4 generate_lead tag",
+      "body": "Published May 9, 2026. GA4 Key Events went from 0 to 5 in the 2 days since ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ the tag is producing real signal. Form-submit tracking pipeline verified end-to-end."
+    },
+    {
+      "headline": "Phone call lead goal repaired May 11",
+      "body": "Was flagged 'Needs attention' ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ the GFN-based Click to call action was demoted from Primary to Secondary. Goal now reads Active across all 6 campaigns."
+    },
+    {
+      "headline": "Apply 75+ recommended negative keywords",
+      "body": "Buckshot_NegativeKeywords_RECOMMENDED_BULK_UPLOAD.csv covers competitor brands, aggregators, Spanish, DIY, OOA geos. ~60ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ70% of wasted spend would be blocked."
+    },
+    {
+      "headline": "Active campaign 'Bid setting limited' warning",
+      "body": "Leads ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Roofing (PC) spending only 20% of $60/day cap. Lift bid / switch to Maximize Conversions after negatives + funnel work."
+    },
+    {
+      "headline": "5 of 6 campaigns paused",
+      "body": "76% of 90-day spend ($3,408) ran through paused campaigns. Re-enable the highest-historical ad group inside Residential Roofing ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Leads (PC) on the corrected LP first."
+    }
+  ],
+  "stale_sources": [
+    {
+      "source": "google_ads",
+      "reason": "Today (May 12) captured at start-of-day IST; values are 0 because the day hasn't accumulated activity yet."
+    },
+    {
+      "source": "ga4",
+      "reason": "GA4 confirmed: 0 events / 0 users / 0 key events / 0 new users for May 12 as of capture time. 1 active user in last 30 min (operator)."
+    },
+    {
+      "source": "flamingo_inbox",
+      "reason": "WordPress admin requires interactive login; today's form count not captured. Daily.forms entry uses 0; will retry on next run."
+    },
+    {
+      "source": "lsa_inbox",
+      "reason": "LSA inbox not captured this run; daily.calls.lsaCharged/lsaTotal entries use 0."
+    },
+    {
+      "source": "microsoft_clarity",
+      "reason": "Not re-captured; behavior data unchanged in snapshot."
+    },
+    {
+      "source": "gtm",
+      "reason": "Container state assumed unchanged (Version 8 / 10 tags / Phone call lead Active)."
+    }
+  ],
+  "refresh_note": "Manual refresh on May 12 at start-of-day IST. GA4 confirmed via Chrome; other sources need interactive auth on next run to capture daily increments. The daily-window has been rolled forward correctly.",
+  "daily": {
+    "dateWindow": "last 30 days",
+    "rangeStart": "2026-04-13",
+    "rangeEnd": "2026-05-12",
+    "note": "Rolling 30-day window. May 12 entry captured at start-of-day IST (likely 0s).",
+    "calls": [
+      {
+        "date": "2026-04-13",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-14",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-15",
+        "googleAds": 0,
+        "lsaCharged": 2,
+        "lsaTotal": 3,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-16",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-17",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-18",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-19",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-20",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-21",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-22",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-23",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-24",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-25",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-26",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-27",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-28",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 1,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-29",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-30",
+        "googleAds": 0,
+        "lsaCharged": 1,
+        "lsaTotal": 1,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-01",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-02",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-03",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-04",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-05",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-06",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-07",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-08",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-09",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-10",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-11",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-12",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      }
+    ],
+    "forms": [
+      {
+        "date": "2026-04-13",
+        "qualified": 2,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-14",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 1
+      },
+      {
+        "date": "2026-04-15",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-16",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-17",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-18",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 2
+      },
+      {
+        "date": "2026-04-19",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-20",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-21",
+        "qualified": 2,
+        "ooa": 0,
+        "spamTest": 1
+      },
+      {
+        "date": "2026-04-22",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-23",
+        "qualified": 3,
+        "ooa": 0,
+        "spamTest": 2
+      },
+      {
+        "date": "2026-04-24",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-25",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 1
+      },
+      {
+        "date": "2026-04-26",
+        "qualified": 2,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-27",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-28",
+        "qualified": 2,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-29",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 1
+      },
+      {
+        "date": "2026-04-30",
+        "qualified": 4,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-01",
+        "qualified": 2,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-02",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-03",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-04",
+        "qualified": 2,
+        "ooa": 0,
+        "spamTest": 1
+      },
+      {
+        "date": "2026-05-05",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 2
+      },
+      {
+        "date": "2026-05-06",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-07",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-08",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 1
+      },
+      {
+        "date": "2026-05-09",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-10",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-11",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-12",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      }
+    ]
+  }
+}
