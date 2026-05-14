@@ -2,9 +2,9 @@
   "snapshot_date": "2026-05-13",
   "period_start": "2026-02-11",
   "period_end": "2026-05-12",
-  "captured_at": "2026-05-13T10:35:00+05:30",
+  "captured_at": "2026-05-14T10:43:46+05:30",
   "version": 4,
-  "headline_state": "Fresh capture May 13 — Ads spend $4,534, 359 clicks. Conversion tracking degrading: 8 actions show no recent conversions, 1 recording. Opt score dropped to 87.1%.",
+  "headline_state": "Full live capture May 13 — 5-day form quiet streak (last submission May 8). Ads spend $4,534 / 359 clicks. Conversion tracking degrading: 8 actions no-recent, 1 recording. Opt score 87.1%.",
   "kpis": {
     "totalSessions": 540,
     "paidSessions": 62,
@@ -80,6 +80,10 @@
   },
   "insights": [
     {
+      "headline": "5-day form-submission quiet streak (May 9–13)",
+      "body": "Zero entries to Flamingo Inbox AND Spam folder across May 9, 10, 11, 12, 13 — confirmed via fresh scrape. Last submission was Nicole Punzel (hail inspection request, Janesville) on May 8. Check whether tag-pipeline regressions (8 \"no recent\" goals) and inbound traffic dip are correlated."
+    },
+    {
       "headline": "Conversion tracking degrading — 8 actions no longer recording",
       "body": "In 90 days the Conversion tracking status shifted from 3 Recording / 0 Unverified / 6 No recent → 1 Recording / 0 Unverified / 8 No recent + 1 Tag inactive. Audit Goals tab; the May 11 repair did not propagate to all 9 account-default goals."
     },
@@ -93,7 +97,7 @@
     },
     {
       "headline": "Apply 75+ recommended negative keywords",
-      "body": "Buckshot_NegativeKeywords_RECOMMENDED_BULK_UPLOAD.csv covers competitor brands, aggregators, Spanish, DIY, OOA geos. Competitor/Brand Exclusion list has 44 entries (up from 5); roofing negative keyword has 78. ~60–70% of wasted spend would be blocked."
+      "body": "Buckshot_NegativeKeywords_RECOMMENDED_BULK_UPLOAD.csv covers competitor brands, aggregators, Spanish, DIY, OOA geos. Competitor/Brand Exclusion list has 44 entries (up from 5); roofing negative keyword has 78."
     },
     {
       "headline": "Active campaign Bid setting limited warning persists",
@@ -108,7 +112,7 @@
     "dateWindow": "last 30 days",
     "rangeStart": "2026-04-14",
     "rangeEnd": "2026-05-13",
-    "note": "Live capture from Google Ads, GA4, Microsoft Clarity, and LSA Inbox on 2026-05-13 at 10:35 AM IST. Flamingo session expired during this run (server-side reauth) — Inbox + Spam folder per-day counts shifted from May-11 capture; entries for May 9–13 not yet pulled. Google Ads call conversions and tel: clicks remain at 0 across window (90-day rollup = 2 calls).",
+    "note": "Full multi-source capture on 2026-05-13 — Google Ads, GA4, LSA Inbox, Microsoft Clarity, and Flamingo (Inbox + Spam) all confirmed live. Window 2026-04-14 → 2026-05-13. No form submissions captured between May 9–13 (5-day quiet stretch). Google Ads call conversions and tel: clicks still 0 across window (90-day rollup = 2 calls).",
     "calls": [
       {
         "date": "2026-04-14",
