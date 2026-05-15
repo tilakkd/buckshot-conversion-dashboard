@@ -6,7 +6,7 @@
   "version": 4,
   "headline_state": "Full live capture May 15. Ads 90-day spend $4,538.93 / 360 clicks / 2 conversions. GA4 90-day: 812 sessions, 608 active users, 19 key events. Flamingo captured live: form quiet streak now ~7 days - only 2 test entries on May 14, none May 15. Conversion tracking still degrading: 8 actions no-recent, 1 recording. Opt score 87.1%.",
   "kpis": {
-    "totalSessions": 812,
+    "totalSessions": 814,
     "paidSessions": 77,
     "paidPct": "9.5%",
     "formSubmissions": 30,
@@ -518,7 +518,7 @@
   },
   "trafficSources": {
     "window": "Feb 13 - May 14, 2026 (90 days)",
-    "totalSessions": 812,
+    "totalSessions": 814,
     "channels": [
       {
         "name": "Organic Search",
@@ -526,7 +526,7 @@
       },
       {
         "name": "Direct",
-        "sessions": 311
+        "sessions": 312
       },
       {
         "name": "Paid Search",
@@ -537,12 +537,12 @@
         "sessions": 58
       },
       {
-        "name": "Unassigned",
-        "sessions": 37
+        "name": "Referral",
+        "sessions": 23
       },
       {
-        "name": "Referral",
-        "sessions": 22
+        "name": "Unassigned",
+        "sessions": 18
       }
     ]
   },
