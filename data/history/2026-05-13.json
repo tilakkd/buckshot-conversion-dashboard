@@ -6,9 +6,9 @@
   "version": 4,
   "headline_state": "Full live capture May 13 — 5-day form quiet streak (last submission May 8). Ads spend $4,534 / 359 clicks. Conversion tracking degrading: 8 actions no-recent, 1 recording. Opt score 87.1%.",
   "kpis": {
-    "totalSessions": 540,
-    "paidSessions": 62,
-    "paidPct": "11.5%",
+    "totalSessions": 721,
+    "paidSessions": 72,
+    "paidPct": "10.0%",
     "formSubmissions": 28,
     "qualifiedForms": 21,
     "ooaForms": 0,
@@ -17,10 +17,10 @@
     "lsaCharged": 3,
     "lsaTotal": 5,
     "lsaDisputed": 0,
-    "adsCost90d": "$4,534.23",
-    "adsCostDaily": "$50.38/day",
-    "ga4ActiveUsers": 540,
-    "ga4KeyEvents": 6
+    "adsCost90d": "$4,534.22",
+    "adsCostDaily": "$49.83/day",
+    "ga4ActiveUsers": 545,
+    "ga4KeyEvents": 11
   },
   "enquiries": {
     "lead": {
@@ -50,11 +50,12 @@
     "flamingoSpamFolder": 578
   },
   "sourceChart": {
-    "paid": 3,
-    "organic": 9,
-    "direct": 5,
-    "lsa": 5,
-    "referral": 2
+    "paid": 0,
+    "organic": 4,
+    "direct": 6,
+    "referral": 1,
+    "unassigned": 0,
+    "lsa": 5
   },
   "funnel": {
     "paidSessions": 62,
