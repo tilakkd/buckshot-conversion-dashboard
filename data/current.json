@@ -6,7 +6,7 @@
   "version": 4,
   "headline_state": "Lead tracking is now fully fixed and verified end-to-end. The biggest opportunity ahead is getting more of your ad clicks to actually reach the contact form.",
   "kpis": {
-    "totalSessions": 812,
+    "totalSessions": 814,
     "paidSessions": 77,
     "paidPct": "9.5%",
     "formSubmissions": 30,
@@ -518,7 +518,7 @@
   },
   "trafficSources": {
     "window": "Feb 13 - May 14, 2026 (90 days)",
-    "totalSessions": 812,
+    "totalSessions": 814,
     "channels": [
       {
         "name": "Organic Search",
@@ -526,7 +526,7 @@
       },
       {
         "name": "Direct",
-        "sessions": 311
+        "sessions": 312
       },
       {
         "name": "Paid Search",
@@ -537,12 +537,12 @@
         "sessions": 58
       },
       {
-        "name": "Unassigned",
-        "sessions": 37
+        "name": "Referral",
+        "sessions": 23
       },
       {
-        "name": "Referral",
-        "sessions": 22
+        "name": "Unassigned",
+        "sessions": 18
       }
     ]
   },
