@@ -447,5 +447,76 @@ function mkBtn(){if(document.getElementById("v6-theme-btn"))return;var b=documen
 mkBtn();
 })();
 </script>
+<!-- v8: traffic-source pie + campaign/adgroup/keyword performer panel -->
+<style id="v8-style">
+.v8-wrap{margin:0 0 16px 0;}
+.v8-grid{display:grid;grid-template-columns:300px 1fr;gap:28px;align-items:start;margin-top:14px;}
+.v8-pie-box{display:flex;flex-direction:column;align-items:center;gap:14px;}
+.v8-pie{width:170px;height:170px;border-radius:50%;flex-shrink:0;}
+.v8-legend{width:100%;display:flex;flex-direction:column;gap:6px;}
+.v8-leg{display:flex;align-items:center;gap:8px;font-size:12.5px;color:#d4d4dd;}
+.v8-leg-dot{width:10px;height:10px;border-radius:2px;flex-shrink:0;}
+.v8-leg-name{flex:1;}
+.v8-leg-val{color:#8a8a99;font-size:11.5px;}
+.v8-tabs{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap;}
+.v8-tab{background:#1a1a24;color:#a8a8b3;border:1px solid #2a2a38;border-radius:7px;padding:6px 13px;font-size:12.5px;font-family:inherit;cursor:pointer;}
+.v8-tab.active{background:#a05fff;color:#fff;border-color:#a05fff;}
+.v8-list{display:flex;flex-direction:column;gap:8px;}
+.v8-row{display:flex;align-items:flex-start;gap:11px;background:#1a1a24;border:1px solid #2a2a38;border-radius:8px;padding:10px 12px;}
+.v8-rank{font-size:13px;font-weight:700;color:#a05fff;min-width:18px;}
+.v8-rbody{flex:1;min-width:0;}
+.v8-rname{font-size:13px;color:#fff;font-weight:600;}
+.v8-badge{font-size:10px;padding:1px 7px;border-radius:10px;margin-left:7px;}
+.v8-badge.active{background:rgba(34,197,94,.18);color:#4ade80;}
+.v8-badge.paused{background:rgba(138,138,153,.18);color:#a8a8b3;}
+.v8-rmetrics{font-size:11.5px;color:#8a8a99;margin-top:3px;}
+.v8-empty{color:#8a8a99;font-size:12.5px;font-style:italic;padding:18px 4px;}
+@media(max-width:760px){.v8-grid{grid-template-columns:1fr;gap:18px;}}
+html.v6-light .v8-leg{color:#3a3a48;}
+html.v6-light .v8-leg-val{color:#8a8a98;}
+html.v6-light .v8-tab{background:#f0f0f4;color:#5a5a68;border-color:#e2e2ea;}
+html.v6-light .v8-tab.active{background:#7c3aed;color:#fff;border-color:#7c3aed;}
+html.v6-light .v8-row{background:#f7f7fa;border-color:#e2e2ea;}
+html.v6-light .v8-rank{color:#7c3aed;}
+html.v6-light .v8-rname{color:#15151f;}
+html.v6-light .v8-rmetrics{color:#6a6a78;}
+html.v6-light .v8-badge.active{background:rgba(21,128,61,.14);color:#15803d;}
+html.v6-light .v8-badge.paused{background:rgba(106,106,120,.14);color:#6a6a78;}
+html.v6-light .v8-empty{color:#6a6a78;}
+</style>
+<script id="v8-perf">
+(function(){
+"use strict";
+var COLORS={"Organic Search":"#22c55e","Direct":"#9ca3af","Paid Search":"#a05fff","Organic Social":"#60a5fa","Unassigned":"#6b7280","Referral":"#f59e0b"};
+fetch("data/current.json?cb="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(d){
+var ts=d.trafficSources,ap=d.adPerformance;if(!ts&&!ap)return;
+var panel=document.createElement("div");panel.className="panel v8-wrap";
+var h="<h2>Traffic Sources &amp; Ad Performance</h2>";
+h+="<div class=\"panel-sub\">Where your website traffic comes from, and which campaigns are performing - "+((ts&&ts.window)||"last 90 days")+".</div>";
+h+="<div class=\"v8-grid\"><div class=\"v8-pie-box\"><div class=\"v8-pie\" id=\"v8-pie\"></div><div class=\"v8-legend\" id=\"v8-legend\"></div></div>";
+h+="<div><div class=\"v8-tabs\"><button type=\"button\" class=\"v8-tab active\" data-lvl=\"campaigns\">Campaigns</button><button type=\"button\" class=\"v8-tab\" data-lvl=\"adGroups\">Ad groups</button><button type=\"button\" class=\"v8-tab\" data-lvl=\"keywords\">Keywords</button></div><div class=\"v8-list\" id=\"v8-list\"></div></div></div>";
+panel.innerHTML=h;
+var anchor=document.querySelector(".datewise-grid");
+if(anchor&&anchor.parentNode){anchor.parentNode.insertBefore(panel,anchor);}else{document.body.appendChild(panel);}
+if(ts&&ts.channels&&ts.channels.length){
+var chs=ts.channels.slice().sort(function(a,b){return b.sessions-a.sessions;});
+var total=chs.reduce(function(a,c){return a+c.sessions;},0)||1;var acc=0,stops=[];
+chs.forEach(function(c){var pct=c.sessions/total*100;var col=COLORS[c.name]||"#888";stops.push(col+" "+acc.toFixed(2)+"% "+(acc+pct).toFixed(2)+"%");acc+=pct;});
+document.getElementById("v8-pie").style.background="conic-gradient("+stops.join(",")+")";
+var lg="";chs.forEach(function(c){var pct=Math.round(c.sessions/total*100);lg+="<div class=\"v8-leg\"><span class=\"v8-leg-dot\" style=\"background:"+(COLORS[c.name]||"#888")+"\"></span><span class=\"v8-leg-name\">"+c.name+"</span><span class=\"v8-leg-val\">"+c.sessions+" &middot; "+pct+"%</span></div>";});
+document.getElementById("v8-legend").innerHTML=lg;}
+function renderList(lvl){var list=document.getElementById("v8-list");var items=(ap&&ap[lvl])||[];
+if(!items.length){list.innerHTML="<div class=\"v8-empty\">"+(lvl==="campaigns"?"No campaign data available.":(lvl==="adGroups"?"Ad group":"Keyword")+" performance populates with the next automated refresh (tomorrow, 10:30 AM IST).")+"</div>";return;}
+var sorted=items.slice().sort(function(a,b){return (b.clicks||0)-(a.clicks||0);}).slice(0,5);var html="";
+sorted.forEach(function(it,i){var badge="";if(it.status){var bc=/active/i.test(it.status)?"active":"paused";badge="<span class=\"v8-badge "+bc+"\">"+it.status+"</span>";}
+var m=[];if(it.clicks!=null)m.push(it.clicks+" clicks");if(it.ctr)m.push(it.ctr+" CTR");if(it.conv!=null)m.push(it.conv+" lead"+(it.conv===1?"":"s"));if(it.cost)m.push(it.cost+" spent");if(it.cpc)m.push(it.cpc+" CPC");if(it.qs!=null)m.push("QS "+it.qs+"/10");
+html+="<div class=\"v8-row\"><span class=\"v8-rank\">"+(i+1)+"</span><div class=\"v8-rbody\"><div class=\"v8-rname\">"+it.name+badge+"</div><div class=\"v8-rmetrics\">"+m.join("  &middot;  ")+"</div></div></div>";});
+list.innerHTML=html;}
+renderList("campaigns");
+var tabs=panel.querySelectorAll(".v8-tab");
+tabs.forEach(function(t){t.addEventListener("click",function(){tabs.forEach(function(x){x.classList.remove("active");});t.classList.add("active");renderList(t.getAttribute("data-lvl"));});});
+}).catch(function(){});
+})();
+</script>
 </body>
 </html>
