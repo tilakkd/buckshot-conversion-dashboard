@@ -4,7 +4,7 @@
   "period_end": "2026-05-10",
   "captured_at": "2026-05-11T07:30:00+05:30",
   "version": 3,
-  "headline_state": "Fresh 90-day snapshot post-tag-install. GA4 Key Events firing. Phone call lead goal still in 'Needs attention'.",
+  "headline_state": "This month you received about 45 enquiries (35 form leads plus 10 calls), roughly 30 qualified. The new lead-tracking tag is now live and recording. The phone-call goal still needs a fix. Main opportunity: getting more ad clicks to reach the contact form.",
   "kpis": {
     "totalSessions": 547,
     "paidSessions": 62,
@@ -98,6 +98,38 @@
     {
       "headline": "Active campaign at $11.95/day vs $60 cap",
       "body": "Bid setting limited warning means Smart Bidding can't price into competitive Madison auctions."
+    }
+  ],
+  "actionTracker": [
+    {
+      "item": "GA4 lead-tracking tag installed",
+      "detail": "New GA4 generate_lead tag added to GTM and published as Version 8.",
+      "status": "Done",
+      "when": "May 9, 2026"
+    },
+    {
+      "item": "Tracking pipeline verified end-to-end",
+      "detail": "Confirmed live: a form submit fires the GTM tag, the GA4 event, and the Google Ads conversion.",
+      "status": "Done",
+      "when": "May 9, 2026"
+    },
+    {
+      "item": "Phone call lead goal repair",
+      "detail": "Goal flagged \"Needs attention\". Diagnosis complete; the fix (demote the dormant GFN action to Secondary) is queued.",
+      "status": "Recommended",
+      "when": "-"
+    },
+    {
+      "item": "Apply 75+ recommended negative keywords",
+      "detail": "Competitor brands, lead aggregators, DIY terms, Spanish terms, out-of-area geos.",
+      "status": "Recommended",
+      "when": "-"
+    },
+    {
+      "item": "Route paid traffic to the contact form",
+      "detail": "Only about 3 of 62 paid sessions reach the free-estimate page.",
+      "status": "Recommended",
+      "when": "-"
     }
   ]
 }
