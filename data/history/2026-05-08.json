@@ -1,6 +1,6 @@
 {
   "snapshot_date": "2026-05-08",
-  "period_start": "2026-04-08",
+  "period_start": "2026-02-06",
   "period_end": "2026-05-07",
   "captured_at": "2026-05-08T18:17:00+05:30",
   "version": 3,
@@ -14,12 +14,12 @@
     "ooaForms": 0,
     "spamTestForms": 8,
     "adsConversions": 2,
-    "lsaCharged": 5,
-    "lsaTotal": 8,
-    "lsaDisputed": 3,
+    "lsaCharged": 3,
+    "lsaTotal": 5,
+    "lsaDisputed": 0,
     "adsCost90d": "$4,482.50",
-    "adsCostDaily": "$11.89/day",
-    "ga4ActiveUsers": 105,
+    "adsCostDaily": "$49.26/day",
+    "ga4ActiveUsers": 424,
     "ga4KeyEvents": 0
   },
   "enquiries": {
@@ -31,17 +31,17 @@
       "trackingStatus": "[WARN] Form GCLID capture suspect (later proven incorrect on May 9)"
     },
     "call": {
-      "total": 10,
-      "googleAds": 2,
-      "lsa": 8,
+      "total": 5,
+      "googleAds": 0,
+      "lsa": 5,
       "telTracked": 0,
       "trackingStatus": "[WARN] Phone call lead goal: Needs attention"
     },
     "combined": {
-      "total": 42,
-      "qualified": 29,
-      "costPerQualified": "~$155",
-      "formToCallRatio": "32 : 10"
+      "total": 37,
+      "qualified": 27,
+      "costPerQualified": "~$166",
+      "formToCallRatio": "32 : 5"
     }
   },
   "spamCounts": {
@@ -50,11 +50,12 @@
     "flamingoSpamFolder": 578
   },
   "sourceChart": {
-    "paid": 3,
-    "organic": 9,
-    "direct": 5,
-    "lsa": 5,
-    "referral": 2
+    "paid": 0,
+    "organic": 0,
+    "direct": 0,
+    "referral": 0,
+    "unassigned": 0,
+    "lsa": 5
   },
   "funnel": {
     "paidSessions": 62,
