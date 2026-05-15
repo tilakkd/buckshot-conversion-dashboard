@@ -6,9 +6,9 @@
   "version": 4,
   "headline_state": "Backfill snapshot for May 12 — captured during May 13 refresh. Numbers reflect 30-day window ending May 11 (no fresh source data for May 12 specifically).",
   "kpis": {
-    "totalSessions": 540,
-    "paidSessions": 62,
-    "paidPct": "11.5%",
+    "totalSessions": 674,
+    "paidSessions": 67,
+    "paidPct": "9.9%",
     "formSubmissions": 30,
     "qualifiedForms": 22,
     "ooaForms": 0,
@@ -17,10 +17,10 @@
     "lsaCharged": 3,
     "lsaTotal": 5,
     "lsaDisputed": 0,
-    "adsCost90d": "$4,534.23",
-    "adsCostDaily": "$50.38/day",
-    "ga4ActiveUsers": 540,
-    "ga4KeyEvents": 6
+    "adsCost90d": "$4,513.06",
+    "adsCostDaily": "$49.59/day",
+    "ga4ActiveUsers": 514,
+    "ga4KeyEvents": 8
   },
   "enquiries": {
     "lead": {
@@ -50,11 +50,12 @@
     "flamingoSpamFolder": 578
   },
   "sourceChart": {
-    "paid": 3,
-    "organic": 9,
-    "direct": 5,
-    "lsa": 5,
-    "referral": 2
+    "paid": 0,
+    "organic": 4,
+    "direct": 4,
+    "referral": 0,
+    "unassigned": 0,
+    "lsa": 5
   },
   "funnel": {
     "paidSessions": 62,
@@ -110,6 +111,13 @@
     "rangeEnd": "2026-05-12",
     "note": "Live capture from Google Ads, GA4, Microsoft Clarity, and LSA Inbox on 2026-05-13 at 10:35 AM IST. Flamingo session expired during this run (server-side reauth) — Inbox + Spam folder per-day counts shifted from May-11 capture; entries for May 9–13 not yet pulled. Google Ads call conversions and tel: clicks remain at 0 across window (90-day rollup = 2 calls).",
     "calls": [
+      {
+        "date": "2026-04-13",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
       {
         "date": "2026-04-14",
         "googleAds": 0,
@@ -308,13 +316,6 @@
       },
       {
         "date": "2026-05-12",
-        "googleAds": 0,
-        "lsaCharged": 0,
-        "lsaTotal": 0,
-        "telTracked": 0
-      },
-      {
-        "date": "2026-05-13",
         "googleAds": 0,
         "lsaCharged": 0,
         "lsaTotal": 0,
