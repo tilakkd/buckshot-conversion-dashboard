@@ -77,6 +77,7 @@ html, body { background: #0d0d14; color: #e7e7ed; font-family: -apple-system, Bl
 .source-row .src-bar { height: 100%; border-radius: 4px; min-width: 2px; transition: width 0.3s ease; }
 .source-row .src-bar.paid { background: #a05fff; }
 .source-row .src-bar.organic { background: #22c55e; }
+.source-row .src-bar.unassigned { background: #6b7280; }
 .source-row .src-bar.direct { background: #9ca3af; }
 .source-row .src-bar.lsa { background: #fbbf24; }
 .source-row .src-bar.referral { background: #60a5fa; }
@@ -233,8 +234,8 @@ if(c.bidWarning){pillData.push({txt:'Ad budget is being held back by bid setting
 pillData.forEach(function(p){var sp=document.createElement('span');sp.className='tpill '+p.cls;sp.textContent=p.txt;pills.appendChild(sp);});
 var sc=document.getElementById('sourceChart');sc.innerHTML='';
 var src=d.sourceChart||{};
-var srcRows=[{key:'paid',label:'Paid (Google Ads)',cls:'paid'},{key:'organic',label:'Organic search',cls:'organic'},{key:'direct',label:'Direct',cls:'direct'},{key:'lsa',label:'LSA (Local Services)',cls:'lsa'},{key:'referral',label:'Referral',cls:'referral'}];
-var srcMax=Math.max(1,src.paid||0,src.organic||0,src.direct||0,src.lsa||0,src.referral||0);
+var srcRows=[{key:'paid',label:'Paid (Google Ads)',cls:'paid'},{key:'organic',label:'Organic search',cls:'organic'},{key:'direct',label:'Direct',cls:'direct'},{key:'lsa',label:'LSA (Local Services)',cls:'lsa'},{key:'referral',label:'Referral',cls:'referral'},{key:'unassigned',label:'Unassigned',cls:'unassigned'}];
+var srcMax=Math.max(1,src.paid||0,src.organic||0,src.direct||0,src.lsa||0,src.referral||0,src.unassigned||0);
 srcRows.forEach(function(r){
 var val=src[r.key]||0;
 var row=document.createElement('div');row.className='source-row';
