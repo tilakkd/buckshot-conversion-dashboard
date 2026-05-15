@@ -1,14 +1,14 @@
 {
   "snapshot_date": "2026-05-11",
-  "period_start": "2026-02-10",
+  "period_start": "2026-02-09",
   "period_end": "2026-05-10",
   "captured_at": "2026-05-11T18:15:07+05:30",
   "version": 3,
   "headline_state": "Lead tracking is now fully fixed and verified end-to-end. The biggest opportunity ahead is getting more of your ad clicks to actually reach the contact form.",
   "kpis": {
-    "totalSessions": 547,
-    "paidSessions": 62,
-    "paidPct": "11.3%",
+    "totalSessions": 629,
+    "paidSessions": 64,
+    "paidPct": "10.2%",
     "formSubmissions": 31,
     "qualifiedForms": 23,
     "ooaForms": 0,
@@ -16,9 +16,9 @@
     "adsConversions": 2,
     "lsaCharged": 3,
     "lsaTotal": 5,
-    "lsaDisputed": 3,
+    "lsaDisputed": 0,
     "adsCost90d": "$4,483.82",
-    "adsCostDaily": "$11.95/day",
+    "adsCostDaily": "$49.27/day",
     "ga4ActiveUsers": 485,
     "ga4KeyEvents": 5
   },
@@ -50,11 +50,12 @@
     "flamingoSpamFolder": 578
   },
   "sourceChart": {
-    "paid": 3,
-    "organic": 9,
-    "direct": 5,
-    "lsa": 5,
-    "referral": 2
+    "paid": 0,
+    "organic": 3,
+    "direct": 2,
+    "referral": 0,
+    "unassigned": 0,
+    "lsa": 5
   },
   "funnel": {
     "paidSessions": 62,
