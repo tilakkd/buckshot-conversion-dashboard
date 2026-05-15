@@ -9,10 +9,10 @@
     "totalSessions": 812,
     "paidSessions": 77,
     "paidPct": "9.5%",
-    "formSubmissions": 41,
-    "qualifiedForms": 28,
+    "formSubmissions": 30,
+    "qualifiedForms": 21,
     "ooaForms": 0,
-    "spamTestForms": 13,
+    "spamTestForms": 9,
     "adsConversions": 2,
     "lsaCharged": 1,
     "lsaTotal": 2,
@@ -24,10 +24,10 @@
   },
   "enquiries": {
     "lead": {
-      "total": 41,
-      "qualified": 28,
+      "total": 30,
+      "qualified": 21,
       "ooa": 0,
-      "spamTest": 13,
+      "spamTest": 9,
       "trackingStatus": "[OK] Verified May 9"
     },
     "call": {
@@ -38,10 +38,10 @@
       "trackingStatus": "[OK] Goal repaired May 11"
     },
     "combined": {
-      "total": 43,
-      "qualified": 29,
-      "costPerQualified": "~$157",
-      "formToCallRatio": "41 : 2"
+      "total": 32,
+      "qualified": 22,
+      "costPerQualified": "~$206",
+      "formToCallRatio": "30 : 2"
     }
   },
   "spamCounts": {
@@ -342,7 +342,7 @@
         "date": "2026-04-18",
         "qualified": 1,
         "ooa": 0,
-        "spamTest": 2
+        "spamTest": 0
       },
       {
         "date": "2026-04-19",
@@ -360,19 +360,19 @@
         "date": "2026-04-21",
         "qualified": 2,
         "ooa": 0,
-        "spamTest": 1
-      },
-      {
-        "date": "2026-04-22",
-        "qualified": 1,
-        "ooa": 0,
         "spamTest": 0
       },
       {
-        "date": "2026-04-23",
-        "qualified": 3,
+        "date": "2026-04-22",
+        "qualified": 0,
         "ooa": 0,
-        "spamTest": 2
+        "spamTest": 1
+      },
+      {
+        "date": "2026-04-23",
+        "qualified": 2,
+        "ooa": 0,
+        "spamTest": 1
       },
       {
         "date": "2026-04-24",
@@ -384,13 +384,13 @@
         "date": "2026-04-25",
         "qualified": 0,
         "ooa": 0,
-        "spamTest": 1
+        "spamTest": 0
       },
       {
         "date": "2026-04-26",
-        "qualified": 2,
+        "qualified": 0,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 2
       },
       {
         "date": "2026-04-27",
@@ -408,7 +408,7 @@
         "date": "2026-04-29",
         "qualified": 1,
         "ooa": 0,
-        "spamTest": 1
+        "spamTest": 0
       },
       {
         "date": "2026-04-30",
@@ -418,9 +418,9 @@
       },
       {
         "date": "2026-05-01",
-        "qualified": 2,
+        "qualified": 0,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 2
       },
       {
         "date": "2026-05-02",
@@ -438,13 +438,13 @@
         "date": "2026-05-04",
         "qualified": 2,
         "ooa": 0,
-        "spamTest": 1
+        "spamTest": 0
       },
       {
         "date": "2026-05-05",
-        "qualified": 1,
+        "qualified": 0,
         "ooa": 0,
-        "spamTest": 2
+        "spamTest": 1
       },
       {
         "date": "2026-05-06",
@@ -462,7 +462,7 @@
         "date": "2026-05-08",
         "qualified": 1,
         "ooa": 0,
-        "spamTest": 1
+        "spamTest": 0
       },
       {
         "date": "2026-05-09",
