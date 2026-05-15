@@ -308,5 +308,50 @@ sel.addEventListener('change',function(e){loadDate(e.target.value);});
 }
 fetch('./data/manifest.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(m){manifest=m;buildDatePicker();loadDate(manifest.latest);}).catch(function(e){document.getElementById('loadingOverlay').innerHTML='<div class="loading-card" style="color:#f87171;">Failed to load: '+e.message+'</div>';});
 </script>
+<!-- v6 enhancements: freshness panel, hover defs, day-by-day note, mobile, hash links, next-update -->
+<style id="v6-style">
+.v6-fresh{background:#13131c;border:1px solid #2a2a38;border-radius:10px;padding:14px 16px;margin:0 0 16px 0;}
+.v6-fresh-title{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8a8a99;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;}
+.v6-next{font-size:11px;color:#8a8a99;text-transform:none;letter-spacing:0;}
+.v6-sources{display:flex;flex-wrap:wrap;gap:8px;}
+.v6-src{display:flex;align-items:center;gap:7px;background:#1a1a24;border-radius:6px;padding:7px 11px;font-size:12.5px;color:#d4d4dd;}
+.v6-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.v6-dot.ok{background:#22c55e;}.v6-dot.warn{background:#f59e0b;}.v6-dot.stale{background:#ef4444;}
+.v6-src .v6-date{color:#8a8a99;font-size:11px;}
+.v6-tip{border-bottom:1px dotted #555;cursor:help;}
+.v6-empty-note{color:#8a8a99;font-size:12.5px;padding:14px 4px;font-style:italic;}
+@media (max-width:560px){.v6-sources{flex-direction:column;}.v6-src{width:100%;justify-content:flex-start;}.v6-fresh-title{flex-direction:column;align-items:flex-start;}}
+</style>
+<script id="v6-enhance">
+(function(){
+"use strict";
+function fmtDate(s){if(!s)return "-";var d=new Date(s);if(isNaN(d))return s;return d.toLocaleDateString("en-US",{month:"short",day:"numeric"});}
+function ageDays(s){if(!s)return 99;var d=new Date(s);if(isNaN(d))return 99;return Math.floor((Date.now()-d.getTime())/86400000);}
+function dotCls(s){var a=ageDays(s);return a<=1?"ok":(a<=3?"warn":"stale");}
+function nextRefresh(){var now=new Date();var n=new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate(),5,0,0));if(n.getTime()<=now.getTime())n.setUTCDate(n.getUTCDate()+1);return n.toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"});}
+fetch("data/current.json?cb="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(d){
+var v=d.verified||{};var fb=d.snapshot_date||"";
+var srcs=[{k:"Flamingo (forms)",dt:v.flamingo||fb},{k:"GA4 (traffic)",dt:v.ga4||fb},{k:"Google Ads (spend)",dt:v.googleAds||fb},{k:"LSA (calls)",dt:v.lsa||fb}];
+var html="<div class=\"v6-fresh-title\"><span>Live data freshness</span><span class=\"v6-next\">Auto-refreshes daily 10:30 AM IST &middot; next: "+nextRefresh()+"</span></div><div class=\"v6-sources\">";
+srcs.forEach(function(s){html+="<div class=\"v6-src\"><span class=\"v6-dot "+dotCls(s.dt)+"\"></span><span>"+s.k+"</span><span class=\"v6-date\">verified "+fmtDate(s.dt)+"</span></div>";});
+html+="</div>";
+var panel=document.createElement("div");panel.className="v6-fresh";panel.innerHTML=html;
+var kpis=document.querySelector(".kpis");
+if(kpis&&kpis.parentNode){kpis.parentNode.insertBefore(panel,kpis);}else{document.body.insertBefore(panel,document.body.firstChild);}
+}).catch(function(){});
+var defs={"TOTAL SESSIONS":"All website visits in the period, measured by GA4.","PAID SESSIONS":"Website visits that came from Google Ads (Paid Search), per GA4.","FORM SUBMISSIONS":"Total contact-form entries in Flamingo, including spam and test submissions.","QUALIFIED FORMS":"Genuine homeowner enquiries - excludes spam, test submissions, and out-of-area.","GENUINE LEADS":"Real prospective-customer enquiries - excludes spam and test submissions.","SPAM":"Junk submissions and internal QA/test entries - not real leads.","GOOGLE ADS CALLS":"Phone-call-lead conversions recorded by Google Ads.","LSA CALLS":"Leads received through Google Local Services Ads.","KEY EVENTS":"Conversion events tracked by GA4 (the generate_lead event).","ACTIVE USERS":"Distinct people who visited the site, per GA4.","COST PER QUALIFIED":"Total ad spend divided by the number of qualified leads."};
+function applyTips(){var labels=document.querySelectorAll(".label,.lbl,.dw-title,.src-label");labels.forEach(function(el){var key=(el.textContent||"").trim().toUpperCase().replace(/\s+/g," ");for(var k in defs){if(key.indexOf(k)>-1&&!el.getAttribute("data-v6tip")){el.setAttribute("title",defs[k]);el.setAttribute("data-v6tip","1");el.classList.add("v6-tip");}}});}
+applyTips();setTimeout(applyTips,1500);setTimeout(applyTips,3500);
+function checkEmpty(barsId,noteId){var bars=document.getElementById(barsId);if(!bars)return;var existing=document.getElementById(noteId);var hasBars=bars.children.length>0;if(!hasBars&&!existing){var n=document.createElement("div");n.id=noteId;n.className="v6-empty-note";n.textContent="Day-by-day data was first captured on May 11, 2026 - earlier snapshots show period totals only.";bars.parentNode.insertBefore(n,bars.nextSibling);}else if(hasBars&&existing){existing.remove();}}
+function checkAll(){checkEmpty("dwCallsBars","v6-calls-note");checkEmpty("dwFormsBars","v6-forms-note");}
+setTimeout(checkAll,1800);
+["dwCallsBars","dwFormsBars"].forEach(function(id){var el=document.getElementById(id);if(el){new MutationObserver(checkAll).observe(el,{childList:true});}});
+var sel=document.getElementById("dateSelect");
+if(sel){var applying=false;
+function applyHash(){var h=(location.hash||"").replace(/^#/,"").trim();if(!/^\d{4}-\d{2}-\d{2}$/.test(h))return;var tries=0;(function poll(){var opt=Array.prototype.slice.call(sel.options).filter(function(o){return o.value===h;});if(opt.length){if(sel.value!==h){applying=true;sel.value=h;sel.dispatchEvent(new Event("change",{bubbles:true}));applying=false;}}else if(tries++<40){setTimeout(poll,150);}})();}
+sel.addEventListener("change",function(){if(applying)return;if(sel.value&&/^\d{4}-\d{2}-\d{2}$/.test(sel.value)){history.replaceState(null,"","#"+sel.value);}});
+window.addEventListener("hashchange",applyHash);applyHash();setTimeout(applyHash,800);}
+})();
+</script>
 </body>
 </html>
