@@ -41,7 +41,6 @@ html, body { background: #0d0d14; color: #e7e7ed; font-family: -apple-system, Bl
 .kpi .value.purple { color: #a05fff; }
 .kpi .value.green { color: #22c55e; }
 .kpi .value.yellow { color: #fbbf24; }
-.kpi .value.red { color: #ef4444; }
 .kpi .sub { font-size: 11px; color: #8a8a95; }
 .enq-grid { display: grid; grid-template-columns: 1fr 1fr 1.1fr; gap: 14px; margin-bottom: 22px; }
 .enq-card { background: #14141c; border: 1px solid #23232f; border-radius: 8px; padding: 16px 18px; }
@@ -115,18 +114,6 @@ html, body { background: #0d0d14; color: #e7e7ed; font-family: -apple-system, Bl
 .spam-tile.inbox .spam-tile-label { color: #f87171; }
 .spam-tile.folder { background: rgba(160, 95, 255, 0.08); border: 1px solid rgba(160, 95, 255, 0.25); }
 .spam-tile.folder .spam-tile-label { color: #c084fc; }
-.action-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
-.action-table th { text-align: left; padding: 9px 10px; color: #8a8a95; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid #23232f; }
-.action-table td { padding: 11px 10px; border-bottom: 1px solid #1a1a24; color: #d4d4dd; vertical-align: top; }
-.action-table tr:last-child td { border-bottom: none; }
-.action-table .act-item { font-weight: 600; color: #ffffff; }
-.action-table .act-detail { font-size: 11.5px; color: #8a8a95; margin-top: 3px; }
-.act-status { display: inline-block; padding: 3px 10px; border-radius: 4px; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; }
-.act-status.done { background: rgba(34, 197, 94, 0.18); color: #4ade80; }
-.act-status.progress { background: rgba(96, 165, 250, 0.18); color: #93c5fd; }
-.act-status.approval { background: rgba(251, 191, 36, 0.18); color: #fbbf24; }
-.act-status.recommended { background: rgba(160, 95, 255, 0.18); color: #c084fc; }
-.act-when { font-size: 11px; color: #8a8a95; white-space: nowrap; }
 .tracking-pills { display: flex; flex-wrap: wrap; gap: 8px; }
 .tpill { padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; }
 .tpill.good { background: rgba(34, 197, 94, 0.12); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.25); }
@@ -164,7 +151,7 @@ html, body { background: #0d0d14; color: #e7e7ed; font-family: -apple-system, Bl
 </div>
 <div class="date-bar-note" id="dateNote"></div>
 </div>
-<div class="big-picture"><div class="lbl">The bottom line</div><span data-field="headline_state">Loading...</span></div>
+<div class="big-picture"><div class="lbl">The bottom line</div><span id="bottomLine">Loading...</span></div>
 <div class="kpis">
 <div class="kpi"><div class="label">TOTAL SESSIONS (30D)</div><div class="value" data-field="kpis.totalSessions">-</div><div class="sub">website visits via GA4</div></div>
 <div class="kpi"><div class="label">PAID SESSIONS</div><div class="value purple" data-field="kpis.paidSessions">-</div><div class="sub"><span data-field="kpis.paidPct">-</span> of total</div></div>
@@ -187,33 +174,53 @@ html, body { background: #0d0d14; color: #e7e7ed; font-family: -apple-system, Bl
 <div class="spam-tile inbox"><div class="spam-tile-label">Spam That Reached Your Inbox</div><div><span class="spam-tile-num" data-field="spamCounts.inbox">-</span><span class="spam-tile-sub">entries that got past the filter this period</span></div></div>
 <div class="spam-tile folder"><div class="spam-tile-label">Spam Auto-Filtered (Lifetime)</div><div><span class="spam-tile-num" data-field="spamCounts.flamingoSpamFolder">-</span><span class="spam-tile-sub">blocked before reaching the inbox</span></div></div>
 </div>
-<div class="panel"><h2>What We Are Doing About It</h2><div class="panel-sub">Every action on your account, with current status. This is the work the agency has done and what is queued next.</div><table class="action-table"><thead><tr><th style="width:42%;">Action</th><th style="width:20%;">Status</th><th style="width:18%;">When</th></tr></thead><tbody id="actionTable"></tbody></table></div>
 <div class="panel"><h2>Account Health (Plain English)</h2><div class="panel-sub">Is your tracking working and are your ads running? Quick status of the things that matter.</div><div class="tracking-pills" id="trackingPills"></div></div>
 <div class="panel insights"><h2>Insights and Next Actions</h2><div class="panel-sub">Prioritized by impact. These reflect the state on the selected snapshot date.</div><ol id="insightsList"></ol></div>
-<div class="data-sources"><h3>Where This Data Comes From</h3><p><strong>Form leads:</strong> Flamingo inbox in your WordPress admin.</p><p><strong>Call leads:</strong> "Calls from ads" in Google Ads, your LSA inbox, and website tel: link clicks.</p><p><strong>Website visits:</strong> Google Analytics 4.</p><p><strong>Behavior signals:</strong> Microsoft Clarity.</p><p style="margin-top: 12px; padding-top: 10px; border-top: 1px solid #23232f; color: #6b6b78;"><strong>Version history:</strong> every daily refresh is saved. Use the date picker at the top to load any past day.</p></div>
+<div class="data-sources"><h3>Where This Data Comes From</h3><p><strong>Form leads:</strong> Flamingo inbox in your WordPress admin.</p><p><strong>Call leads:</strong> "Calls from ads" in Google Ads, your LSA inbox, and website tel: link clicks.</p><p><strong>Website visits:</strong> Google Analytics 4.</p><p><strong>Behavior signals:</strong> Microsoft Clarity.</p><p style="margin-top: 12px; padding-top: 10px; border-top: 1px solid #23232f; color: #6b6b78;"><strong>How the numbers tie together:</strong> the form, call, and combined totals on this dashboard are all calculated from the same day-by-day data shown in the two tables above - so the bottom-line banner, the KPI tiles, and the cards always agree.</p><p style="color: #6b6b78;"><strong>Version history:</strong> every daily refresh is saved. Use the date picker at the top to load any past day.</p></div>
 </div>
 <div class="loading-overlay" id="loadingOverlay"><div class="loading-card">Loading dashboard data...</div></div>
 <script>
 var manifest=null,currentData=null;
 function get(o,p){return p.split('.').reduce(function(a,k){return a!=null?a[k]:undefined;},o);}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function deriveAndComposeBanner(d){
+if(d.daily&&d.daily.forms&&d.daily.forms.length){
+var fq=0,fo=0,fs=0;
+d.daily.forms.forEach(function(x){fq+=x.qualified||0;fo+=x.ooa||0;fs+=x.spamTest||0;});
+var cga=0,clc=0,clt=0,ctt=0;
+d.daily.calls.forEach(function(x){cga+=x.googleAds||0;clc+=x.lsaCharged||0;clt+=x.lsaTotal||0;ctt+=x.telTracked||0;});
+var f=fq+fo+fs,c=cga+clt+ctt;
+d.kpis=d.kpis||{};
+d.kpis.formSubmissions=f;d.kpis.qualifiedForms=fq;d.kpis.ooaForms=fo;d.kpis.spamTestForms=fs;
+d.kpis.lsaCharged=clc;d.kpis.lsaTotal=clt;
+d.enquiries=d.enquiries||{};
+d.enquiries.lead=d.enquiries.lead||{};
+d.enquiries.lead.total=f;d.enquiries.lead.qualified=fq;d.enquiries.lead.ooa=fo;d.enquiries.lead.spamTest=fs;
+d.enquiries.call=d.enquiries.call||{};
+d.enquiries.call.total=c;d.enquiries.call.googleAds=cga;d.enquiries.call.lsa=clt;d.enquiries.call.telTracked=ctt;
+d.enquiries.combined=d.enquiries.combined||{};
+d.enquiries.combined.total=f+c;d.enquiries.combined.qualified=fq+clc;
+d.enquiries.combined.formToCallRatio=f+' : '+c;
+var costNum=parseFloat(String((d.kpis&&d.kpis.adsCost90d)||'').replace(/[^0-9.]/g,''));
+if(costNum&&(fq+clc)>0){d.enquiries.combined.costPerQualified='~$'+Math.round(costNum/(fq+clc));}
+}
+var e=d.enquiries||{};
+var ff=(e.lead&&e.lead.total)||0;
+var cc=(e.call&&e.call.total)||0;
+var ct=(e.combined&&e.combined.total!=null)?e.combined.total:(ff+cc);
+var cq=(e.combined&&e.combined.qualified)||0;
+var cpq=(e.combined&&e.combined.costPerQualified)||'';
+var s='This snapshot: '+ct+' enquiries ('+ff+' form leads plus '+cc+' calls), about '+cq+' qualified';
+if(cpq){s+=', at roughly '+cpq+' per qualified lead';}
+s+='. ';
+return s+(d.headline_state||'');
+}
 function render(d){
 if(!d)return;
+document.getElementById('bottomLine').textContent=deriveAndComposeBanner(d);
 document.querySelectorAll('[data-field]').forEach(function(el){var v=get(d,el.dataset.field);el.textContent=(v==null)?'-':v;});
 var ol=document.getElementById('insightsList');ol.innerHTML='';
 (d.insights||[]).forEach(function(ins){var li=document.createElement('li');var s=document.createElement('strong');s.textContent=ins.headline+'.';li.appendChild(s);li.appendChild(document.createTextNode(' '+ins.body));ol.appendChild(li);});
-var at=document.getElementById('actionTable');at.innerHTML='';
-var actions=d.actionTracker||[];
-if(actions.length===0){var tr0=document.createElement('tr');var td0=document.createElement('td');td0.colSpan=3;td0.style.color='#6b6b78';td0.textContent='No action items recorded for this snapshot date.';tr0.appendChild(td0);at.appendChild(tr0);}
-actions.forEach(function(a){
-var tr=document.createElement('tr');
-var statusClass={'Done':'done','In progress':'progress','Awaiting your approval':'approval','Recommended':'recommended'}[a.status]||'recommended';
-var c1=document.createElement('td');var item=document.createElement('div');item.className='act-item';item.textContent=a.item;c1.appendChild(item);
-if(a.detail){var det=document.createElement('div');det.className='act-detail';det.textContent=a.detail;c1.appendChild(det);}
-var c2=document.createElement('td');var st=document.createElement('span');st.className='act-status '+statusClass;st.textContent=a.status;c2.appendChild(st);
-var c3=document.createElement('td');var wh=document.createElement('span');wh.className='act-when';wh.textContent=a.when||'-';c3.appendChild(wh);
-tr.appendChild(c1);tr.appendChild(c2);tr.appendChild(c3);at.appendChild(tr);
-});
 var pills=document.getElementById('trackingPills');pills.innerHTML='';
 var t=d.trackingState||{},c=d.campaignState||{};
 var pillData=[];
@@ -255,7 +262,7 @@ var forms=daily.forms||[];
 var cBars=document.getElementById('dwCallsBars');cBars.innerHTML='';
 var cAxis=document.getElementById('dwCallsAxis');cAxis.innerHTML='';
 var cTable=document.getElementById('dwCallsTable');cTable.innerHTML='';
-var callTotals=calls.map(function(x){return (x.googleAds||0)+(x.lsaCharged||0)+(x.telTracked||0);});
+var callTotals=calls.map(function(x){return (x.googleAds||0)+(x.lsaTotal||0)+(x.telTracked||0);});
 var callMax=Math.max(1,Math.max.apply(null,callTotals.length?callTotals:[0]));
 var cSumTotal=0;
 calls.forEach(function(x,i){
