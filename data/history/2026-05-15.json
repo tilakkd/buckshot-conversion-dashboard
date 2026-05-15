@@ -50,11 +50,12 @@
     "flamingoSpamFolder": 577
   },
   "sourceChart": {
-    "paid": 3,
-    "organic": 9,
-    "direct": 5,
-    "lsa": 5,
-    "referral": 2
+    "paid": 1,
+    "organic": 4,
+    "direct": 7,
+    "referral": 1,
+    "unassigned": 6,
+    "lsa": 2
   },
   "funnel": {
     "paidSessions": 77,
