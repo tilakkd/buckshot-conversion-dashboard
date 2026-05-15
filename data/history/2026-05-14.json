@@ -17,7 +17,7 @@
     "lsaCharged": 3,
     "lsaTotal": 5,
     "lsaDisputed": 0,
-    "adsCost90d": "$4,538.93",
+    "adsCost90d": "$4,538.92",
     "adsCostDaily": "$49.88/day",
     "ga4ActiveUsers": 576,
     "ga4KeyEvents": 13
@@ -50,11 +50,12 @@
     "flamingoSpamFolder": 578
   },
   "sourceChart": {
-    "paid": 3,
-    "organic": 9,
-    "direct": 5,
-    "lsa": 5,
-    "referral": 2
+    "paid": 0,
+    "organic": 4,
+    "direct": 7,
+    "referral": 1,
+    "unassigned": 1,
+    "lsa": 5
   },
   "funnel": {
     "paidSessions": 72,
