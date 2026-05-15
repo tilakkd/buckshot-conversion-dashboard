@@ -1,53 +1,53 @@
 {
-  "snapshot_date": "2026-05-14",
-  "period_start": "2026-02-12",
-  "period_end": "2026-05-13",
-  "captured_at": "2026-05-14T22:42:00+05:30",
+  "snapshot_date": "2026-05-15",
+  "period_start": "2026-02-13",
+  "period_end": "2026-05-14",
+  "captured_at": "2026-05-15T10:55:00+05:30",
   "version": 4,
-  "headline_state": "Daily refresh May 14. Ads 90-day spend $4,538.93 / 360 clicks / 2 conversions. GA4 90-day: 762 sessions, 576 active users, 13 key events. Conversion tracking still degrading: 8 actions no-recent, 1 recording. Opt score 87.1%. Flamingo Inbox not captured this run (WordPress login wall + CAPTCHA) - form figures carried forward from May 13.",
+  "headline_state": "Full live capture May 15. Ads 90-day spend $4,538.93 / 360 clicks / 2 conversions. GA4 90-day: 812 sessions, 608 active users, 19 key events. Flamingo captured live: form quiet streak now ~7 days - only 2 test entries on May 14, none May 15. Conversion tracking still degrading: 8 actions no-recent, 1 recording. Opt score 87.1%.",
   "kpis": {
-    "totalSessions": 762,
-    "paidSessions": 72,
-    "paidPct": "9.4%",
-    "formSubmissions": 40,
+    "totalSessions": 812,
+    "paidSessions": 77,
+    "paidPct": "9.5%",
+    "formSubmissions": 41,
     "qualifiedForms": 28,
     "ooaForms": 0,
-    "spamTestForms": 12,
+    "spamTestForms": 13,
     "adsConversions": 2,
-    "lsaCharged": 3,
-    "lsaTotal": 5,
+    "lsaCharged": 1,
+    "lsaTotal": 2,
     "lsaDisputed": 0,
     "adsCost90d": "$4,538.93",
     "adsCostDaily": "$49.88/day",
-    "ga4ActiveUsers": 576,
-    "ga4KeyEvents": 13
+    "ga4ActiveUsers": 608,
+    "ga4KeyEvents": 19
   },
   "enquiries": {
     "lead": {
-      "total": 40,
+      "total": 41,
       "qualified": 28,
       "ooa": 0,
-      "spamTest": 12,
+      "spamTest": 13,
       "trackingStatus": "[OK] Verified May 9"
     },
     "call": {
-      "total": 8,
+      "total": 3,
       "googleAds": 0,
-      "lsa": 5,
+      "lsa": 2,
       "telTracked": 0,
       "trackingStatus": "[OK] Goal repaired May 11"
     },
     "combined": {
-      "total": 48,
-      "qualified": 31,
-      "costPerQualified": "~$146",
-      "formToCallRatio": "40 : 5"
+      "total": 44,
+      "qualified": 29,
+      "costPerQualified": "~$157",
+      "formToCallRatio": "41 : 2"
     }
   },
   "spamCounts": {
     "inbox": 1,
     "test": 3,
-    "flamingoSpamFolder": 578
+    "flamingoSpamFolder": 577
   },
   "sourceChart": {
     "paid": 3,
@@ -57,7 +57,7 @@
     "referral": 2
   },
   "funnel": {
-    "paidSessions": 72,
+    "paidSessions": 77,
     "servicePages": 58,
     "freeEstimate": 3,
     "verifiedPaidConversions": 0,
@@ -80,8 +80,8 @@
   },
   "insights": [
     {
-      "headline": "5-day form-submission quiet streak (May 9 - 13)",
-      "body": "Zero entries to Flamingo Inbox AND Spam folder across May 9, 10, 11, 12, 13  -  confirmed via fresh scrape. Last submission was Nicole Punzel (hail inspection request, Janesville) on May 8. Check whether tag-pipeline regressions (8 \"no recent\" goals) and inbound traffic dip are correlated."
+      "headline": "Form-submission quiet streak now about 7 days (May 9 - 15)",
+      "body": "Zero genuine form submissions to Flamingo Inbox since Nicole Punzel (hail inspection, Janesville) on May 8. May 14 had only 2 internal test entries (test@example.com); May 15 none so far. Flamingo Inbox now 932 items, Spam folder 577. The tag-pipeline regression (8 no-recent goals) and the inbound dip remain the likely correlated causes - audit before assuming a seasonal lull."
     },
     {
       "headline": "Conversion tracking degrading  -  8 actions no longer recording",
@@ -110,17 +110,10 @@
   ],
   "daily": {
     "dateWindow": "last 30 days",
-    "rangeStart": "2026-04-15",
-    "rangeEnd": "2026-05-14",
-    "note": "Partial refresh on 2026-05-14. Google Ads, GA4, LSA Inbox, Microsoft Clarity and GTM captured live. Flamingo Inbox not captured (WordPress login wall + CAPTCHA) - form counts carried forward from 2026-05-13. Window 2026-04-15 -> 2026-05-14. Google Ads call conversions and tel: clicks remain 0 across the window.",
+    "rangeStart": "2026-04-16",
+    "rangeEnd": "2026-05-15",
+    "note": "Full live capture on 2026-05-15. Google Ads, GA4, LSA Inbox, Microsoft Clarity, GTM and Flamingo (Inbox + Spam) all captured live. Window 2026-04-16 -> 2026-05-15. The May 14 form entry was corrected to 2 test submissions (it was a carried-forward 0 on the prior partial run). Google Ads call conversions and tel: clicks remain 0 across the window.",
     "calls": [
-      {
-        "date": "2026-04-15",
-        "googleAds": 0,
-        "lsaCharged": 2,
-        "lsaTotal": 3,
-        "telTracked": 0
-      },
       {
         "date": "2026-04-16",
         "googleAds": 0,
@@ -323,15 +316,16 @@
         "lsaCharged": 0,
         "lsaTotal": 0,
         "telTracked": 0
+      },
+      {
+        "date": "2026-05-15",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
       }
     ],
     "forms": [
-      {
-        "date": "2026-04-15",
-        "qualified": 0,
-        "ooa": 0,
-        "spamTest": 0
-      },
       {
         "date": "2026-04-16",
         "qualified": 1,
@@ -504,11 +498,15 @@
         "date": "2026-05-14",
         "qualified": 0,
         "ooa": 0,
+        "spamTest": 2
+      },
+      {
+        "date": "2026-05-15",
+        "qualified": 0,
+        "ooa": 0,
         "spamTest": 0
       }
     ]
   },
-  "stale_sources": [
-    "Flamingo Inbox - WordPress login wall and CAPTCHA blocked capture; form figures carried forward from 2026-05-13"
-  ]
+  "stale_sources": []
 }
