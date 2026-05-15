@@ -4,7 +4,7 @@
   "period_end": "2026-05-14",
   "captured_at": "2026-05-15T10:55:00+05:30",
   "version": 4,
-  "headline_state": "This month you received about 45 enquiries (35 form leads plus 10 calls), roughly 30 of them qualified, at about $149 per qualified lead. Lead tracking is now fully fixed and verified end-to-end. The biggest opportunity ahead is getting more of your ad clicks to actually reach the contact form.",
+  "headline_state": "Lead tracking is now fully fixed and verified end-to-end. The biggest opportunity ahead is getting more of your ad clicks to actually reach the contact form.",
   "kpis": {
     "totalSessions": 812,
     "paidSessions": 77,
@@ -31,14 +31,14 @@
       "trackingStatus": "[OK] Verified May 9"
     },
     "call": {
-      "total": 3,
+      "total": 2,
       "googleAds": 0,
       "lsa": 2,
       "telTracked": 0,
       "trackingStatus": "[OK] Goal repaired May 11"
     },
     "combined": {
-      "total": 44,
+      "total": 43,
       "qualified": 29,
       "costPerQualified": "~$157",
       "formToCallRatio": "41 : 2"
@@ -508,49 +508,5 @@
       }
     ]
   },
-  "stale_sources": [],
-  "actionTracker": [
-    {
-      "item": "GA4 lead-tracking tag installed",
-      "detail": "New GA4 generate_lead tag added to GTM and published as Version 8.",
-      "status": "Done",
-      "when": "May 9, 2026"
-    },
-    {
-      "item": "Tracking pipeline verified end-to-end",
-      "detail": "Confirmed live: a form submit fires the GTM tag, the GA4 event, and the Google Ads conversion. Retracted the earlier incorrect \"form does not capture GCLID\" finding.",
-      "status": "Done",
-      "when": "May 9, 2026"
-    },
-    {
-      "item": "Phone call lead goal repaired",
-      "detail": "Demoted the dormant GFN-based Click to call action to Secondary. Goal now reads Active across all 6 campaigns.",
-      "status": "Done",
-      "when": "May 11, 2026"
-    },
-    {
-      "item": "Apply 75+ recommended negative keywords",
-      "detail": "Competitor brands, lead aggregators, DIY terms, Spanish terms, out-of-area geos. Will block roughly 60-70% of current wasted spend.",
-      "status": "Awaiting your approval",
-      "when": "-"
-    },
-    {
-      "item": "Route paid traffic to the contact form",
-      "detail": "Only about 3 of 62 paid sessions reach the free-estimate page. Send ads straight to it, or embed the form on the current landing page.",
-      "status": "Recommended",
-      "when": "-"
-    },
-    {
-      "item": "Re-activate the best paused campaign on a corrected landing page",
-      "detail": "5 of 6 campaigns are paused. Re-enable the strongest historical ad group inside Residential Roofing once the landing page is fixed.",
-      "status": "Recommended",
-      "when": "-"
-    },
-    {
-      "item": "Lift the ad bid or switch to Maximize Conversions",
-      "detail": "The active campaign is held back by bid settings and spends only about 20% of its daily cap. Do this after the negatives and the funnel fix.",
-      "status": "Recommended",
-      "when": "-"
-    }
-  ]
+  "stale_sources": []
 }
