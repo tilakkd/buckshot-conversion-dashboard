@@ -4,7 +4,7 @@
   "period_end": "2026-05-07",
   "captured_at": "2026-05-08T18:17:00+05:30",
   "version": 3,
-  "headline_state": "This month you received about 45 enquiries (35 form leads plus 10 calls), roughly 30 qualified - but lead tracking was not yet wired up, so Google Ads could not see them. Tracking fixes are recommended before increasing ad spend.",
+  "headline_state": "Lead tracking was not yet wired up, so Google Ads could not see your leads. Tracking fixes are recommended before increasing ad spend.",
   "kpis": {
     "totalSessions": 547,
     "paidSessions": 62,
@@ -102,38 +102,6 @@
     {
       "headline": "Active campaign spending only 20% of budget cap",
       "body": "$11.89/day actual vs $60/day cap. 'Bid setting limited' warning + Maximize Clicks strategy = throttled."
-    }
-  ],
-  "actionTracker": [
-    {
-      "item": "Mark generate_lead as a GA4 Key Event",
-      "detail": "GA4 had 0 Key Events configured. Recommended in the original audit.",
-      "status": "Recommended",
-      "when": "-"
-    },
-    {
-      "item": "Install a GA4 lead-tracking tag in GTM",
-      "detail": "No tag was pushing the generate_lead event to GA4, so Google Ads could not see form leads.",
-      "status": "Recommended",
-      "when": "-"
-    },
-    {
-      "item": "Repair the Phone call lead goal",
-      "detail": "Goal flagged \"Needs attention\" across all 6 campaigns.",
-      "status": "Recommended",
-      "when": "-"
-    },
-    {
-      "item": "Apply 75+ recommended negative keywords",
-      "detail": "Only 5 competitor negatives were in place; 40+ competitor brands bleeding budget.",
-      "status": "Recommended",
-      "when": "-"
-    },
-    {
-      "item": "Route paid traffic to the contact form",
-      "detail": "Major drop-off: paid clicks rarely reach the free-estimate page.",
-      "status": "Recommended",
-      "when": "-"
     }
   ]
 }
