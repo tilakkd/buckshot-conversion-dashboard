@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Buckshot Exteriors — Conversion Dashboard</title>
+<title>Buckshot Exteriors - Conversion Dashboard</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
 <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
@@ -13,14 +13,11 @@
 <meta name="yandex" content="noindex, nofollow">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="X-Robots-Tag" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <style>
 :root { color-scheme: light; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { background: #0d0d14; color: #e7e7ed; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", sans-serif; line-height: 1.5; font-size: 14px; min-height: 100%; }
 .wrap { max-width: 1280px; margin: 0 auto; padding: 28px 24px 60px; }
-a { color: #a05fff; text-decoration: none; }
-a:hover { color: #c084fc; }
 .hd { margin-bottom: 18px; }
 .hd h1 { font-size: 26px; font-weight: 700; color: #f3f4f6; letter-spacing: -0.01em; margin-bottom: 6px; }
 .hd .subtitle { font-size: 13.5px; color: #b8b8c2; margin-bottom: 4px; }
@@ -34,9 +31,9 @@ a:hover { color: #c084fc; }
 .date-bar select { background: #0d0d14; border: 1px solid #3d2960; color: #ffffff; padding: 7px 12px; border-radius: 6px; font-family: inherit; font-size: 13px; cursor: pointer; min-width: 280px; }
 .date-bar select:focus { outline: 2px solid #a05fff; outline-offset: 1px; }
 .date-bar-note { width: 100%; font-size: 11.5px; color: #a8a8b3; line-height: 1.45; border-top: 1px solid #3d2960; padding-top: 10px; margin-top: 4px; }
-.big-picture { background: linear-gradient(90deg, #5b21b6 0%, #4c1d95 100%); border-left: 4px solid #c084fc; padding: 18px 22px; border-radius: 8px; margin-bottom: 22px; font-size: 13.5px; line-height: 1.65; color: #f3e8ff; }
+.big-picture { background: linear-gradient(90deg, #5b21b6 0%, #4c1d95 100%); border-left: 4px solid #c084fc; padding: 18px 22px; border-radius: 8px; margin-bottom: 22px; font-size: 14px; line-height: 1.7; color: #f3e8ff; }
 .big-picture strong { color: #ffffff; font-weight: 700; }
-.big-picture .lbl { color: #c084fc; font-weight: 700; margin-right: 4px; }
+.big-picture .lbl { color: #c084fc; font-weight: 700; margin-right: 4px; text-transform: uppercase; font-size: 11px; letter-spacing: 0.06em; display: block; margin-bottom: 4px; }
 .kpis { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin-bottom: 22px; }
 .kpi { background: #14141c; border: 1px solid #23232f; border-radius: 8px; padding: 14px 16px; }
 .kpi .label { font-size: 10px; color: #8a8a95; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
@@ -51,11 +48,10 @@ a:hover { color: #c084fc; }
 .enq-card.lead { border-left: 3px solid #fbbf24; }
 .enq-card.call { border-left: 3px solid #22c55e; }
 .enq-card.combined { border-left: 3px solid #a05fff; background: linear-gradient(135deg, #14141c 0%, #1d1428 100%); }
-.enq-card .enq-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 12px; display: flex; align-items: center; gap: 6px; }
+.enq-card .enq-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 12px; }
 .enq-card.lead .enq-title { color: #fbbf24; }
 .enq-card.call .enq-title { color: #4ade80; }
 .enq-card.combined .enq-title { color: #c084fc; }
-.enq-card .enq-icon { font-size: 13px; }
 .enq-card .enq-total { font-size: 32px; font-weight: 700; color: #ffffff; line-height: 1; letter-spacing: -0.02em; margin-bottom: 4px; }
 .enq-card .enq-totalsub { font-size: 11.5px; color: #8a8a95; margin-bottom: 14px; }
 .enq-card .enq-rows { display: flex; flex-direction: column; gap: 6px; padding-top: 12px; border-top: 1px solid #23232f; }
@@ -72,52 +68,71 @@ a:hover { color: #c084fc; }
 .enq-card.combined .enq-bigbreak .bb-num.gold { color: #fbbf24; }
 .enq-card.combined .enq-bigbreak .bb-num.green { color: #4ade80; }
 .enq-card.combined .enq-bigbreak .bb-lbl { font-size: 10px; color: #8a8a95; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
-.daily-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 22px; }
-.daily-card { background: #14141c; border: 1px solid #23232f; border-radius: 8px; padding: 16px 18px; }
-.daily-card.calls { border-left: 3px solid #22c55e; }
-.daily-card.forms { border-left: 3px solid #fbbf24; }
-.daily-card h2 { font-size: 14px; color: #f3f4f6; font-weight: 700; margin-bottom: 2px; letter-spacing: -0.005em; display: flex; align-items: center; gap: 7px; }
-.daily-card .daily-sub { font-size: 11.5px; color: #8a8a95; margin-bottom: 12px; }
-.daily-totalstrip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 12px; }
-.daily-totalstrip.forms { grid-template-columns: repeat(3, 1fr); }
-.daily-tot { background: #1a1a24; border: 1px solid #23232f; border-radius: 6px; padding: 8px 10px; }
-.daily-tot .lbl { font-size: 9.5px; color: #8a8a95; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 2px; }
-.daily-tot .num { font-size: 18px; font-weight: 700; color: #ffffff; line-height: 1.1; letter-spacing: -0.01em; }
-.daily-tot .num.purple { color: #a05fff; }
-.daily-tot .num.green { color: #22c55e; }
-.daily-tot .num.gold { color: #fbbf24; }
-.daily-tot .num.blue { color: #60a5fa; }
-.daily-tot .num.orange { color: #fb923c; }
-.daily-tot .num.muted { color: #9ca3af; }
-.chart-wrap { background: #0d0d14; border: 1px solid #23232f; border-radius: 6px; padding: 10px 10px 6px; margin-bottom: 12px; height: 260px; position: relative; }
-.daily-meta { font-size: 11.5px; color: #b8b8c2; margin-bottom: 12px; padding: 8px 12px; background: rgba(160, 95, 255, 0.08); border-left: 2px solid #a05fff; border-radius: 4px; line-height: 1.5; }
-.daily-table-wrap { overflow-x: auto; max-height: 280px; overflow-y: auto; border: 1px solid #23232f; border-radius: 6px; }
-.daily-table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
-.daily-table th { background: #1a1a24; color: #c084fc; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; font-size: 10px; padding: 8px 10px; text-align: right; border-bottom: 1px solid #23232f; position: sticky; top: 0; z-index: 1; }
-.daily-table th:first-child, .daily-table td:first-child { text-align: left; }
-.daily-table td { padding: 6px 10px; text-align: right; color: #d4d4dd; border-bottom: 1px solid #1a1a24; }
-.daily-table tbody tr:hover { background: rgba(160, 95, 255, 0.05); }
-.daily-table tbody tr.has-data td { color: #ffffff; }
-.daily-table tbody tr.zero-day td { color: #5a5a65; }
-.daily-table tfoot td { background: #1a1a24; color: #ffffff; font-weight: 700; border-top: 2px solid #3d2960; padding: 8px 10px; }
-.daily-empty { padding: 22px; text-align: center; color: #6b6b78; font-size: 12.5px; font-style: italic; }
+.panel { background: #14141c; border: 1px solid #23232f; border-radius: 8px; padding: 18px 20px; margin-bottom: 18px; }
+.panel h2 { font-size: 15px; color: #f3f4f6; font-weight: 700; margin-bottom: 4px; letter-spacing: -0.01em; }
+.panel .panel-sub { font-size: 12px; color: #8a8a95; margin-bottom: 16px; }
+.source-chart { display: flex; flex-direction: column; gap: 10px; }
+.source-row { display: flex; align-items: center; gap: 12px; }
+.source-row .src-label { width: 150px; font-size: 12.5px; color: #d4d4dd; flex-shrink: 0; }
+.source-row .src-bar-wrap { flex: 1; background: #1a1a24; border-radius: 4px; height: 22px; overflow: hidden; }
+.source-row .src-bar { height: 100%; border-radius: 4px; min-width: 2px; transition: width 0.3s ease; }
+.source-row .src-bar.paid { background: #a05fff; }
+.source-row .src-bar.organic { background: #22c55e; }
+.source-row .src-bar.direct { background: #9ca3af; }
+.source-row .src-bar.lsa { background: #fbbf24; }
+.source-row .src-bar.referral { background: #60a5fa; }
+.source-row .src-val { width: 80px; font-size: 12.5px; color: #ffffff; font-weight: 600; text-align: right; flex-shrink: 0; }
+.datewise-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 18px; }
+.dw-card { background: #14141c; border: 1px solid #23232f; border-radius: 8px; padding: 16px 18px; }
+.dw-card.calls { border-left: 3px solid #22c55e; }
+.dw-card.forms { border-left: 3px solid #fbbf24; }
+.dw-title { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+.dw-card.calls .dw-title { color: #4ade80; }
+.dw-card.forms .dw-title { color: #fbbf24; }
+.dw-sub { font-size: 11px; color: #8a8a95; margin-bottom: 14px; }
+.dw-bars { display: flex; align-items: flex-end; gap: 3px; height: 90px; padding: 6px 0; border-bottom: 1px solid #23232f; margin-bottom: 6px; }
+.dw-bar-col { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; height: 100%; min-width: 4px; }
+.dw-bar { width: 100%; border-radius: 2px 2px 0 0; min-height: 1px; }
+.dw-card.calls .dw-bar { background: #22c55e; }
+.dw-card.forms .dw-bar { background: #fbbf24; }
+.dw-bar.empty { background: #23232f !important; }
+.dw-xaxis { display: flex; justify-content: space-between; font-size: 9.5px; color: #6b6b78; margin-bottom: 12px; }
+.dw-table-wrap { max-height: 200px; overflow-y: auto; border: 1px solid #23232f; border-radius: 6px; }
+.dw-table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+.dw-table th { position: sticky; top: 0; background: #1a1a24; color: #8a8a95; font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 7px 8px; text-align: right; border-bottom: 1px solid #23232f; }
+.dw-table th:first-child { text-align: left; }
+.dw-table td { padding: 6px 8px; text-align: right; color: #d4d4dd; border-bottom: 1px solid #15151d; }
+.dw-table td:first-child { text-align: left; color: #a8a8b3; }
+.dw-table tr:last-child td { border-bottom: none; }
+.dw-table td.zero { color: #4a4a55; }
+.dw-table td.total { font-weight: 700; color: #ffffff; }
 .spam-strip { display: flex; gap: 10px; align-items: stretch; margin-bottom: 22px; flex-wrap: wrap; }
-.spam-tile { flex: 1; min-width: 220px; border-radius: 6px; padding: 12px 14px; }
-.spam-tile-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; display: flex; align-items: center; gap: 6px; }
+.spam-tile { flex: 1; min-width: 240px; border-radius: 6px; padding: 12px 14px; }
+.spam-tile-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
 .spam-tile-num { font-size: 22px; font-weight: 700; color: #ffffff; }
 .spam-tile-sub { font-size: 11.5px; color: #a8a8b3; margin-left: 8px; }
 .spam-tile.inbox { background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.25); }
 .spam-tile.inbox .spam-tile-label { color: #f87171; }
-.spam-tile.test { background: rgba(156, 163, 175, 0.08); border: 1px solid rgba(156, 163, 175, 0.25); }
-.spam-tile.test .spam-tile-label { color: #cbd5e1; }
 .spam-tile.folder { background: rgba(160, 95, 255, 0.08); border: 1px solid rgba(160, 95, 255, 0.25); }
 .spam-tile.folder .spam-tile-label { color: #c084fc; }
-.tab-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; vertical-align: middle; }
-.tab-dot.spam { background: #f87171; box-shadow: 0 0 6px rgba(239, 68, 68, 0.5); }
-.tab-dot.test { background: #9ca3af; }
-.panel { background: #14141c; border: 1px solid #23232f; border-radius: 8px; padding: 18px 20px; margin-bottom: 18px; }
-.panel h2 { font-size: 15px; color: #f3f4f6; font-weight: 700; margin-bottom: 4px; letter-spacing: -0.01em; }
-.panel .panel-sub { font-size: 12px; color: #8a8a95; margin-bottom: 16px; }
+.action-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.action-table th { text-align: left; padding: 9px 10px; color: #8a8a95; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid #23232f; }
+.action-table td { padding: 11px 10px; border-bottom: 1px solid #1a1a24; color: #d4d4dd; vertical-align: top; }
+.action-table tr:last-child td { border-bottom: none; }
+.action-table .act-item { font-weight: 600; color: #ffffff; }
+.action-table .act-detail { font-size: 11.5px; color: #8a8a95; margin-top: 3px; }
+.act-status { display: inline-block; padding: 3px 10px; border-radius: 4px; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; }
+.act-status.done { background: rgba(34, 197, 94, 0.18); color: #4ade80; }
+.act-status.progress { background: rgba(96, 165, 250, 0.18); color: #93c5fd; }
+.act-status.approval { background: rgba(251, 191, 36, 0.18); color: #fbbf24; }
+.act-status.recommended { background: rgba(160, 95, 255, 0.18); color: #c084fc; }
+.act-when { font-size: 11px; color: #8a8a95; white-space: nowrap; }
+.tracking-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.tpill { padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; }
+.tpill.good { background: rgba(34, 197, 94, 0.12); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.25); }
+.tpill.warn { background: rgba(251, 191, 36, 0.12); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.25); }
+.tpill.bad { background: rgba(239, 68, 68, 0.12); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.25); }
+.tpill.info { background: rgba(96, 165, 250, 0.12); color: #93c5fd; border: 1px solid rgba(96, 165, 250, 0.25); }
 .insights ol { counter-reset: insight; list-style: none; padding-left: 0; }
 .insights ol li { padding: 10px 12px 10px 38px; margin-bottom: 6px; background: #1a1a24; border-radius: 6px; border: 1px solid #23232f; position: relative; font-size: 12.5px; line-height: 1.55; color: #d4d4dd; counter-increment: insight; }
 .insights ol li::before { content: counter(insight) "."; position: absolute; left: 14px; top: 10px; color: #a05fff; font-weight: 700; font-size: 13px; width: 18px; }
@@ -125,131 +140,165 @@ a:hover { color: #c084fc; }
 .data-sources { background: #14141c; border: 1px solid #23232f; border-radius: 8px; padding: 16px 20px; font-size: 12px; color: #8a8a95; line-height: 1.8; }
 .data-sources h3 { font-size: 14px; color: #f3f4f6; margin-bottom: 8px; font-weight: 700; }
 .data-sources strong { color: #d4d4dd; font-weight: 600; }
-.quick-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-.qlink { background: rgba(160, 95, 255, 0.12); color: #c084fc; border: 1px solid rgba(160, 95, 255, 0.25); border-radius: 4px; padding: 4px 10px; font-size: 11px; font-weight: 600; text-decoration: none; }
-.qlink:hover { background: rgba(160, 95, 255, 0.25); color: #ffffff; }
-.tracking-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
-.tpill { background: rgba(34, 197, 94, 0.12); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.25); padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: 600; }
-.tpill.warn { background: rgba(251, 191, 36, 0.12); color: #fbbf24; border-color: rgba(251, 191, 36, 0.25); }
-.tpill.bad { background: rgba(239, 68, 68, 0.12); color: #f87171; border-color: rgba(239, 68, 68, 0.25); }
-.loading-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(13, 13, 20, 0.7); backdrop-filter: blur(2px); display: flex; align-items: center; justify-content: center; z-index: 100; transition: opacity 0.25s ease; }
+.loading-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(13, 13, 20, 0.7); display: flex; align-items: center; justify-content: center; z-index: 100; transition: opacity 0.25s ease; }
 .loading-overlay.hidden { opacity: 0; pointer-events: none; }
 .loading-card { background: #1a1a24; border: 1px solid #3d2960; border-radius: 8px; padding: 24px 32px; color: #c084fc; font-weight: 600; }
-@media (max-width: 1100px) { .kpis { grid-template-columns: repeat(3, 1fr); } .enq-grid { grid-template-columns: 1fr; } .daily-grid { grid-template-columns: 1fr; } }
-@media (max-width: 700px) { .kpis { grid-template-columns: repeat(2, 1fr); } .daily-totalstrip { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 1100px) { .kpis { grid-template-columns: repeat(3, 1fr); } .enq-grid { grid-template-columns: 1fr; } .datewise-grid { grid-template-columns: 1fr; } }
+@media (max-width: 700px) { .kpis { grid-template-columns: repeat(2, 1fr); } }
 </style>
 </head>
 <body>
 <div class="wrap">
 <div class="hd">
-<h1>Buckshot Exteriors — Conversion Dashboard</h1>
-<div class="subtitle">Cross-referenced from Google Ads + GA4 + Microsoft Clarity + Flamingo + LSA Inbox</div>
-<div class="meta">Auto-refreshed daily at 10:30 AM IST · Version history below · Search engines blocked via noindex</div>
-<div class="quick-links">
-<a class="qlink" href="https://www.buckshotexteriors.com/wp-admin/admin.php?page=flamingo_inbound" target="_blank" rel="noopener">Flamingo Inbox ↗</a>
-<a class="qlink" href="https://ads.google.com/u/1/localservices/inbox?cid=4026037149" target="_blank" rel="noopener">LSA Leads ↗</a>
-<a class="qlink" href="https://ads.google.com/aw/campaigns?campaignId=23713998408&ocid=7566413701" target="_blank" rel="noopener">Active Campaign ↗</a>
-<a class="qlink" href="https://analytics.google.com/analytics/web/?authuser=1#/a391803525p533585540/reports" target="_blank" rel="noopener">GA4 ↗</a>
-<a class="qlink" href="https://clarity.microsoft.com/projects/view/whxv7w4ddr/dashboard" target="_blank" rel="noopener">Clarity ↗</a>
-<a class="qlink" href="https://tagmanager.google.com/?authuser=1#/container/accounts/6351430209/containers/250284699/workspaces/9/tags" target="_blank" rel="noopener">GTM ↗</a>
-</div>
+<h1>Buckshot Exteriors - Conversion Dashboard</h1>
+<div class="subtitle">Your leads, your ad spend, and what we are doing about it - in one place</div>
+<div class="meta">Auto-refreshed daily at 10:30 AM IST - Use the date picker to view any past day - Private dashboard, not indexed by search engines</div>
 </div>
 <div class="date-bar" id="dateBar">
 <div class="date-bar-left">
 <div>
-<div class="date-bar-label">📅 Viewing data from</div>
-<div class="date-bar-current" id="currentDateDisplay">Loading…</div>
+<div class="date-bar-label">Viewing data from</div>
+<div class="date-bar-current" id="currentDateDisplay">Loading...</div>
 </div>
-<select id="dateSelect" aria-label="Select a date"><option value="">Loading dates…</option></select>
+<select id="dateSelect" aria-label="Select a date"><option value="">Loading dates...</option></select>
 </div>
 <div class="date-bar-note" id="dateNote"></div>
 </div>
-<div class="big-picture"><span class="lbl">Snapshot state:</span> <span data-field="headline_state">Loading…</span></div>
+<div class="big-picture"><div class="lbl">The bottom line</div><span data-field="headline_state">Loading...</span></div>
 <div class="kpis">
-<div class="kpi"><div class="label">TOTAL SESSIONS (30D)</div><div class="value" data-field="kpis.totalSessions">—</div><div class="sub">tracked by GA4</div></div>
-<div class="kpi"><div class="label">PAID SESSIONS</div><div class="value purple" data-field="kpis.paidSessions">—</div><div class="sub"><span data-field="kpis.paidPct">—</span> of total</div></div>
-<div class="kpi"><div class="label">FORM SUBMISSIONS</div><div class="value yellow" data-field="kpis.formSubmissions">—</div><div class="sub"><span data-field="kpis.qualifiedForms">—</span> qualified</div></div>
-<div class="kpi"><div class="label">ADS CONVERSIONS</div><div class="value red" data-field="kpis.adsConversions">—</div><div class="sub">call-ext only</div></div>
-<div class="kpi"><div class="label">LSA CHARGED LEADS</div><div class="value green" data-field="kpis.lsaCharged">—</div><div class="sub"><span data-field="kpis.lsaTotal">—</span> total · <span data-field="kpis.lsaDisputed">—</span> disputed</div></div>
-<div class="kpi"><div class="label">ADS COST (90D)</div><div class="value" data-field="kpis.adsCost90d">—</div><div class="sub"><span data-field="kpis.adsCostDaily">—</span></div></div>
+<div class="kpi"><div class="label">TOTAL SESSIONS (30D)</div><div class="value" data-field="kpis.totalSessions">-</div><div class="sub">website visits via GA4</div></div>
+<div class="kpi"><div class="label">PAID SESSIONS</div><div class="value purple" data-field="kpis.paidSessions">-</div><div class="sub"><span data-field="kpis.paidPct">-</span> of total</div></div>
+<div class="kpi"><div class="label">FORM SUBMISSIONS</div><div class="value yellow" data-field="kpis.formSubmissions">-</div><div class="sub"><span data-field="kpis.qualifiedForms">-</span> qualified</div></div>
+<div class="kpi"><div class="label">COST PER QUALIFIED LEAD</div><div class="value green" data-field="enquiries.combined.costPerQualified">-</div><div class="sub">forms + calls combined</div></div>
+<div class="kpi"><div class="label">LSA CHARGED LEADS</div><div class="value" data-field="kpis.lsaCharged">-</div><div class="sub"><span data-field="kpis.lsaTotal">-</span> total - <span data-field="kpis.lsaDisputed">-</span> disputed</div></div>
+<div class="kpi"><div class="label">ADS COST (90D)</div><div class="value" data-field="kpis.adsCost90d">-</div><div class="sub"><span data-field="kpis.adsCostDaily">-</span></div></div>
 </div>
 <div class="enq-grid">
-<div class="enq-card lead"><div class="enq-title"><span class="enq-icon">📝</span> Lead Enquiries (Forms)</div><div class="enq-total" data-field="enquiries.lead.total">—</div><div class="enq-totalsub">form submissions in last 30 days</div><div class="enq-rows"><div class="enq-row"><span class="lbl">Qualified <small>Madison metro</small></span><span class="val q" data-field="enquiries.lead.qualified">—</span></div><div class="enq-row"><span class="lbl">Out-of-area</span><span class="val warn" data-field="enquiries.lead.ooa">—</span></div><div class="enq-row"><span class="lbl">Spam / test</span><span class="val muted" data-field="enquiries.lead.spamTest">—</span></div><div class="enq-row" style="border-top:1px solid #23232f; padding-top:6px; margin-top:4px;"><span class="lbl">Tracking status</span><span class="val" data-field="enquiries.lead.trackingStatus" style="font-size:11px;">—</span></div></div></div>
-<div class="enq-card call"><div class="enq-title"><span class="enq-icon">📞</span> Call Enquiries</div><div class="enq-total" data-field="enquiries.call.total">—</div><div class="enq-totalsub">phone interactions across all sources</div><div class="enq-rows"><div class="enq-row"><span class="lbl">Google Ads calls <small>(call assets)</small></span><span class="val q" data-field="enquiries.call.googleAds">—</span></div><div class="enq-row"><span class="lbl">LSA phone leads</span><span class="val q" data-field="enquiries.call.lsa">—</span></div><div class="enq-row"><span class="lbl">Site tel: clicks tracked</span><span class="val muted" data-field="enquiries.call.telTracked">—</span></div><div class="enq-row" style="border-top:1px solid #23232f; padding-top:6px; margin-top:4px;"><span class="lbl">Tracking status</span><span class="val" data-field="enquiries.call.trackingStatus" style="font-size:11px;">—</span></div></div></div>
-<div class="enq-card combined"><div class="enq-title"><span class="enq-icon">🎯</span> Combined Enquiries (All Sources)</div><div class="enq-total" data-field="enquiries.combined.total">—</div><div class="enq-totalsub">total inbound enquiries in last 30 days</div><div class="enq-bigbreak"><div><div class="bb-num gold" data-field="enquiries.lead.total">—</div><div class="bb-lbl">Form leads</div></div><div><div class="bb-num green" data-field="enquiries.call.total">—</div><div class="bb-lbl">Call leads</div></div></div><div class="enq-rows" style="border-top:1px solid #23232f; padding-top:10px; margin-top:10px;"><div class="enq-row"><span class="lbl">Qualified (forms + calls)</span><span class="val q" data-field="enquiries.combined.qualified">—</span></div><div class="enq-row"><span class="lbl">Cost per qualified enquiry</span><span class="val" data-field="enquiries.combined.costPerQualified" style="font-size:13px;">—</span></div><div class="enq-row"><span class="lbl">Form-to-call ratio</span><span class="val muted" data-field="enquiries.combined.formToCallRatio">—</span></div></div></div>
+<div class="enq-card lead"><div class="enq-title">LEAD ENQUIRIES (FORMS)</div><div class="enq-total" data-field="enquiries.lead.total">-</div><div class="enq-totalsub">form submissions in last 30 days</div><div class="enq-rows"><div class="enq-row"><span class="lbl">Qualified <small>Madison metro</small></span><span class="val q" data-field="enquiries.lead.qualified">-</span></div><div class="enq-row"><span class="lbl">Out-of-area</span><span class="val warn" data-field="enquiries.lead.ooa">-</span></div><div class="enq-row"><span class="lbl">Spam / test</span><span class="val muted" data-field="enquiries.lead.spamTest">-</span></div><div class="enq-row" style="border-top:1px solid #23232f; padding-top:6px; margin-top:4px;"><span class="lbl">Tracking status</span><span class="val" data-field="enquiries.lead.trackingStatus" style="font-size:11px;">-</span></div></div></div>
+<div class="enq-card call"><div class="enq-title">CALL ENQUIRIES</div><div class="enq-total" data-field="enquiries.call.total">-</div><div class="enq-totalsub">phone interactions across all sources</div><div class="enq-rows"><div class="enq-row"><span class="lbl">Google Ads calls <small>call assets</small></span><span class="val q" data-field="enquiries.call.googleAds">-</span></div><div class="enq-row"><span class="lbl">LSA phone leads</span><span class="val q" data-field="enquiries.call.lsa">-</span></div><div class="enq-row"><span class="lbl">Website tel: clicks tracked</span><span class="val muted" data-field="enquiries.call.telTracked">-</span></div><div class="enq-row" style="border-top:1px solid #23232f; padding-top:6px; margin-top:4px;"><span class="lbl">Tracking status</span><span class="val" data-field="enquiries.call.trackingStatus" style="font-size:11px;">-</span></div></div></div>
+<div class="enq-card combined"><div class="enq-title">COMBINED ENQUIRIES (ALL SOURCES)</div><div class="enq-total" data-field="enquiries.combined.total">-</div><div class="enq-totalsub">total inbound enquiries in last 30 days</div><div class="enq-bigbreak"><div><div class="bb-num gold" data-field="enquiries.lead.total">-</div><div class="bb-lbl">Form leads</div></div><div><div class="bb-num green" data-field="enquiries.call.total">-</div><div class="bb-lbl">Call leads</div></div></div><div class="enq-rows" style="border-top:1px solid #23232f; padding-top:10px; margin-top:10px;"><div class="enq-row"><span class="lbl">Qualified (forms + calls)</span><span class="val q" data-field="enquiries.combined.qualified">-</span></div><div class="enq-row"><span class="lbl">Cost per qualified enquiry</span><span class="val" data-field="enquiries.combined.costPerQualified" style="font-size:13px;">-</span></div><div class="enq-row"><span class="lbl">Form-to-call ratio</span><span class="val muted" data-field="enquiries.combined.formToCallRatio">-</span></div></div></div>
 </div>
-<div class="daily-grid">
-<div class="daily-card calls">
-<h2><span>📞</span> Call Conversions by Date</h2>
-<div class="daily-sub">Daily phone leads across all sources — Google Ads call assets, LSA inbox, site tel: clicks.</div>
-<div class="daily-totalstrip">
-<div class="daily-tot"><div class="lbl">Google Ads</div><div class="num purple" id="callsTotGoogleAds">—</div></div>
-<div class="daily-tot"><div class="lbl">LSA Charged</div><div class="num green" id="callsTotLsaCharged">—</div></div>
-<div class="daily-tot"><div class="lbl">LSA Total</div><div class="num gold" id="callsTotLsaTotal">—</div></div>
-<div class="daily-tot"><div class="lbl">Tel Clicks</div><div class="num blue" id="callsTotTel">—</div></div>
-</div>
-<div class="chart-wrap"><canvas id="callsChart"></canvas></div>
-<div class="daily-meta" id="callsMeta">Loading window…</div>
-<div class="daily-table-wrap">
-<table class="daily-table" id="callsTable">
-<thead><tr><th>Date</th><th>Google Ads</th><th>LSA Charged</th><th>LSA Total</th><th>Tel Clicks</th><th>Daily Total</th></tr></thead>
-<tbody></tbody>
-<tfoot></tfoot>
-</table>
-</div>
-</div>
-<div class="daily-card forms">
-<h2><span>📝</span> Form Submissions by Date</h2>
-<div class="daily-sub">Daily Flamingo inbox submissions — qualified Madison-metro, out-of-area, spam/test.</div>
-<div class="daily-totalstrip forms">
-<div class="daily-tot"><div class="lbl">Qualified</div><div class="num green" id="formsTotQualified">—</div></div>
-<div class="daily-tot"><div class="lbl">Out of Area</div><div class="num orange" id="formsTotOoa">—</div></div>
-<div class="daily-tot"><div class="lbl">Spam / Test</div><div class="num muted" id="formsTotSpam">—</div></div>
-</div>
-<div class="chart-wrap"><canvas id="formsChart"></canvas></div>
-<div class="daily-meta" id="formsMeta">Loading window…</div>
-<div class="daily-table-wrap">
-<table class="daily-table" id="formsTable">
-<thead><tr><th>Date</th><th>Qualified</th><th>Out of Area</th><th>Spam / Test</th><th>Daily Total</th></tr></thead>
-<tbody></tbody>
-<tfoot></tfoot>
-</table>
-</div>
-</div>
+<div class="panel"><h2>Where Your Leads Come From</h2><div class="panel-sub">Verified leads in the last 30 days, split by traffic source. Shows whether your ad spend is producing leads or whether they are coming from organic, referrals, or LSA.</div><div class="source-chart" id="sourceChart"></div></div>
+<div class="datewise-grid">
+<div class="dw-card calls"><div class="dw-title">Call Conversions by Date</div><div class="dw-sub" id="dwCallsSub">Daily phone leads across all sources - last 30 days</div><div class="dw-bars" id="dwCallsBars"></div><div class="dw-xaxis" id="dwCallsAxis"></div><div class="dw-table-wrap"><table class="dw-table"><thead><tr><th>Date</th><th>Google Ads</th><th>LSA Charged</th><th>LSA Total</th><th>Tel Clicks</th><th>Daily Total</th></tr></thead><tbody id="dwCallsTable"></tbody></table></div></div>
+<div class="dw-card forms"><div class="dw-title">Form Submissions by Date</div><div class="dw-sub" id="dwFormsSub">Daily Flamingo inbox submissions - last 30 days</div><div class="dw-bars" id="dwFormsBars"></div><div class="dw-xaxis" id="dwFormsAxis"></div><div class="dw-table-wrap"><table class="dw-table"><thead><tr><th>Date</th><th>Qualified</th><th>Out of Area</th><th>Spam / Test</th><th>Daily Total</th></tr></thead><tbody id="dwFormsTable"></tbody></table></div></div>
 </div>
 <div class="spam-strip">
-<div class="spam-tile inbox"><div class="spam-tile-label"><span class="tab-dot spam"></span>Spam in Inbox</div><div><span class="spam-tile-num" data-field="spamCounts.inbox">—</span><span class="spam-tile-sub">post-filter entries</span></div></div>
-<div class="spam-tile test"><div class="spam-tile-label"><span class="tab-dot test"></span>Internal QA Tests</div><div><span class="spam-tile-num" data-field="spamCounts.test">—</span><span class="spam-tile-sub">QA pipeline tests</span></div></div>
-<div class="spam-tile folder"><div class="spam-tile-label"><span class="tab-dot spam"></span>Flamingo Spam Folder</div><div><span class="spam-tile-num" data-field="spamCounts.flamingoSpamFolder">—</span><span class="spam-tile-sub">auto-filtered lifetime · pre-Inbox</span></div></div>
+<div class="spam-tile inbox"><div class="spam-tile-label">Spam That Reached Your Inbox</div><div><span class="spam-tile-num" data-field="spamCounts.inbox">-</span><span class="spam-tile-sub">entries that got past the filter this period</span></div></div>
+<div class="spam-tile folder"><div class="spam-tile-label">Spam Auto-Filtered (Lifetime)</div><div><span class="spam-tile-num" data-field="spamCounts.flamingoSpamFolder">-</span><span class="spam-tile-sub">blocked before reaching the inbox</span></div></div>
 </div>
-<div class="panel"><h2>Tracking + Campaign State (as of this snapshot)</h2><div class="panel-sub">GTM container, key goals, and active campaign status at the time of this snapshot.</div><div class="tracking-pills" id="trackingPills"></div></div>
-<div class="panel insights"><h2>Insights &amp; Next Actions</h2><div class="panel-sub">Prioritized by leverage. These reflect the state on the selected snapshot date.</div><ol id="insightsList"></ol></div>
-<div class="data-sources"><h3>Data Sources &amp; Refresh</h3><p><strong>Auto-refresh:</strong> Daily at 10:30 AM IST. Missed days are backfilled (Google Ads + GA4 only) on next available run.</p><p><strong>Form entries (Lead Enquiries):</strong> Flamingo Inbox via Buckshot WordPress admin.</p><p><strong>Call Enquiries:</strong> "Calls from ads" metric in Google Ads + LSA inbox + GTM-tracked tel: clicks.</p><p><strong>Sessions/events:</strong> GA4 Traffic Acquisition for property G-5X1X23VNJQ.</p><p><strong>Behavior signals:</strong> Microsoft Clarity project whxv7w4ddr (3-day rolling window).</p><p><strong>Tracking state:</strong> GTM-KG87WZF2 container, Goals tab in Google Ads.</p><p><strong>Date-wise sections:</strong> "Call Conversions by Date" and "Form Submissions by Date" read the <code style="color:#c084fc; background:#23232f; padding:1px 5px; border-radius:3px; font-size:11px;">daily.calls[]</code> and <code style="color:#c084fc; background:#23232f; padding:1px 5px; border-radius:3px; font-size:11px;">daily.forms[]</code> arrays in each snapshot JSON. Rows populate as live source pulls write per-day numbers.</p><p style="margin-top: 12px; padding-top: 10px; border-top: 1px solid #23232f; color: #6b6b78;"><strong>Version history:</strong> every daily refresh commits to <code style="color:#c084fc; background:#23232f; padding:1px 5px; border-radius:3px; font-size:11px;">tilakkd/buckshot-conversion-dashboard</code>. Use the date picker above to load any past day.</p></div>
+<div class="panel"><h2>What We Are Doing About It</h2><div class="panel-sub">Every action on your account, with current status. This is the work the agency has done and what is queued next.</div><table class="action-table"><thead><tr><th style="width:42%;">Action</th><th style="width:20%;">Status</th><th style="width:18%;">When</th></tr></thead><tbody id="actionTable"></tbody></table></div>
+<div class="panel"><h2>Account Health (Plain English)</h2><div class="panel-sub">Is your tracking working and are your ads running? Quick status of the things that matter.</div><div class="tracking-pills" id="trackingPills"></div></div>
+<div class="panel insights"><h2>Insights and Next Actions</h2><div class="panel-sub">Prioritized by impact. These reflect the state on the selected snapshot date.</div><ol id="insightsList"></ol></div>
+<div class="data-sources"><h3>Where This Data Comes From</h3><p><strong>Form leads:</strong> Flamingo inbox in your WordPress admin.</p><p><strong>Call leads:</strong> "Calls from ads" in Google Ads, your LSA inbox, and website tel: link clicks.</p><p><strong>Website visits:</strong> Google Analytics 4.</p><p><strong>Behavior signals:</strong> Microsoft Clarity.</p><p style="margin-top: 12px; padding-top: 10px; border-top: 1px solid #23232f; color: #6b6b78;"><strong>Version history:</strong> every daily refresh is saved. Use the date picker at the top to load any past day.</p></div>
 </div>
-<div class="loading-overlay" id="loadingOverlay"><div class="loading-card">Loading dashboard data…</div></div>
+<div class="loading-overlay" id="loadingOverlay"><div class="loading-card">Loading dashboard data...</div></div>
 <script>
-let manifest=null,currentData=null,callsChart=null,formsChart=null;
-function get(o,p){return p.split('.').reduce((a,k)=>a!=null?a[k]:undefined,o);}
-function fmtShortDate(iso){try{return new Date(iso+'T00:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric'});}catch(e){return iso;}}
-function render(d){if(!d)return;document.querySelectorAll('[data-field]').forEach(el=>{const v=get(d,el.dataset.field);el.textContent=(v==null)?'—':v;});
-var ol=document.getElementById('insightsList');ol.innerHTML='';(d.insights||[]).forEach(ins=>{var li=document.createElement('li');var s=document.createElement('strong');s.textContent=ins.headline+'.';li.appendChild(s);li.appendChild(document.createTextNode(' '+ins.body));ol.appendChild(li);});
-var pills=document.getElementById('trackingPills');pills.innerHTML='';var t=d.trackingState||{},c=d.campaignState||{};
-var pillData=[{txt:'GTM '+(t.gtmLiveVersion||'—')+' · '+(t.gtmTags||'—')+' tags',cls:'tpill'},{txt:'Phone call lead: '+(t.phoneCallLeadGoal||'—'),cls:(t.phoneCallLeadGoal==='Active'?'tpill':'tpill bad')},{txt:'Submit lead form: '+(t.submitLeadFormGoal||'—'),cls:'tpill'},{txt:'Active campaigns: '+(c.activeCount||'—')+' of '+((c.activeCount||0)+(c.pausedCount||0)),cls:'tpill'},{txt:'Optimization score: '+(c.optimizationScore||'—'),cls:'tpill'},{txt:(c.bidWarning||''),cls:(c.bidWarning?'tpill warn':'tpill')}];
-pillData.forEach(p=>{if(!p.txt)return;var sp=document.createElement('span');sp.className=p.cls;sp.textContent=p.txt;pills.appendChild(sp);});
-var dateBar=document.getElementById('currentDateDisplay');var isLatest=manifest&&d.snapshot_date===manifest.latest;var niceDate;try{niceDate=new Date(d.snapshot_date+'T00:00:00').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});}catch(e){niceDate=d.snapshot_date;}
-dateBar.innerHTML=niceDate+' <span style="color:#8a8a95; font-size:12px; margin-left:6px;">(period '+(d.period_start||'—')+' to '+(d.period_end||'—')+')</span>'+(isLatest?' <span class="badge-latest">Latest</span>':' <span class="badge-historical">Historical</span>');
-var note=document.getElementById('dateNote');var dm=(manifest&&manifest.dates||[]).find(x=>x.date===d.snapshot_date);note.textContent=dm?dm.note:'';
-renderDaily(d);}
-function renderDaily(d){var daily=(d&&d.daily)||{};var window_lbl=(daily.dateWindow||'last 30 days');var range='';if(daily.rangeStart&&daily.rangeEnd){range=' · '+fmtShortDate(daily.rangeStart)+' → '+fmtShortDate(daily.rangeEnd);}var note=daily.note?' · '+daily.note:'';document.getElementById('callsMeta').textContent='Window: '+window_lbl+range+note;document.getElementById('formsMeta').textContent='Window: '+window_lbl+range+note;renderCallsDaily(daily.calls||[]);renderFormsDaily(daily.forms||[]);}
-function renderCallsDaily(rows){var tbody=document.querySelector('#callsTable tbody'),tfoot=document.querySelector('#callsTable tfoot');tbody.innerHTML='';tfoot.innerHTML='';var tot={googleAds:0,lsaCharged:0,lsaTotal:0,telTracked:0};if(!rows.length){tbody.innerHTML='<tr><td colspan="6" class="daily-empty">No daily call data yet — per-day rows populate as future refreshes write live source numbers.</td></tr>';}else{rows.forEach(r=>{var ga=r.googleAds||0,lc=r.lsaCharged||0,lt=r.lsaTotal||0,tc=r.telTracked||0,sum=ga+lc+lt+tc;var tr=document.createElement('tr');tr.className=sum>0?'has-data':'zero-day';tr.innerHTML='<td>'+fmtShortDate(r.date)+'</td><td>'+ga+'</td><td>'+lc+'</td><td>'+lt+'</td><td>'+tc+'</td><td><strong>'+sum+'</strong></td>';tbody.appendChild(tr);tot.googleAds+=ga;tot.lsaCharged+=lc;tot.lsaTotal+=lt;tot.telTracked+=tc;});var sum=tot.googleAds+tot.lsaCharged+tot.lsaTotal+tot.telTracked;var tf=document.createElement('tr');tf.innerHTML='<td>Window total</td><td>'+tot.googleAds+'</td><td>'+tot.lsaCharged+'</td><td>'+tot.lsaTotal+'</td><td>'+tot.telTracked+'</td><td>'+sum+'</td>';tfoot.appendChild(tf);}
-document.getElementById('callsTotGoogleAds').textContent=tot.googleAds;document.getElementById('callsTotLsaCharged').textContent=tot.lsaCharged;document.getElementById('callsTotLsaTotal').textContent=tot.lsaTotal;document.getElementById('callsTotTel').textContent=tot.telTracked;
-if(callsChart){callsChart.destroy();callsChart=null;}var ctx=document.getElementById('callsChart');if(!rows.length||!window.Chart)return;callsChart=new Chart(ctx,{type:'bar',data:{labels:rows.map(r=>fmtShortDate(r.date)),datasets:[{label:'Google Ads',data:rows.map(r=>r.googleAds||0),backgroundColor:'#a05fff',stack:'a'},{label:'LSA Charged',data:rows.map(r=>r.lsaCharged||0),backgroundColor:'#22c55e',stack:'a'},{label:'LSA Total',data:rows.map(r=>r.lsaTotal||0),backgroundColor:'#fbbf24',stack:'a'},{label:'Tel Clicks',data:rows.map(r=>r.telTracked||0),backgroundColor:'#60a5fa',stack:'a'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#d4d4dd',font:{size:11},boxWidth:12}},tooltip:{mode:'index',intersect:false,backgroundColor:'#1a1a24',titleColor:'#c084fc',bodyColor:'#e7e7ed',borderColor:'#3d2960',borderWidth:1}},scales:{x:{stacked:true,ticks:{color:'#8a8a95',font:{size:10},maxRotation:0,autoSkip:true,maxTicksLimit:15},grid:{display:false}},y:{stacked:true,beginAtZero:true,ticks:{color:'#8a8a95',font:{size:10},precision:0},grid:{color:'#23232f'}}}}});}
-function renderFormsDaily(rows){var tbody=document.querySelector('#formsTable tbody'),tfoot=document.querySelector('#formsTable tfoot');tbody.innerHTML='';tfoot.innerHTML='';var tot={qualified:0,ooa:0,spamTest:0};if(!rows.length){tbody.innerHTML='<tr><td colspan="5" class="daily-empty">No daily form data yet — per-day rows populate as future refreshes write live Flamingo numbers.</td></tr>';}else{rows.forEach(r=>{var q=r.qualified||0,o=r.ooa||0,s=r.spamTest||0,sum=q+o+s;var tr=document.createElement('tr');tr.className=sum>0?'has-data':'zero-day';tr.innerHTML='<td>'+fmtShortDate(r.date)+'</td><td>'+q+'</td><td>'+o+'</td><td>'+s+'</td><td><strong>'+sum+'</strong></td>';tbody.appendChild(tr);tot.qualified+=q;tot.ooa+=o;tot.spamTest+=s;});var sum=tot.qualified+tot.ooa+tot.spamTest;var tf=document.createElement('tr');tf.innerHTML='<td>Window total</td><td>'+tot.qualified+'</td><td>'+tot.ooa+'</td><td>'+tot.spamTest+'</td><td>'+sum+'</td>';tfoot.appendChild(tf);}
-document.getElementById('formsTotQualified').textContent=tot.qualified;document.getElementById('formsTotOoa').textContent=tot.ooa;document.getElementById('formsTotSpam').textContent=tot.spamTest;
-if(formsChart){formsChart.destroy();formsChart=null;}var ctx=document.getElementById('formsChart');if(!rows.length||!window.Chart)return;formsChart=new Chart(ctx,{type:'bar',data:{labels:rows.map(r=>fmtShortDate(r.date)),datasets:[{label:'Qualified',data:rows.map(r=>r.qualified||0),backgroundColor:'#22c55e',stack:'a'},{label:'Out of Area',data:rows.map(r=>r.ooa||0),backgroundColor:'#fb923c',stack:'a'},{label:'Spam / Test',data:rows.map(r=>r.spamTest||0),backgroundColor:'#9ca3af',stack:'a'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#d4d4dd',font:{size:11},boxWidth:12}},tooltip:{mode:'index',intersect:false,backgroundColor:'#1a1a24',titleColor:'#c084fc',bodyColor:'#e7e7ed',borderColor:'#3d2960',borderWidth:1}},scales:{x:{stacked:true,ticks:{color:'#8a8a95',font:{size:10},maxRotation:0,autoSkip:true,maxTicksLimit:15},grid:{display:false}},y:{stacked:true,beginAtZero:true,ticks:{color:'#8a8a95',font:{size:10},precision:0},grid:{color:'#23232f'}}}}});}
-async function loadDate(date){var ov=document.getElementById('loadingOverlay');ov.classList.remove('hidden');try{var url=(date===manifest.latest)?'./data/current.json':'./data/history/'+date+'.json';var resp=await fetch(url,{cache:'no-store'});if(!resp.ok)throw new Error('HTTP '+resp.status);currentData=await resp.json();render(currentData);}catch(e){alert('Could not load data for '+date+': '+e.message);}finally{setTimeout(()=>ov.classList.add('hidden'),200);}}
-function buildDatePicker(){var sel=document.getElementById('dateSelect');sel.innerHTML='';(manifest.dates||[]).forEach(d=>{var opt=document.createElement('option');opt.value=d.date;opt.textContent=d.label;sel.appendChild(opt);});sel.value=manifest.latest;sel.addEventListener('change',e=>{loadDate(e.target.value);});}
-(async function(){try{var r=await fetch('./data/manifest.json',{cache:'no-store'});manifest=await r.json();buildDatePicker();await loadDate(manifest.latest);}catch(e){document.getElementById('loadingOverlay').innerHTML='<div class="loading-card" style="color:#f87171;">Failed to load: '+e.message+'</div>';}})();
+var manifest=null,currentData=null;
+function get(o,p){return p.split('.').reduce(function(a,k){return a!=null?a[k]:undefined;},o);}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function render(d){
+if(!d)return;
+document.querySelectorAll('[data-field]').forEach(function(el){var v=get(d,el.dataset.field);el.textContent=(v==null)?'-':v;});
+var ol=document.getElementById('insightsList');ol.innerHTML='';
+(d.insights||[]).forEach(function(ins){var li=document.createElement('li');var s=document.createElement('strong');s.textContent=ins.headline+'.';li.appendChild(s);li.appendChild(document.createTextNode(' '+ins.body));ol.appendChild(li);});
+var at=document.getElementById('actionTable');at.innerHTML='';
+var actions=d.actionTracker||[];
+if(actions.length===0){var tr0=document.createElement('tr');var td0=document.createElement('td');td0.colSpan=3;td0.style.color='#6b6b78';td0.textContent='No action items recorded for this snapshot date.';tr0.appendChild(td0);at.appendChild(tr0);}
+actions.forEach(function(a){
+var tr=document.createElement('tr');
+var statusClass={'Done':'done','In progress':'progress','Awaiting your approval':'approval','Recommended':'recommended'}[a.status]||'recommended';
+var c1=document.createElement('td');var item=document.createElement('div');item.className='act-item';item.textContent=a.item;c1.appendChild(item);
+if(a.detail){var det=document.createElement('div');det.className='act-detail';det.textContent=a.detail;c1.appendChild(det);}
+var c2=document.createElement('td');var st=document.createElement('span');st.className='act-status '+statusClass;st.textContent=a.status;c2.appendChild(st);
+var c3=document.createElement('td');var wh=document.createElement('span');wh.className='act-when';wh.textContent=a.when||'-';c3.appendChild(wh);
+tr.appendChild(c1);tr.appendChild(c2);tr.appendChild(c3);at.appendChild(tr);
+});
+var pills=document.getElementById('trackingPills');pills.innerHTML='';
+var t=d.trackingState||{},c=d.campaignState||{};
+var pillData=[];
+pillData.push({txt:'Website lead tracking: Installed and working',cls:'good'});
+if(t.phoneCallLeadGoal==='Active'){pillData.push({txt:'Phone-call tracking: Working',cls:'good'});}else{pillData.push({txt:'Phone-call tracking: Needs a fix',cls:'bad'});}
+if(t.submitLeadFormGoal==='Active'){pillData.push({txt:'Contact-form tracking: Working',cls:'good'});}else{pillData.push({txt:'Contact-form tracking: Needs a fix',cls:'bad'});}
+var totalCamp=(c.activeCount||0)+(c.pausedCount||0);
+pillData.push({txt:(c.activeCount||0)+' of '+totalCamp+' ad campaigns currently running',cls:(c.activeCount>0?'info':'warn')});
+if(c.bidWarning){pillData.push({txt:'Ad budget is being held back by bid settings',cls:'warn'});}
+pillData.forEach(function(p){var sp=document.createElement('span');sp.className='tpill '+p.cls;sp.textContent=p.txt;pills.appendChild(sp);});
+var sc=document.getElementById('sourceChart');sc.innerHTML='';
+var src=d.sourceChart||{};
+var srcRows=[{key:'paid',label:'Paid (Google Ads)',cls:'paid'},{key:'organic',label:'Organic search',cls:'organic'},{key:'direct',label:'Direct',cls:'direct'},{key:'lsa',label:'LSA (Local Services)',cls:'lsa'},{key:'referral',label:'Referral',cls:'referral'}];
+var srcMax=Math.max(1,src.paid||0,src.organic||0,src.direct||0,src.lsa||0,src.referral||0);
+srcRows.forEach(function(r){
+var val=src[r.key]||0;
+var row=document.createElement('div');row.className='source-row';
+var lab=document.createElement('div');lab.className='src-label';lab.textContent=r.label;
+var wrap=document.createElement('div');wrap.className='src-bar-wrap';
+var bar=document.createElement('div');bar.className='src-bar '+r.cls;bar.style.width=((val/srcMax)*100)+'%';
+wrap.appendChild(bar);
+var v=document.createElement('div');v.className='src-val';v.textContent=val+' lead'+(val===1?'':'s');
+row.appendChild(lab);row.appendChild(wrap);row.appendChild(v);
+sc.appendChild(row);
+});
+renderDateWise(d);
+var dateBar=document.getElementById('currentDateDisplay');
+var isLatest=manifest&&d.snapshot_date===manifest.latest;
+var niceDate;try{niceDate=new Date(d.snapshot_date+'T00:00:00').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});}catch(e){niceDate=d.snapshot_date;}
+dateBar.innerHTML=esc(niceDate)+' <span style="color:#8a8a95; font-size:12px; margin-left:6px;">(period '+esc(d.period_start||'-')+' to '+esc(d.period_end||'-')+')</span>'+(isLatest?' <span class="badge-latest">Latest</span>':' <span class="badge-historical">Historical</span>');
+var note=document.getElementById('dateNote');
+var dm=(manifest&&manifest.dates||[]).find(function(x){return x.date===d.snapshot_date;});
+note.textContent=dm?dm.note:'';
+}
+function renderDateWise(d){
+var daily=d.daily||{};
+var calls=daily.calls||[];
+var forms=daily.forms||[];
+var cBars=document.getElementById('dwCallsBars');cBars.innerHTML='';
+var cAxis=document.getElementById('dwCallsAxis');cAxis.innerHTML='';
+var cTable=document.getElementById('dwCallsTable');cTable.innerHTML='';
+var callTotals=calls.map(function(x){return (x.googleAds||0)+(x.lsaCharged||0)+(x.telTracked||0);});
+var callMax=Math.max(1,Math.max.apply(null,callTotals.length?callTotals:[0]));
+var cSumTotal=0;
+calls.forEach(function(x,i){
+var tot=callTotals[i];cSumTotal+=tot;
+var col=document.createElement('div');col.className='dw-bar-col';
+var bar=document.createElement('div');bar.className='dw-bar'+(tot===0?' empty':'');bar.style.height=((tot/callMax)*100)+'%';bar.title=x.date+': '+tot;
+col.appendChild(bar);cBars.appendChild(col);
+var tr=document.createElement('tr');var dateShort=x.date.slice(5);
+tr.innerHTML='<td>'+esc(dateShort)+'</td><td'+(x.googleAds?'':' class="zero"')+'>'+(x.googleAds||0)+'</td><td'+(x.lsaCharged?'':' class="zero"')+'>'+(x.lsaCharged||0)+'</td><td'+(x.lsaTotal?'':' class="zero"')+'>'+(x.lsaTotal||0)+'</td><td'+(x.telTracked?'':' class="zero"')+'>'+(x.telTracked||0)+'</td><td class="total">'+tot+'</td>';
+cTable.appendChild(tr);
+});
+if(calls.length){var c0=document.createElement('span');c0.textContent=calls[0].date.slice(5);var c1=document.createElement('span');c1.textContent=calls[calls.length-1].date.slice(5);cAxis.appendChild(c0);cAxis.appendChild(c1);}
+document.getElementById('dwCallsSub').textContent='Daily phone leads, last 30 days ('+(daily.rangeStart||'-')+' to '+(daily.rangeEnd||'-')+'). Period total: '+cSumTotal+' calls.';
+var fBars=document.getElementById('dwFormsBars');fBars.innerHTML='';
+var fAxis=document.getElementById('dwFormsAxis');fAxis.innerHTML='';
+var fTable=document.getElementById('dwFormsTable');fTable.innerHTML='';
+var formTotals=forms.map(function(x){return (x.qualified||0)+(x.ooa||0)+(x.spamTest||0);});
+var formMax=Math.max(1,Math.max.apply(null,formTotals.length?formTotals:[0]));
+var fSumTotal=0,fSumQ=0;
+forms.forEach(function(x,i){
+var tot=formTotals[i];fSumTotal+=tot;fSumQ+=x.qualified||0;
+var col=document.createElement('div');col.className='dw-bar-col';
+var bar=document.createElement('div');bar.className='dw-bar'+(tot===0?' empty':'');bar.style.height=((tot/formMax)*100)+'%';bar.title=x.date+': '+tot;
+col.appendChild(bar);fBars.appendChild(col);
+var tr=document.createElement('tr');var dateShort=x.date.slice(5);
+tr.innerHTML='<td>'+esc(dateShort)+'</td><td'+(x.qualified?'':' class="zero"')+'>'+(x.qualified||0)+'</td><td'+(x.ooa?'':' class="zero"')+'>'+(x.ooa||0)+'</td><td'+(x.spamTest?'':' class="zero"')+'>'+(x.spamTest||0)+'</td><td class="total">'+tot+'</td>';
+fTable.appendChild(tr);
+});
+if(forms.length){var f0=document.createElement('span');f0.textContent=forms[0].date.slice(5);var f1=document.createElement('span');f1.textContent=forms[forms.length-1].date.slice(5);fAxis.appendChild(f0);fAxis.appendChild(f1);}
+document.getElementById('dwFormsSub').textContent='Daily form submissions, last 30 days ('+(daily.rangeStart||'-')+' to '+(daily.rangeEnd||'-')+'). Period total: '+fSumTotal+' forms ('+fSumQ+' qualified).';
+}
+function loadDate(date){
+var ov=document.getElementById('loadingOverlay');ov.classList.remove('hidden');
+var url=(date===manifest.latest)?'./data/current.json':'./data/history/'+date+'.json';
+fetch(url,{cache:'no-store'}).then(function(resp){if(!resp.ok)throw new Error('HTTP '+resp.status);return resp.json();}).then(function(j){currentData=j;render(j);}).catch(function(e){alert('Could not load data for '+date+': '+e.message);}).then(function(){setTimeout(function(){ov.classList.add('hidden');},200);});
+}
+function buildDatePicker(){
+var sel=document.getElementById('dateSelect');sel.innerHTML='';
+(manifest.dates||[]).forEach(function(d){var opt=document.createElement('option');opt.value=d.date;opt.textContent=d.label;sel.appendChild(opt);});
+sel.value=manifest.latest;
+sel.addEventListener('change',function(e){loadDate(e.target.value);});
+}
+fetch('./data/manifest.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(m){manifest=m;buildDatePicker();loadDate(manifest.latest);}).catch(function(e){document.getElementById('loadingOverlay').innerHTML='<div class="loading-card" style="color:#f87171;">Failed to load: '+e.message+'</div>';});
 </script>
 </body>
 </html>
