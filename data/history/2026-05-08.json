@@ -9,10 +9,10 @@
     "totalSessions": 547,
     "paidSessions": 62,
     "paidPct": "11.3%",
-    "formSubmissions": 35,
-    "qualifiedForms": 22,
-    "ooaForms": 4,
-    "spamTestForms": 9,
+    "formSubmissions": 32,
+    "qualifiedForms": 24,
+    "ooaForms": 0,
+    "spamTestForms": 8,
     "adsConversions": 2,
     "lsaCharged": 5,
     "lsaTotal": 8,
@@ -24,10 +24,10 @@
   },
   "enquiries": {
     "lead": {
-      "total": 35,
-      "qualified": 22,
-      "ooa": 4,
-      "spamTest": 9,
+      "total": 32,
+      "qualified": 24,
+      "ooa": 0,
+      "spamTest": 8,
       "trackingStatus": "[WARN] Form GCLID capture suspect (later proven incorrect on May 9)"
     },
     "call": {
@@ -38,10 +38,10 @@
       "trackingStatus": "[WARN] Phone call lead goal: Needs attention"
     },
     "combined": {
-      "total": 45,
-      "qualified": 30,
-      "costPerQualified": "~$149",
-      "formToCallRatio": "3.5 : 1"
+      "total": 42,
+      "qualified": 29,
+      "costPerQualified": "~$155",
+      "formToCallRatio": "32 : 10"
     }
   },
   "spamCounts": {
