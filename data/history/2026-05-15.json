@@ -515,5 +515,88 @@
     "ga4": "2026-05-15",
     "googleAds": "2026-05-15",
     "lsa": "2026-05-15"
+  },
+  "trafficSources": {
+    "window": "Feb 13 - May 14, 2026 (90 days)",
+    "totalSessions": 812,
+    "channels": [
+      {
+        "name": "Organic Search",
+        "sessions": 326
+      },
+      {
+        "name": "Direct",
+        "sessions": 311
+      },
+      {
+        "name": "Paid Search",
+        "sessions": 77
+      },
+      {
+        "name": "Organic Social",
+        "sessions": 58
+      },
+      {
+        "name": "Unassigned",
+        "sessions": 37
+      },
+      {
+        "name": "Referral",
+        "sessions": 22
+      }
+    ]
+  },
+  "adPerformance": {
+    "window": "Feb 13 - May 14, 2026 (90 days)",
+    "rankedBy": "clicks",
+    "campaigns": [
+      {
+        "name": "Website traffic-Search-1",
+        "status": "Paused",
+        "clicks": 177,
+        "ctr": "1.93%",
+        "conv": 0,
+        "cost": "$725.99",
+        "cpc": "$4.10"
+      },
+      {
+        "name": "Leads - Roofing (PC)",
+        "status": "Active",
+        "clicks": 117,
+        "ctr": "3.60%",
+        "conv": 0,
+        "cost": "$1,130.85",
+        "cpc": "$9.67"
+      },
+      {
+        "name": "Residential Roofing - Leads (PC)",
+        "status": "Paused",
+        "clicks": 43,
+        "ctr": "2.17%",
+        "conv": 2,
+        "cost": "$2,280.01",
+        "cpc": "$53.02"
+      },
+      {
+        "name": "Website traffic-Search-Roofing",
+        "status": "Paused",
+        "clicks": 15,
+        "ctr": "4.64%",
+        "conv": 0,
+        "cost": "$181.99",
+        "cpc": "$12.13"
+      },
+      {
+        "name": "Buckshot - Storm Damage - Madison Area",
+        "status": "Paused",
+        "clicks": 8,
+        "ctr": "1.45%",
+        "conv": 0,
+        "cost": "$220.09",
+        "cpc": "$27.51"
+      }
+    ],
+    "adGroups": [],
+    "keywords": []
   }
 }
