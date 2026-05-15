@@ -509,5 +509,11 @@
       }
     ]
   },
-  "stale_sources": []
+  "stale_sources": [],
+  "verified": {
+    "flamingo": "2026-05-15",
+    "ga4": "2026-05-15",
+    "googleAds": "2026-05-15",
+    "lsa": "2026-05-15"
+  }
 }
