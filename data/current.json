@@ -1,37 +1,37 @@
 {
-  "snapshot_date": "2026-05-15",
-  "period_start": "2026-02-13",
-  "period_end": "2026-05-14",
-  "captured_at": "2026-05-15T10:55:00+05:30",
+  "snapshot_date": "2026-05-16",
+  "period_start": "2026-02-14",
+  "period_end": "2026-05-15",
+  "captured_at": "2026-05-16T16:19:15+05:30",
   "version": 4,
-  "headline_state": "Lead tracking is now fully fixed and verified end-to-end. The biggest opportunity ahead is getting more of your ad clicks to actually reach the contact form.",
+  "headline_state": "Daily refresh May 16. Ads 90-day spend $4,548.78 / 362 clicks / 15.3K impr / 2 conversions / $12.57 avg CPC. GA4 90-day: 861 sessions, 638 active users, 23 key events (generate_lead). Flamingo unchanged from May 15 - no new inbox submissions; 30-day window slides forward (drop 04/16 Haldeman qualified). LSA 30-day window unchanged at 1 charged / 2 total. Opt score 87.1%. Conversion tracking still degrading: 8 no-recent, 1 recording, 1 tag inactive. GTM Version 8 (7 days old), 10 tags.",
   "kpis": {
-    "totalSessions": 814,
-    "paidSessions": 77,
+    "totalSessions": 861,
+    "paidSessions": 82,
     "paidPct": "9.5%",
-    "formSubmissions": 30,
-    "qualifiedForms": 21,
+    "formSubmissions": 29,
+    "qualifiedForms": 20,
     "ooaForms": 0,
     "spamTestForms": 9,
     "adsConversions": 2,
     "lsaCharged": 1,
     "lsaTotal": 2,
     "lsaDisputed": 0,
-    "adsCost90d": "$4,538.92",
-    "adsCostDaily": "$49.88/day",
-    "ga4ActiveUsers": 608,
-    "ga4KeyEvents": 19
+    "adsCost90d": "$4,548.78",
+    "adsCostDaily": "$49.99/day",
+    "ga4ActiveUsers": 638,
+    "ga4KeyEvents": 23
   },
   "enquiries": {
     "lead": {
-      "total": 30,
-      "qualified": 21,
+      "total": 29,
+      "qualified": 20,
       "ooa": 0,
       "spamTest": 9,
       "trackingStatus": "[OK] Verified May 9"
     },
     "call": {
-      "total": 2,
+      "total": 3,
       "googleAds": 0,
       "lsa": 2,
       "telTracked": 0,
@@ -39,15 +39,15 @@
     },
     "combined": {
       "total": 32,
-      "qualified": 22,
-      "costPerQualified": "~$206",
-      "formToCallRatio": "30 : 2"
+      "qualified": 21,
+      "costPerQualified": "~$217",
+      "formToCallRatio": "29 : 2"
     }
   },
   "spamCounts": {
     "inbox": 1,
     "test": 3,
-    "flamingoSpamFolder": 577
+    "flamingoSpamFolder": 578
   },
   "sourceChart": {
     "paid": 1,
@@ -58,7 +58,7 @@
     "lsa": 2
   },
   "funnel": {
-    "paidSessions": 77,
+    "paidSessions": 82,
     "servicePages": 58,
     "freeEstimate": 3,
     "verifiedPaidConversions": 0,
@@ -81,47 +81,36 @@
   },
   "insights": [
     {
-      "headline": "Form-submission quiet streak now about 7 days (May 9 - 15)",
-      "body": "Zero genuine form submissions to Flamingo Inbox since Nicole Punzel (hail inspection, Janesville) on May 8. May 14 had only 2 internal test entries (test@example.com); May 15 none so far. Flamingo Inbox now 932 items, Spam folder 577. The tag-pipeline regression (8 no-recent goals) and the inbound dip remain the likely correlated causes - audit before assuming a seasonal lull."
+      "headline": "Form-submission quiet streak now about 8 days (May 9 - 16)",
+      "body": "Zero genuine form submissions to Flamingo Inbox since Nicole Punzel (hail inspection, Janesville) on May 8. May 14 had only 2 internal test entries; May 15 and May 16 brought no submissions at all. Flamingo Inbox unchanged at 932 items; Spam folder ticked up to 578. Tag-pipeline regression (8 no-recent goals) and the inbound dip remain the likely correlated causes - audit before assuming a seasonal lull."
     },
     {
       "headline": "Conversion tracking degrading  -  8 actions no longer recording",
-      "body": "In 90 days the Conversion tracking status shifted from 3 Recording / 0 Unverified / 6 No recent -> 1 Recording / 0 Unverified / 8 No recent + 1 Tag inactive. Audit Goals tab; the May 11 repair did not propagate to all 9 account-default goals."
+      "body": "In 90 days the Conversion tracking status shows 1 Recording / 0 Unverified / 8 No recent / 1 Tag inactive. Audit Goals tab; the May 11 phone-call repair did not propagate to all 9 account-default goals."
     },
     {
       "headline": "Funnel fix  -  single highest-leverage move",
-      "body": "Only ~3 of 62 paid sessions reach /free-estimate/ in 30 days. Route the active campaign final URLs to /free-estimate/ directly or embed the CF7 form on the current LP."
+      "body": "Only ~3 of 82 paid sessions reach /free-estimate/ in 90 days. Route the active campaign final URLs to /free-estimate/ directly or embed the CF7 form on the current LP."
     },
     {
-      "headline": "Optimization score dropped to 87.1% from 92.9%",
-      "body": "Two new recommendations now showing: Add images to ads (+4%), Expand reach with Google search partners (+2.4%). Review before applying."
+      "headline": "GA4 traffic still concentrated on Direct + Organic Search",
+      "body": "Direct 333 + Organic Search 331 = 77% of 861 90-day sessions. Paid Search 82 (9.5%). Conversion is leakage downstream, not top-of-funnel."
     },
     {
       "headline": "Apply 75+ recommended negative keywords",
-      "body": "Buckshot_NegativeKeywords_RECOMMENDED_BULK_UPLOAD.csv covers competitor brands, aggregators, Spanish, DIY, OOA geos. Competitor/Brand Exclusion list has 44 entries (up from 5); roofing negative keyword has 78."
+      "body": "Buckshot_NegativeKeywords_RECOMMENDED_BULK_UPLOAD.csv covers competitor brands, aggregators, Spanish, DIY, OOA geos. Competitor/Brand Exclusion list has 44 entries (up from 5); Roofing Negative keyword list has 78."
     },
     {
       "headline": "Active campaign Bid setting limited warning persists",
-      "body": "Leads  -  Roofing (PC) spending only 25% of $60/day cap. Lift bid / switch to Maximize Conversions after negatives + funnel work."
-    },
-    {
-      "headline": "5 of 6 campaigns paused",
-      "body": "76% of 90-day spend ($3,408) ran through paused campaigns. Re-enable the highest-historical ad group inside Residential Roofing  -  Leads (PC) on the corrected LP first."
+      "body": "Leads  -  Roofing (PC) spending only 25-30% of $60/day cap (90-day cost $1,140.71 = $12.67/day). Lift bid / switch to Maximize Conversions after negatives + funnel work."
     }
   ],
   "daily": {
     "dateWindow": "last 30 days",
-    "rangeStart": "2026-04-16",
-    "rangeEnd": "2026-05-15",
-    "note": "Full live capture on 2026-05-15. Google Ads, GA4, LSA Inbox, Microsoft Clarity, GTM and Flamingo (Inbox + Spam) all captured live. Window 2026-04-16 -> 2026-05-15. The May 14 form entry was corrected to 2 test submissions (it was a carried-forward 0 on the prior partial run). Google Ads call conversions and tel: clicks remain 0 across the window.",
+    "rangeStart": "2026-04-17",
+    "rangeEnd": "2026-05-16",
+    "note": "Full live capture on 2026-05-16. Window slides forward by 1 day (drop 2026-04-16: Kevin Haldeman qualified). No new inbox submissions on 2026-05-15 or 2026-05-16. LSA window unchanged. All 6 sources captured live.",
     "calls": [
-      {
-        "date": "2026-04-16",
-        "googleAds": 0,
-        "lsaCharged": 0,
-        "lsaTotal": 0,
-        "telTracked": 0
-      },
       {
         "date": "2026-04-17",
         "googleAds": 0,
@@ -324,15 +313,16 @@
         "lsaCharged": 0,
         "lsaTotal": 0,
         "telTracked": 0
+      },
+      {
+        "date": "2026-05-16",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
       }
     ],
     "forms": [
-      {
-        "date": "2026-04-16",
-        "qualified": 1,
-        "ooa": 0,
-        "spamTest": 0
-      },
       {
         "date": "2026-04-17",
         "qualified": 1,
@@ -506,48 +496,58 @@
         "qualified": 0,
         "ooa": 0,
         "spamTest": 0
+      },
+      {
+        "date": "2026-05-16",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
       }
     ]
   },
   "stale_sources": [],
   "verified": {
-    "flamingo": "2026-05-15",
-    "ga4": "2026-05-15",
-    "googleAds": "2026-05-15",
-    "lsa": "2026-05-15"
+    "flamingo": "2026-05-16",
+    "ga4": "2026-05-16",
+    "googleAds": "2026-05-16",
+    "lsa": "2026-05-16"
   },
   "trafficSources": {
-    "window": "Feb 13 - May 14, 2026 (90 days)",
-    "totalSessions": 814,
+    "window": "Feb 14 - May 15, 2026 (90 days)",
+    "totalSessions": 861,
     "channels": [
       {
-        "name": "Organic Search",
-        "sessions": 326
+        "name": "Direct",
+        "sessions": 333
       },
       {
-        "name": "Direct",
-        "sessions": 312
+        "name": "Organic Search",
+        "sessions": 331
       },
       {
         "name": "Paid Search",
-        "sessions": 77
+        "sessions": 82
       },
       {
         "name": "Organic Social",
-        "sessions": 58
+        "sessions": 59
+      },
+      {
+        "name": "Unassigned",
+        "sessions": 31
       },
       {
         "name": "Referral",
         "sessions": 23
       },
       {
-        "name": "Unassigned",
-        "sessions": 18
+        "name": "Cross-network",
+        "sessions": 2
       }
     ]
   },
   "adPerformance": {
-    "window": "Feb 13 - May 14, 2026 (90 days)",
+    "window": "Feb 14 - May 15, 2026 (90 days)",
     "rankedBy": "clicks",
     "campaigns": [
       {
@@ -562,11 +562,11 @@
       {
         "name": "Leads - Roofing (PC)",
         "status": "Active",
-        "clicks": 117,
+        "clicks": 119,
         "ctr": "3.60%",
         "conv": 0,
-        "cost": "$1,130.85",
-        "cpc": "$9.67"
+        "cost": "$1,140.71",
+        "cpc": "$9.59"
       },
       {
         "name": "Residential Roofing - Leads (PC)",
