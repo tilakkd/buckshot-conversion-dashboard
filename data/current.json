@@ -80,14 +80,34 @@
     "newestChange": "May 11  -  Phone call lead goal repaired"
   },
   "insights": [
-    "Leads - Roofing (PC) has 5 Enabled ad groups. Only GENERAL ROOFING, LOCAL MADISON AREA and HAIL DAMAGE earned clicks (58 of 119 in the campaign). STORM DAMAGE (3 impr) and EMERGENCY ROOF REPAIR (0 impr) are Enabled but invisible in auctions.",
-    "Best Active keyword: 'roof repair' (Phrase, GENERAL ROOFING) - 19 clicks, 3.48% CTR, $5.21 CPC, $99 spend, 0 conv. Single largest click contributor and cheapest CPC.",
-    "LOCAL MADISON AREA carries location intent: 'roofing contractor madison wi' (11 clk, 2.09%), 'roof replacement madison wi' (6 clk, 3.82%), 'madison roof repair' (4 clk, 3.13%). CPCs $4.92 - $5.68.",
-    "HAIL DAMAGE wins highest CTRs (7.50% and 7.69%) on tiny volumes (40 and 13 impressions) - storm intent is real, inventory is throttled.",
-    "STORM DAMAGE and EMERGENCY ROOF REPAIR are Enabled with $0 spend - likely below auction floor on bids or too-tight match types.",
-    "Largest active 0-click outlier: 'gutter installation Madison' (LOCAL MADISON AREA) - 87 impressions, 0 clicks. Ad copy or ad-rank issue.",
-    "Zero conversions from any Active keyword over 90 days. The 2 account conv came from the now-Paused Residential Roofing - Leads (PC) campaign.",
-    "Picked up 2026-05-15 spam-folder form (Elmer Erriver SEO pitch). 30-day forms: 30 (20 qualified / 0 OOA / 10 spamTest); flamingoSpamFolder 577 -> 578."
+    {
+      "headline": "Form-submission quiet streak now about 7 days (May 9 - 15)",
+      "body": "Zero genuine form submissions to Flamingo Inbox since Nicole Punzel (hail inspection, Janesville) on May 8. May 14 had only 2 internal test entries (test@example.com); May 15 none so far. Flamingo Inbox now 932 items, Spam folder 577. The tag-pipeline regression (8 no-recent goals) and the inbound dip remain the likely correlated causes - audit before assuming a seasonal lull."
+    },
+    {
+      "headline": "Conversion tracking degrading  -  8 actions no longer recording",
+      "body": "In 90 days the Conversion tracking status shifted from 3 Recording / 0 Unverified / 6 No recent -> 1 Recording / 0 Unverified / 8 No recent + 1 Tag inactive. Audit Goals tab; the May 11 repair did not propagate to all 9 account-default goals."
+    },
+    {
+      "headline": "Funnel fix  -  single highest-leverage move",
+      "body": "Only ~3 of 62 paid sessions reach /free-estimate/ in 30 days. Route the active campaign final URLs to /free-estimate/ directly or embed the CF7 form on the current LP."
+    },
+    {
+      "headline": "Optimization score dropped to 87.1% from 92.9%",
+      "body": "Two new recommendations now showing: Add images to ads (+4%), Expand reach with Google search partners (+2.4%). Review before applying."
+    },
+    {
+      "headline": "Apply 75+ recommended negative keywords",
+      "body": "Buckshot_NegativeKeywords_RECOMMENDED_BULK_UPLOAD.csv covers competitor brands, aggregators, Spanish, DIY, OOA geos. Competitor/Brand Exclusion list has 44 entries (up from 5); roofing negative keyword has 78."
+    },
+    {
+      "headline": "Active campaign Bid setting limited warning persists",
+      "body": "Leads  -  Roofing (PC) spending only 25% of $60/day cap. Lift bid / switch to Maximize Conversions after negatives + funnel work."
+    },
+    {
+      "headline": "5 of 6 campaigns paused",
+      "body": "76% of 90-day spend ($3,408) ran through paused campaigns. Re-enable the highest-historical ad group inside Residential Roofing  -  Leads (PC) on the corrected LP first."
+    }
   ],
   "daily": {
     "dateWindow": "last 30 days (2026-04-17 -> 2026-05-16); top-line totals are CUMULATIVE since 2026-04-01",
