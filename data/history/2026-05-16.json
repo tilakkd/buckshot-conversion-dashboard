@@ -2,9 +2,9 @@
   "snapshot_date": "2026-05-16",
   "period_start": "2026-02-14",
   "period_end": "2026-05-15",
-  "captured_at": "2026-05-16T18:35:00+05:30",
+  "captured_at": "2026-05-16T19:00:00+05:30",
   "version": 4,
-  "headline_state": "Daily refresh May 16. Ads 90-day spend $4,548.78 / 362 clicks / 15.3K impr / 2 conversions / $12.57 avg CPC. GA4 90-day: 861 sessions (channel sum), 638 30-day active users, 23 key events. Flamingo unchanged since 5/14. Top spend leak: AG 1 - Local Intent (paused) at $1,292.29 / 0 conv. Only Residential Roofing AG 2 - Near Me converted (2 conv, $987.72 spend). Ad group + keyword 90-day tables added to snapshot.",
+  "headline_state": "Daily refresh May 16. The only campaign currently serving is Leads - Roofing (PC): 119 clicks / $1,140.71 spend / 0 conversions over 90 days. Inside that campaign, 3 ad groups are Active (GENERAL ROOFING 27 clk $138, LOCAL MADISON AREA 25 clk $131, HAIL DAMAGE 6 clk $37) - together 58 clicks and $306 of the campaign's spend. The remaining 61 clicks and $834 sit in 4 Paused ad groups (Roofers, Roofing Contractors, Roof Repair, Roof Installers). Top Active keywords by clicks: 'roof repair' (GENERAL ROOFING, 19 clk, 3.48% CTR, $99), 'roofing contractor madison wi' (LOCAL MADISON AREA, 11 clk, 2.09% CTR, $62), 'roof replacement madison wi' (LOCAL MADISON AREA, 6 clk, 3.82% CTR, $30). All 0 conv. Whole account 90-day spend $4,548.78 / 362 clicks / 2 conv - those 2 conv came from the now-Paused Residential Roofing - Leads (PC) campaign.",
   "kpis": {
     "totalSessions": 861,
     "paidSessions": 82,
@@ -80,31 +80,12 @@
     "newestChange": "May 11  -  Phone call lead goal repaired"
   },
   "insights": [
-    "May 16 re-verify. All 6 sources live (Ads, GA4, LSA, Clarity, GTM, Flamingo). 90-day sessions stepped up 814 -> 861 day-over-day as the window rolled.",
-    {
-      "headline": "Form-submission quiet streak now about 8 days (May 9 - 16)",
-      "body": "Zero genuine form submissions to Flamingo Inbox since Nicole Punzel (hail inspection, Janesville) on May 8. May 14 had only 2 internal test entries; May 15 and May 16 brought no submissions at all. Flamingo Inbox unchanged at 932 items; Spam folder ticked up to 578. Tag-pipeline regression (8 no-recent goals) and the inbound dip remain the likely correlated causes - audit before assuming a seasonal lull."
-    },
-    {
-      "headline": "Conversion tracking degrading  -  8 actions no longer recording",
-      "body": "In 90 days the Conversion tracking status shows 1 Recording / 0 Unverified / 8 No recent / 1 Tag inactive. Audit Goals tab; the May 11 phone-call repair did not propagate to all 9 account-default goals."
-    },
-    {
-      "headline": "Funnel fix  -  single highest-leverage move",
-      "body": "Only ~3 of 82 paid sessions reach /free-estimate/ in 90 days. Route the active campaign final URLs to /free-estimate/ directly or embed the CF7 form on the current LP."
-    },
-    {
-      "headline": "GA4 traffic still concentrated on Direct + Organic Search",
-      "body": "Direct 333 + Organic Search 331 = 77% of 861 90-day sessions. Paid Search 82 (9.5%). Conversion is leakage downstream, not top-of-funnel."
-    },
-    {
-      "headline": "Apply 75+ recommended negative keywords",
-      "body": "Buckshot_NegativeKeywords_RECOMMENDED_BULK_UPLOAD.csv covers competitor brands, aggregators, Spanish, DIY, OOA geos. Competitor/Brand Exclusion list has 44 entries (up from 5); Roofing Negative keyword list has 78."
-    },
-    {
-      "headline": "Active campaign Bid setting limited warning persists",
-      "body": "Leads  -  Roofing (PC) spending only 25-30% of $60/day cap (90-day cost $1,140.71 = $12.67/day). Lift bid / switch to Maximize Conversions after negatives + funnel work."
-    }
+    "Only Leads - Roofing (PC) is serving. Inside it 3 ad groups are Active and earned 58 of the campaign's 119 clicks (49% of clicks, 27% of spend).",
+    "Top Active keyword is 'roof repair' (GENERAL ROOFING) - 19 clicks, 3.48% CTR, $5.21 avg CPC, $99 total spend, 0 conv. Cheapest CPC among Active keywords.",
+    "LOCAL MADISON AREA is carrying location intent: 'roofing contractor madison wi' (11 clk, 2.09% CTR) and 'roof replacement madison wi' (6 clk, 3.82% CTR) - $5-6 CPCs, no conversions yet.",
+    "HAIL DAMAGE ad group is Active but small (6 clicks, $37). Storm-damage demand exists in Search Terms (hail damage roof, hail damage madison wi) but inventory is throttled.",
+    "Account is 0 paid conversions over 90 days from Active ad groups. The 2 conv on the dashboard came from Residential Roofing - Leads (PC) which is now Paused. The Active ad groups need either lower CPC, better landing match, or more impressions to convert.",
+    "Paused-but-historically-spending: 'roofers' (Roofers AG) and 'roofing contractors' (Roofing Contractors AG) together took $742 and 48 clicks. If Eligible, they would dominate the campaign budget at the current $15+ CPC."
   ],
   "daily": {
     "dateWindow": "last 30 days",
@@ -599,14 +580,34 @@
     ],
     "adGroups": [
       {
-        "name": "Ad group 1",
-        "campaign": "Website traffic-Search-1",
-        "status": "Paused",
-        "clicks": 177,
-        "ctr": "1.93%",
+        "name": "GENERAL ROOFING",
+        "campaign": "Leads - Roofing (PC)",
+        "status": "Active",
+        "clicks": 27,
+        "ctr": "3.09%",
         "conv": 0,
-        "cost": "$725.99",
-        "cpc": "$4.10"
+        "cost": "$138.00",
+        "cpc": "$5.11"
+      },
+      {
+        "name": "LOCAL MADISON AREA",
+        "campaign": "Leads - Roofing (PC)",
+        "status": "Active",
+        "clicks": 25,
+        "ctr": "2.35%",
+        "conv": 0,
+        "cost": "$131.18",
+        "cpc": "$5.25"
+      },
+      {
+        "name": "HAIL DAMAGE",
+        "campaign": "Leads - Roofing (PC)",
+        "status": "Active",
+        "clicks": 6,
+        "ctr": "3.09%",
+        "conv": 0,
+        "cost": "$36.73",
+        "cpc": "$6.12"
       },
       {
         "name": "Roofers",
@@ -619,46 +620,6 @@
         "cpc": "$15.64"
       },
       {
-        "name": "GENERAL ROOFING",
-        "campaign": "Leads - Roofing (PC)",
-        "status": "Eligible",
-        "clicks": 27,
-        "ctr": "3.09%",
-        "conv": 0,
-        "cost": "$138.00",
-        "cpc": "$5.11"
-      },
-      {
-        "name": "LOCAL MADISON AREA",
-        "campaign": "Leads - Roofing (PC)",
-        "status": "Eligible",
-        "clicks": 25,
-        "ctr": "2.35%",
-        "conv": 0,
-        "cost": "$131.18",
-        "cpc": "$5.25"
-      },
-      {
-        "name": "AG 1 - Local Intent",
-        "campaign": "Residential Roofing - Leads (PC)",
-        "status": "Paused",
-        "clicks": 23,
-        "ctr": "1.55%",
-        "conv": 0,
-        "cost": "$1,292.29",
-        "cpc": "$56.19"
-      },
-      {
-        "name": "AG 2 - Near Me",
-        "campaign": "Residential Roofing - Leads (PC)",
-        "status": "Paused",
-        "clicks": 20,
-        "ctr": "4.02%",
-        "conv": 2,
-        "cost": "$987.72",
-        "cpc": "$49.39"
-      },
-      {
         "name": "Roofing Contractors",
         "campaign": "Leads - Roofing (PC)",
         "status": "Paused",
@@ -669,20 +630,67 @@
         "cpc": "$15.18"
       },
       {
-        "name": "Residential Roofing",
-        "campaign": "Website traffic-Search-Roofing",
+        "name": "Roof Repair",
+        "campaign": "Leads - Roofing (PC)",
         "status": "Paused",
-        "clicks": 15,
-        "ctr": "4.66%",
+        "clicks": 7,
+        "ctr": "11.11%",
         "conv": 0,
-        "cost": "$181.99",
-        "cpc": "$12.13"
+        "cost": "$21.70",
+        "cpc": "$3.10"
+      },
+      {
+        "name": "Roof Installers",
+        "campaign": "Leads - Roofing (PC)",
+        "status": "Paused",
+        "clicks": 4,
+        "ctr": "5.00%",
+        "conv": 0,
+        "cost": "$56.00",
+        "cpc": "$14.00"
       }
     ],
     "keywords": [
       {
+        "name": "\"roof repair\"",
+        "match": "Phrase match",
+        "adgroup": "GENERAL ROOFING",
+        "status": "Active",
+        "clicks": 19,
+        "ctr": "3.48%",
+        "conv": 0,
+        "cost": "$99.01",
+        "cpc": "$5.21",
+        "qs": null
+      },
+      {
+        "name": "\"roofing contractor madison wi\"",
+        "match": "Phrase match",
+        "adgroup": "LOCAL MADISON AREA",
+        "status": "Active",
+        "clicks": 11,
+        "ctr": "2.09%",
+        "conv": 0,
+        "cost": "$62.48",
+        "cpc": "$5.68",
+        "qs": null
+      },
+      {
+        "name": "\"roof replacement madison wi\"",
+        "match": "Phrase match",
+        "adgroup": "LOCAL MADISON AREA",
+        "status": "Active",
+        "clicks": 6,
+        "ctr": "3.82%",
+        "conv": 0,
+        "cost": "$29.53",
+        "cpc": "$4.92",
+        "qs": null
+      },
+      {
         "name": "\"roofers\"",
         "match": "Phrase match",
+        "adgroup": "Roofers",
         "status": "Paused",
         "clicks": 30,
         "ctr": "5.80%",
@@ -692,19 +700,9 @@
         "qs": null
       },
       {
-        "name": "\"roof repair\"",
-        "match": "Phrase match",
-        "status": "Eligible",
-        "clicks": 19,
-        "ctr": "3.48%",
-        "conv": 0,
-        "cost": "$99.01",
-        "cpc": "$5.21",
-        "qs": null
-      },
-      {
         "name": "\"roofing contractors\"",
         "match": "Phrase match",
+        "adgroup": "Roofing Contractors",
         "status": "Paused",
         "clicks": 18,
         "ctr": "4.26%",
@@ -712,51 +710,9 @@
         "cost": "$273.30",
         "cpc": "$15.18",
         "qs": null
-      },
-      {
-        "name": "roofer near me",
-        "match": "Broad match",
-        "status": "Eligible",
-        "clicks": 14,
-        "ctr": "3.81%",
-        "conv": 0,
-        "cost": "$647.03",
-        "cpc": "$46.22",
-        "qs": null
-      },
-      {
-        "name": "roofing contractor madison",
-        "match": "Broad match",
-        "status": "Paused",
-        "clicks": 10,
-        "ctr": "2.28%",
-        "conv": 0,
-        "cost": "$559.68",
-        "cpc": "$55.97",
-        "qs": null
-      },
-      {
-        "name": "roof replacement madison",
-        "match": "Broad match",
-        "status": "Eligible",
-        "clicks": 7,
-        "ctr": "1.22%",
-        "conv": 0,
-        "cost": "$427.29",
-        "cpc": "$61.04",
-        "qs": null
-      },
-      {
-        "name": "\"trusted roofers near me\"",
-        "match": "Phrase match",
-        "status": "Eligible",
-        "clicks": 5,
-        "ctr": "17.24%",
-        "conv": 0,
-        "cost": "$328.62",
-        "cpc": "$65.72",
-        "qs": null
       }
-    ]
+    ],
+    "scope": "Active campaign only: Leads - Roofing (PC). Ad groups + keywords filtered to that campaign; Active ad groups listed first, then Paused ad groups inside the same campaign.",
+    "activeCampaign": "Leads - Roofing (PC)"
   }
 }
