@@ -2,20 +2,20 @@
   "snapshot_date": "2026-05-16",
   "period_start": "2026-02-14",
   "period_end": "2026-05-15",
-  "captured_at": "2026-05-16T20:20:00+05:30",
+  "captured_at": "2026-05-16T22:30:00+05:30",
   "version": 4,
   "headline_state": "Daily refresh May 16. Leads - Roofing (PC) is the only active campaign. 5 ad groups are Enabled: GENERAL ROOFING (27 clk $138), LOCAL MADISON AREA (25 clk $131), HAIL DAMAGE (6 clk $37), STORM DAMAGE (0 clk, 3 impr), EMERGENCY ROOF REPAIR (0 clk, 0 impr). Active total: 58 clicks / $306 / 0 conv. Top Active keywords: 'roof repair' (GENERAL ROOFING, 19 clk, 3.48% CTR, $99), 'roofing contractor madison wi' (LOCAL MADISON AREA, 11 clk, 2.09%, $62), 'roof replacement madison wi' (LOCAL MADISON AREA, 6 clk, 3.82%, $30), 'madison roof repair' (LOCAL MADISON AREA, 4 clk, 3.13%), 'hail damage roof repair' (HAIL DAMAGE, 3 clk, 7.50%). Picked up May 15 spam-folder form (Elmer Erriver SEO pitch) - 30-day forms now 30 (20 qualified / 0 OOA / 10 spamTest). Account 90-day: $4,548.78 / 362 clicks / 2 conv (came from now-Paused Residential Roofing campaign).",
   "kpis": {
     "totalSessions": 861,
     "paidSessions": 82,
     "paidPct": "9.5%",
-    "formSubmissions": 30,
-    "qualifiedForms": 20,
-    "ooaForms": 0,
-    "spamTestForms": 10,
+    "formSubmissions": 52,
+    "qualifiedForms": 24,
+    "ooaForms": 2,
+    "spamTestForms": 26,
     "adsConversions": 2,
-    "lsaCharged": 1,
-    "lsaTotal": 2,
+    "lsaCharged": 3,
+    "lsaTotal": 6,
     "lsaDisputed": 0,
     "adsCost90d": "$4,548.78",
     "adsCostDaily": "$49.99/day",
@@ -24,24 +24,24 @@
   },
   "enquiries": {
     "lead": {
-      "total": 30,
-      "qualified": 20,
-      "ooa": 0,
-      "spamTest": 10,
+      "total": 52,
+      "qualified": 24,
+      "ooa": 2,
+      "spamTest": 26,
       "trackingStatus": "[OK] Verified May 9"
     },
     "call": {
-      "total": 3,
+      "total": 6,
       "googleAds": 0,
-      "lsa": 2,
+      "lsa": 6,
       "telTracked": 0,
       "trackingStatus": "[OK] Goal repaired May 11"
     },
     "combined": {
-      "total": 33,
-      "qualified": 22,
-      "costPerQualified": "~$207",
-      "formToCallRatio": "30 : 3"
+      "total": 58,
+      "qualified": 30,
+      "costPerQualified": "~$152",
+      "formToCallRatio": "52 : 6"
     }
   },
   "spamCounts": {
@@ -90,10 +90,10 @@
     "Picked up 2026-05-15 spam-folder form (Elmer Erriver SEO pitch). 30-day forms: 30 (20 qualified / 0 OOA / 10 spamTest); flamingoSpamFolder 577 -> 578."
   ],
   "daily": {
-    "dateWindow": "last 30 days",
+    "dateWindow": "last 30 days (2026-04-17 -> 2026-05-16); top-line totals are CUMULATIVE since 2026-04-01",
     "rangeStart": "2026-04-17",
     "rangeEnd": "2026-05-16",
-    "note": "Spam-folder submission on 2026-05-15 (Elmer Erriver SEO pitch, quickcontact) caught here. daily.forms.may15 = 0 qualified / 0 OOA / 1 spamTest. flamingoSpamFolder advanced 577 -> 578. All other days unchanged from prior snapshot.",
+    "note": "Daily breakdown shows real day-of submissions from Flamingo Inbox + Spam folder + LSA inbox (received-date basis). Top-line totals on the KPIs and Enquiries cards are CUMULATIVE since 2026-04-01 so they never decrease as the rolling window shifts. As-of 2026-05-16: 52 total form submissions (24 qualified inbox + 2 out-of-area + 26 spam/test), 6 LSA calls (3 charged).",
     "calls": [
       {
         "date": "2026-04-17",
@@ -317,7 +317,7 @@
         "date": "2026-04-18",
         "qualified": 1,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 2
       },
       {
         "date": "2026-04-19",
@@ -335,7 +335,7 @@
         "date": "2026-04-21",
         "qualified": 2,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-04-22",
@@ -346,8 +346,8 @@
       {
         "date": "2026-04-23",
         "qualified": 2,
-        "ooa": 0,
-        "spamTest": 1
+        "ooa": 1,
+        "spamTest": 2
       },
       {
         "date": "2026-04-24",
@@ -359,7 +359,7 @@
         "date": "2026-04-25",
         "qualified": 0,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-04-26",
@@ -383,12 +383,12 @@
         "date": "2026-04-29",
         "qualified": 1,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-04-30",
-        "qualified": 4,
-        "ooa": 0,
+        "qualified": 3,
+        "ooa": 1,
         "spamTest": 0
       },
       {
@@ -413,13 +413,13 @@
         "date": "2026-05-04",
         "qualified": 2,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-05-05",
         "qualified": 0,
         "ooa": 0,
-        "spamTest": 1
+        "spamTest": 3
       },
       {
         "date": "2026-05-06",
@@ -437,7 +437,7 @@
         "date": "2026-05-08",
         "qualified": 1,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-05-09",
@@ -473,7 +473,7 @@
         "date": "2026-05-14",
         "qualified": 0,
         "ooa": 0,
-        "spamTest": 2
+        "spamTest": 7
       },
       {
         "date": "2026-05-15",
