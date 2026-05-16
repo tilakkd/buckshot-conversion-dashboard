@@ -2,17 +2,17 @@
   "snapshot_date": "2026-05-16",
   "period_start": "2026-02-14",
   "period_end": "2026-05-15",
-  "captured_at": "2026-05-16T19:00:00+05:30",
+  "captured_at": "2026-05-16T19:30:00+05:30",
   "version": 4,
-  "headline_state": "Daily refresh May 16. The only campaign currently serving is Leads - Roofing (PC): 119 clicks / $1,140.71 spend / 0 conversions over 90 days. Inside that campaign, 3 ad groups are Active (GENERAL ROOFING 27 clk $138, LOCAL MADISON AREA 25 clk $131, HAIL DAMAGE 6 clk $37) - together 58 clicks and $306 of the campaign's spend. The remaining 61 clicks and $834 sit in 4 Paused ad groups (Roofers, Roofing Contractors, Roof Repair, Roof Installers). Top Active keywords by clicks: 'roof repair' (GENERAL ROOFING, 19 clk, 3.48% CTR, $99), 'roofing contractor madison wi' (LOCAL MADISON AREA, 11 clk, 2.09% CTR, $62), 'roof replacement madison wi' (LOCAL MADISON AREA, 6 clk, 3.82% CTR, $30). All 0 conv. Whole account 90-day spend $4,548.78 / 362 clicks / 2 conv - those 2 conv came from the now-Paused Residential Roofing - Leads (PC) campaign.",
+  "headline_state": "Daily refresh May 16. The only campaign currently serving is Leads - Roofing (PC): 119 clicks / $1,140.71 spend / 0 conversions over 90 days. Inside it, 3 ad groups are Active (GENERAL ROOFING 27 clk $138, LOCAL MADISON AREA 25 clk $131, HAIL DAMAGE 6 clk $37) - 58 clicks / $306 of campaign spend. Top Active keywords: 'roof repair' (GENERAL ROOFING, 19 clk, 3.48% CTR, $99), 'roofing contractor madison wi' (LOCAL MADISON AREA, 11 clk, 2.09% CTR, $62), 'roof replacement madison wi' (LOCAL MADISON AREA, 6 clk, 3.82% CTR, $30). All 0 conv. 90-day account: $4,548.78 / 362 clicks / 2 conv. Forms 30-day: 30 total (20 qualified + 0 OOA + 10 spamTest). Picked up the May 15 spam-folder submission (Elmer Erriver SEO pitch) that prior runs missed.",
   "kpis": {
     "totalSessions": 861,
     "paidSessions": 82,
     "paidPct": "9.5%",
-    "formSubmissions": 29,
+    "formSubmissions": 30,
     "qualifiedForms": 20,
     "ooaForms": 0,
-    "spamTestForms": 9,
+    "spamTestForms": 10,
     "adsConversions": 2,
     "lsaCharged": 1,
     "lsaTotal": 2,
@@ -24,10 +24,10 @@
   },
   "enquiries": {
     "lead": {
-      "total": 29,
+      "total": 30,
       "qualified": 20,
       "ooa": 0,
-      "spamTest": 9,
+      "spamTest": 10,
       "trackingStatus": "[OK] Verified May 9"
     },
     "call": {
@@ -38,10 +38,10 @@
       "trackingStatus": "[OK] Goal repaired May 11"
     },
     "combined": {
-      "total": 32,
-      "qualified": 21,
-      "costPerQualified": "~$217",
-      "formToCallRatio": "29 : 2"
+      "total": 33,
+      "qualified": 22,
+      "costPerQualified": "~$207",
+      "formToCallRatio": "30 : 3"
     }
   },
   "spamCounts": {
@@ -80,6 +80,7 @@
     "newestChange": "May 11  -  Phone call lead goal repaired"
   },
   "insights": [
+    "Picked up 2026-05-15 spam-folder submission (Elmer Erriver SEO pitch, auto-spammed by Flamingo). 30-day forms now 30 (20 qualified, 0 OOA, 10 spamTest); flamingoSpamFolder 577 -> 578.",
     "Only Leads - Roofing (PC) is serving. Inside it 3 ad groups are Active and earned 58 of the campaign's 119 clicks (49% of clicks, 27% of spend).",
     "Top Active keyword is 'roof repair' (GENERAL ROOFING) - 19 clicks, 3.48% CTR, $5.21 avg CPC, $99 total spend, 0 conv. Cheapest CPC among Active keywords.",
     "LOCAL MADISON AREA is carrying location intent: 'roofing contractor madison wi' (11 clk, 2.09% CTR) and 'roof replacement madison wi' (6 clk, 3.82% CTR) - $5-6 CPCs, no conversions yet.",
@@ -91,7 +92,7 @@
     "dateWindow": "last 30 days",
     "rangeStart": "2026-04-17",
     "rangeEnd": "2026-05-16",
-    "note": "Full live capture on 2026-05-16. Window slides forward by 1 day (drop 2026-04-16: Kevin Haldeman qualified). No new inbox submissions on 2026-05-15 or 2026-05-16. LSA window unchanged. All 6 sources captured live.",
+    "note": "Spam-folder submission on 2026-05-15 (Elmer Erriver SEO pitch, quickcontact) caught here. daily.forms.may15 = 0 qualified / 0 OOA / 1 spamTest. flamingoSpamFolder advanced 577 -> 578. All other days unchanged from prior snapshot.",
     "calls": [
       {
         "date": "2026-04-17",
@@ -477,7 +478,7 @@
         "date": "2026-05-15",
         "qualified": 0,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-05-16",
