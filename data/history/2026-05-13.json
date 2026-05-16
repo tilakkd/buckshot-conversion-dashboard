@@ -2,20 +2,20 @@
   "snapshot_date": "2026-05-13",
   "period_start": "2026-02-11",
   "period_end": "2026-05-12",
-  "captured_at": "2026-05-14T10:43:46+05:30",
+  "captured_at": "2026-05-13T23:55:00+05:30",
   "version": 4,
-  "headline_state": "Full live capture May 13 — 5-day form quiet streak (last submission May 8). Ads spend $4,534 / 359 clicks. Conversion tracking degrading: 8 actions no-recent, 1 recording. Opt score 87.1%.",
+  "headline_state": "Full live capture May 13  -  5-day form quiet streak (last submission May 8). Ads spend $4,534 / 359 clicks. Conversion tracking degrading: 8 actions no-recent, 1 recording. Opt score 87.1%.",
   "kpis": {
     "totalSessions": 721,
     "paidSessions": 72,
     "paidPct": "10.0%",
-    "formSubmissions": 28,
-    "qualifiedForms": 21,
-    "ooaForms": 0,
-    "spamTestForms": 7,
+    "formSubmissions": 44,
+    "qualifiedForms": 24,
+    "ooaForms": 2,
+    "spamTestForms": 18,
     "adsConversions": 2,
     "lsaCharged": 3,
-    "lsaTotal": 5,
+    "lsaTotal": 6,
     "lsaDisputed": 0,
     "adsCost90d": "$4,534.22",
     "adsCostDaily": "$49.83/day",
@@ -24,24 +24,24 @@
   },
   "enquiries": {
     "lead": {
-      "total": 28,
-      "qualified": 21,
-      "ooa": 0,
-      "spamTest": 7,
-      "trackingStatus": "✓ Verified May 9"
+      "total": 44,
+      "qualified": 24,
+      "ooa": 2,
+      "spamTest": 18,
+      "trackingStatus": "[OK] Verified May 9"
     },
     "call": {
-      "total": 5,
+      "total": 6,
       "googleAds": 0,
-      "lsa": 5,
+      "lsa": 6,
       "telTracked": 0,
-      "trackingStatus": "✓ Goal repaired May 11"
+      "trackingStatus": "[OK] Goal repaired May 11"
     },
     "combined": {
-      "total": 33,
-      "qualified": 24,
-      "costPerQualified": "~$189",
-      "formToCallRatio": "28 : 5"
+      "total": 50,
+      "qualified": 30,
+      "costPerQualified": "~$151",
+      "formToCallRatio": "44 : 6"
     }
   },
   "spamCounts": {
@@ -62,7 +62,7 @@
     "servicePages": 58,
     "freeEstimate": 3,
     "verifiedPaidConversions": 0,
-    "verifiedNote": "Tag pipeline verified working May 9 — limiter is reach, not tracking"
+    "verifiedNote": "Tag pipeline verified working May 9  -  limiter is reach, not tracking"
   },
   "campaignState": {
     "activeCount": 1,
@@ -77,19 +77,19 @@
     "gtmTags": 10,
     "phoneCallLeadGoal": "Active",
     "submitLeadFormGoal": "Active",
-    "newestChange": "May 11 — Phone call lead goal repaired"
+    "newestChange": "May 11  -  Phone call lead goal repaired"
   },
   "insights": [
     {
-      "headline": "5-day form-submission quiet streak (May 9–13)",
-      "body": "Zero entries to Flamingo Inbox AND Spam folder across May 9, 10, 11, 12, 13 — confirmed via fresh scrape. Last submission was Nicole Punzel (hail inspection request, Janesville) on May 8. Check whether tag-pipeline regressions (8 \"no recent\" goals) and inbound traffic dip are correlated."
+      "headline": "5-day form-submission quiet streak (May 9 - 13)",
+      "body": "Zero entries to Flamingo Inbox AND Spam folder across May 9, 10, 11, 12, 13  -  confirmed via fresh scrape. Last submission was Nicole Punzel (hail inspection request, Janesville) on May 8. Check whether tag-pipeline regressions (8 \"no recent\" goals) and inbound traffic dip are correlated."
     },
     {
-      "headline": "Conversion tracking degrading — 8 actions no longer recording",
-      "body": "In 90 days the Conversion tracking status shifted from 3 Recording / 0 Unverified / 6 No recent → 1 Recording / 0 Unverified / 8 No recent + 1 Tag inactive. Audit Goals tab; the May 11 repair did not propagate to all 9 account-default goals."
+      "headline": "Conversion tracking degrading  -  8 actions no longer recording",
+      "body": "In 90 days the Conversion tracking status shifted from 3 Recording / 0 Unverified / 6 No recent -> 1 Recording / 0 Unverified / 8 No recent + 1 Tag inactive. Audit Goals tab; the May 11 repair did not propagate to all 9 account-default goals."
     },
     {
-      "headline": "Funnel fix — single highest-leverage move",
+      "headline": "Funnel fix  -  single highest-leverage move",
       "body": "Only ~3 of 62 paid sessions reach /free-estimate/ in 30 days. Route the active campaign final URLs to /free-estimate/ directly or embed the CF7 form on the current LP."
     },
     {
@@ -102,18 +102,18 @@
     },
     {
       "headline": "Active campaign Bid setting limited warning persists",
-      "body": "Leads – Roofing (PC) spending only 25% of $60/day cap. Lift bid / switch to Maximize Conversions after negatives + funnel work."
+      "body": "Leads  -  Roofing (PC) spending only 25% of $60/day cap. Lift bid / switch to Maximize Conversions after negatives + funnel work."
     },
     {
       "headline": "5 of 6 campaigns paused",
-      "body": "76% of 90-day spend ($3,408) ran through paused campaigns. Re-enable the highest-historical ad group inside Residential Roofing – Leads (PC) on the corrected LP first."
+      "body": "76% of 90-day spend ($3,408) ran through paused campaigns. Re-enable the highest-historical ad group inside Residential Roofing  -  Leads (PC) on the corrected LP first."
     }
   ],
   "daily": {
-    "dateWindow": "last 30 days",
+    "dateWindow": "last 30 days (2026-04-14 -> 2026-05-13); top-line totals are CUMULATIVE since 2026-04-01",
     "rangeStart": "2026-04-14",
     "rangeEnd": "2026-05-13",
-    "note": "Full multi-source capture on 2026-05-13 — Google Ads, GA4, LSA Inbox, Microsoft Clarity, and Flamingo (Inbox + Spam) all confirmed live. Window 2026-04-14 → 2026-05-13. No form submissions captured between May 9–13 (5-day quiet stretch). Google Ads call conversions and tel: clicks still 0 across window (90-day rollup = 2 calls).",
+    "note": "Daily breakdown shows real day-of submissions from Flamingo Inbox + Spam folder + LSA inbox (received-date basis). Top-line totals on the KPIs and Enquiries cards are CUMULATIVE since 2026-04-01 so they never decrease as the rolling window shifts. As-of 2026-05-13: 44 total form submissions (24 qualified inbox + 2 out-of-area + 18 spam/test), 6 LSA calls (3 charged).",
     "calls": [
       {
         "date": "2026-04-14",
@@ -355,7 +355,7 @@
         "date": "2026-04-18",
         "qualified": 1,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 2
       },
       {
         "date": "2026-04-19",
@@ -373,7 +373,7 @@
         "date": "2026-04-21",
         "qualified": 2,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-04-22",
@@ -384,8 +384,8 @@
       {
         "date": "2026-04-23",
         "qualified": 2,
-        "ooa": 0,
-        "spamTest": 1
+        "ooa": 1,
+        "spamTest": 2
       },
       {
         "date": "2026-04-24",
@@ -397,7 +397,7 @@
         "date": "2026-04-25",
         "qualified": 0,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-04-26",
@@ -421,12 +421,12 @@
         "date": "2026-04-29",
         "qualified": 1,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-04-30",
-        "qualified": 4,
-        "ooa": 0,
+        "qualified": 3,
+        "ooa": 1,
         "spamTest": 0
       },
       {
@@ -451,13 +451,13 @@
         "date": "2026-05-04",
         "qualified": 2,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-05-05",
         "qualified": 0,
         "ooa": 0,
-        "spamTest": 1
+        "spamTest": 3
       },
       {
         "date": "2026-05-06",
@@ -475,7 +475,7 @@
         "date": "2026-05-08",
         "qualified": 1,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-05-09",
