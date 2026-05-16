@@ -2,9 +2,9 @@
   "snapshot_date": "2026-05-16",
   "period_start": "2026-02-14",
   "period_end": "2026-05-15",
-  "captured_at": "2026-05-16T20:00:00+05:30",
+  "captured_at": "2026-05-16T20:20:00+05:30",
   "version": 4,
-  "headline_state": "Daily refresh May 16. Leads - Roofing (PC) is the only active campaign: 119 clicks / $1,140.71 / 0 conv over 90 days. Inside it 5 ad groups are Active: GENERAL ROOFING (27 clk $138), LOCAL MADISON AREA (25 clk $131), HAIL DAMAGE (6 clk $37), and two with 0 clicks - EMERGENCY ROOF REPAIR (0 impr) and STORM DAMAGE (3 impr / 0 clk). Active ad groups combined: 58 clicks / $306. Top Active keywords by clicks: 'roof repair' (GENERAL ROOFING, 19 clk, 3.48% CTR, $99), 'roofing contractor madison wi' (LOCAL MADISON AREA, 11 clk, 2.09% CTR, $62), 'roof replacement madison wi' (LOCAL MADISON AREA, 6 clk, 3.82% CTR, $30), 'madison roof repair' (LOCAL MADISON AREA, 4 clk, 3.13%, 128 impr), 'hail damage roof repair' (HAIL DAMAGE, 3 clk, 7.50%, 40 impr). 0 conv from any Active keyword. Picked up May 15 spam-folder form (Elmer Erriver SEO pitch) - forms 30-day now 30 (20 qualified / 0 OOA / 10 spamTest).",
+  "headline_state": "Daily refresh May 16. Leads - Roofing (PC) is the only active campaign. 5 ad groups are Enabled: GENERAL ROOFING (27 clk $138), LOCAL MADISON AREA (25 clk $131), HAIL DAMAGE (6 clk $37), STORM DAMAGE (0 clk, 3 impr), EMERGENCY ROOF REPAIR (0 clk, 0 impr). Active total: 58 clicks / $306 / 0 conv. Top Active keywords: 'roof repair' (GENERAL ROOFING, 19 clk, 3.48% CTR, $99), 'roofing contractor madison wi' (LOCAL MADISON AREA, 11 clk, 2.09%, $62), 'roof replacement madison wi' (LOCAL MADISON AREA, 6 clk, 3.82%, $30), 'madison roof repair' (LOCAL MADISON AREA, 4 clk, 3.13%), 'hail damage roof repair' (HAIL DAMAGE, 3 clk, 7.50%). Picked up May 15 spam-folder form (Elmer Erriver SEO pitch) - 30-day forms now 30 (20 qualified / 0 OOA / 10 spamTest). Account 90-day: $4,548.78 / 362 clicks / 2 conv (came from now-Paused Residential Roofing campaign).",
   "kpis": {
     "totalSessions": 861,
     "paidSessions": 82,
@@ -80,13 +80,14 @@
     "newestChange": "May 11  -  Phone call lead goal repaired"
   },
   "insights": [
-    "Active campaign Leads - Roofing (PC) has 5 Enabled ad groups: GENERAL ROOFING, LOCAL MADISON AREA, HAIL DAMAGE, EMERGENCY ROOF REPAIR, STORM DAMAGE. Only the first 3 received clicks in the 90-day window (58 clicks total, 49% of campaign clicks, $306 spend).",
-    "Best Active keyword: 'roof repair' (Phrase, GENERAL ROOFING) - 19 clicks, 3.48% CTR, $5.21 CPC, $99 spend, 0 conv. Cheapest cost per click in the campaign and the single largest click contributor.",
-    "LOCAL MADISON AREA is the location-intent workhorse - 4 Active keywords with clicks: 'roofing contractor madison wi' (11 clk), 'roof replacement madison wi' (6 clk), 'madison roof repair' (4 clk), plus 'gutter installation Madison' with 87 impressions but 0 clicks. CTRs 2.09% - 3.82%, CPCs $4.92 - $5.68.",
-    "HAIL DAMAGE is small but converts attention well: 'hail damage roof repair' 7.50% CTR (3 of 40 impr), '[roof damage from hail]' 7.69% CTR (1 of 13 impr). Storm-keyword demand exists but inventory throttled.",
-    "EMERGENCY ROOF REPAIR and STORM DAMAGE are Active but invisible: 0 impressions and 3 impressions respectively over 90 days. Either bids are below auction floor or matching is too restrictive.",
-    "Zero conversions from any Active keyword in 90 days. The 2 account conversions came from the now-Paused Residential Roofing - Leads (PC) campaign, not the Active one.",
-    "'gutter installation Madison' (LOCAL MADISON AREA, Active) is the biggest 0-click outlier: 87 impressions, 0 clicks. Either ad copy mismatch or low ad rank."
+    "Leads - Roofing (PC) has 5 Enabled ad groups. Only GENERAL ROOFING, LOCAL MADISON AREA and HAIL DAMAGE earned clicks (58 of 119 in the campaign). STORM DAMAGE (3 impr) and EMERGENCY ROOF REPAIR (0 impr) are Enabled but invisible in auctions.",
+    "Best Active keyword: 'roof repair' (Phrase, GENERAL ROOFING) - 19 clicks, 3.48% CTR, $5.21 CPC, $99 spend, 0 conv. Single largest click contributor and cheapest CPC.",
+    "LOCAL MADISON AREA carries location intent: 'roofing contractor madison wi' (11 clk, 2.09%), 'roof replacement madison wi' (6 clk, 3.82%), 'madison roof repair' (4 clk, 3.13%). CPCs $4.92 - $5.68.",
+    "HAIL DAMAGE wins highest CTRs (7.50% and 7.69%) on tiny volumes (40 and 13 impressions) - storm intent is real, inventory is throttled.",
+    "STORM DAMAGE and EMERGENCY ROOF REPAIR are Enabled with $0 spend - likely below auction floor on bids or too-tight match types.",
+    "Largest active 0-click outlier: 'gutter installation Madison' (LOCAL MADISON AREA) - 87 impressions, 0 clicks. Ad copy or ad-rank issue.",
+    "Zero conversions from any Active keyword over 90 days. The 2 account conv came from the now-Paused Residential Roofing - Leads (PC) campaign.",
+    "Picked up 2026-05-15 spam-folder form (Elmer Erriver SEO pitch). 30-day forms: 30 (20 qualified / 0 OOA / 10 spamTest); flamingoSpamFolder 577 -> 578."
   ],
   "daily": {
     "dateWindow": "last 30 days",
@@ -585,7 +586,6 @@
         "campaign": "Leads - Roofing (PC)",
         "status": "Active",
         "clicks": 27,
-        "impr": 874,
         "ctr": "3.09%",
         "conv": 0,
         "cost": "$138.00",
@@ -596,7 +596,6 @@
         "campaign": "Leads - Roofing (PC)",
         "status": "Active",
         "clicks": 25,
-        "impr": null,
         "ctr": "2.35%",
         "conv": 0,
         "cost": "$131.18",
@@ -607,73 +606,30 @@
         "campaign": "Leads - Roofing (PC)",
         "status": "Active",
         "clicks": 6,
-        "impr": null,
         "ctr": "3.09%",
         "conv": 0,
         "cost": "$36.73",
         "cpc": "$6.12"
       },
       {
-        "name": "EMERGENCY ROOF REPAIR",
-        "campaign": "Leads - Roofing (PC)",
-        "status": "Active",
-        "clicks": 0,
-        "impr": 0,
-        "ctr": "-",
-        "conv": 0,
-        "cost": "$0.00",
-        "cpc": "-"
-      },
-      {
         "name": "STORM DAMAGE",
         "campaign": "Leads - Roofing (PC)",
         "status": "Active",
         "clicks": 0,
-        "impr": 3,
         "ctr": "0.00%",
         "conv": 0,
         "cost": "$0.00",
         "cpc": "-"
       },
       {
-        "name": "Roofers",
+        "name": "EMERGENCY ROOF REPAIR",
         "campaign": "Leads - Roofing (PC)",
-        "status": "Paused",
-        "clicks": 30,
-        "ctr": "5.61%",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "-",
         "conv": 0,
-        "cost": "$469.19",
-        "cpc": "$15.64"
-      },
-      {
-        "name": "Roofing Contractors",
-        "campaign": "Leads - Roofing (PC)",
-        "status": "Paused",
-        "clicks": 18,
-        "ctr": "4.23%",
-        "conv": 0,
-        "cost": "$273.30",
-        "cpc": "$15.18"
-      },
-      {
-        "name": "Roof Repair",
-        "campaign": "Leads - Roofing (PC)",
-        "status": "Paused",
-        "clicks": 7,
-        "ctr": "11.11%",
-        "conv": 0,
-        "cost": "$21.70",
-        "cpc": "$3.10"
-      },
-      {
-        "name": "Roof Installers",
-        "campaign": "Leads - Roofing (PC)",
-        "status": "Paused",
-        "clicks": 4,
-        "ctr": "5.00%",
-        "conv": 0,
-        "cost": "$56.00",
-        "cpc": "$14.00"
+        "cost": "$0.00",
+        "cpc": "-"
       }
     ],
     "keywords": [
@@ -759,8 +715,7 @@
         "conv": 0,
         "cost": "$0.00",
         "cpc": "-",
-        "qs": null,
-        "impr": 87
+        "qs": null
       },
       {
         "name": "\"chimney flashing repair\"",
@@ -772,11 +727,10 @@
         "conv": 0,
         "cost": "$0.00",
         "cpc": "-",
-        "qs": null,
-        "impr": 3
+        "qs": null
       }
     ],
-    "scope": "Active campaign only: Leads - Roofing (PC). 5 ad groups currently Enabled (GENERAL ROOFING, LOCAL MADISON AREA, HAIL DAMAGE, EMERGENCY ROOF REPAIR, STORM DAMAGE). Keywords list filtered to those Active ad groups. Paused ad groups in the same campaign kept for context.",
+    "scope": "Active campaign only: Leads - Roofing (PC). Only the 5 Enabled ad groups are listed; Paused ad groups are excluded entirely. Keywords come only from those Active ad groups.",
     "activeCampaign": "Leads - Roofing (PC)",
     "activeAdGroupsCount": 5
   }
