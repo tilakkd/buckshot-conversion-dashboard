@@ -1,6 +1,11 @@
 {
-  "latest": "2026-05-15",
+  "latest": "2026-05-16",
   "dates": [
+    {
+      "date": "2026-05-16",
+      "label": "May 16, 2026 - Daily refresh",
+      "note": "Latest - all 6 sources captured live. 90-day spend $4,548.78. Sessions 861 (Direct/Organic dominate). No new inbox submissions; LSA window unchanged. Opt score 87.1%."
+    },
     {
       "date": "2026-05-15",
       "label": "May 15, 2026 - Daily refresh",
