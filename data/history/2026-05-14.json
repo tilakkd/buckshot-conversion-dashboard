@@ -2,20 +2,20 @@
   "snapshot_date": "2026-05-14",
   "period_start": "2026-02-12",
   "period_end": "2026-05-13",
-  "captured_at": "2026-05-14T22:42:00+05:30",
+  "captured_at": "2026-05-14T23:55:00+05:30",
   "version": 4,
   "headline_state": "Daily refresh May 14. Ads 90-day spend $4,538.93 / 360 clicks / 2 conversions. GA4 90-day: 762 sessions, 576 active users, 13 key events. Conversion tracking still degrading: 8 actions no-recent, 1 recording. Opt score 87.1%. Flamingo Inbox not captured this run (WordPress login wall + CAPTCHA) - form figures carried forward from May 13.",
   "kpis": {
     "totalSessions": 762,
     "paidSessions": 72,
     "paidPct": "9.4%",
-    "formSubmissions": 30,
-    "qualifiedForms": 21,
-    "ooaForms": 0,
-    "spamTestForms": 9,
+    "formSubmissions": 51,
+    "qualifiedForms": 24,
+    "ooaForms": 2,
+    "spamTestForms": 25,
     "adsConversions": 2,
     "lsaCharged": 3,
-    "lsaTotal": 5,
+    "lsaTotal": 6,
     "lsaDisputed": 0,
     "adsCost90d": "$4,538.92",
     "adsCostDaily": "$49.88/day",
@@ -24,24 +24,24 @@
   },
   "enquiries": {
     "lead": {
-      "total": 30,
-      "qualified": 21,
-      "ooa": 0,
-      "spamTest": 9,
+      "total": 51,
+      "qualified": 24,
+      "ooa": 2,
+      "spamTest": 25,
       "trackingStatus": "[OK] Verified May 9"
     },
     "call": {
-      "total": 5,
+      "total": 6,
       "googleAds": 0,
-      "lsa": 5,
+      "lsa": 6,
       "telTracked": 0,
       "trackingStatus": "[OK] Goal repaired May 11"
     },
     "combined": {
-      "total": 35,
-      "qualified": 24,
-      "costPerQualified": "~$189",
-      "formToCallRatio": "30 : 5"
+      "total": 57,
+      "qualified": 30,
+      "costPerQualified": "~$151",
+      "formToCallRatio": "51 : 6"
     }
   },
   "spamCounts": {
@@ -110,10 +110,10 @@
     }
   ],
   "daily": {
-    "dateWindow": "last 30 days",
+    "dateWindow": "last 30 days (2026-04-15 -> 2026-05-14); top-line totals are CUMULATIVE since 2026-04-01",
     "rangeStart": "2026-04-15",
     "rangeEnd": "2026-05-14",
-    "note": "Partial refresh on 2026-05-14. Google Ads, GA4, LSA Inbox, Microsoft Clarity and GTM captured live. Flamingo Inbox not captured (WordPress login wall + CAPTCHA) - form counts carried forward from 2026-05-13. Window 2026-04-15 -> 2026-05-14. Google Ads call conversions and tel: clicks remain 0 across the window.",
+    "note": "Daily breakdown shows real day-of submissions from Flamingo Inbox + Spam folder + LSA inbox (received-date basis). Top-line totals on the KPIs and Enquiries cards are CUMULATIVE since 2026-04-01 so they never decrease as the rolling window shifts. As-of 2026-05-14: 51 total form submissions (24 qualified inbox + 2 out-of-area + 25 spam/test), 6 LSA calls (3 charged).",
     "calls": [
       {
         "date": "2026-04-15",
@@ -349,7 +349,7 @@
         "date": "2026-04-18",
         "qualified": 1,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 2
       },
       {
         "date": "2026-04-19",
@@ -367,7 +367,7 @@
         "date": "2026-04-21",
         "qualified": 2,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-04-22",
@@ -378,8 +378,8 @@
       {
         "date": "2026-04-23",
         "qualified": 2,
-        "ooa": 0,
-        "spamTest": 1
+        "ooa": 1,
+        "spamTest": 2
       },
       {
         "date": "2026-04-24",
@@ -391,7 +391,7 @@
         "date": "2026-04-25",
         "qualified": 0,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-04-26",
@@ -415,12 +415,12 @@
         "date": "2026-04-29",
         "qualified": 1,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-04-30",
-        "qualified": 4,
-        "ooa": 0,
+        "qualified": 3,
+        "ooa": 1,
         "spamTest": 0
       },
       {
@@ -445,13 +445,13 @@
         "date": "2026-05-04",
         "qualified": 2,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-05-05",
         "qualified": 0,
         "ooa": 0,
-        "spamTest": 1
+        "spamTest": 3
       },
       {
         "date": "2026-05-06",
@@ -469,7 +469,7 @@
         "date": "2026-05-08",
         "qualified": 1,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-05-09",
@@ -505,7 +505,7 @@
         "date": "2026-05-14",
         "qualified": 0,
         "ooa": 0,
-        "spamTest": 2
+        "spamTest": 7
       }
     ]
   },
