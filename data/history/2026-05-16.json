@@ -1,0 +1,602 @@
+{
+  "snapshot_date": "2026-05-16",
+  "period_start": "2026-02-14",
+  "period_end": "2026-05-15",
+  "captured_at": "2026-05-16T16:19:15+05:30",
+  "version": 4,
+  "headline_state": "Daily refresh May 16. Ads 90-day spend $4,548.78 / 362 clicks / 15.3K impr / 2 conversions / $12.57 avg CPC. GA4 90-day: 861 sessions, 638 active users, 23 key events (generate_lead). Flamingo unchanged from May 15 - no new inbox submissions; 30-day window slides forward (drop 04/16 Haldeman qualified). LSA 30-day window unchanged at 1 charged / 2 total. Opt score 87.1%. Conversion tracking still degrading: 8 no-recent, 1 recording, 1 tag inactive. GTM Version 8 (7 days old), 10 tags.",
+  "kpis": {
+    "totalSessions": 861,
+    "paidSessions": 82,
+    "paidPct": "9.5%",
+    "formSubmissions": 29,
+    "qualifiedForms": 20,
+    "ooaForms": 0,
+    "spamTestForms": 9,
+    "adsConversions": 2,
+    "lsaCharged": 1,
+    "lsaTotal": 2,
+    "lsaDisputed": 0,
+    "adsCost90d": "$4,548.78",
+    "adsCostDaily": "$49.99/day",
+    "ga4ActiveUsers": 638,
+    "ga4KeyEvents": 23
+  },
+  "enquiries": {
+    "lead": {
+      "total": 29,
+      "qualified": 20,
+      "ooa": 0,
+      "spamTest": 9,
+      "trackingStatus": "[OK] Verified May 9"
+    },
+    "call": {
+      "total": 3,
+      "googleAds": 0,
+      "lsa": 2,
+      "telTracked": 0,
+      "trackingStatus": "[OK] Goal repaired May 11"
+    },
+    "combined": {
+      "total": 32,
+      "qualified": 21,
+      "costPerQualified": "~$217",
+      "formToCallRatio": "29 : 2"
+    }
+  },
+  "spamCounts": {
+    "inbox": 1,
+    "test": 3,
+    "flamingoSpamFolder": 578
+  },
+  "sourceChart": {
+    "paid": 1,
+    "organic": 4,
+    "direct": 7,
+    "referral": 1,
+    "unassigned": 6,
+    "lsa": 2
+  },
+  "funnel": {
+    "paidSessions": 82,
+    "servicePages": 58,
+    "freeEstimate": 3,
+    "verifiedPaidConversions": 0,
+    "verifiedNote": "Tag pipeline verified working May 9  -  limiter is reach, not tracking"
+  },
+  "campaignState": {
+    "activeCount": 1,
+    "pausedCount": 5,
+    "activeCampaignName": "Leads - Roofing (PC)",
+    "optimizationScore": "87.1%",
+    "bidWarning": "Bid setting limited"
+  },
+  "trackingState": {
+    "gtmContainer": "GTM-KG87WZF2",
+    "gtmLiveVersion": "Version 8",
+    "gtmTags": 10,
+    "phoneCallLeadGoal": "Active",
+    "submitLeadFormGoal": "Active",
+    "newestChange": "May 11  -  Phone call lead goal repaired"
+  },
+  "insights": [
+    {
+      "headline": "Form-submission quiet streak now about 8 days (May 9 - 16)",
+      "body": "Zero genuine form submissions to Flamingo Inbox since Nicole Punzel (hail inspection, Janesville) on May 8. May 14 had only 2 internal test entries; May 15 and May 16 brought no submissions at all. Flamingo Inbox unchanged at 932 items; Spam folder ticked up to 578. Tag-pipeline regression (8 no-recent goals) and the inbound dip remain the likely correlated causes - audit before assuming a seasonal lull."
+    },
+    {
+      "headline": "Conversion tracking degrading  -  8 actions no longer recording",
+      "body": "In 90 days the Conversion tracking status shows 1 Recording / 0 Unverified / 8 No recent / 1 Tag inactive. Audit Goals tab; the May 11 phone-call repair did not propagate to all 9 account-default goals."
+    },
+    {
+      "headline": "Funnel fix  -  single highest-leverage move",
+      "body": "Only ~3 of 82 paid sessions reach /free-estimate/ in 90 days. Route the active campaign final URLs to /free-estimate/ directly or embed the CF7 form on the current LP."
+    },
+    {
+      "headline": "GA4 traffic still concentrated on Direct + Organic Search",
+      "body": "Direct 333 + Organic Search 331 = 77% of 861 90-day sessions. Paid Search 82 (9.5%). Conversion is leakage downstream, not top-of-funnel."
+    },
+    {
+      "headline": "Apply 75+ recommended negative keywords",
+      "body": "Buckshot_NegativeKeywords_RECOMMENDED_BULK_UPLOAD.csv covers competitor brands, aggregators, Spanish, DIY, OOA geos. Competitor/Brand Exclusion list has 44 entries (up from 5); Roofing Negative keyword list has 78."
+    },
+    {
+      "headline": "Active campaign Bid setting limited warning persists",
+      "body": "Leads  -  Roofing (PC) spending only 25-30% of $60/day cap (90-day cost $1,140.71 = $12.67/day). Lift bid / switch to Maximize Conversions after negatives + funnel work."
+    }
+  ],
+  "daily": {
+    "dateWindow": "last 30 days",
+    "rangeStart": "2026-04-17",
+    "rangeEnd": "2026-05-16",
+    "note": "Full live capture on 2026-05-16. Window slides forward by 1 day (drop 2026-04-16: Kevin Haldeman qualified). No new inbox submissions on 2026-05-15 or 2026-05-16. LSA window unchanged. All 6 sources captured live.",
+    "calls": [
+      {
+        "date": "2026-04-17",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-18",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-19",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-20",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-21",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-22",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-23",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-24",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-25",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-26",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-27",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-28",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 1,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-29",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-30",
+        "googleAds": 0,
+        "lsaCharged": 1,
+        "lsaTotal": 1,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-01",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-02",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-03",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-04",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-05",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-06",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-07",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-08",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-09",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-10",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-11",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-12",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-13",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-14",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-15",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-16",
+        "googleAds": 0,
+        "lsaCharged": 0,
+        "lsaTotal": 0,
+        "telTracked": 0
+      }
+    ],
+    "forms": [
+      {
+        "date": "2026-04-17",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-18",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-19",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-20",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-21",
+        "qualified": 2,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-22",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 1
+      },
+      {
+        "date": "2026-04-23",
+        "qualified": 2,
+        "ooa": 0,
+        "spamTest": 1
+      },
+      {
+        "date": "2026-04-24",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-25",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-26",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 2
+      },
+      {
+        "date": "2026-04-27",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-28",
+        "qualified": 2,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-29",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-30",
+        "qualified": 4,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-01",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 2
+      },
+      {
+        "date": "2026-05-02",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-03",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-04",
+        "qualified": 2,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-05",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 1
+      },
+      {
+        "date": "2026-05-06",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-07",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-08",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-09",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-10",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-11",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-12",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-13",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-14",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 2
+      },
+      {
+        "date": "2026-05-15",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-16",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      }
+    ]
+  },
+  "stale_sources": [],
+  "verified": {
+    "flamingo": "2026-05-16",
+    "ga4": "2026-05-16",
+    "googleAds": "2026-05-16",
+    "lsa": "2026-05-16"
+  },
+  "trafficSources": {
+    "window": "Feb 14 - May 15, 2026 (90 days)",
+    "totalSessions": 861,
+    "channels": [
+      {
+        "name": "Direct",
+        "sessions": 333
+      },
+      {
+        "name": "Organic Search",
+        "sessions": 331
+      },
+      {
+        "name": "Paid Search",
+        "sessions": 82
+      },
+      {
+        "name": "Organic Social",
+        "sessions": 59
+      },
+      {
+        "name": "Unassigned",
+        "sessions": 31
+      },
+      {
+        "name": "Referral",
+        "sessions": 23
+      },
+      {
+        "name": "Cross-network",
+        "sessions": 2
+      }
+    ]
+  },
+  "adPerformance": {
+    "window": "Feb 14 - May 15, 2026 (90 days)",
+    "rankedBy": "clicks",
+    "campaigns": [
+      {
+        "name": "Website traffic-Search-1",
+        "status": "Paused",
+        "clicks": 177,
+        "ctr": "1.93%",
+        "conv": 0,
+        "cost": "$725.99",
+        "cpc": "$4.10"
+      },
+      {
+        "name": "Leads - Roofing (PC)",
+        "status": "Active",
+        "clicks": 119,
+        "ctr": "3.60%",
+        "conv": 0,
+        "cost": "$1,140.71",
+        "cpc": "$9.59"
+      },
+      {
+        "name": "Residential Roofing - Leads (PC)",
+        "status": "Paused",
+        "clicks": 43,
+        "ctr": "2.17%",
+        "conv": 2,
+        "cost": "$2,280.01",
+        "cpc": "$53.02"
+      },
+      {
+        "name": "Website traffic-Search-Roofing",
+        "status": "Paused",
+        "clicks": 15,
+        "ctr": "4.64%",
+        "conv": 0,
+        "cost": "$181.99",
+        "cpc": "$12.13"
+      },
+      {
+        "name": "Buckshot - Storm Damage - Madison Area",
+        "status": "Paused",
+        "clicks": 8,
+        "ctr": "1.45%",
+        "conv": 0,
+        "cost": "$220.09",
+        "cpc": "$27.51"
+      }
+    ],
+    "adGroups": [],
+    "keywords": []
+  }
+}
