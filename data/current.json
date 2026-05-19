@@ -1,4 +1,7 @@
 {
+  "snapshot_date": "2026-05-18",
+  "period_start": "2026-04-01",
+  "period_end": "2026-05-18",
   "schema_version": 1,
   "version": 4,
   "captured_at": "2026-05-19T13:05:00+05:30",
@@ -43,6 +46,26 @@
       "formToCallRatio": "55 : 6"
     }
   },
+  "spamCounts": {
+    "inbox": 1,
+    "test": 4,
+    "flamingoSpamFolder": 577
+  },
+  "sourceChart": {
+    "paid": 1,
+    "organic": 4,
+    "direct": 7,
+    "referral": 1,
+    "unassigned": 6,
+    "lsa": 2
+  },
+  "funnel": {
+    "paidSessions": 86,
+    "servicePages": 58,
+    "freeEstimate": 3,
+    "verifiedPaidConversions": 0,
+    "verifiedNote": "Tag pipeline verified working May 9  -  limiter is reach, not tracking"
+  },
   "campaignState": {
     "activeCount": 1,
     "pausedCount": 5,
@@ -58,17 +81,40 @@
     "submitLeadFormGoal": "Active",
     "newestChange": "May 11  -  Phone call lead goal repaired"
   },
-  "spamCounts": {
-    "inbox": 1,
-    "test": 4,
-    "flamingoSpamFolder": 577
-  },
-  "verified": {
-    "flamingo": "2026-05-19",
-    "ga4": "2026-05-19",
-    "googleAds": "2026-05-19",
-    "lsa": "2026-05-19"
-  },
+  "insights": [
+    {
+      "headline": "Qualified-lead drought now spans 10 days",
+      "body": "Zero qualified Flamingo Inbox submissions May 9 through May 18; last real customer enquiry was Nicole Punzel on May 8. Active campaign has driven 119 clicks with no conversions in the same window."
+    },
+    {
+      "headline": "Only May 18 activity was an AI-product sales pitch",
+      "body": "Ashley Brown (ashleybro@parallelaid.com) submitted via quickcontact form on May 18 pitching \"My Advanced Virtual Intelligent System\"; Flamingo auto-classified it as spam, treated as spamTest."
+    },
+    {
+      "headline": "Optimization score jumps to 90% from 86.1%",
+      "body": "Leads - Roofing (PC) optimization score climbed 3.9 points overnight to 90% per the Google Ads overview. Bid-strategy limit warning is still active on the campaign."
+    },
+    {
+      "headline": "Active campaign still has zero conversions on $1,140 spend",
+      "body": "Leads - Roofing (PC) is at 119 clicks and $1,140.71 across the trailing 90-day window with zero attributed conversions; the only 2 account conversions came from the paused Residential Roofing - Leads (PC)."
+    },
+    {
+      "headline": "Two of five Active ad groups have zero traffic",
+      "body": "EMERGENCY ROOF REPAIR and STORM DAMAGE inside Leads - Roofing (PC) have 0 clicks and 0 impressions across the 90-day window - likely a bid-floor or match-type issue worth diagnosing."
+    },
+    {
+      "headline": "Paid Search delivers under 10% of 90-day sessions",
+      "body": "GA4 shows 86 of 890 sessions came from Paid Search; Direct (363) and Organic Search (337) carry the bulk of traffic and most key events. Heavy direct traffic suggests offline brand referrals or untagged inbound links."
+    },
+    {
+      "headline": "No new LSA leads in 18 days",
+      "body": "Last LSA inbox entry was April 30 (Monona, charged). LSA monthly credit projection is still $0.00, suggesting no charge disputes are pending."
+    },
+    {
+      "headline": "Clarity flags 10.6% dead-click rate on rolling 3 days",
+      "body": "Last-3-day Clarity shows 5 of 47 sessions with dead clicks (10.64%) and 5 quick-back sessions; verify against the Elementor submenu dropdown false-positive before treating it as a defect."
+    }
+  ],
   "daily": {
     "rangeStart": "2026-04-19",
     "rangeEnd": "2026-05-18",
@@ -469,6 +515,18 @@
       }
     ]
   },
+  "stale_sources": [
+    "sourceChart_carried_from_2026-05-16",
+    "funnel_carried_from_2026-05-16",
+    "ga4_traffic_acquisition_90d_carried",
+    "google_ads_window_label_only"
+  ],
+  "verified": {
+    "flamingo": "2026-05-19",
+    "ga4": "2026-05-19",
+    "googleAds": "2026-05-19",
+    "lsa": "2026-05-19"
+  },
   "trafficSources": {
     "window": "Feb 18 - May 18, 2026 (90 days)",
     "totalSessions": 890,
@@ -711,39 +769,5 @@
         "qs": "3/10"
       }
     ]
-  },
-  "insights": [
-    {
-      "headline": "Qualified-lead drought now spans 10 days",
-      "body": "Zero qualified Flamingo Inbox submissions May 9 through May 18; last real customer enquiry was Nicole Punzel on May 8. Active campaign has driven 119 clicks with no conversions in the same window."
-    },
-    {
-      "headline": "Only May 18 activity was an AI-product sales pitch",
-      "body": "Ashley Brown (ashleybro@parallelaid.com) submitted via quickcontact form on May 18 pitching \"My Advanced Virtual Intelligent System\"; Flamingo auto-classified it as spam, treated as spamTest."
-    },
-    {
-      "headline": "Optimization score jumps to 90% from 86.1%",
-      "body": "Leads - Roofing (PC) optimization score climbed 3.9 points overnight to 90% per the Google Ads overview. Bid-strategy limit warning is still active on the campaign."
-    },
-    {
-      "headline": "Active campaign still has zero conversions on $1,140 spend",
-      "body": "Leads - Roofing (PC) is at 119 clicks and $1,140.71 across the trailing 90-day window with zero attributed conversions; the only 2 account conversions came from the paused Residential Roofing - Leads (PC)."
-    },
-    {
-      "headline": "Two of five Active ad groups have zero traffic",
-      "body": "EMERGENCY ROOF REPAIR and STORM DAMAGE inside Leads - Roofing (PC) have 0 clicks and 0 impressions across the 90-day window - likely a bid-floor or match-type issue worth diagnosing."
-    },
-    {
-      "headline": "Paid Search delivers under 10% of 90-day sessions",
-      "body": "GA4 shows 86 of 890 sessions came from Paid Search; Direct (363) and Organic Search (337) carry the bulk of traffic and most key events. Heavy direct traffic suggests offline brand referrals or untagged inbound links."
-    },
-    {
-      "headline": "No new LSA leads in 18 days",
-      "body": "Last LSA inbox entry was April 30 (Monona, charged). LSA monthly credit projection is still $0.00, suggesting no charge disputes are pending."
-    },
-    {
-      "headline": "Clarity flags 10.6% dead-click rate on rolling 3 days",
-      "body": "Last-3-day Clarity shows 5 of 47 sessions with dead clicks (10.64%) and 5 quick-back sessions; verify against the Elementor submenu dropdown false-positive before treating it as a defect."
-    }
-  ]
+  }
 }
