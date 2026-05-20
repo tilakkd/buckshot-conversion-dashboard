@@ -1,5 +1,5 @@
 {
-  "latest": "2026-05-18",
+  "latest": "2026-05-19",
   "dates": [
     {
       "date": "2026-05-08",
@@ -50,6 +50,11 @@
       "date": "2026-05-18",
       "label": "May 18, 2026 - Finalized",
       "note": "Day-of finalized May 19 at 13:05 IST. Cumulative since Apr 1: 55 form submissions / 6 LSA (3 charged). 1 new spam-folder entry from Ashley Brown (AI sales pitch) classified spamTest. Opt score climbed to 90.0%."
+    },
+    {
+      "date": "2026-05-19",
+      "label": "May 19, 2026 - Finalized",
+      "note": "Day-of finalized May 20 at 07:05 IST (manual run). Cumulative since Apr 1: 59 forms (26 qualified) / 8 LSA (3 charged). Busiest lead day in weeks: 2 qualified Madison leads + 2 LSA calls. Opt score 90.0%."
     }
   ]
 }
