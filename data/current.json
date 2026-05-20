@@ -1,63 +1,63 @@
 {
-  "snapshot_date": "2026-05-18",
+  "snapshot_date": "2026-05-19",
   "period_start": "2026-04-01",
-  "period_end": "2026-05-18",
+  "period_end": "2026-05-19",
   "schema_version": 1,
   "version": 4,
-  "captured_at": "2026-05-19T13:05:00+05:30",
-  "date": "2026-05-18",
-  "headline_state": "Finalized May 18, 2026. Cumulative since Apr 1: 55 form submissions (24 qualified inbox, 3 OOA, 28 spam/test), 6 LSA calls (3 charged); combined 61 touches, 30 qualified. New May 18 activity: 1 spam-folder submission from Ashley Brown (ashleybro@parallelaid.com) with AI-product sales pitch, classified spamTest. Active campaign Leads - Roofing (PC) still at 119 clicks / $1,140.71 across 5 Enabled ad groups in the trailing 90-day window. Optimization score climbed to 90.0% from 86.1% on May 17 (up 3.9 points). Bid setting still limited on the active campaign. GTM container quality still flagged Needs Attention (2 issues). No new LSA leads or qualified Flamingo Inbox submissions yesterday - the qualified-lead drought now spans May 9 to May 18 (10 days).",
+  "captured_at": "2026-05-20T07:05:00+05:30",
+  "date": "2026-05-19",
+  "headline_state": "Finalized May 19, 2026. Cumulative since Apr 1: 59 form submissions (26 qualified inbox, 4 OOA, 29 spam/test), 8 LSA calls (3 charged); combined 67 touches, 34 qualified. May 19 was the busiest lead day in weeks: 2 qualified Madison-area form leads (Lisa Lutz, Vaughn Porter) ended the qualified-lead drought, plus 1 out-of-area Milwaukee form (Daniel Winstanley) and 1 VA sales-pitch spam (Meredith White), and 2 new LSA phone leads (both uncharged - 1 Not charged, 1 In review). Active campaign Leads - Roofing (PC) at 364 account clicks / $4,563.61 total 90-day spend. Optimization score holding at 90.0%. Bid setting still limited on the active campaign. GTM container quality still flagged Needs Attention.",
   "kpis": {
-    "formSubmissions": 55,
-    "qualifiedForms": 24,
-    "ooaForms": 3,
-    "spamTestForms": 28,
-    "lsaTotal": 6,
+    "formSubmissions": 59,
+    "qualifiedForms": 26,
+    "ooaForms": 4,
+    "spamTestForms": 29,
+    "lsaTotal": 8,
     "lsaCharged": 3,
     "lsaDisputed": 0,
-    "adsCost90d": "$4,548.78",
-    "adsCostDaily": "$50.54/day",
+    "adsCost90d": "$4,563.61",
+    "adsCostDaily": "$50.71/day",
     "adsConversions": 2,
-    "ga4ActiveUsers": 654,
-    "ga4KeyEvents": 32,
+    "ga4ActiveUsers": 665,
+    "ga4KeyEvents": 37,
     "totalSessions": 890,
     "paidSessions": 86,
     "paidPct": "9.7%"
   },
   "enquiries": {
     "lead": {
-      "total": 55,
-      "qualified": 24,
-      "ooa": 3,
-      "spamTest": 28,
+      "total": 59,
+      "qualified": 26,
+      "ooa": 4,
+      "spamTest": 29,
       "trackingStatus": "[OK] Verified May 9"
     },
     "call": {
-      "total": 6,
-      "lsa": 6,
+      "total": 8,
+      "lsa": 8,
       "googleAds": 0,
       "telTracked": 0,
       "trackingStatus": "[OK] Goal repaired May 11"
     },
     "combined": {
-      "total": 61,
-      "qualified": 30,
-      "costPerQualified": "~$152",
-      "formToCallRatio": "55 : 6"
+      "total": 67,
+      "qualified": 34,
+      "costPerQualified": "~$134",
+      "formToCallRatio": "59 : 8"
     }
   },
   "spamCounts": {
     "inbox": 1,
     "test": 4,
-    "flamingoSpamFolder": 577
+    "flamingoSpamFolder": 578
   },
   "sourceChart": {
     "paid": 1,
     "organic": 4,
-    "direct": 7,
+    "direct": 9,
     "referral": 1,
     "unassigned": 6,
-    "lsa": 2
+    "lsa": 4
   },
   "funnel": {
     "paidSessions": 86,
@@ -83,51 +83,44 @@
   },
   "insights": [
     {
-      "headline": "Qualified-lead drought now spans 10 days",
-      "body": "Zero qualified Flamingo Inbox submissions May 9 through May 18; last real customer enquiry was Nicole Punzel on May 8. Active campaign has driven 119 clicks with no conversions in the same window."
+      "headline": "Qualified-lead drought broken with 2 Madison-area leads",
+      "body": "After zero qualified Flamingo leads from May 9-18, May 19 brought two: Lisa Lutz (608, insurance-approved roof/garage/gutters/shed) and Vaughn Porter (Madison 53704, roof/siding/gutters). Both are real in-area projects."
     },
     {
-      "headline": "Only May 18 activity was an AI-product sales pitch",
-      "body": "Ashley Brown (ashleybro@parallelaid.com) submitted via quickcontact form on May 18 pitching \"My Advanced Virtual Intelligent System\"; Flamingo auto-classified it as spam, treated as spamTest."
+      "headline": "Two new LSA phone leads, neither charged yet",
+      "body": "LSA delivered 2 Madison phone leads on May 19 (Roof repair + a direct-search call); one is Not charged and one is In review. LSA total rises to 8 with 3 charged. Watch the In-review lead for a charge or credit."
     },
     {
-      "headline": "Optimization score jumps to 90% from 86.1%",
-      "body": "Leads - Roofing (PC) optimization score climbed 3.9 points overnight to 90% per the Google Ads overview. Bid-strategy limit warning is still active on the campaign."
+      "headline": "Out-of-area Milwaukee form looks like spam",
+      "body": "Daniel Winstanley (414 Milwaukee) sent a vague no-specifics message asking to redirect to a different email - classified OOA, not qualified. Worth watching the sender pattern if it repeats."
     },
     {
-      "headline": "Active campaign still has zero conversions on $1,140 spend",
-      "body": "Leads - Roofing (PC) is at 119 clicks and $1,140.71 across the trailing 90-day window with zero attributed conversions; the only 2 account conversions came from the paused Residential Roofing - Leads (PC)."
+      "headline": "Active campaign still zero conversions on $4,563 account spend",
+      "body": "Leads - Roofing (PC) remains Eligible-but-Limited (bid strategy capped by max bid limit). The 2 attributed account conversions are still on the paused Residential Roofing - Leads (PC); the active campaign shows none."
     },
     {
-      "headline": "Two of five Active ad groups have zero traffic",
-      "body": "EMERGENCY ROOF REPAIR and STORM DAMAGE inside Leads - Roofing (PC) have 0 clicks and 0 impressions across the 90-day window - likely a bid-floor or match-type issue worth diagnosing."
+      "headline": "Optimization score steady at 90%",
+      "body": "Account optimization score holds at 90.0% with an open recommendation to expand reach via Google search partners (+2.4%). Bid-limit warning persists on the active campaign."
     },
     {
-      "headline": "Paid Search delivers under 10% of 90-day sessions",
-      "body": "GA4 shows 86 of 890 sessions came from Paid Search; Direct (363) and Organic Search (337) carry the bulk of traffic and most key events. Heavy direct traffic suggests offline brand referrals or untagged inbound links."
+      "headline": "GA4 30-day key events climb to 37",
+      "body": "GA4 home shows 665 active users and 37 key events over the last 30 days (up from 32), consistent with the uptick in form activity. New users 656."
     },
     {
-      "headline": "No new LSA leads in 18 days",
-      "body": "Last LSA inbox entry was April 30 (Monona, charged). LSA monthly credit projection is still $0.00, suggesting no charge disputes are pending."
+      "headline": "Clarity dead-click rate ticks up to 12.1%",
+      "body": "Last-3-day Clarity (US + bot-filtered) shows 8 of 66 sessions with dead clicks and 5 quick-backs; verify against the known Elementor submenu false-positive before treating as a defect."
     },
     {
-      "headline": "Clarity flags 10.6% dead-click rate on rolling 3 days",
-      "body": "Last-3-day Clarity shows 5 of 47 sessions with dead clicks (10.64%) and 5 quick-back sessions; verify against the Elementor submenu dropdown false-positive before treating it as a defect."
+      "headline": "Ad-performance detail carried forward this run",
+      "body": "A browser ad-blocker dialog blocked the Google Ads campaign/ad-group/keyword tables, so the performer panel shows last-known values. Top-line cost, clicks, and optimization score were captured live."
     }
   ],
   "daily": {
-    "rangeStart": "2026-04-19",
-    "rangeEnd": "2026-05-18",
-    "dateWindow": "last 30 days (2026-04-19 -> 2026-05-18); top-line totals are CUMULATIVE since 2026-04-01",
-    "note": "Daily breakdown shows real day-of submissions from Flamingo Inbox + Spam folder + LSA inbox (received-date basis). Top-line totals on the KPIs and Enquiries cards are CUMULATIVE since 2026-04-01 so they never decrease as the rolling window shifts. As-of 2026-05-18: 55 total form submissions (24 qualified inbox + 3 out-of-area + 28 spam/test), 6 LSA calls (3 charged). Finalized May 18: 1 new Flamingo spam-folder entry from Ashley Brown (AI sales pitch) classified spamTest; zero new Inbox or LSA leads.",
+    "rangeStart": "2026-04-20",
+    "rangeEnd": "2026-05-19",
+    "dateWindow": "last 30 days (2026-04-20 -> 2026-05-19); top-line totals are CUMULATIVE since 2026-04-01",
+    "note": "Finalized May 19. Busiest lead day in weeks: 2 qualified Madison-area form submissions (Lisa Lutz - 608, insurance-approved roof/garage/gutters/shed; Vaughn Porter - Madison 53704 roof/siding/gutters), 1 out-of-area form (Daniel Winstanley - 414 Milwaukee, vague/suspicious), 1 spam-folder entry (Meredith White, VA sales pitch). Plus 2 new LSA phone leads (1 Not charged, 1 In review). Top-line totals are CUMULATIVE since 2026-04-01.",
     "calls": [
-      {
-        "date": "2026-04-19",
-        "lsaTotal": 0,
-        "lsaCharged": 0,
-        "googleAds": 0,
-        "telTracked": 0
-      },
       {
         "date": "2026-04-20",
         "lsaTotal": 0,
@@ -330,15 +323,16 @@
         "lsaCharged": 0,
         "googleAds": 0,
         "telTracked": 0
+      },
+      {
+        "date": "2026-05-19",
+        "lsaTotal": 2,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
       }
     ],
     "forms": [
-      {
-        "date": "2026-04-19",
-        "qualified": 1,
-        "ooa": 0,
-        "spamTest": 0
-      },
       {
         "date": "2026-04-20",
         "qualified": 0,
@@ -512,23 +506,29 @@
         "qualified": 0,
         "ooa": 0,
         "spamTest": 1
+      },
+      {
+        "date": "2026-05-19",
+        "qualified": 2,
+        "ooa": 1,
+        "spamTest": 1
       }
     ]
   },
   "stale_sources": [
-    "sourceChart_carried_from_2026-05-16",
-    "funnel_carried_from_2026-05-16",
+    "google_ads_adperformance_carried_adblocker_dialog",
     "ga4_traffic_acquisition_90d_carried",
-    "google_ads_window_label_only"
+    "sourceChart_estimated_no_per_lead_GA4_attribution",
+    "funnel_carried_from_prior"
   ],
   "verified": {
-    "flamingo": "2026-05-19",
-    "ga4": "2026-05-19",
-    "googleAds": "2026-05-19",
-    "lsa": "2026-05-19"
+    "flamingo": "2026-05-20",
+    "ga4": "2026-05-20",
+    "googleAds": "2026-05-20",
+    "lsa": "2026-05-20"
   },
   "trafficSources": {
-    "window": "Feb 18 - May 18, 2026 (90 days)",
+    "window": "Feb 19 - May 19, 2026 (90 days)",
     "totalSessions": 890,
     "channels": [
       {
@@ -573,7 +573,7 @@
     "scope": "Active campaign only: Leads - Roofing (PC). 5 Enabled ad groups shown. Keywords filtered to those Active ad groups. Paused entries excluded.",
     "activeCampaign": "Leads - Roofing (PC)",
     "activeAdGroupsCount": 5,
-    "window": "Feb 18 - May 18, 2026 (90 days)",
+    "window": "Feb 19 - May 19, 2026 (90 days)",
     "rankedBy": "clicks",
     "campaigns": [
       {
