@@ -154,12 +154,12 @@ html, body { background: #0d0d14; color: #e7e7ed; font-family: -apple-system, Bl
 </div>
 <div class="big-picture"><div class="lbl">The bottom line</div><span id="bottomLine">Loading...</span></div>
 <div class="kpis">
-<div class="kpi"><div class="label">TOTAL SESSIONS (30D)</div><div class="value" data-field="kpis.totalSessions">-</div><div class="sub">website visits via GA4</div></div>
-<div class="kpi"><div class="label">PAID SESSIONS</div><div class="value purple" data-field="kpis.paidSessions">-</div><div class="sub"><span data-field="kpis.paidPct">-</span> of total</div></div>
-<div class="kpi"><div class="label">FORM SUBMISSIONS</div><div class="value yellow" data-field="kpis.formSubmissions">-</div><div class="sub"><span data-field="kpis.qualifiedForms">-</span> qualified</div></div>
+<div class="kpi"><div class="label">IMPRESSIONS</div><div class="value" data-field="kpis.adsImpressions">-</div><div class="sub">ad impressions</div></div>
+<div class="kpi"><div class="label">CLICKS</div><div class="value purple" data-field="kpis.adsClicks">-</div><div class="sub"><span data-field="kpis.adsCtr">-</span> CTR</div></div>
+<div class="kpi"><div class="label">AVG CPC</div><div class="value yellow" data-field="kpis.adsCpc">-</div><div class="sub"><span data-field="kpis.adsClicks">-</span> clicks</div></div>
 <div class="kpi"><div class="label">COST PER QUALIFIED LEAD</div><div class="value green" data-field="enquiries.combined.costPerQualified">-</div><div class="sub">forms + calls combined</div></div>
 <div class="kpi"><div class="label">LSA CHARGED LEADS</div><div class="value" data-field="kpis.lsaCharged">-</div><div class="sub"><span data-field="kpis.lsaTotal">-</span> total - <span data-field="kpis.lsaDisputed">-</span> disputed</div></div>
-<div class="kpi"><div class="label">ADS COST (90D)</div><div class="value" data-field="kpis.adsCost90d">-</div><div class="sub"><span data-field="kpis.adsCostDaily">-</span></div></div>
+<div class="kpi"><div class="label">AD SPEND</div><div class="value" data-field="kpis.adsCost90d">-</div><div class="sub"><span data-field="kpis.adsCostDaily">-</span></div></div>
 </div>
 <div class="enq-grid">
 <div class="enq-card lead"><div class="enq-title">LEAD ENQUIRIES (FORMS)</div><div class="enq-total" data-field="enquiries.lead.total">-</div><div class="enq-totalsub">form submissions in last 30 days</div><div class="enq-rows"><div class="enq-row"><span class="lbl">Qualified <small>Madison metro</small></span><span class="val q" data-field="enquiries.lead.qualified">-</span></div><div class="enq-row"><span class="lbl">Out-of-area</span><span class="val warn" data-field="enquiries.lead.ooa">-</span></div><div class="enq-row"><span class="lbl">Spam / test</span><span class="val muted" data-field="enquiries.lead.spamTest">-</span></div><div class="enq-row" style="border-top:1px solid #23232f; padding-top:6px; margin-top:4px;"><span class="lbl">Tracking status</span><span class="val" data-field="enquiries.lead.trackingStatus" style="font-size:11px;">-</span></div></div></div>
@@ -339,7 +339,7 @@ var panel=document.createElement("div");panel.className="v6-fresh";panel.innerHT
 var kpis=document.querySelector(".kpis");
 if(kpis&&kpis.parentNode){kpis.parentNode.insertBefore(panel,kpis);}else{document.body.insertBefore(panel,document.body.firstChild);}
 }).catch(function(){});
-var defs={"TOTAL SESSIONS":"All website visits in the period, measured by GA4.","PAID SESSIONS":"Website visits that came from Google Ads (Paid Search), per GA4.","FORM SUBMISSIONS":"Total contact-form entries in Flamingo, including spam and test submissions.","QUALIFIED FORMS":"Genuine homeowner enquiries - excludes spam, test submissions, and out-of-area.","GENUINE LEADS":"Real prospective-customer enquiries - excludes spam and test submissions.","SPAM":"Junk submissions and internal QA/test entries - not real leads.","GOOGLE ADS CALLS":"Phone-call-lead conversions recorded by Google Ads.","LSA CALLS":"Leads received through Google Local Services Ads.","KEY EVENTS":"Conversion events tracked by GA4 (the generate_lead event).","ACTIVE USERS":"Distinct people who visited the site, per GA4.","COST PER QUALIFIED":"Total ad spend divided by the number of qualified leads."};
+var defs={"IMPRESSIONS":"Times your Google Ads showed in the period.","CLICKS":"Clicks on your Google Ads in the period.","AVG CPC":"Average cost per click (ad spend divided by clicks).","QUALIFIED FORMS":"Genuine homeowner enquiries - excludes spam, test submissions, and out-of-area.","GENUINE LEADS":"Real prospective-customer enquiries - excludes spam and test submissions.","SPAM":"Junk submissions and internal QA/test entries - not real leads.","GOOGLE ADS CALLS":"Phone-call-lead conversions recorded by Google Ads.","LSA CALLS":"Leads received through Google Local Services Ads.","KEY EVENTS":"Conversion events tracked by GA4 (the generate_lead event).","ACTIVE USERS":"Distinct people who visited the site, per GA4.","COST PER QUALIFIED":"Total ad spend divided by the number of qualified leads."};
 function applyTips(){var labels=document.querySelectorAll(".label,.lbl,.dw-title,.src-label");labels.forEach(function(el){var key=(el.textContent||"").trim().toUpperCase().replace(/\s+/g," ");for(var k in defs){if(key.indexOf(k)>-1&&!el.getAttribute("data-v6tip")){el.setAttribute("title",defs[k]);el.setAttribute("data-v6tip","1");el.classList.add("v6-tip");}}});}
 applyTips();setTimeout(applyTips,1500);setTimeout(applyTips,3500);
 function checkEmpty(barsId,noteId){var bars=document.getElementById(barsId);if(!bars)return;var existing=document.getElementById(noteId);var hasBars=bars.children.length>0;if(!hasBars&&!existing){var n=document.createElement("div");n.id=noteId;n.className="v6-empty-note";n.textContent="Day-by-day data was first captured on May 11, 2026 - earlier snapshots show period totals only.";bars.parentNode.insertBefore(n,bars.nextSibling);}else if(hasBars&&existing){existing.remove();}}
@@ -531,26 +531,10 @@ html.v6-light .v9-btn.v9-on{background:#2563eb;color:#fff;border-color:#2563eb}
 </style>
 <script id="v9-window">
 (function(){
-  var MAP={w7:7,w14:14,w30:30}, LBL={w7:'7 days',w14:'14 days',w30:'30 days'}, SUF={w7:'7D',w14:'14D',w30:'30D'};
-  var active='w30', baseSnap=null, orig={}, busy=false;
+  var MAP={w7:7,w14:14,w30:30}, LBL={w7:'7 days',w14:'14 days',w30:'30 days'};
+  var active='w30', baseSnap=null, busy=false;
   function q(s){return document.querySelector(s);}
   function get(o,p){return p.split('.').reduce(function(a,k){return a==null?a:a[k];},o);}
-  function suffixOf(t){var m=t&&t.match(/\((7D|14D|30D|90D)\)/);return m?m[1]:null;}
-  function captureLabels(){
-    var s=q('[data-field="kpis.totalSessions"]'); if(s){var l=s.parentNode.querySelector('.label'); if(l&&!('sess' in orig))orig.sess=suffixOf(l.textContent);}
-    var c=q('[data-field="kpis.adsCost90d"]'); if(c){var l2=c.parentNode.querySelector('.label'); if(l2&&!('cost' in orig))orig.cost=suffixOf(l2.textContent);}
-  }
-  function setSuffix(el,suf){
-    if(!el||!suf) return;
-    for(var i=0;i<el.childNodes.length;i++){var nd=el.childNodes[i];
-      if(nd.nodeType===3 && /\((?:7D|14D|30D|90D)\)/.test(nd.nodeValue)){nd.nodeValue=nd.nodeValue.replace(/\((?:7D|14D|30D|90D)\)/,'('+suf+')');return;}}
-    if(el.children.length===0){el.textContent=el.textContent.replace(/\((?:7D|14D|30D|90D)\)/,'('+suf+')');}
-  }
-  function relabel(hasWin){
-    var s=q('[data-field="kpis.totalSessions"]'); var c=q('[data-field="kpis.adsCost90d"]');
-    setSuffix(s?s.parentNode.querySelector('.label'):null, hasWin?SUF[active]:orig.sess);
-    setSuffix(c?c.parentNode.querySelector('.label'):null, hasWin?SUF[active]:orig.cost);
-  }
   function setSub(id,n,arr){
     var e=document.getElementById(id); if(!e||!arr||!arr.length) return;
     var st=arr[0].date, en=arr[arr.length-1].date;
@@ -571,23 +555,23 @@ html.v6-light .v9-btn.v9-on{background:#2563eb;color:#fff;border-color:#2563eb}
     var d=JSON.parse(baseSnap), n=MAP[k];
     if(d.daily){if(d.daily.forms)d.daily.forms=d.daily.forms.slice(-n);if(d.daily.calls)d.daily.calls=d.daily.calls.slice(-n);}
     var w=d.windows&&d.windows[k];
-    if(w){d.kpis.totalSessions=w.totalSessions;d.kpis.paidSessions=w.paidSessions;d.kpis.paidPct=w.paidPct;d.kpis.adsCost90d=w.adsCost;d.kpis.adsCostDaily=w.adsCostDaily;}
+    if(w){d.kpis.adsImpressions=w.impressions;d.kpis.adsClicks=w.clicks;d.kpis.adsCtr=w.ctr;d.kpis.adsCpc=w.cpc;d.kpis.adsCost90d=w.adsCost;d.kpis.adsCostDaily=w.adsCostDaily;}
     var banner=''; try{if(window.deriveAndComposeBanner)banner=window.deriveAndComposeBanner(d);}catch(e){}
     try{ if(window.renderDateWise) window.renderDateWise(d); }catch(e){}
     document.querySelectorAll('[data-field]').forEach(function(el){var v=get(d,el.getAttribute('data-field')); if(v!==undefined&&v!==null) el.textContent=v;});
     if(d.daily){ setSub('dwCallsSub',n,d.daily.calls); setSub('dwFormsSub',n,d.daily.forms); }
     var bl=document.getElementById('bottomLine'); if(bl&&banner) bl.textContent=banner;
-    setOn(); captureLabels(); relabel(!!w);
+    setOn();
     var note=q('#v9-note'); var asOf=(d.windows&&d.windows.asOf)||d.snapshot_date||'';
-    if(note) note.textContent = w ? ('window ending '+asOf) : 'leads/calls windowed; traffic and cost show full period';
+    if(note) note.textContent = w ? ('window ending '+asOf) : 'leads/calls windowed; ad metrics show full period';
   }
   var origRender=window.render;
   window.render=function(){
     var r=origRender.apply(this,arguments);
-    if(!busy){ busy=true; try{baseSnap=JSON.stringify(window.currentData);}catch(e){baseSnap=null;} buildBar(); captureLabels(); setTimeout(function(){applyWindow(active);busy=false;},0); }
+    if(!busy){ busy=true; try{baseSnap=JSON.stringify(window.currentData);}catch(e){baseSnap=null;} buildBar(); setTimeout(function(){applyWindow(active);busy=false;},0); }
     return r;
   };
-  if(window.currentData){ try{baseSnap=JSON.stringify(window.currentData);}catch(e){} buildBar(); captureLabels(); setTimeout(function(){applyWindow(active);},0); }
+  if(window.currentData){ try{baseSnap=JSON.stringify(window.currentData);}catch(e){} buildBar(); setTimeout(function(){applyWindow(active);},0); }
 })();
 </script>
 </body>
