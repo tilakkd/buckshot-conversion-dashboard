@@ -4,7 +4,7 @@
   "period_end": "2026-05-20",
   "schema_version": 1,
   "version": 4,
-  "captured_at": "2026-05-21T10:35:00+05:30",
+  "captured_at": "2026-05-21T10:55:00+05:30",
   "date": "2026-05-20",
   "headline_state": "Finalized May 20, 2026. Cumulative since Apr 1: 60 form submissions (26 qualified inbox, 5 OOA, 29 spam/test), 8 LSA calls (4 charged); combined 68 touches, 34 qualified. May 20 was quiet on new leads: 1 inbound form (Steven Moser - a commercial roof-repair request from Cambria WI 53923, Columbia County, OUTSIDE the Madison/Dane/Rock/Jefferson service area, so classified OOA not qualified) and 0 new LSA calls. The notable change is that the May 19 Madison roof-repair LSA lead moved from In review to Charged, lifting LSA charged from 3 to 4. Active campaign Leads - Roofing (PC) at 369 account clicks / $4,583.36 total 90-day spend, still 0 conversions and Bid setting limited. Optimization score 90.0%. GTM container quality still Needs Attention.",
   "kpis": {
@@ -113,13 +113,21 @@
     {
       "headline": "GTM container still flagged Needs Attention",
       "body": "The GTM-KG87WZF2 container remains on Live Version 8 (published 12 days ago, 0 workspace changes) and still reports Needs Attention with 2 open issues. Phone-call and form-submit lead goals remain Active."
+    },
+    {
+      "headline": "Clarity (US, last 3 days): healthy engagement, low frustration",
+      "body": "Filtered to US visitors: 53 sessions (17 bots excluded), 1.77 pages/session, 30.35% average scroll depth, 50 sec active time. Rage clicks 0% and quick-backs only 3.77% (2 sessions) - no major frustration signals. Smart events captured 4 form submits and 2 request-quote clicks."
+    },
+    {
+      "headline": "Mobile INP is poor (1.6s) - the clearest on-site issue",
+      "body": "Clarity performance score is 77/100 with LCP 2.1s (good) and CLS 0 (good), but Interaction to Next Paint is 1.6s, rated poor, on a mostly-mobile audience. Dead clicks (13.21%, 7 sessions) historically trace to the Elementor nav dropdown (href=#), so treat as working-as-designed unless a recording proves otherwise."
     }
   ],
   "daily": {
     "rangeStart": "2026-04-21",
     "rangeEnd": "2026-05-20",
     "dateWindow": "last 30 days (2026-04-21 -> 2026-05-20); top-line totals are CUMULATIVE since 2026-04-01",
-    "note": "Finalized 2026-05-20. New day-of: 1 OOA form (Steven Moser, Cambria WI - out of service area), 0 new LSA calls. Updated May 19 LSA entry: 1 of the 2 leads moved In review -> Charged.",
+    "note": "Finalized 2026-05-20. New day-of: 1 OOA form (Steven Moser, Cambria WI - out of service area), 0 new LSA calls. Updated May 19 LSA entry: 1 of the 2 leads moved In review -> Charged. Clarity (US-only, last 3 days) captured live in a follow-up pass and added to insights.",
     "calls": [
       {
         "date": "2026-04-21",
@@ -516,7 +524,6 @@
     ]
   },
   "stale_sources": [
-    "microsoft_clarity_no_authenticated_tab",
     "sourceChart_estimated_no_per_lead_GA4_attribution",
     "funnel_servicePages_and_freeEstimate_carried_from_prior"
   ],
