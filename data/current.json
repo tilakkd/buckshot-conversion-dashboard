@@ -1,34 +1,34 @@
 {
-  "snapshot_date": "2026-05-19",
+  "snapshot_date": "2026-05-20",
   "period_start": "2026-04-01",
-  "period_end": "2026-05-19",
+  "period_end": "2026-05-20",
   "schema_version": 1,
   "version": 4,
-  "captured_at": "2026-05-20T07:05:00+05:30",
-  "date": "2026-05-19",
-  "headline_state": "Finalized May 19, 2026. Cumulative since Apr 1: 59 form submissions (26 qualified inbox, 4 OOA, 29 spam/test), 8 LSA calls (3 charged); combined 67 touches, 34 qualified. May 19 was the busiest lead day in weeks: 2 qualified Madison-area form leads (Lisa Lutz, Vaughn Porter) ended the qualified-lead drought, plus 1 out-of-area Milwaukee form (Daniel Winstanley) and 1 VA sales-pitch spam (Meredith White), and 2 new LSA phone leads (both uncharged - 1 Not charged, 1 In review). Active campaign Leads - Roofing (PC) at 364 account clicks / $4,563.61 total 90-day spend. Optimization score holding at 90.0%. Bid setting still limited on the active campaign. GTM container quality still flagged Needs Attention.",
+  "captured_at": "2026-05-21T10:35:00+05:30",
+  "date": "2026-05-20",
+  "headline_state": "Finalized May 20, 2026. Cumulative since Apr 1: 60 form submissions (26 qualified inbox, 5 OOA, 29 spam/test), 8 LSA calls (4 charged); combined 68 touches, 34 qualified. May 20 was quiet on new leads: 1 inbound form (Steven Moser - a commercial roof-repair request from Cambria WI 53923, Columbia County, OUTSIDE the Madison/Dane/Rock/Jefferson service area, so classified OOA not qualified) and 0 new LSA calls. The notable change is that the May 19 Madison roof-repair LSA lead moved from In review to Charged, lifting LSA charged from 3 to 4. Active campaign Leads - Roofing (PC) at 369 account clicks / $4,583.36 total 90-day spend, still 0 conversions and Bid setting limited. Optimization score 90.0%. GTM container quality still Needs Attention.",
   "kpis": {
-    "formSubmissions": 59,
+    "formSubmissions": 60,
     "qualifiedForms": 26,
-    "ooaForms": 4,
+    "ooaForms": 5,
     "spamTestForms": 29,
     "lsaTotal": 8,
-    "lsaCharged": 3,
+    "lsaCharged": 4,
     "lsaDisputed": 0,
-    "adsCost90d": "$4,563.61",
-    "adsCostDaily": "$50.71/day",
+    "adsCost90d": "$4,583.36",
+    "adsCostDaily": "$50.93/day",
     "adsConversions": 2,
     "ga4ActiveUsers": 665,
-    "ga4KeyEvents": 37,
-    "totalSessions": 890,
-    "paidSessions": 86,
-    "paidPct": "9.7%"
+    "ga4KeyEvents": 42,
+    "totalSessions": 1004,
+    "paidSessions": 91,
+    "paidPct": "9.1%"
   },
   "enquiries": {
     "lead": {
-      "total": 59,
+      "total": 60,
       "qualified": 26,
-      "ooa": 4,
+      "ooa": 5,
       "spamTest": 29,
       "trackingStatus": "[OK] Verified May 9"
     },
@@ -40,10 +40,10 @@
       "trackingStatus": "[OK] Goal repaired May 11"
     },
     "combined": {
-      "total": 67,
+      "total": 68,
       "qualified": 34,
-      "costPerQualified": "~$134",
-      "formToCallRatio": "59 : 8"
+      "costPerQualified": "~$135",
+      "formToCallRatio": "60 : 8"
     }
   },
   "spamCounts": {
@@ -60,7 +60,7 @@
     "lsa": 4
   },
   "funnel": {
-    "paidSessions": 86,
+    "paidSessions": 91,
     "servicePages": 58,
     "freeEstimate": 3,
     "verifiedPaidConversions": 0,
@@ -83,51 +83,44 @@
   },
   "insights": [
     {
-      "headline": "Qualified-lead drought broken with 2 Madison-area leads",
-      "body": "After zero qualified Flamingo leads from May 9-18, May 19 brought two: Lisa Lutz (608, insurance-approved roof/garage/gutters/shed) and Vaughn Porter (Madison 53704, roof/siding/gutters). Both are real in-area projects."
+      "headline": "Quiet lead day - 1 out-of-area form, no new calls",
+      "body": "May 20 brought a single inbound form (Steven Moser, a commercial roof-repair request) and zero new LSA phone leads. The form came from Cambria WI 53923 in Columbia County, outside the Madison/Dane/Rock/Jefferson service area, so it is logged as OOA rather than a qualified lead."
     },
     {
-      "headline": "Two new LSA phone leads, neither charged yet",
-      "body": "LSA delivered 2 Madison phone leads on May 19 (Roof repair + a direct-search call); one is Not charged and one is In review. LSA total rises to 8 with 3 charged. Watch the In-review lead for a charge or credit."
+      "headline": "LSA charged count rises from 3 to 4",
+      "body": "The May 19 Madison roof-repair LSA lead that was In review yesterday is now Charged, so cumulative LSA charged moves to 4 of 8 total. No new LSA leads arrived May 20; total holds at 8."
     },
     {
-      "headline": "Out-of-area Milwaukee form looks like spam",
-      "body": "Daniel Winstanley (414 Milwaukee) sent a vague no-specifics message asking to redirect to a different email - classified OOA, not qualified. Worth watching the sender pattern if it repeats."
+      "headline": "Active campaign still at zero conversions on heavy account spend",
+      "body": "Leads - Roofing (PC) shows 126 clicks and $1,175.29 spend over 90 days with 0 conversions and a Bid setting limited warning. Account-wide 90-day spend is $4,583.36 against just 2 conversions."
     },
     {
-      "headline": "Active campaign still zero conversions on $4,563 account spend",
-      "body": "Leads - Roofing (PC) remains Eligible-but-Limited (bid strategy capped by max bid limit). The 2 attributed account conversions are still on the paused Residential Roofing - Leads (PC); the active campaign shows none."
+      "headline": "Most account spend sits in PAUSED campaigns",
+      "body": "The paused Residential Roofing - Leads (PC) accounts for $2,280.01 (half the 90-day spend) and the only 2 conversions, while paused Website traffic-Search-1 drew 177 clicks at $4.10 CPC. The lone active campaign drives only $1,175 of the $4,583 total."
     },
     {
-      "headline": "Optimization score steady at 90%",
-      "body": "Account optimization score holds at 90.0% with an open recommendation to expand reach via Google search partners (+2.4%). Bid-limit warning persists on the active campaign."
+      "headline": "'roof repair' keyword carries the active campaign",
+      "body": "Among enabled keywords in the active ad groups, \"roof repair\" (GENERAL ROOFING) leads with 23 of 66 clicks and $118.48 spend at a 3.37% CTR. \"roofing contractor madison wi\" is a distant second at 11 clicks."
     },
     {
-      "headline": "GA4 30-day key events climb to 37",
-      "body": "GA4 home shows 665 active users and 37 key events over the last 30 days (up from 32), consistent with the uptick in form activity. New users 656."
+      "headline": "EMERGENCY ROOF REPAIR ad group finally served",
+      "body": "After sitting at zero, the EMERGENCY ROOF REPAIR ad group recorded its first click (1 click, $4.85) in the 90-day window. STORM DAMAGE remains at 0 clicks despite 32 impressions - likely a bid-floor or match-type constraint worth checking."
     },
     {
-      "headline": "Clarity dead-click rate ticks up to 12.1%",
-      "body": "Last-3-day Clarity (US + bot-filtered) shows 8 of 66 sessions with dead clicks and 5 quick-backs; verify against the known Elementor submenu false-positive before treating as a defect."
+      "headline": "Direct and Organic Search dominate 90-day traffic",
+      "body": "Of 1,004 sessions, Direct (410) and Organic Search (372) make up about 78%, while Paid Search contributes 91 sessions (9.1%) and 3 key events. Total key events across channels was 42."
     },
     {
-      "headline": "Ad-performance detail carried forward this run",
-      "body": "A browser ad-blocker dialog blocked the Google Ads campaign/ad-group/keyword tables, so the performer panel shows last-known values. Top-line cost, clicks, and optimization score were captured live."
+      "headline": "GTM container still flagged Needs Attention",
+      "body": "The GTM-KG87WZF2 container remains on Live Version 8 (published 12 days ago, 0 workspace changes) and still reports Needs Attention with 2 open issues. Phone-call and form-submit lead goals remain Active."
     }
   ],
   "daily": {
-    "rangeStart": "2026-04-20",
-    "rangeEnd": "2026-05-19",
-    "dateWindow": "last 30 days (2026-04-20 -> 2026-05-19); top-line totals are CUMULATIVE since 2026-04-01",
-    "note": "Finalized May 19. Busiest lead day in weeks: 2 qualified Madison-area form submissions (Lisa Lutz - 608, insurance-approved roof/garage/gutters/shed; Vaughn Porter - Madison 53704 roof/siding/gutters), 1 out-of-area form (Daniel Winstanley - 414 Milwaukee, vague/suspicious), 1 spam-folder entry (Meredith White, VA sales pitch). Plus 2 new LSA phone leads (1 Not charged, 1 In review). Top-line totals are CUMULATIVE since 2026-04-01.",
+    "rangeStart": "2026-04-21",
+    "rangeEnd": "2026-05-20",
+    "dateWindow": "last 30 days (2026-04-21 -> 2026-05-20); top-line totals are CUMULATIVE since 2026-04-01",
+    "note": "Finalized 2026-05-20. New day-of: 1 OOA form (Steven Moser, Cambria WI - out of service area), 0 new LSA calls. Updated May 19 LSA entry: 1 of the 2 leads moved In review -> Charged.",
     "calls": [
-      {
-        "date": "2026-04-20",
-        "lsaTotal": 0,
-        "lsaCharged": 0,
-        "googleAds": 0,
-        "telTracked": 0
-      },
       {
         "date": "2026-04-21",
         "lsaTotal": 0,
@@ -327,18 +320,19 @@
       {
         "date": "2026-05-19",
         "lsaTotal": 2,
+        "lsaCharged": 1,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-20",
+        "lsaTotal": 0,
         "lsaCharged": 0,
         "googleAds": 0,
         "telTracked": 0
       }
     ],
     "forms": [
-      {
-        "date": "2026-04-20",
-        "qualified": 0,
-        "ooa": 0,
-        "spamTest": 0
-      },
       {
         "date": "2026-04-21",
         "qualified": 2,
@@ -512,60 +506,71 @@
         "qualified": 2,
         "ooa": 1,
         "spamTest": 1
+      },
+      {
+        "date": "2026-05-20",
+        "qualified": 0,
+        "ooa": 1,
+        "spamTest": 0
       }
     ]
   },
   "stale_sources": [
-    "google_ads_adperformance_carried_adblocker_dialog",
-    "ga4_traffic_acquisition_90d_carried",
+    "microsoft_clarity_no_authenticated_tab",
     "sourceChart_estimated_no_per_lead_GA4_attribution",
-    "funnel_carried_from_prior"
+    "funnel_servicePages_and_freeEstimate_carried_from_prior"
   ],
   "verified": {
-    "flamingo": "2026-05-20",
-    "ga4": "2026-05-20",
-    "googleAds": "2026-05-20",
-    "lsa": "2026-05-20"
+    "flamingo": "2026-05-21",
+    "ga4": "2026-05-21",
+    "googleAds": "2026-05-21",
+    "lsa": "2026-05-21"
   },
   "trafficSources": {
-    "window": "Feb 19 - May 19, 2026 (90 days)",
-    "totalSessions": 890,
+    "window": "Feb 20 - May 20, 2026 (90 days)",
+    "totalSessions": 1004,
     "channels": [
       {
         "name": "Direct",
-        "sessions": 363,
-        "pct": "40.9%",
-        "keyEvents": 16
+        "sessions": 410,
+        "pct": "40.8%",
+        "keyEvents": 23
       },
       {
         "name": "Organic Search",
-        "sessions": 337,
-        "pct": "37.9%",
-        "keyEvents": 7
+        "sessions": 372,
+        "pct": "37.1%",
+        "keyEvents": 12
       },
       {
         "name": "Paid Search",
-        "sessions": 86,
-        "pct": "9.7%",
+        "sessions": 91,
+        "pct": "9.1%",
         "keyEvents": 3
       },
       {
         "name": "Organic Social",
-        "sessions": 60,
+        "sessions": 67,
         "pct": "6.7%",
         "keyEvents": 0
       },
       {
-        "name": "Referral",
-        "sessions": 23,
-        "pct": "2.6%",
-        "keyEvents": 1
+        "name": "Unassigned",
+        "sessions": 32,
+        "pct": "3.2%",
+        "keyEvents": 2
       },
       {
-        "name": "Unassigned",
-        "sessions": 21,
-        "pct": "2.4%",
+        "name": "Referral",
+        "sessions": 30,
+        "pct": "3.0%",
         "keyEvents": 2
+      },
+      {
+        "name": "Cross-network",
+        "sessions": 2,
+        "pct": "0.2%",
+        "keyEvents": 0
       }
     ]
   },
@@ -573,18 +578,9 @@
     "scope": "Active campaign only: Leads - Roofing (PC). 5 Enabled ad groups shown. Keywords filtered to those Active ad groups. Paused entries excluded.",
     "activeCampaign": "Leads - Roofing (PC)",
     "activeAdGroupsCount": 5,
-    "window": "Feb 19 - May 19, 2026 (90 days)",
+    "window": "Feb 20 - May 20, 2026 (90 days)",
     "rankedBy": "clicks",
     "campaigns": [
-      {
-        "name": "Residential Roofing - Leads (PC)",
-        "status": "Paused",
-        "clicks": 43,
-        "ctr": "2.17%",
-        "conv": 2,
-        "cost": "$2,280.01",
-        "cpc": "$53.02"
-      },
       {
         "name": "Website traffic-Search-1",
         "status": "Paused",
@@ -597,20 +593,20 @@
       {
         "name": "Leads - Roofing (PC)",
         "status": "Active",
-        "clicks": 119,
-        "ctr": "3.49%",
+        "clicks": 126,
+        "ctr": "3.36%",
         "conv": 0,
-        "cost": "$1,140.71",
-        "cpc": "$9.59"
+        "cost": "$1,175.29",
+        "cpc": "$9.33"
       },
       {
-        "name": "Buckshot - Storm Damage - Madison Area",
+        "name": "Residential Roofing - Leads (PC)",
         "status": "Paused",
-        "clicks": 8,
-        "ctr": "1.45%",
-        "conv": 0,
-        "cost": "$220.09",
-        "cpc": "$27.51"
+        "clicks": 43,
+        "ctr": "2.17%",
+        "conv": 2,
+        "cost": "$2,280.01",
+        "cpc": "$53.02"
       },
       {
         "name": "Website traffic-Search-Roofing",
@@ -622,10 +618,19 @@
         "cpc": "$12.13"
       },
       {
+        "name": "Buckshot - Storm Damage - Madison Area",
+        "status": "Paused",
+        "clicks": 8,
+        "ctr": "1.45%",
+        "conv": 0,
+        "cost": "$220.09",
+        "cpc": "$27.51"
+      },
+      {
         "name": "Leads-PMax Roofing",
         "status": "Paused",
         "clicks": 0,
-        "ctr": "-",
+        "ctr": "0.00%",
         "conv": 0,
         "cost": "$0.00",
         "cpc": "-"
@@ -636,28 +641,28 @@
         "name": "GENERAL ROOFING",
         "campaign": "Leads - Roofing (PC)",
         "status": "Active",
-        "clicks": 27,
-        "ctr": "2.94%",
+        "clicks": 32,
+        "ctr": "3.00%",
         "conv": 0,
-        "cost": "$138.00",
-        "cpc": "$5.11"
+        "cost": "$162.71",
+        "cpc": "$5.08"
       },
       {
         "name": "LOCAL MADISON AREA",
         "campaign": "Leads - Roofing (PC)",
         "status": "Active",
-        "clicks": 25,
-        "ctr": "2.25%",
+        "clicks": 27,
+        "ctr": "2.13%",
         "conv": 0,
-        "cost": "$131.18",
-        "cpc": "$5.25"
+        "cost": "$141.05",
+        "cpc": "$5.22"
       },
       {
         "name": "HAIL DAMAGE",
         "campaign": "Leads - Roofing (PC)",
         "status": "Active",
         "clicks": 6,
-        "ctr": "3.08%",
+        "ctr": "2.87%",
         "conv": 0,
         "cost": "$36.73",
         "cpc": "$6.12"
@@ -666,11 +671,11 @@
         "name": "EMERGENCY ROOF REPAIR",
         "campaign": "Leads - Roofing (PC)",
         "status": "Active",
-        "clicks": 0,
-        "ctr": "0.00%",
+        "clicks": 1,
+        "ctr": "1.59%",
         "conv": 0,
-        "cost": "$0.00",
-        "cpc": "-"
+        "cost": "$4.85",
+        "cpc": "$4.85"
       },
       {
         "name": "STORM DAMAGE",
@@ -689,11 +694,11 @@
         "match": "Phrase match",
         "adgroup": "GENERAL ROOFING",
         "status": "Active",
-        "clicks": 19,
-        "ctr": "3.28%",
+        "clicks": 23,
+        "ctr": "3.37%",
         "conv": 0,
-        "cost": "$99.01",
-        "cpc": "$5.21",
+        "cost": "$118.48",
+        "cpc": "$5.15",
         "qs": null
       },
       {
@@ -702,7 +707,7 @@
         "adgroup": "LOCAL MADISON AREA",
         "status": "Active",
         "clicks": 11,
-        "ctr": "2.05%",
+        "ctr": "1.85%",
         "conv": 0,
         "cost": "$62.48",
         "cpc": "$5.68",
@@ -713,23 +718,11 @@
         "match": "Phrase match",
         "adgroup": "LOCAL MADISON AREA",
         "status": "Active",
-        "clicks": 6,
-        "ctr": "3.64%",
+        "clicks": 8,
+        "ctr": "4.21%",
         "conv": 0,
-        "cost": "$29.53",
+        "cost": "$39.40",
         "cpc": "$4.92",
-        "qs": null
-      },
-      {
-        "name": "\"roofing companies near me\"",
-        "match": "Phrase match",
-        "adgroup": "GENERAL ROOFING",
-        "status": "Active",
-        "clicks": 4,
-        "ctr": "5.00%",
-        "conv": 0,
-        "cost": "$19.56",
-        "cpc": "$4.89",
         "qs": null
       },
       {
@@ -738,10 +731,22 @@
         "adgroup": "LOCAL MADISON AREA",
         "status": "Active",
         "clicks": 4,
-        "ctr": "2.84%",
+        "ctr": "2.40%",
         "conv": 0,
         "cost": "$19.41",
         "cpc": "$4.85",
+        "qs": null
+      },
+      {
+        "name": "\"roofing companies near me\"",
+        "match": "Phrase match",
+        "adgroup": "GENERAL ROOFING",
+        "status": "Active",
+        "clicks": 4,
+        "ctr": "4.08%",
+        "conv": 0,
+        "cost": "$19.56",
+        "cpc": "$4.89",
         "qs": null
       },
       {
@@ -750,10 +755,46 @@
         "adgroup": "HAIL DAMAGE",
         "status": "Active",
         "clicks": 3,
-        "ctr": "7.50%",
+        "ctr": "6.98%",
         "conv": 0,
         "cost": "$17.66",
         "cpc": "$5.89",
+        "qs": null
+      },
+      {
+        "name": "\"roofing contractor sun prairie wi\"",
+        "match": "Phrase match",
+        "adgroup": "LOCAL MADISON AREA",
+        "status": "Active",
+        "clicks": 2,
+        "ctr": "3.45%",
+        "conv": 0,
+        "cost": "$9.85",
+        "cpc": "$4.92",
+        "qs": null
+      },
+      {
+        "name": "[roofers near me]",
+        "match": "Exact match",
+        "adgroup": "GENERAL ROOFING",
+        "status": "Active",
+        "clicks": 2,
+        "ctr": "4.55%",
+        "conv": 0,
+        "cost": "$9.94",
+        "cpc": "$4.97",
+        "qs": null
+      },
+      {
+        "name": "\"roof repair middleton wi\"",
+        "match": "Phrase match",
+        "adgroup": "LOCAL MADISON AREA",
+        "status": "Active",
+        "clicks": 2,
+        "ctr": "8.33%",
+        "conv": 0,
+        "cost": "$9.91",
+        "cpc": "$4.95",
         "qs": null
       },
       {
@@ -761,12 +802,204 @@
         "match": "Exact match",
         "adgroup": "GENERAL ROOFING",
         "status": "Active",
-        "clicks": 2,
-        "ctr": "1.90%",
+        "clicks": 1,
+        "ctr": "0.83%",
         "conv": 0,
-        "cost": "$9.56",
-        "cpc": "$4.78",
+        "cost": "$4.86",
+        "cpc": "$4.86",
         "qs": "3/10"
+      },
+      {
+        "name": "[roof repair near me]",
+        "match": "Exact match",
+        "adgroup": "EMERGENCY ROOF REPAIR",
+        "status": "Active",
+        "clicks": 1,
+        "ctr": "2.27%",
+        "conv": 0,
+        "cost": "$4.85",
+        "cpc": "$4.85",
+        "qs": null
+      },
+      {
+        "name": "[roof damage from hail]",
+        "match": "Exact match",
+        "adgroup": "HAIL DAMAGE",
+        "status": "Active",
+        "clicks": 1,
+        "ctr": "5.88%",
+        "conv": 0,
+        "cost": "$9.67",
+        "cpc": "$9.67",
+        "qs": null
+      },
+      {
+        "name": "\"gutter installation Madison\"",
+        "match": "Phrase match",
+        "adgroup": "LOCAL MADISON AREA",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "[roof repair Madison WI]",
+        "match": "Exact match",
+        "adgroup": "LOCAL MADISON AREA",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "\"roof leaking repair\"",
+        "match": "Phrase match",
+        "adgroup": "STORM DAMAGE",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "\"hail damage roof repair madison wi\"",
+        "match": "Phrase match",
+        "adgroup": "HAIL DAMAGE",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "[roofing contractor near me]",
+        "match": "Exact match",
+        "adgroup": "GENERAL ROOFING",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "[roof inspection Madison WI]",
+        "match": "Exact match",
+        "adgroup": "EMERGENCY ROOF REPAIR",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "[roof replacement near me]",
+        "match": "Exact match",
+        "adgroup": "GENERAL ROOFING",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "\"emergency roof repair\"",
+        "match": "Phrase match",
+        "adgroup": "EMERGENCY ROOF REPAIR",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": "3/10"
+      },
+      {
+        "name": "\"chimney flashing repair\"",
+        "match": "Phrase match",
+        "adgroup": "STORM DAMAGE",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "\"roof damage repair near me\"",
+        "match": "Phrase match",
+        "adgroup": "STORM DAMAGE",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "[commercial roofing Madison WI]",
+        "match": "Exact match",
+        "adgroup": "GENERAL ROOFING",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "\"roof estimate Madison\"",
+        "match": "Phrase match",
+        "adgroup": "LOCAL MADISON AREA",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "\"emergency roofers near me\"",
+        "match": "Phrase match",
+        "adgroup": "EMERGENCY ROOF REPAIR",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "\"storm damage roof repair\"",
+        "match": "Phrase match",
+        "adgroup": "STORM DAMAGE",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
       }
     ]
   }
