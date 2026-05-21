@@ -518,5 +518,74 @@ tabs.forEach(function(t){t.addEventListener("click",function(){tabs.forEach(func
 }).catch(function(){});
 })();
 </script>
+
+<style id="v9-style">
+.v9-winbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:18px 0 6px}
+.v9-winbar .v9-lab{font-size:11px;letter-spacing:.06em;text-transform:uppercase;opacity:.7;margin-right:2px}
+.v9-btn{cursor:pointer;border:1px solid #2c3a4a;background:#16202b;color:#cfe3f5;font-weight:600;font-size:13px;padding:7px 15px;border-radius:8px;transition:all .15s}
+.v9-btn:hover{border-color:#3d5168}
+.v9-btn.v9-on{background:#2563eb;border-color:#2563eb;color:#fff}
+.v9-note{font-size:11px;opacity:.6;margin-left:6px}
+html.v6-light .v9-btn{background:#eef2f7;color:#22405f;border-color:#cfd8e3}
+html.v6-light .v9-btn.v9-on{background:#2563eb;color:#fff;border-color:#2563eb}
+</style>
+<script id="v9-window">
+(function(){
+  var MAP={w7:7,w14:14,w30:30}, LBL={w7:'7 days',w14:'14 days',w30:'30 days'}, SUF={w7:'7D',w14:'14D',w30:'30D'};
+  var active='w30', baseSnap=null, applying=false, orig={};
+  var origRender=window.render;
+  function q(s){return document.querySelector(s);}
+  function suffixOf(t){var m=t&&t.match(/\((7D|14D|30D|90D)\)/);return m?m[1]:null;}
+  function captureLabels(){
+    var s=q('[data-field="kpis.totalSessions"]'); if(s){var l=s.parentNode.querySelector('.label'); if(l&&!('sess' in orig)){orig.sess=suffixOf(l.textContent);}}
+    var c=q('[data-field="kpis.adsCost90d"]'); if(c){var l2=c.parentNode.querySelector('.label'); if(l2&&!('cost' in orig)){orig.cost=suffixOf(l2.textContent);}}
+  }
+  function setSuffix(el,suf){
+    if(!el||!suf) return;
+    for(var i=0;i<el.childNodes.length;i++){var nd=el.childNodes[i];
+      if(nd.nodeType===3 && /\((?:7D|14D|30D|90D)\)/.test(nd.nodeValue)){nd.nodeValue=nd.nodeValue.replace(/\((?:7D|14D|30D|90D)\)/,'('+suf+')');return;}}
+    if(el.children.length===0){el.textContent=el.textContent.replace(/\((?:7D|14D|30D|90D)\)/,'('+suf+')');}
+  }
+  function relabel(hasWin){
+    var s=q('[data-field="kpis.totalSessions"]'); var c=q('[data-field="kpis.adsCost90d"]');
+    setSuffix(s?s.parentNode.querySelector('.label'):null, hasWin?SUF[active]:orig.sess);
+    setSuffix(c?c.parentNode.querySelector('.label'):null, hasWin?SUF[active]:orig.cost);
+  }
+  function buildBar(){
+    if(q('#v9-bar')) return;
+    var bar=document.createElement('div'); bar.className='v9-winbar'; bar.id='v9-bar';
+    var lab=document.createElement('span'); lab.className='v9-lab'; lab.textContent='Time window'; bar.appendChild(lab);
+    ['w7','w14','w30'].forEach(function(k){var b=document.createElement('button');b.className='v9-btn';b.id='v9-'+k;b.textContent=LBL[k];b.onclick=function(){applyWindow(k);};bar.appendChild(b);});
+    var n=document.createElement('span'); n.className='v9-note'; n.id='v9-note'; bar.appendChild(n);
+    var anchor=q('.kpis'); if(anchor&&anchor.parentNode){anchor.parentNode.insertBefore(bar,anchor);} else if(document.body){document.body.insertBefore(bar,document.body.firstChild);}
+  }
+  function setOn(){['w7','w14','w30'].forEach(function(k){var b=q('#v9-'+k);if(b)b.classList.toggle('v9-on',k===active);});}
+  function applyWindow(k){
+    if(!baseSnap) return;
+    active=k; buildBar();
+    var d=JSON.parse(baseSnap), n=MAP[k];
+    if(d.daily){if(d.daily.forms)d.daily.forms=d.daily.forms.slice(-n);if(d.daily.calls)d.daily.calls=d.daily.calls.slice(-n);}
+    var w=d.windows&&d.windows[k];
+    if(w){d.kpis.totalSessions=w.totalSessions;d.kpis.paidSessions=w.paidSessions;d.kpis.paidPct=w.paidPct;d.kpis.adsCost90d=w.adsCost;d.kpis.adsCostDaily=w.adsCostDaily;}
+    try{if(window.deriveAndComposeBanner)window.deriveAndComposeBanner(d);}catch(e){}
+    applying=true; window.currentData=d;
+    try{origRender();}catch(e){}
+    applying=false;
+    buildBar(); setOn(); captureLabels(); relabel(!!w);
+    var note=q('#v9-note'); var asOf=(d.windows&&d.windows.asOf)||d.snapshot_date||'';
+    if(note) note.textContent = w ? ('ending '+asOf) : 'leads/calls windowed; traffic & cost show full period';
+  }
+  window.render=function(){
+    var r=origRender.apply(this,arguments);
+    if(!applying){
+      try{baseSnap=JSON.stringify(window.currentData);}catch(e){baseSnap=null;}
+      buildBar(); captureLabels();
+      setTimeout(function(){applyWindow(active);},0);
+    }
+    return r;
+  };
+  if(window.currentData){try{baseSnap=JSON.stringify(window.currentData);}catch(e){}buildBar();captureLabels();setTimeout(function(){applyWindow(active);},0);}
+})();
+</script>
 </body>
 </html>
