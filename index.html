@@ -580,7 +580,7 @@ var active="w30", lastPreset="w30", custom=null, baseSnap=null, busy=false;
 function q(s){return document.querySelector(s);}
 function get(o,p){return p.split(".").reduce(function(a,k){return a==null?a:a[k];},o);}
 function asOf(){var cd=window.currentData;return (cd&&cd.windows&&cd.windows.asOf)||(cd&&cd.snapshot_date)||null;}
-function addDays(ds,n){var d=new Date(ds+"T00:00:00");d.setDate(d.getDate()+n);return d.toISOString().slice(0,10);}
+function addDays(ds,n){var p=ds.split("-");var d=new Date(Date.UTC(+p[0],+p[1]-1,+p[2]));d.setUTCDate(d.getUTCDate()+n);return d.toISOString().slice(0,10);}
 function range(){var a=asOf();if(!a)return null;if(active==="custom"&&custom)return {start:custom.start,end:custom.end};return {start:addDays(a,-(MAP[active]-1)),end:a};}
 function inR(ds,r){return !!r&&ds>=r.start&&ds<=r.end;}
 function esc(s){return (s||"").split("&").join("&amp;").split("<").join("&lt;").split(">").join("&gt;");}
@@ -615,7 +615,7 @@ html.v6-light .vxl-date{background:#eef2f7;color:#22405f;border-color:#cfd8e3}
 (function(){
 function q(s){return document.querySelector(s);}
 function asOf(){var cd=window.currentData||{};return (cd.windows&&cd.windows.asOf)||cd.snapshot_date||null;}
-function addDays(ds,n){var d=new Date(ds+"T00:00:00");d.setDate(d.getDate()+n);return d.toISOString().slice(0,10);}
+function addDays(ds,n){var p=ds.split("-");var d=new Date(Date.UTC(+p[0],+p[1]-1,+p[2]));d.setUTCDate(d.getUTCDate()+n);return d.toISOString().slice(0,10);}
 function num(s){return parseFloat((""+s).replace(/[^0-9.]/g,""))||0;}
 function txt(p){var els=document.querySelectorAll("[data-field]");for(var i=0;i<els.length;i++){if(els[i].getAttribute("data-field")===p)return (els[i].textContent||"").trim();}return "";}
 function ensureXLSX(cb){if(window.XLSX){cb(true);return;}var s=document.createElement("script");s.src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js";s.onload=function(){cb(true);};s.onerror=function(){cb(false);};document.head.appendChild(s);}
