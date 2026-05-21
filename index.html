@@ -601,5 +601,36 @@ if(window.currentData){try{baseSnap=JSON.stringify(window.currentData);}catch(e)
 setTimeout(function(){build();applyView();},1400);setTimeout(function(){build();},3200);
 })();
 </script>
+<style id="vxl-style">
+.vxl-row{display:flex;justify-content:flex-end;margin:12px 0 0}
+.vxl-btn{cursor:pointer;border:1px solid #1f7a4d;background:#16341f;color:#7ee0a8;font-weight:600;font-size:13px;padding:8px 16px;border-radius:8px;transition:all .15s}
+.vxl-btn:hover{background:#1c4327;border-color:#2ea36a}
+.vxl-btn[disabled]{opacity:.6;cursor:default}
+html.v6-light .vxl-btn{background:#e6f7ee;color:#137a48;border-color:#b6e3cb}
+</style>
+<script id="vxl">
+(function(){
+function q(s){return document.querySelector(s);}
+function txt(p){var els=document.querySelectorAll("[data-field]");for(var i=0;i<els.length;i++){if(els[i].getAttribute("data-field")===p)return (els[i].textContent||"").trim();}return "";}
+function ensureXLSX(cb){if(window.XLSX){cb(true);return;}var s=document.createElement("script");s.src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js";s.onload=function(){cb(true);};s.onerror=function(){cb(false);};document.head.appendChild(s);}
+function reset(){var b=q("#vxl-btn");if(b){b.textContent="Download Excel";b.removeAttribute("disabled");}}
+function fallbackCSV(cd){var rows=[["Metric","Value"]];[["Impressions","kpis.adsImpressions"],["Clicks","kpis.adsClicks"],["Avg CPC","kpis.adsCpc"],["Ad spend","kpis.adsCost90d"],["Cost per qualified","enquiries.combined.costPerQualified"],["LSA charged","kpis.lsaCharged"]].forEach(function(r){rows.push([r[0],txt(r[1])]);});var csv=rows.map(function(r){return r.map(function(c){return (""+c).indexOf(",")>=0?("\""+c+"\""):c;}).join(",");}).join("\n");var blob=new Blob([csv],{type:"text/csv"});var a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="Buckshot_GoogleAds_Report_"+((cd&&cd.snapshot_date)||"export")+".csv";document.body.appendChild(a);a.click();a.remove();}
+function buildAndDownload(){var cd=window.currentData||{};var b=q("#vxl-btn");if(b){b.textContent="Preparing...";b.setAttribute("disabled","1");}ensureXLSX(function(ok){try{if(!ok||!window.XLSX){fallbackCSV(cd);reset();return;}var X=window.XLSX;var wb=X.utils.book_new();function add(name,rows){X.utils.book_append_sheet(wb,X.utils.aoa_to_sheet(rows),name.slice(0,31));}
+var sum=[["Buckshot General Contracting  -  Google Ads Report"],["Snapshot date",cd.snapshot_date||""],["Period",(cd.period_start||"")+" to "+(cd.period_end||"")],["Generated",new Date().toString()],[],["Google Ads KPIs (current on-screen view)"],["Metric","Value","Detail"]];
+[["Impressions","kpis.adsImpressions","ad impressions"],["Clicks","kpis.adsClicks","CTR "+txt("kpis.adsCtr")],["Avg CPC","kpis.adsCpc",""],["Cost per qualified lead","enquiries.combined.costPerQualified",""],["LSA charged leads","kpis.lsaCharged",txt("kpis.lsaTotal")+" total / "+txt("kpis.lsaDisputed")+" disputed"],["Ad spend","kpis.adsCost90d",txt("kpis.adsCostDaily")]].forEach(function(r){sum.push([r[0],txt(r[1]),r[2]]);});
+sum.push([]);sum.push(["Enquiries","Total","Qualified","OOA","Spam/test"]);sum.push(["Form leads",txt("enquiries.lead.total"),txt("enquiries.lead.qualified"),txt("enquiries.lead.ooa"),txt("enquiries.lead.spamTest")]);sum.push(["Calls",txt("enquiries.call.total"),txt("enquiries.call.lsa")+" LSA",txt("enquiries.call.googleAds")+" Google Ads",""]);sum.push(["Combined",txt("enquiries.combined.total"),txt("enquiries.combined.qualified"),"",""]);add("Summary",sum);
+var forms=(cd.daily&&cd.daily.forms)||[];var calls=(cd.daily&&cd.daily.calls)||[];var dm={};forms.forEach(function(f){dm[f.date]=dm[f.date]||{};dm[f.date].f=f;});calls.forEach(function(c){dm[c.date]=dm[c.date]||{};dm[c.date].c=c;});var dates=Object.keys(dm).sort();var dr=[["Date","Form qualified","Form OOA","Form spam/test","LSA total","LSA charged","Google Ads calls"]];dates.forEach(function(d){var f=dm[d].f||{},c=dm[d].c||{};dr.push([d,f.qualified||0,f.ooa||0,f.spamTest||0,c.lsaTotal||0,c.lsaCharged||0,c.googleAds||0]);});add("Daily breakdown",dr);
+var ld=cd.leadDetails||[];var lr=[["Date","Name","City","Category","Note / reason"]];ld.slice().sort(function(a,b){return a.date<b.date?1:-1;}).forEach(function(x){lr.push([x.date,x.name,x.city||"",x.cat,x.note||""]);});add("Lead details",lr);
+var cl=cd.callDetails||[];var cr=[["Date","Source","Status"]];cl.slice().sort(function(a,b){return a.date<b.date?1:-1;}).forEach(function(x){cr.push([x.date,x.source,x.status]);});add("Call details",cr);
+if(cd.windows){var w=cd.windows;var wr=[["Window","Impressions","Clicks","CTR","Avg CPC","Ad spend","Cost/day"]];[["7 days","w7"],["14 days","w14"],["30 days","w30"]].forEach(function(p){var o=w[p[1]];if(o)wr.push([p[0],o.impressions,o.clicks,o.ctr,o.cpc,o.adsCost,o.adsCostDaily]);});add("Windows 7-14-30",wr);}
+var ap=cd.adPerformance||{};if(ap.campaigns&&ap.campaigns.length){var ar=[["Campaign","Status","Clicks","CTR","Conv","Cost","CPC"]];ap.campaigns.forEach(function(c){ar.push([c.name,c.status,c.clicks,c.ctr,c.conv,c.cost,c.cpc]);});add("Campaigns",ar);}
+if(ap.adGroups&&ap.adGroups.length){var gr=[["Ad group","Campaign","Status","Clicks","CTR","Conv","Cost","CPC"]];ap.adGroups.forEach(function(g){gr.push([g.name,g.campaign,g.status,g.clicks,g.ctr,g.conv,g.cost,g.cpc]);});add("Ad groups",gr);}
+if(ap.keywords&&ap.keywords.length){var kr=[["Keyword","Match","Ad group","Status","Clicks","CTR","Conv","Cost","CPC","QS"]];ap.keywords.forEach(function(k){kr.push([k.name,k.match,k.adgroup,k.status,k.clicks,k.ctr,k.conv,k.cost,k.cpc,k.qs]);});add("Keywords",kr);}
+if(cd.insights&&cd.insights.length){var ir=[["Headline","Detail"]];cd.insights.forEach(function(i){if(i&&i.headline)ir.push([i.headline,i.body||""]);});add("Insights",ir);}
+X.writeFile(wb,"Buckshot_GoogleAds_Report_"+(cd.snapshot_date||"export")+".xlsx");}catch(e){alert("Export failed: "+(e&&e.message||e));}reset();});}
+function build(){if(q("#vxl-row"))return;var row=document.createElement("div");row.className="vxl-row";row.id="vxl-row";var b=document.createElement("button");b.id="vxl-btn";b.className="vxl-btn";b.textContent="Download Excel";b.onclick=buildAndDownload;row.appendChild(b);var anchor=q(".kpis");if(anchor&&anchor.parentNode){anchor.parentNode.insertBefore(row,anchor);}else if(document.body){document.body.insertBefore(row,document.body.firstChild);}}
+build();setTimeout(build,1500);setTimeout(build,3300);
+})();
+</script>
 </body>
 </html>
