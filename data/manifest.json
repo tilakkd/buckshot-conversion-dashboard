@@ -2,6 +2,11 @@
   "latest": "2026-05-20",
   "dates": [
     {
+      "date": "2026-05-20",
+      "label": "May 20, 2026 - Finalized",
+      "note": "Day-of finalized May 21 at 10:35 IST. Cumulative since Apr 1: 60 forms (26 qualified, 5 OOA) / 8 LSA (4 charged); combined 68 touches, 34 qualified. Quiet day: 1 inbound form (Cambria WI, out-of-area) and 0 new LSA calls; the May 19 LSA roof-repair lead moved In review -> Charged. Active campaign 0 conversions on $4,583.36 90-day spend. Opt score 90.0%."
+    },
+    {
       "date": "2026-05-19",
       "label": "May 19, 2026 - Finalized",
       "note": "Day-of finalized May 20 at 07:05 IST (manual run). Cumulative since Apr 1: 59 forms (26 qualified) / 8 LSA (3 charged). Busiest lead day in weeks: 2 qualified Madison leads + 2 LSA calls. Opt score 90.0%."
@@ -55,7 +60,6 @@
       "date": "2026-05-08",
       "label": "May 8, 2026 - Pre-tag-install",
       "note": "Original audit. 0 GA4 Key Events. Phone call lead goal in 'Needs attention'."
-    },
-    "2026-05-20"
+    }
   ]
 }
