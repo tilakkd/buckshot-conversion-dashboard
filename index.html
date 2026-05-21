@@ -641,5 +641,15 @@ build();setTimeout(build,700);setTimeout(build,1800);setTimeout(build,3300);
 })();
 </script>
 <style id="v14-hidefresh">.v6-fresh{display:none !important}</style>
+<script id="v15-spamrate">
+(function(){
+function q(s){return document.querySelector(s);}
+function readNum(p){var els=document.querySelectorAll("[data-field]");for(var i=0;i<els.length;i++){if(els[i].getAttribute("data-field")===p)return parseFloat((els[i].textContent||"").replace(/[^0-9.]/g,""))||0;}return 0;}
+function findVal(){var lead=q(".enq-card.lead");if(!lead)return null;var tag=lead.querySelector(".enq-row[data-spamrate]");if(tag)return tag.querySelector(".val");var rows=lead.querySelectorAll(".enq-row");for(var i=0;i<rows.length;i++){var lb=rows[i].querySelector(".lbl");if(lb&&lb.textContent.toLowerCase().indexOf("tracking status")>=0){rows[i].setAttribute("data-spamrate","1");lb.textContent="Spam / test rate";return rows[i].querySelector(".val");}}return null;}
+function update(){var val=findVal();if(!val)return;var total=readNum("enquiries.lead.total");var spam=readNum("enquiries.lead.spamTest");var pct=total>0?Math.round(spam/total*100):0;var t=pct+"%";if(val.textContent!==t)val.textContent=t;}
+function init(){var lead=q(".enq-card.lead");if(!lead){setTimeout(init,400);return;}update();try{var obs=new MutationObserver(function(){update();});obs.observe(lead,{childList:true,characterData:true,subtree:true});}catch(e){}}
+init();setTimeout(update,1500);setTimeout(update,3300);
+})();
+</script>
 </body>
 </html>
