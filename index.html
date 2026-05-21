@@ -591,5 +591,72 @@ html.v6-light .v9-btn.v9-on{background:#2563eb;color:#fff;border-color:#2563eb}
   strip(); setTimeout(strip,800); setTimeout(strip,2200);
 })();
 </script>
+<style id="v12-style">
+.v12-drill{margin-top:12px;border-top:1px solid #24303d;padding-top:10px}
+.v12-sel{background:#16202b;color:#cfe3f5;border:1px solid #2c3a4a;border-radius:7px;padding:5px 10px;font-size:12px;font-weight:600;width:100%}
+.v12-list{margin-top:8px;max-height:240px;overflow:auto;font-size:12px}
+.v12-row{display:flex;gap:9px;padding:6px 2px;border-bottom:1px solid #1d2733;align-items:baseline}
+.v12-row .d{color:#7e93a8;white-space:nowrap;font-variant-numeric:tabular-nums;min-width:38px}
+.v12-row .nm{font-weight:600;color:#e8f0f8;white-space:nowrap}
+.v12-row .nt{color:#9fb2c4;flex:1;text-align:left}
+.v12-empty{color:#7e93a8;padding:8px 2px;font-style:italic}
+html.v6-light .v12-sel{background:#eef2f7;color:#22405f;border-color:#cfd8e3}
+html.v6-light .v12-row{border-color:#e6ebf1}
+html.v6-light .v12-row .nm{color:#1a2733}
+html.v6-light .v12-row .nt{color:#54657a}
+html.v6-light .v12-row .d{color:#8294a6}
+html.v6-light .v12-empty{color:#8294a6}
+</style>
+<script id="v12-drill">
+(function(){
+  function days(){var b=document.querySelector('.v9-btn.v9-on');var m={'v9-w7':7,'v9-w14':14,'v9-w30':30};return (b&&m[b.id])||30;}
+  function inWindow(ds){
+    var cd=window.currentData; if(!cd) return true;
+    var asOf=(cd.windows&&cd.windows.asOf)||cd.snapshot_date; if(!asOf) return true;
+    var end=new Date(asOf+'T00:00:00'); var start=new Date(end); start.setDate(start.getDate()-(days()-1));
+    var d=new Date(ds+'T00:00:00'); return d>=start && d<=end;
+  }
+  function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+  function fmt(s){var p=s.split('-');return p[1]+'/'+p[2];}
+  function rows(arr,cols){
+    return arr.map(function(x){return '<div class="v12-row">'+cols(x)+'</div>';}).join('');
+  }
+  function renderLeads(){
+    var card=document.querySelector('.enq-card.lead'); if(!card) return;
+    var box=card.querySelector('.v12-drill'); if(!box) return;
+    var sel=box.querySelector('.v12-sel'), list=box.querySelector('.v12-list'), cat=sel.value;
+    var cd=window.currentData||{}; var data=(cd.leadDetails||[]).filter(function(x){return x.cat===cat&&inWindow(x.date);});
+    data.sort(function(a,b){return a.date<b.date?1:-1;});
+    if(!data.length){ list.innerHTML='<div class="v12-empty">No '+(cat==='ooa'?'out-of-area':cat)+' form leads in this window.</div>'; return; }
+    list.innerHTML=rows(data,function(x){var loc=x.city?(' - '+esc(x.city)):''; return '<span class="d">'+fmt(x.date)+'</span><span class="nm">'+esc(x.name)+loc+'</span><span class="nt">'+esc(x.note)+'</span>';});
+  }
+  function renderCalls(){
+    var card=document.querySelector('.enq-card.call'); if(!card) return;
+    var box=card.querySelector('.v12-drill'); if(!box) return;
+    var sel=box.querySelector('.v12-sel'), list=box.querySelector('.v12-list'), st=sel.value;
+    var cd=window.currentData||{}; var data=(cd.callDetails||[]).filter(function(x){return (st==='all'||x.status===st)&&inWindow(x.date);});
+    data.sort(function(a,b){return a.date<b.date?1:-1;});
+    if(!data.length){ list.innerHTML='<div class="v12-empty">No '+(st==='all'?'':st.toLowerCase()+' ')+'calls in this window.</div>'; return; }
+    list.innerHTML=rows(data,function(x){return '<span class="d">'+fmt(x.date)+'</span><span class="nm">'+esc(x.source)+'</span><span class="nt">'+esc(x.status)+'</span>';});
+  }
+  function buildLead(){
+    var card=document.querySelector('.enq-card.lead'); if(!card||card.querySelector('.v12-drill')) return;
+    var box=document.createElement('div'); box.className='v12-drill';
+    box.innerHTML='<select class="v12-sel"><option value="qualified">Qualified leads</option><option value="ooa">Out of area</option><option value="spam">Spam / test</option></select><div class="v12-list"></div>';
+    card.appendChild(box); box.querySelector('.v12-sel').addEventListener('change',renderLeads); renderLeads();
+  }
+  function buildCall(){
+    var card=document.querySelector('.enq-card.call'); if(!card||card.querySelector('.v12-drill')) return;
+    var box=document.createElement('div'); box.className='v12-drill';
+    box.innerHTML='<select class="v12-sel"><option value="all">All calls</option><option value="Charged">Charged</option><option value="Not charged">Not charged</option><option value="Disputed">Disputed</option></select><div class="v12-list"></div>';
+    card.appendChild(box); box.querySelector('.v12-sel').addEventListener('change',renderCalls); renderCalls();
+  }
+  function build(){ buildLead(); buildCall(); }
+  function rerender(){ renderLeads(); renderCalls(); }
+  function hook(){ ['v9-w7','v9-w14','v9-w30'].forEach(function(id){var b=document.getElementById(id); if(b&&!b.__v12){b.__v12=1; b.addEventListener('click',function(){setTimeout(rerender,80);});}}); }
+  function init(){ if(!window.currentData){ setTimeout(init,400); return;} build(); hook(); }
+  init(); setTimeout(function(){build();hook();rerender();},1300); setTimeout(function(){build();hook();},3200);
+})();
+</script>
 </body>
 </html>
