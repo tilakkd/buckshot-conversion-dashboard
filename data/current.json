@@ -1009,5 +1009,33 @@
         "qs": null
       }
     ]
+  },
+  "windows": {
+    "asOf": "2026-05-20",
+    "note": "7/14/30-day windowed totals ending asOf. GA4 sessions and Ads cost are direct pulls; forms/calls/LSA-charged are derived client-side from the daily arrays.",
+    "w7": {
+      "days": 7,
+      "totalSessions": 229,
+      "paidSessions": 19,
+      "paidPct": "8.3%",
+      "adsCost": "$49.14",
+      "adsCostDaily": "$7.02/day"
+    },
+    "w14": {
+      "days": 14,
+      "totalSessions": 464,
+      "paidSessions": 30,
+      "paidPct": "6.5%",
+      "adsCost": "$100.86",
+      "adsCostDaily": "$7.20/day"
+    },
+    "w30": {
+      "days": 30,
+      "totalSessions": 898,
+      "paidSessions": 83,
+      "paidPct": "9.2%",
+      "adsCost": "$391.73",
+      "adsCostDaily": "$13.06/day"
+    }
   }
 }
