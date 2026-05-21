@@ -532,13 +532,13 @@ html.v6-light .v9-btn.v9-on{background:#2563eb;color:#fff;border-color:#2563eb}
 <script id="v9-window">
 (function(){
   var MAP={w7:7,w14:14,w30:30}, LBL={w7:'7 days',w14:'14 days',w30:'30 days'}, SUF={w7:'7D',w14:'14D',w30:'30D'};
-  var active='w30', baseSnap=null, applying=false, orig={};
-  var origRender=window.render;
+  var active='w30', baseSnap=null, orig={}, busy=false;
   function q(s){return document.querySelector(s);}
+  function get(o,p){return p.split('.').reduce(function(a,k){return a==null?a:a[k];},o);}
   function suffixOf(t){var m=t&&t.match(/\((7D|14D|30D|90D)\)/);return m?m[1]:null;}
   function captureLabels(){
-    var s=q('[data-field="kpis.totalSessions"]'); if(s){var l=s.parentNode.querySelector('.label'); if(l&&!('sess' in orig)){orig.sess=suffixOf(l.textContent);}}
-    var c=q('[data-field="kpis.adsCost90d"]'); if(c){var l2=c.parentNode.querySelector('.label'); if(l2&&!('cost' in orig)){orig.cost=suffixOf(l2.textContent);}}
+    var s=q('[data-field="kpis.totalSessions"]'); if(s){var l=s.parentNode.querySelector('.label'); if(l&&!('sess' in orig))orig.sess=suffixOf(l.textContent);}
+    var c=q('[data-field="kpis.adsCost90d"]'); if(c){var l2=c.parentNode.querySelector('.label'); if(l2&&!('cost' in orig))orig.cost=suffixOf(l2.textContent);}
   }
   function setSuffix(el,suf){
     if(!el||!suf) return;
@@ -550,6 +550,11 @@ html.v6-light .v9-btn.v9-on{background:#2563eb;color:#fff;border-color:#2563eb}
     var s=q('[data-field="kpis.totalSessions"]'); var c=q('[data-field="kpis.adsCost90d"]');
     setSuffix(s?s.parentNode.querySelector('.label'):null, hasWin?SUF[active]:orig.sess);
     setSuffix(c?c.parentNode.querySelector('.label'):null, hasWin?SUF[active]:orig.cost);
+  }
+  function setSub(id,n,arr){
+    var e=document.getElementById(id); if(!e||!arr||!arr.length) return;
+    var st=arr[0].date, en=arr[arr.length-1].date;
+    e.textContent=e.textContent.replace(/last \d+ days \([^)]*\)/, 'last '+n+' days ('+st+' to '+en+')');
   }
   function buildBar(){
     if(q('#v9-bar')) return;
@@ -567,24 +572,22 @@ html.v6-light .v9-btn.v9-on{background:#2563eb;color:#fff;border-color:#2563eb}
     if(d.daily){if(d.daily.forms)d.daily.forms=d.daily.forms.slice(-n);if(d.daily.calls)d.daily.calls=d.daily.calls.slice(-n);}
     var w=d.windows&&d.windows[k];
     if(w){d.kpis.totalSessions=w.totalSessions;d.kpis.paidSessions=w.paidSessions;d.kpis.paidPct=w.paidPct;d.kpis.adsCost90d=w.adsCost;d.kpis.adsCostDaily=w.adsCostDaily;}
-    try{if(window.deriveAndComposeBanner)window.deriveAndComposeBanner(d);}catch(e){}
-    applying=true; window.currentData=d;
-    try{origRender();}catch(e){}
-    applying=false;
-    buildBar(); setOn(); captureLabels(); relabel(!!w);
+    var banner=''; try{if(window.deriveAndComposeBanner)banner=window.deriveAndComposeBanner(d);}catch(e){}
+    try{ if(window.renderDateWise) window.renderDateWise(d); }catch(e){}
+    document.querySelectorAll('[data-field]').forEach(function(el){var v=get(d,el.getAttribute('data-field')); if(v!==undefined&&v!==null) el.textContent=v;});
+    if(d.daily){ setSub('dwCallsSub',n,d.daily.calls); setSub('dwFormsSub',n,d.daily.forms); }
+    var bl=document.getElementById('bottomLine'); if(bl&&banner) bl.textContent=banner;
+    setOn(); captureLabels(); relabel(!!w);
     var note=q('#v9-note'); var asOf=(d.windows&&d.windows.asOf)||d.snapshot_date||'';
-    if(note) note.textContent = w ? ('ending '+asOf) : 'leads/calls windowed; traffic & cost show full period';
+    if(note) note.textContent = w ? ('window ending '+asOf) : 'leads/calls windowed; traffic and cost show full period';
   }
+  var origRender=window.render;
   window.render=function(){
     var r=origRender.apply(this,arguments);
-    if(!applying){
-      try{baseSnap=JSON.stringify(window.currentData);}catch(e){baseSnap=null;}
-      buildBar(); captureLabels();
-      setTimeout(function(){applyWindow(active);},0);
-    }
+    if(!busy){ busy=true; try{baseSnap=JSON.stringify(window.currentData);}catch(e){baseSnap=null;} buildBar(); captureLabels(); setTimeout(function(){applyWindow(active);busy=false;},0); }
     return r;
   };
-  if(window.currentData){try{baseSnap=JSON.stringify(window.currentData);}catch(e){}buildBar();captureLabels();setTimeout(function(){applyWindow(active);},0);}
+  if(window.currentData){ try{baseSnap=JSON.stringify(window.currentData);}catch(e){} buildBar(); captureLabels(); setTimeout(function(){applyWindow(active);},0); }
 })();
 </script>
 </body>
