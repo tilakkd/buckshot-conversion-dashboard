@@ -581,33 +581,33 @@ html.v6-light .v12-empty{color:#8294a6}
   function get(o,p){return p.split('.').reduce(function(a,k){return a==null?a:a[k];},o);}
   function asOf(){var cd=window.currentData;return (cd&&cd.windows&&cd.windows.asOf)||(cd&&cd.snapshot_date)||null;}
   function addDays(ds,n){var d=new Date(ds+'T00:00:00');d.setDate(d.getDate()+n);return d.toISOString().slice(0,10);}
-  function nDays(r){return Math.round((new Date(r.end+'T00:00:00')-new Date(r.start+'T00:00:00'))/86400000)+1;}
   function range(){var a=asOf();if(!a)return null;if(active==='custom'&&custom)return {start:custom.start,end:custom.end};return {start:addDays(a,-(MAP[active]-1)),end:a};}
   function inR(ds,r){return !!r&&ds>=r.start&&ds<=r.end;}
   function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
   function fmt(s){var p=s.split('-');return p[1]+'/'+p[2];}
-  function adsSum(r){var cd=window.currentData;var arr=(cd&&cd.adsDaily)||[];if(!arr.length||!r)return null;var ds=arr.map(function(x){return x.date;});var mn=ds.reduce(function(a,b){return a<b?a:b;}),mx=ds.reduce(function(a,b){return a>b?a:b;});if(r.start<mn||r.end>mx)return null;var im=0,cl=0,co=0;arr.forEach(function(x){if(x.date>=r.start&&x.date<=r.end){im+=(+x.impressions||0);cl+=(+x.clicks||0);co+=(+x.cost||0);}});return {impr:im,clicks:cl,cost:co};}
+  function adsSum(r){var cd=window.currentData;var arr=(cd&&cd.adsDaily)||[];if(!arr.length||!r)return null;var ds=arr.map(function(x){return x.date;});var mn=ds.slice().sort()[0];var mx=ds.slice().sort()[ds.length-1];if(r.start<mn||r.end>mx)return null;var im=0,cl=0,co=0;arr.forEach(function(x){if(x.date>=r.start&&x.date<=r.end){im+=(+x.impressions||0);cl+=(+x.clicks||0);co+=(+x.cost||0);}});return {impr:im,clicks:cl,cost:co};}
+  function money(n){return n.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});}
   function renderLeads(r){var box=q('.enq-card.lead .v12-drill');if(!box)return;var sel=box.querySelector('.v12-sel'),list=box.querySelector('.v12-list'),cat=sel.value;var cd=window.currentData||{};var data=(cd.leadDetails||[]).filter(function(x){return x.cat===cat&&inR(x.date,r);});data.sort(function(a,b){return a.date<b.date?1:-1;});if(!data.length){list.innerHTML='<div class="v12-empty">No '+(cat==='ooa'?'out-of-area':cat)+' form leads in this range.</div>';return;}list.innerHTML=data.map(function(x){var loc=x.city?(' - '+esc(x.city)):'';return '<div class="v12-row"><span class="d">'+fmt(x.date)+'</span><span class="nm">'+esc(x.name)+loc+'</span><span class="nt">'+esc(x.note)+'</span></div>';}).join('');}
   function renderCalls(r){var box=q('.enq-card.call .v12-drill');if(!box)return;var sel=box.querySelector('.v12-sel'),list=box.querySelector('.v12-list'),st=sel.value;var cd=window.currentData||{};var data=(cd.callDetails||[]).filter(function(x){return (st==='all'||x.status===st)&&inR(x.date,r);});data.sort(function(a,b){return a.date<b.date?1:-1;});if(!data.length){list.innerHTML='<div class="v12-empty">No '+(st==='all'?'':st.toLowerCase()+' ')+'calls in this range.</div>';return;}list.innerHTML=data.map(function(x){return '<div class="v12-row"><span class="d">'+fmt(x.date)+'</span><span class="nm">'+esc(x.source)+'</span><span class="nt">'+esc(x.status)+'</span></div>';}).join('');}
   function setSub(id,prefix,r){var e=document.getElementById(id);if(!e)return;var lbl=(active==='custom')?(r.start+' to '+r.end):('last '+MAP[active]+' days ('+r.start+' to '+r.end+')');e.textContent=prefix+', '+lbl;}
-  function paint(r,adsOk){['w7','w14','w30'].forEach(function(k){var b=q('#vctl-'+k);if(b)b.classList.toggle('on',active===k);});var note=q('#vctl-note');if(note){if(active!=='custom'){note.textContent='Window ending '+(asOf()||'');}else if(adsOk){note.textContent='Custom range '+r.start+' to '+r.end+' (leads, calls and ad metrics).';}else{note.textContent='Custom range '+r.start+' to '+r.end+' - applies to leads, calls and the daily breakdown. Ad-metric tiles use the '+LBL[lastPreset]+' window.';}}}
+  function paint(r,adsOk){['w7','w14','w30'].forEach(function(k){var b=q('#vctl-'+k);if(b)b.classList.toggle('on',active===k);});var note=q('#vctl-note');if(note){if(active!=='custom'){note.textContent='Window ending '+(asOf()||'');}else if(adsOk){note.textContent='Custom range '+r.start+' to '+r.end+' (leads, calls and ad metrics).';}else{note.textContent='Custom range '+r.start+' to '+r.end+' - leads, calls and daily breakdown. Ad tiles use the '+LBL[lastPreset]+' window.';}}}
   function applyView(){
     if(!baseSnap)return; var r=range(); if(!r)return;
     var d=JSON.parse(baseSnap);
     if(d.daily){if(d.daily.forms)d.daily.forms=d.daily.forms.filter(function(x){return inR(x.date,r);});if(d.daily.calls)d.daily.calls=d.daily.calls.filter(function(x){return inR(x.date,r);});}
     var cust=(active==='custom'); var a=cust?adsSum(r):null;
-    if(!cust){var wk=active;var w=d.windows&&d.windows[wk];if(w){d.kpis.adsImpressions=w.impressions;d.kpis.adsClicks=w.clicks;d.kpis.adsCtr=w.ctr;d.kpis.adsCpc=w.cpc;d.kpis.adsCost90d=w.adsCost;d.kpis.adsCostDaily=w.adsCostDaily;}}
-    else if(a){d.kpis.adsImpressions=a.impr.toLocaleString('en-US');d.kpis.adsClicks=a.clicks;d.kpis.adsCtr=(a.impr?(a.clicks/a.impr*100).toFixed(1):'0.0')+'%';d.kpis.adsCpc='
+    if(!cust){var w=d.windows&&d.windows[active];if(w){d.kpis.adsImpressions=w.impressions;d.kpis.adsClicks=w.clicks;d.kpis.adsCtr=w.ctr;d.kpis.adsCpc=w.cpc;d.kpis.adsCost90d=w.adsCost;d.kpis.adsCostDaily=w.adsCostDaily;}}
+    else if(a){var nd=Math.round((new Date(r.end+'T00:00:00')-new Date(r.start+'T00:00:00'))/86400000)+1;d.kpis.adsImpressions=a.impr.toLocaleString('en-US');d.kpis.adsClicks=a.clicks;d.kpis.adsCtr=(a.impr?(a.clicks/a.impr*100).toFixed(1):'0.0')+'%';d.kpis.adsCpc='
 </html>+(a.clicks?(a.cost/a.clicks):0).toFixed(2);d.kpis.adsCost90d='
-</html>+a.cost.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});d.kpis.adsCostDaily='
-</html>+(a.cost/nDays(r)).toFixed(2)+'/day';}
+</html>+money(a.cost);d.kpis.adsCostDaily='
+</html>+money(a.cost/nd)+'/day';}
     var banner=''; try{if(window.deriveAndComposeBanner)banner=window.deriveAndComposeBanner(d);}catch(e){}
     try{if(window.renderDateWise)window.renderDateWise(d);}catch(e){}
     var skipAds=(cust&&!a);
     document.querySelectorAll('[data-field]').forEach(function(el){var f=el.getAttribute('data-field'); if(skipAds&&ADS[f])return; var v=get(d,f); if(v!==undefined&&v!==null)el.textContent=v;});
     if(d.daily){setSub('dwCallsSub','Daily phone leads',r);setSub('dwFormsSub','Daily form submissions',r);}
     if(!skipAds){var bl=document.getElementById('bottomLine'); if(bl&&banner)bl.textContent=banner;}
-    renderLeads(r); renderCalls(r); paint(r,!!a||!cust);
+    renderLeads(r); renderCalls(r); paint(r,(!cust)||(!!a));
   }
   function applyCustom(){var a=asOf();if(!a)return;var fi=q('#vctl-from'),ti=q('#vctl-to');var f=fi.value,t=ti.value;if(!f||!t)return;var mn=addDays(a,-29);if(f<mn)f=mn;if(t>a)t=a;if(f>t){var x=f;f=t;t=x;}fi.value=f;ti.value=t;active='custom';custom={start:f,end:t};applyView();}
   function buildBar(){
@@ -615,15 +615,15 @@ html.v6-light .v12-empty{color:#8294a6}
     var bar=document.createElement('div');bar.className='vctl-bar';bar.id='vctl-bar';
     var lab=document.createElement('span');lab.className='vctl-lab';lab.textContent='Time window';bar.appendChild(lab);
     ['w7','w14','w30'].forEach(function(k){var b=document.createElement('button');b.className='vctl-btn';b.id='vctl-'+k;b.textContent=LBL[k];b.onclick=function(){active=k;lastPreset=k;custom=null;applyView();};bar.appendChild(b);});
-    var cust=document.createElement('span');cust.className='vctl-cust';
-    var cl=document.createElement('span');cl.className='cl';cl.textContent='Custom';cust.appendChild(cl);
+    var cu=document.createElement('span');cu.className='vctl-cust';
+    var cl=document.createElement('span');cl.className='cl';cl.textContent='Custom';cu.appendChild(cl);
     var from=document.createElement('input');from.type='date';from.className='vctl-date';from.id='vctl-from';
     var dash=document.createElement('span');dash.textContent='to';dash.style.opacity='.6';dash.style.fontSize='12px';
     var to=document.createElement('input');to.type='date';to.className='vctl-date';to.id='vctl-to';
     var go=document.createElement('button');go.className='vctl-go';go.textContent='Apply';go.onclick=applyCustom;
     var clr=document.createElement('button');clr.className='vctl-clr';clr.textContent='Clear';clr.onclick=function(){active=lastPreset;custom=null;applyView();};
-    cust.appendChild(from);cust.appendChild(dash);cust.appendChild(to);cust.appendChild(go);cust.appendChild(clr);
-    bar.appendChild(cust);
+    cu.appendChild(from);cu.appendChild(dash);cu.appendChild(to);cu.appendChild(go);cu.appendChild(clr);
+    bar.appendChild(cu);
     var note=document.createElement('span');note.className='vctl-note';note.id='vctl-note';bar.appendChild(note);
     var a=asOf();if(a){from.min=addDays(a,-29);from.max=a;to.min=addDays(a,-29);to.max=a;from.value=addDays(a,-6);to.value=a;}
     var anchor=q('.kpis');if(anchor&&anchor.parentNode){anchor.parentNode.insertBefore(bar,anchor);}else if(document.body){document.body.insertBefore(bar,document.body.firstChild);}
