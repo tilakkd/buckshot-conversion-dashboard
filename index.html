@@ -574,5 +574,22 @@ html.v6-light .v9-btn.v9-on{background:#2563eb;color:#fff;border-color:#2563eb}
   if(window.currentData){ try{baseSnap=JSON.stringify(window.currentData);}catch(e){} buildBar(); setTimeout(function(){applyWindow(active);},0); }
 })();
 </script>
+<script id="v9b-nopie">
+(function(){
+  function strip(){
+    var pie=document.getElementById('v8-pie'); if(!pie) return;
+    var grid=pie.closest('.v8-grid');
+    var col=pie; while(col&&grid&&col.parentNode!==grid) col=col.parentNode;
+    if(col&&grid&&grid.contains(col)) col.style.display='none';
+    var wrap=document.querySelector('.v8-wrap');
+    if(wrap){
+      var h=wrap.querySelector('h2'); if(h) h.textContent='Ad Performance';
+      var sub=wrap.querySelector('.panel-sub'); if(sub) sub.textContent='Top-performing campaigns, ad groups, and keywords in Google Ads.';
+    }
+    if(grid){ grid.style.gridTemplateColumns='1fr'; }
+  }
+  strip(); setTimeout(strip,800); setTimeout(strip,2200);
+})();
+</script>
 </body>
 </html>
