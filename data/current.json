@@ -1053,5 +1053,373 @@
       "ctr": "2.8%",
       "cpc": "$5.09"
     }
-  }
+  },
+  "leadDetails": [
+    {
+      "date": "2026-04-21",
+      "name": "Brendan W.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Full roof tear-off + replacement, fascia, gutters"
+    },
+    {
+      "date": "2026-04-21",
+      "name": "Joseph V.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Roof storm-damage inspection (AAA insurance)"
+    },
+    {
+      "date": "2026-04-21",
+      "name": "Sally W.",
+      "city": "",
+      "cat": "spam",
+      "note": "B2B janitorial solicitation (BrightBound Janitorial)"
+    },
+    {
+      "date": "2026-04-22",
+      "name": "David C.",
+      "city": "",
+      "cat": "spam",
+      "note": "B2B sales pitch: ContractorOutsourcing.com (VA outsourcing)"
+    },
+    {
+      "date": "2026-04-23",
+      "name": "Takushi K.",
+      "city": "Madison",
+      "cat": "qualified",
+      "note": "Hail-damage roof/siding inspection"
+    },
+    {
+      "date": "2026-04-23",
+      "name": "Cameron S.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Tree-damage exterior wall repair"
+    },
+    {
+      "date": "2026-04-23",
+      "name": "Benjamin N.",
+      "city": "Centerville, IA",
+      "cat": "ooa",
+      "note": "Out of area: out-of-state (Iowa); investor siding bid (Rural Revival)"
+    },
+    {
+      "date": "2026-04-23",
+      "name": "Roberthon",
+      "city": "",
+      "cat": "spam",
+      "note": "Spam: gibberish / non-English message"
+    },
+    {
+      "date": "2026-04-23",
+      "name": "Jordan V.",
+      "city": "",
+      "cat": "spam",
+      "note": "B2B: roofing-business acquisition offer"
+    },
+    {
+      "date": "2026-04-24",
+      "name": "Michael W.",
+      "city": "Fort Atkinson",
+      "cat": "qualified",
+      "note": "Re-side a duplex"
+    },
+    {
+      "date": "2026-04-25",
+      "name": "Daniel W.",
+      "city": "",
+      "cat": "spam",
+      "note": "SEO / paid-traffic solicitation"
+    },
+    {
+      "date": "2026-04-26",
+      "name": "Rise QA #2",
+      "city": "",
+      "cat": "spam",
+      "note": "Internal QA test submission (GCLID/UTM verify)"
+    },
+    {
+      "date": "2026-04-26",
+      "name": "Rise QA",
+      "city": "",
+      "cat": "spam",
+      "note": "Internal QA test submission (pipeline verify)"
+    },
+    {
+      "date": "2026-04-27",
+      "name": "Maria R.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Estimates: house roof, house siding, garage roof + siding"
+    },
+    {
+      "date": "2026-04-28",
+      "name": "Penny T.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Roof hail-damage check (neighborhood signs)"
+    },
+    {
+      "date": "2026-04-28",
+      "name": "Jonathan M.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Roof hail-damage inspection"
+    },
+    {
+      "date": "2026-04-29",
+      "name": "Margaret G.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Front-door eyebrow water damage + roof inspection"
+    },
+    {
+      "date": "2026-04-29",
+      "name": "Murray O.",
+      "city": "",
+      "cat": "spam",
+      "note": "B2B: Google Ad Grants / Ads-management pitch"
+    },
+    {
+      "date": "2026-04-30",
+      "name": "Terry R.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Roof replacement (house + attached & detached garage)"
+    },
+    {
+      "date": "2026-04-30",
+      "name": "Erik L.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Chimney cricket / saddle"
+    },
+    {
+      "date": "2026-04-30",
+      "name": "Susan D.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Shingle siding inquiry"
+    },
+    {
+      "date": "2026-04-30",
+      "name": "Angela F.",
+      "city": "Church Hill",
+      "cat": "ooa",
+      "note": "Out of area: Church Hill; full-home renovation, not roofing"
+    },
+    {
+      "date": "2026-05-01",
+      "name": "Christos K.",
+      "city": "",
+      "cat": "spam",
+      "note": "Internal test (Rise Marketing): body '77777'"
+    },
+    {
+      "date": "2026-05-01",
+      "name": "Mike S.",
+      "city": "",
+      "cat": "spam",
+      "note": "Test submission ('test')"
+    },
+    {
+      "date": "2026-05-03",
+      "name": "Susan D.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Shingle siding estimate (email/text preferred)"
+    },
+    {
+      "date": "2026-05-04",
+      "name": "Olivia S.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Hail damage: roof + siding, 3 structures"
+    },
+    {
+      "date": "2026-05-04",
+      "name": "Jean S.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Roof hail check + estimate (neighbor referral)"
+    },
+    {
+      "date": "2026-05-04",
+      "name": "Joseph M.",
+      "city": "",
+      "cat": "spam",
+      "note": "SEO solicitation (search-ranking service)"
+    },
+    {
+      "date": "2026-05-05",
+      "name": "Eric G.",
+      "city": "",
+      "cat": "spam",
+      "note": "B2B: commercial-roofing crew pitch (dibiz / otcroofs)"
+    },
+    {
+      "date": "2026-05-05",
+      "name": "Susan S.",
+      "city": "",
+      "cat": "spam",
+      "note": "B2B: AI / virtual-assistant pitch (parallelaid)"
+    },
+    {
+      "date": "2026-05-05",
+      "name": "Susan S.",
+      "city": "",
+      "cat": "spam",
+      "note": "B2B: AI / virtual-assistant pitch (parallelaid, duplicate)"
+    },
+    {
+      "date": "2026-05-08",
+      "name": "Nicole P.",
+      "city": "Janesville",
+      "cat": "qualified",
+      "note": "Roof hail-damage inspection (1100 Erie Dr)"
+    },
+    {
+      "date": "2026-05-08",
+      "name": "Cara L.",
+      "city": "",
+      "cat": "spam",
+      "note": "B2B: virtual-assistant pitch (MAVIS / vettedvas)"
+    },
+    {
+      "date": "2026-05-14",
+      "name": "Rise QA",
+      "city": "",
+      "cat": "spam",
+      "note": "Internal QA test submission (mail-delivery diagnose)"
+    },
+    {
+      "date": "2026-05-14",
+      "name": "Test",
+      "city": "",
+      "cat": "spam",
+      "note": "Test submission ('test mail')"
+    },
+    {
+      "date": "2026-05-14",
+      "name": "Test",
+      "city": "",
+      "cat": "spam",
+      "note": "Test submission (test@test.com)"
+    },
+    {
+      "date": "2026-05-14",
+      "name": "Test",
+      "city": "",
+      "cat": "spam",
+      "note": "Test submission (test@test.com)"
+    },
+    {
+      "date": "2026-05-14",
+      "name": "Test",
+      "city": "",
+      "cat": "spam",
+      "note": "Test submission (test@test.com)"
+    },
+    {
+      "date": "2026-05-14",
+      "name": "Test",
+      "city": "",
+      "cat": "spam",
+      "note": "Test submission (test@test.com)"
+    },
+    {
+      "date": "2026-05-14",
+      "name": "Test",
+      "city": "",
+      "cat": "spam",
+      "note": "Test submission (test@test.com)"
+    },
+    {
+      "date": "2026-05-15",
+      "name": "Elmer E.",
+      "city": "",
+      "cat": "spam",
+      "note": "SEO solicitation (site not ranking on Google)"
+    },
+    {
+      "date": "2026-05-16",
+      "name": "Test",
+      "city": "",
+      "cat": "spam",
+      "note": "Test submission ('test mail')"
+    },
+    {
+      "date": "2026-05-17",
+      "name": "Dennis D.",
+      "city": "",
+      "cat": "ooa",
+      "note": "Out of service area (per submitted address); whole-home remodel"
+    },
+    {
+      "date": "2026-05-18",
+      "name": "Ashley B.",
+      "city": "",
+      "cat": "spam",
+      "note": "B2B: AI / virtual-assistant pitch (parallelaid)"
+    },
+    {
+      "date": "2026-05-19",
+      "name": "Lisa L.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Roof + garage replacement, gutters, shed (insurance approved)"
+    },
+    {
+      "date": "2026-05-19",
+      "name": "Vaughn P.",
+      "city": "",
+      "cat": "qualified",
+      "note": "New roof, full/partial siding, gutters"
+    },
+    {
+      "date": "2026-05-19",
+      "name": "Daniel W.",
+      "city": "",
+      "cat": "ooa",
+      "note": "Out of service area (per submitted address)"
+    },
+    {
+      "date": "2026-05-19",
+      "name": "Meredith W.",
+      "city": "",
+      "cat": "spam",
+      "note": "B2B: virtual-assistant service pitch (virtualhelpdesk)"
+    },
+    {
+      "date": "2026-05-20",
+      "name": "Steven M.",
+      "city": "",
+      "cat": "ooa",
+      "note": "Out of service area (per submitted address); roof-leak repair"
+    }
+  ],
+  "callDetails": [
+    {
+      "date": "2026-04-28",
+      "source": "LSA",
+      "status": "Not charged"
+    },
+    {
+      "date": "2026-04-30",
+      "source": "LSA",
+      "status": "Charged"
+    },
+    {
+      "date": "2026-05-19",
+      "source": "LSA",
+      "status": "Charged"
+    },
+    {
+      "date": "2026-05-19",
+      "source": "LSA",
+      "status": "Not charged"
+    }
+  ],
+  "leadDetailsNote": "Redacted per-lead log (first name + last initial; no email/phone). cat=qualified|ooa|spam. Reconciles to daily.forms per-day counts. OOA reflects submitted-address classification. Window buttons slice by date."
 }
