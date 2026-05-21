@@ -3,14 +3,14 @@
   "period_start": "2026-04-01",
   "period_end": "2026-05-20",
   "schema_version": 1,
-  "version": 4,
+  "version": 5,
   "captured_at": "2026-05-21T10:55:00+05:30",
   "date": "2026-05-20",
-  "headline_state": "Finalized May 20, 2026. Cumulative since Apr 1: 60 form submissions (26 qualified inbox, 5 OOA, 29 spam/test), 8 LSA calls (4 charged); combined 68 touches, 34 qualified. May 20 was quiet on new leads: 1 inbound form (Steven Moser - a commercial roof-repair request from Cambria WI 53923, Columbia County, OUTSIDE the Madison/Dane/Rock/Jefferson service area, so classified OOA not qualified) and 0 new LSA calls. The notable change is that the May 19 Madison roof-repair LSA lead moved from In review to Charged, lifting LSA charged from 3 to 4. Active campaign Leads - Roofing (PC) at 369 account clicks / $4,583.36 total 90-day spend, still 0 conversions and Bid setting limited. Optimization score 90.0%. GTM container quality still Needs Attention.",
+  "headline_state": "Finalized May 20, 2026. Cumulative since Apr 1: 60 form submissions (27 qualified inbox, 4 OOA, 29 spam/test), 8 LSA calls (4 charged); combined 68 touches, 35 qualified. May 20 was quiet on new leads: 1 inbound form (Steven Moser - a commercial roof-repair request from Cambria WI 53923, Columbia County, OUTSIDE the Madison/Dane/Rock/Jefferson service area, so classified OOA not qualified) and 0 new LSA calls. The notable change is that the May 19 Madison roof-repair LSA lead moved from In review to Charged, lifting LSA charged from 3 to 4. Active campaign Leads - Roofing (PC) at 369 account clicks / $4,583.36 total 90-day spend, still 0 conversions and Bid setting limited. Optimization score 90.0%. GTM container quality still Needs Attention.",
   "kpis": {
     "formSubmissions": 60,
-    "qualifiedForms": 26,
-    "ooaForms": 5,
+    "qualifiedForms": 27,
+    "ooaForms": 4,
     "spamTestForms": 29,
     "lsaTotal": 8,
     "lsaCharged": 4,
@@ -31,8 +31,8 @@
   "enquiries": {
     "lead": {
       "total": 60,
-      "qualified": 26,
-      "ooa": 5,
+      "qualified": 27,
+      "ooa": 4,
       "spamTest": 29,
       "trackingStatus": "[OK] Verified May 9"
     },
@@ -45,8 +45,8 @@
     },
     "combined": {
       "total": 68,
-      "qualified": 34,
-      "costPerQualified": "~$135",
+      "qualified": 35,
+      "costPerQualified": "~$131",
       "formToCallRatio": "60 : 8"
     }
   },
@@ -515,8 +515,8 @@
       },
       {
         "date": "2026-05-19",
-        "qualified": 2,
-        "ooa": 1,
+        "qualified": 3,
+        "ooa": 0,
         "spamTest": 1
       },
       {
@@ -1381,8 +1381,8 @@
       "date": "2026-05-19",
       "name": "Daniel W.",
       "city": "",
-      "cat": "ooa",
-      "note": "Out of service area (per submitted address)"
+      "cat": "qualified",
+      "note": "Appointment request; he and spouse interested in services"
     },
     {
       "date": "2026-05-19",
