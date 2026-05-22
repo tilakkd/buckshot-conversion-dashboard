@@ -1,15 +1,15 @@
 {
-  "snapshot_date": "2026-05-20",
+  "snapshot_date": "2026-05-21",
   "period_start": "2026-04-01",
-  "period_end": "2026-05-20",
+  "period_end": "2026-05-21",
   "schema_version": 1,
-  "version": 5,
-  "captured_at": "2026-05-21T10:55:00+05:30",
-  "date": "2026-05-20",
-  "headline_state": "Finalized May 20, 2026. Cumulative since Apr 1: 60 form submissions (27 qualified inbox, 4 OOA, 29 spam/test), 8 LSA calls (4 charged); combined 68 touches, 35 qualified. May 20 was quiet on new leads: 1 inbound form (Steven Moser - a commercial roof-repair request from Cambria WI 53923, Columbia County, OUTSIDE the Madison/Dane/Rock/Jefferson service area, so classified OOA not qualified) and 0 new LSA calls. The notable change is that the May 19 Madison roof-repair LSA lead moved from In review to Charged, lifting LSA charged from 3 to 4. Active campaign Leads - Roofing (PC) at 369 account clicks / $4,583.36 total 90-day spend, still 0 conversions and Bid setting limited. Optimization score 90.0%. GTM container quality still Needs Attention.",
+  "version": 6,
+  "captured_at": "2026-05-22T10:48:15+05:30",
+  "date": "2026-05-21",
+  "headline_state": "Finalized May 21, 2026. Cumulative since Apr 1: 62 form submissions (29 qualified, 4 out-of-area, 29 spam/test) and 8 LSA call leads (4 charged). 2 new qualified Madison roofing leads on May 21. Active campaign Leads - Roofing (PC) served 93 impressions but spent $0 (0 clicks) on May 21 - reach limited by bid setting, not a tracking gap.",
   "kpis": {
-    "formSubmissions": 60,
-    "qualifiedForms": 27,
+    "formSubmissions": 62,
+    "qualifiedForms": 29,
     "ooaForms": 4,
     "spamTestForms": 29,
     "lsaTotal": 8,
@@ -23,15 +23,15 @@
     "totalSessions": 1004,
     "paidSessions": 91,
     "paidPct": "9.1%",
-    "adsImpressions": "2,765",
+    "adsImpressions": "2,858",
     "adsClicks": 77,
-    "adsCtr": "2.8%",
+    "adsCtr": "2.7%",
     "adsCpc": "$5.09"
   },
   "enquiries": {
     "lead": {
-      "total": 60,
-      "qualified": 27,
+      "total": 62,
+      "qualified": 29,
       "ooa": 4,
       "spamTest": 29,
       "trackingStatus": "[OK] Verified May 9"
@@ -44,16 +44,16 @@
       "trackingStatus": "[OK] Goal repaired May 11"
     },
     "combined": {
-      "total": 68,
-      "qualified": 35,
-      "costPerQualified": "~$131",
-      "formToCallRatio": "60 : 8"
+      "total": 70,
+      "qualified": 37,
+      "costPerQualified": "~$124",
+      "formToCallRatio": "62 : 8"
     }
   },
   "spamCounts": {
     "inbox": 1,
     "test": 4,
-    "flamingoSpamFolder": 578
+    "flamingoSpamFolder": 577
   },
   "sourceChart": {
     "paid": 1,
@@ -87,59 +87,44 @@
   },
   "insights": [
     {
-      "headline": "Quiet lead day - 1 out-of-area form, no new calls",
-      "body": "May 20 brought a single inbound form (Steven Moser, a commercial roof-repair request) and zero new LSA phone leads. The form came from Cambria WI 53923 in Columbia County, outside the Madison/Dane/Rock/Jefferson service area, so it is logged as OOA rather than a qualified lead."
+      "headline": "Two new qualified leads on May 21",
+      "body": "Both were Madison-area roofing requests (a hotel storm siding/facia repair and a north-Madison metal roof redo), lifting cumulative qualified forms to 29 since April 1."
     },
     {
-      "headline": "LSA charged count rises from 3 to 4",
-      "body": "The May 19 Madison roof-repair LSA lead that was In review yesterday is now Charged, so cumulative LSA charged moves to 4 of 8 total. No new LSA leads arrived May 20; total holds at 8."
+      "headline": "Active campaign spent nothing on May 21",
+      "body": "Leads - Roofing (PC) served 93 impressions but drew 0 clicks and $0 cost, consistent with the standing Bid setting limited reach constraint."
     },
     {
-      "headline": "Active campaign still at zero conversions on heavy account spend",
-      "body": "Leads - Roofing (PC) shows 126 clicks and $1,175.29 spend over 90 days with 0 conversions and a Bid setting limited warning. Account-wide 90-day spend is $4,583.36 against just 2 conversions."
+      "headline": "7-day ad spend flat at $49",
+      "body": "The campaign spent $49.14 over the last 7 days on 10 clicks and 596 impressions at a $4.91 CPC, unchanged from the prior week."
     },
     {
-      "headline": "Most account spend sits in PAUSED campaigns",
-      "body": "The paused Residential Roofing - Leads (PC) accounts for $2,280.01 (half the 90-day spend) and the only 2 conversions, while paused Website traffic-Search-1 drew 177 clicks at $4.10 CPC. The lone active campaign drives only $1,175 of the $4,583 total."
+      "headline": "30-day clicks holding at 77",
+      "body": "The last 30 days delivered 2,858 impressions and 77 clicks at a $5.09 CPC and 2.7% CTR for $391.73 of campaign spend."
     },
     {
-      "headline": "'roof repair' keyword carries the active campaign",
-      "body": "Among enabled keywords in the active ad groups, \"roof repair\" (GENERAL ROOFING) leads with 23 of 66 clicks and $118.48 spend at a 3.37% CTR. \"roofing contractor madison wi\" is a distant second at 11 clicks."
+      "headline": "No new LSA calls since May 19",
+      "body": "Local Services leads are flat at 8 total and 4 charged since April 1; the two most recent leads both arrived May 19."
     },
     {
-      "headline": "EMERGENCY ROOF REPAIR ad group finally served",
-      "body": "After sitting at zero, the EMERGENCY ROOF REPAIR ad group recorded its first click (1 click, $4.85) in the 90-day window. STORM DAMAGE remains at 0 clicks despite 32 impressions - likely a bid-floor or match-type constraint worth checking."
+      "headline": "Blended cost per qualified near $124",
+      "body": "Against about $4,583 of trailing 90-day account spend and 37 combined qualified enquiries, cost per qualified lead sits near $124."
     },
     {
-      "headline": "Direct and Organic Search dominate 90-day traffic",
-      "body": "Of 1,004 sessions, Direct (410) and Organic Search (372) make up about 78%, while Paid Search contributes 91 sessions (9.1%) and 3 key events. Total key events across channels was 42."
+      "headline": "General Roofing leads ad-group spend",
+      "body": "Over 30 days General Roofing led with $162.71 and 32 clicks, ahead of Local Madison Area at $141.05 and 27 clicks."
     },
     {
-      "headline": "GTM container still flagged Needs Attention",
-      "body": "The GTM-KG87WZF2 container remains on Live Version 8 (published 12 days ago, 0 workspace changes) and still reports Needs Attention with 2 open issues. Phone-call and form-submit lead goals remain Active."
-    },
-    {
-      "headline": "Clarity (US, last 3 days): healthy engagement, low frustration",
-      "body": "Filtered to US visitors: 53 sessions (17 bots excluded), 1.77 pages/session, 30.35% average scroll depth, 50 sec active time. Rage clicks 0% and quick-backs only 3.77% (2 sessions) - no major frustration signals. Smart events captured 4 form submits and 2 request-quote clicks."
-    },
-    {
-      "headline": "Mobile INP is poor (1.6s) - the clearest on-site issue",
-      "body": "Clarity performance score is 77/100 with LCP 2.1s (good) and CLS 0 (good), but Interaction to Next Paint is 1.6s, rated poor, on a mostly-mobile audience. Dead clicks (13.21%, 7 sessions) historically trace to the Elementor nav dropdown (href=#), so treat as working-as-designed unless a recording proves otherwise."
+      "headline": "No spam landed on May 21",
+      "body": "No spam or test submissions arrived on May 21; the Flamingo spam folder holds 577 items."
     }
   ],
   "daily": {
-    "rangeStart": "2026-04-21",
-    "rangeEnd": "2026-05-20",
-    "dateWindow": "last 30 days (2026-04-21 -> 2026-05-20); top-line totals are CUMULATIVE since 2026-04-01",
-    "note": "Finalized 2026-05-20. New day-of: 1 OOA form (Steven Moser, Cambria WI - out of service area), 0 new LSA calls. Updated May 19 LSA entry: 1 of the 2 leads moved In review -> Charged. Clarity (US-only, last 3 days) captured live in a follow-up pass and added to insights.",
+    "rangeStart": "2026-04-22",
+    "rangeEnd": "2026-05-21",
+    "dateWindow": "last 30 days (2026-04-22 -> 2026-05-21); top-line totals are CUMULATIVE since 2026-04-01",
+    "note": "Finalized 2026-05-21. Day-of counts; cumulative totals anchored at 2026-04-01.",
     "calls": [
-      {
-        "date": "2026-04-21",
-        "lsaTotal": 0,
-        "lsaCharged": 0,
-        "googleAds": 0,
-        "telTracked": 0
-      },
       {
         "date": "2026-04-22",
         "lsaTotal": 0,
@@ -342,15 +327,16 @@
         "lsaCharged": 0,
         "googleAds": 0,
         "telTracked": 0
+      },
+      {
+        "date": "2026-05-21",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
       }
     ],
     "forms": [
-      {
-        "date": "2026-04-21",
-        "qualified": 2,
-        "ooa": 0,
-        "spamTest": 1
-      },
       {
         "date": "2026-04-22",
         "qualified": 0,
@@ -524,18 +510,28 @@
         "qualified": 0,
         "ooa": 1,
         "spamTest": 0
+      },
+      {
+        "date": "2026-05-21",
+        "qualified": 2,
+        "ooa": 0,
+        "spamTest": 0
       }
     ]
   },
   "stale_sources": [
     "sourceChart_estimated_no_per_lead_GA4_attribution",
-    "funnel_servicePages_and_freeEstimate_carried_from_prior"
+    "funnel_servicePages_freeEstimate_carried_from_prior",
+    "ga4_sessions_and_traffic_carried_from_prior_secondary",
+    "adsCost90d_account_total_carried_from_prior_slow_moving",
+    "adPerformance_90d_carried_from_prior",
+    "adsDaily_30d_backfill_skipped_grid_blanked_yesterday_captured"
   ],
   "verified": {
-    "flamingo": "2026-05-21",
+    "flamingo": "2026-05-22",
     "ga4": "2026-05-21",
-    "googleAds": "2026-05-21",
-    "lsa": "2026-05-21"
+    "googleAds": "2026-05-22",
+    "lsa": "2026-05-22"
   },
   "trafficSources": {
     "window": "Feb 20 - May 20, 2026 (90 days)",
@@ -1015,7 +1011,7 @@
     ]
   },
   "windows": {
-    "asOf": "2026-05-20",
+    "asOf": "2026-05-21",
     "note": "7/14/30-day rolling Google Ads totals ending asOf (impressions, clicks, ctr, cpc, cost). Forms/calls/LSA-charged derive client-side from the daily arrays.",
     "w7": {
       "days": 7,
@@ -1024,7 +1020,7 @@
       "paidPct": "8.3%",
       "adsCost": "$49.14",
       "adsCostDaily": "$7.02/day",
-      "impressions": "589",
+      "impressions": "596",
       "clicks": 10,
       "ctr": "1.7%",
       "cpc": "$4.91"
@@ -1036,9 +1032,9 @@
       "paidPct": "6.5%",
       "adsCost": "$100.86",
       "adsCostDaily": "$7.20/day",
-      "impressions": "1,158",
+      "impressions": "1,122",
       "clicks": 21,
-      "ctr": "1.8%",
+      "ctr": "1.9%",
       "cpc": "$4.80"
     },
     "w30": {
@@ -1048,34 +1044,13 @@
       "paidPct": "9.2%",
       "adsCost": "$391.73",
       "adsCostDaily": "$13.06/day",
-      "impressions": "2,765",
+      "impressions": "2,858",
       "clicks": 77,
-      "ctr": "2.8%",
+      "ctr": "2.7%",
       "cpc": "$5.09"
     }
   },
   "leadDetails": [
-    {
-      "date": "2026-04-21",
-      "name": "Brendan W.",
-      "city": "",
-      "cat": "qualified",
-      "note": "Full roof tear-off + replacement, fascia, gutters"
-    },
-    {
-      "date": "2026-04-21",
-      "name": "Joseph V.",
-      "city": "",
-      "cat": "qualified",
-      "note": "Roof storm-damage inspection (AAA insurance)"
-    },
-    {
-      "date": "2026-04-21",
-      "name": "Sally W.",
-      "city": "",
-      "cat": "spam",
-      "note": "B2B janitorial solicitation (BrightBound Janitorial)"
-    },
     {
       "date": "2026-04-22",
       "name": "David C.",
@@ -1397,6 +1372,20 @@
       "city": "",
       "cat": "ooa",
       "note": "Out of service area (per submitted address); roof-leak repair"
+    },
+    {
+      "date": "2026-05-21",
+      "name": "Aaron P.",
+      "city": "Madison",
+      "cat": "qualified",
+      "note": "Storm siding/facia repair estimate; Country Inn & Suites hotel"
+    },
+    {
+      "date": "2026-05-21",
+      "name": "Dan B.",
+      "city": "Madison",
+      "cat": "qualified",
+      "note": "Metal roof redo quote, north Madison"
     }
   ],
   "callDetails": [
@@ -1421,5 +1410,22 @@
       "status": "Not charged"
     }
   ],
-  "leadDetailsNote": "Redacted per-lead log (first name + last initial; no email/phone). cat=qualified|ooa|spam. Reconciles to daily.forms per-day counts. OOA reflects submitted-address classification. Window buttons slice by date."
+  "leadDetailsNote": "Redacted per-lead log (first name + last initial; no email/phone). cat=qualified|ooa|spam. Reconciles to daily.forms per-day counts. OOA reflects submitted-address classification. Window buttons slice by date.",
+  "adsDaily": [
+    {
+      "date": "2026-05-21",
+      "impressions": 93,
+      "clicks": 0,
+      "cost": 0
+    }
+  ],
+  "prior": {
+    "w7": {
+      "qualified": 1
+    },
+    "w14": {
+      "qualified": 12
+    },
+    "w30": null
+  }
 }
