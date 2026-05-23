@@ -1178,5 +1178,277 @@
       "qualified": 12
     },
     "w30": null
-  }
+  },
+  "leadTimeline": [
+    {
+      "date": "2026-05-21",
+      "time": "12:03 PM",
+      "sort": "2026-05-21 12:03",
+      "src": "form",
+      "form": "Quick Contact",
+      "city": "Madison",
+      "cat": "qualified",
+      "note": "Storm siding/facia repair estimate; Country Inn & Suites hotel"
+    },
+    {
+      "date": "2026-05-21",
+      "time": "10:28 AM",
+      "sort": "2026-05-21 10:28",
+      "src": "form",
+      "form": "Quick Contact",
+      "city": "Madison",
+      "cat": "qualified",
+      "note": "Metal roof redo quote, north Madison"
+    },
+    {
+      "date": "2026-05-20",
+      "time": "11:14 AM",
+      "sort": "2026-05-20 11:14",
+      "src": "form",
+      "form": "Free Estimate",
+      "city": "",
+      "cat": "ooa",
+      "note": "Out of service area (per submitted address); roof-leak repair"
+    },
+    {
+      "date": "2026-05-19",
+      "time": "9:20 PM",
+      "sort": "2026-05-19 21:20",
+      "src": "call",
+      "form": "",
+      "city": "",
+      "cat": "notcharged",
+      "note": "Phone call - Not charged"
+    },
+    {
+      "date": "2026-05-19",
+      "time": "8:24 PM",
+      "sort": "2026-05-19 20:24",
+      "src": "call",
+      "form": "",
+      "city": "Madison",
+      "cat": "charged",
+      "note": "Roof repair"
+    },
+    {
+      "date": "2026-05-19",
+      "time": "2:28 PM",
+      "sort": "2026-05-19 14:28",
+      "src": "form",
+      "form": "Quick Contact",
+      "city": "",
+      "cat": "qualified",
+      "note": "Roof + garage replacement, gutters, shed (insurance approved)"
+    },
+    {
+      "date": "2026-05-19",
+      "time": "12:53 PM",
+      "sort": "2026-05-19 12:53",
+      "src": "form",
+      "form": "Quick Contact",
+      "city": "",
+      "cat": "qualified",
+      "note": "Appointment request; he and spouse interested in services"
+    },
+    {
+      "date": "2026-05-19",
+      "time": "12:00 PM",
+      "sort": "2026-05-19 12:00",
+      "src": "form",
+      "form": "Free Estimate",
+      "city": "",
+      "cat": "qualified",
+      "note": "New roof, full/partial siding, gutters"
+    },
+    {
+      "date": "2026-05-17",
+      "time": "2:45 PM",
+      "sort": "2026-05-17 14:45",
+      "src": "form",
+      "form": "Free Estimate",
+      "city": "",
+      "cat": "ooa",
+      "note": "Out of service area (per submitted address); whole-home remodel"
+    },
+    {
+      "date": "2026-05-08",
+      "time": "9:17 AM",
+      "sort": "2026-05-08 09:17",
+      "src": "form",
+      "form": "Quick Contact",
+      "city": "Janesville",
+      "cat": "qualified",
+      "note": "Roof hail-damage inspection"
+    },
+    {
+      "date": "2026-05-04",
+      "time": "2:07 PM",
+      "sort": "2026-05-04 14:07",
+      "src": "form",
+      "form": "Free Estimate",
+      "city": "",
+      "cat": "qualified",
+      "note": "Hail damage: roof + siding, 3 structures"
+    },
+    {
+      "date": "2026-05-04",
+      "time": "12:11 PM",
+      "sort": "2026-05-04 12:11",
+      "src": "form",
+      "form": "Free Estimate",
+      "city": "",
+      "cat": "qualified",
+      "note": "Roof hail check + estimate (neighbor referral)"
+    },
+    {
+      "date": "2026-05-03",
+      "time": "7:17 PM",
+      "sort": "2026-05-03 19:17",
+      "src": "form",
+      "form": "Free Estimate",
+      "city": "",
+      "cat": "qualified",
+      "note": "Shingle siding estimate (email/text preferred)"
+    },
+    {
+      "date": "2026-04-30",
+      "time": "9:06 PM",
+      "sort": "2026-04-30 21:06",
+      "src": "form",
+      "form": "Free Estimate",
+      "city": "",
+      "cat": "qualified",
+      "note": "Roof replacement (house + attached & detached garage)"
+    },
+    {
+      "date": "2026-04-30",
+      "time": "6:01 PM",
+      "sort": "2026-04-30 18:01",
+      "src": "form",
+      "form": "Quick Contact",
+      "city": "Church Hill",
+      "cat": "ooa",
+      "note": "Out of area: Church Hill; full-home renovation, not roofing"
+    },
+    {
+      "date": "2026-04-30",
+      "time": "4:14 PM",
+      "sort": "2026-04-30 16:14",
+      "src": "form",
+      "form": "Free Estimate",
+      "city": "",
+      "cat": "qualified",
+      "note": "Chimney cricket / saddle"
+    },
+    {
+      "date": "2026-04-30",
+      "time": "2:54 PM",
+      "sort": "2026-04-30 14:54",
+      "src": "form",
+      "form": "Quick Contact",
+      "city": "",
+      "cat": "qualified",
+      "note": "Shingle siding inquiry"
+    },
+    {
+      "date": "2026-04-30",
+      "time": "12:34 AM",
+      "sort": "2026-04-30 00:34",
+      "src": "call",
+      "form": "",
+      "city": "Monona",
+      "cat": "charged",
+      "note": "Roof installation"
+    },
+    {
+      "date": "2026-04-29",
+      "time": "8:58 AM",
+      "sort": "2026-04-29 08:58",
+      "src": "form",
+      "form": "Quick Contact",
+      "city": "",
+      "cat": "qualified",
+      "note": "Front-door eyebrow water damage + roof inspection"
+    },
+    {
+      "date": "2026-04-28",
+      "time": "5:56 PM",
+      "sort": "2026-04-28 17:56",
+      "src": "form",
+      "form": "Free Estimate",
+      "city": "",
+      "cat": "qualified",
+      "note": "Roof hail-damage check (neighborhood signs)"
+    },
+    {
+      "date": "2026-04-28",
+      "time": "7:08 AM",
+      "sort": "2026-04-28 07:08",
+      "src": "form",
+      "form": "Free Estimate",
+      "city": "",
+      "cat": "qualified",
+      "note": "Roof hail-damage inspection"
+    },
+    {
+      "date": "2026-04-28",
+      "time": "1:48 AM",
+      "sort": "2026-04-28 01:48",
+      "src": "call",
+      "form": "",
+      "city": "Madison",
+      "cat": "notcharged",
+      "note": "Roof installation"
+    },
+    {
+      "date": "2026-04-27",
+      "time": "9:40 PM",
+      "sort": "2026-04-27 21:40",
+      "src": "form",
+      "form": "Free Estimate",
+      "city": "",
+      "cat": "qualified",
+      "note": "Estimates: house roof, house siding, garage roof + siding"
+    },
+    {
+      "date": "2026-04-24",
+      "time": "5:32 PM",
+      "sort": "2026-04-24 17:32",
+      "src": "form",
+      "form": "Quick Contact",
+      "city": "Fort Atkinson",
+      "cat": "qualified",
+      "note": "Re-side a duplex"
+    },
+    {
+      "date": "2026-04-23",
+      "time": "3:43 PM",
+      "sort": "2026-04-23 15:43",
+      "src": "form",
+      "form": "Quick Contact",
+      "city": "Madison",
+      "cat": "qualified",
+      "note": "Hail-damage roof/siding inspection"
+    },
+    {
+      "date": "2026-04-23",
+      "time": "10:51 AM",
+      "sort": "2026-04-23 10:51",
+      "src": "form",
+      "form": "Free Estimate",
+      "city": "Centerville, IA",
+      "cat": "ooa",
+      "note": "Out of area: out-of-state (Iowa); investor siding bid (Rural Revival)"
+    },
+    {
+      "date": "2026-04-23",
+      "time": "6:52 AM",
+      "sort": "2026-04-23 06:52",
+      "src": "form",
+      "form": "Quick Contact",
+      "city": "",
+      "cat": "qualified",
+      "note": "Tree-damage exterior wall repair"
+    }
+  ]
 }
