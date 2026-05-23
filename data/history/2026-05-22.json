@@ -1,0 +1,1438 @@
+{
+  "snapshot_date": "2026-05-22",
+  "period_start": "2026-04-01",
+  "period_end": "2026-05-22",
+  "schema_version": 1,
+  "version": 6,
+  "captured_at": "2026-05-23T10:54:47+05:30",
+  "date": "2026-05-22",
+  "headline_state": "On May 22 the Buckshot account stayed in a reach-limited holding pattern: the active Leads - Roofing (PC) campaign logged 27 impressions but 0 clicks and $0 spend. No genuine web leads or LSA calls came in (only two internal QA test form submissions). Rolling 30-day Google Ads cost is $391.73 (77 clicks, 2,882 impressions, 2.7% CTR, $5.09 CPC); 90-day account spend is $4,583.36. Cumulative since Apr 1: 64 form submissions (29 qualified, 4 out-of-area, 31 spam/test) and 8 LSA leads (4 charged), for 37 qualified touches at about $124 each.",
+  "kpis": {
+    "formSubmissions": 64,
+    "qualifiedForms": 29,
+    "ooaForms": 4,
+    "spamTestForms": 31,
+    "lsaTotal": 8,
+    "lsaCharged": 4,
+    "lsaDisputed": 0,
+    "adsCost90d": "$4,583.36",
+    "adsCostDaily": "$50.93/day",
+    "adsConversions": 2,
+    "ga4ActiveUsers": 665,
+    "ga4KeyEvents": 42,
+    "totalSessions": 1004,
+    "paidSessions": 91,
+    "paidPct": "9.1%",
+    "adsImpressions": "2,882",
+    "adsClicks": 77,
+    "adsCtr": "2.7%",
+    "adsCpc": "$5.09"
+  },
+  "enquiries": {
+    "lead": {
+      "total": 64,
+      "qualified": 29,
+      "ooa": 4,
+      "spamTest": 31,
+      "trackingStatus": "[OK] Verified May 9"
+    },
+    "call": {
+      "total": 8,
+      "lsa": 8,
+      "googleAds": 0,
+      "telTracked": 0,
+      "trackingStatus": "[OK] Goal repaired May 11"
+    },
+    "combined": {
+      "total": 72,
+      "qualified": 37,
+      "costPerQualified": "~$124",
+      "formToCallRatio": "64 : 8"
+    }
+  },
+  "spamCounts": {
+    "inbox": 1,
+    "test": 4,
+    "flamingoSpamFolder": 578
+  },
+  "sourceChart": {
+    "paid": 1,
+    "organic": 4,
+    "direct": 9,
+    "referral": 1,
+    "unassigned": 6,
+    "lsa": 4
+  },
+  "funnel": {
+    "paidSessions": 91,
+    "servicePages": 58,
+    "freeEstimate": 3,
+    "verifiedPaidConversions": 0,
+    "verifiedNote": "Tag pipeline verified working May 9  -  limiter is reach, not tracking"
+  },
+  "campaignState": {
+    "activeCount": 1,
+    "pausedCount": 5,
+    "activeCampaignName": "Leads - Roofing (PC)",
+    "optimizationScore": "90.0%",
+    "bidWarning": "Bid setting limited"
+  },
+  "trackingState": {
+    "gtmContainer": "GTM-KG87WZF2",
+    "gtmLiveVersion": "Version 8",
+    "gtmTags": 10,
+    "phoneCallLeadGoal": "Active",
+    "submitLeadFormGoal": "Active",
+    "newestChange": "May 11  -  Phone call lead goal repaired"
+  },
+  "insights": [
+    {
+      "headline": "No new genuine leads on May 22",
+      "body": "The only May 22 form activity was two internal QA test submissions; no qualified prospects or LSA calls came in that day."
+    },
+    {
+      "headline": "Active campaign stayed reach-limited",
+      "body": "Leads - Roofing (PC) served just 27 impressions on May 22 with 0 clicks and $0 spend, continuing the throttled-bid pattern from May 21."
+    },
+    {
+      "headline": "30-day Google Ads cost steady at $391.73",
+      "body": "Across Apr 23 - May 22 the account spent $391.73 for 77 clicks and 2,882 impressions, a 2.7% CTR and $5.09 average CPC."
+    },
+    {
+      "headline": "7-day pace lighter than the 14-day run rate",
+      "body": "Last 7 days cost $39.28 ($5.61/day) versus $7.20/day over 14 days, reflecting the reduced impression volume."
+    },
+    {
+      "headline": "Blended cost per qualified lead near $124",
+      "body": "37 qualified touches (29 web plus 8 LSA) against $4,583.36 of 90-day account spend works out to about $124 per qualified lead."
+    },
+    {
+      "headline": "LSA charged leads hold at 4 of 8",
+      "body": "No new Local Services Ads leads arrived on May 22; the cumulative total stays at 8 LSA leads with 4 charged."
+    },
+    {
+      "headline": "Spam and test volume ticks up",
+      "body": "Cumulative spam/test form submissions rose to 31 of 64 total, driven by two internal QA test posts on May 22; no external spam reached the inbox that day."
+    }
+  ],
+  "daily": {
+    "rangeStart": "2026-04-23",
+    "rangeEnd": "2026-05-22",
+    "dateWindow": "Apr 23 - May 22, 2026",
+    "note": "Rolling 30-day day-of counts, Apr 23 - May 22, 2026.",
+    "calls": [
+      {
+        "date": "2026-04-23",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-24",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-25",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-26",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-27",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-28",
+        "lsaTotal": 1,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-29",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-04-30",
+        "lsaTotal": 1,
+        "lsaCharged": 1,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-01",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-02",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-03",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-04",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-05",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-06",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-07",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-08",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-09",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-10",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-11",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-12",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-13",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-14",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-15",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-16",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-17",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-18",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-19",
+        "lsaTotal": 2,
+        "lsaCharged": 1,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-20",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-21",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      },
+      {
+        "date": "2026-05-22",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
+      }
+    ],
+    "forms": [
+      {
+        "date": "2026-04-23",
+        "qualified": 2,
+        "ooa": 1,
+        "spamTest": 2
+      },
+      {
+        "date": "2026-04-24",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-25",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 1
+      },
+      {
+        "date": "2026-04-26",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 2
+      },
+      {
+        "date": "2026-04-27",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-28",
+        "qualified": 2,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-04-29",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 1
+      },
+      {
+        "date": "2026-04-30",
+        "qualified": 3,
+        "ooa": 1,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-01",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 2
+      },
+      {
+        "date": "2026-05-02",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-03",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-04",
+        "qualified": 2,
+        "ooa": 0,
+        "spamTest": 1
+      },
+      {
+        "date": "2026-05-05",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 3
+      },
+      {
+        "date": "2026-05-06",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-07",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-08",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 1
+      },
+      {
+        "date": "2026-05-09",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-10",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-11",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-12",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-13",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-14",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 7
+      },
+      {
+        "date": "2026-05-15",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 1
+      },
+      {
+        "date": "2026-05-16",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 1
+      },
+      {
+        "date": "2026-05-17",
+        "qualified": 0,
+        "ooa": 1,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-18",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 1
+      },
+      {
+        "date": "2026-05-19",
+        "qualified": 3,
+        "ooa": 0,
+        "spamTest": 1
+      },
+      {
+        "date": "2026-05-20",
+        "qualified": 0,
+        "ooa": 1,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-21",
+        "qualified": 2,
+        "ooa": 0,
+        "spamTest": 0
+      },
+      {
+        "date": "2026-05-22",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 2
+      }
+    ]
+  },
+  "stale_sources": [
+    "ga4: carried forward (sessions, key events, sourceChart, trafficSources not re-read this run)",
+    "clarity: rolling 3-day metrics not re-read this run",
+    "adPerformance: carried forward (campaigns grid virtualized; account scorecard read live)",
+    "gtm: trackingState carried forward (container stable)"
+  ],
+  "verified": {
+    "flamingo": "2026-05-22",
+    "ga4": "2026-05-21",
+    "googleAds": "2026-05-22",
+    "lsa": "2026-05-22"
+  },
+  "trafficSources": {
+    "window": "Feb 20 - May 20, 2026 (90 days)",
+    "totalSessions": 1004,
+    "channels": [
+      {
+        "name": "Direct",
+        "sessions": 410,
+        "pct": "40.8%",
+        "keyEvents": 23
+      },
+      {
+        "name": "Organic Search",
+        "sessions": 372,
+        "pct": "37.1%",
+        "keyEvents": 12
+      },
+      {
+        "name": "Paid Search",
+        "sessions": 91,
+        "pct": "9.1%",
+        "keyEvents": 3
+      },
+      {
+        "name": "Organic Social",
+        "sessions": 67,
+        "pct": "6.7%",
+        "keyEvents": 0
+      },
+      {
+        "name": "Unassigned",
+        "sessions": 32,
+        "pct": "3.2%",
+        "keyEvents": 2
+      },
+      {
+        "name": "Referral",
+        "sessions": 30,
+        "pct": "3.0%",
+        "keyEvents": 2
+      },
+      {
+        "name": "Cross-network",
+        "sessions": 2,
+        "pct": "0.2%",
+        "keyEvents": 0
+      }
+    ]
+  },
+  "adPerformance": {
+    "scope": "Active campaign only: Leads - Roofing (PC). 5 Enabled ad groups shown. Keywords filtered to those Active ad groups. Paused entries excluded.",
+    "activeCampaign": "Leads - Roofing (PC)",
+    "activeAdGroupsCount": 5,
+    "window": "Feb 20 - May 20, 2026 (90 days)",
+    "rankedBy": "clicks",
+    "campaigns": [
+      {
+        "name": "Website traffic-Search-1",
+        "status": "Paused",
+        "clicks": 177,
+        "ctr": "1.93%",
+        "conv": 0,
+        "cost": "$725.99",
+        "cpc": "$4.10"
+      },
+      {
+        "name": "Leads - Roofing (PC)",
+        "status": "Active",
+        "clicks": 126,
+        "ctr": "3.36%",
+        "conv": 0,
+        "cost": "$1,175.29",
+        "cpc": "$9.33"
+      },
+      {
+        "name": "Residential Roofing - Leads (PC)",
+        "status": "Paused",
+        "clicks": 43,
+        "ctr": "2.17%",
+        "conv": 2,
+        "cost": "$2,280.01",
+        "cpc": "$53.02"
+      },
+      {
+        "name": "Website traffic-Search-Roofing",
+        "status": "Paused",
+        "clicks": 15,
+        "ctr": "4.64%",
+        "conv": 0,
+        "cost": "$181.99",
+        "cpc": "$12.13"
+      },
+      {
+        "name": "Buckshot - Storm Damage - Madison Area",
+        "status": "Paused",
+        "clicks": 8,
+        "ctr": "1.45%",
+        "conv": 0,
+        "cost": "$220.09",
+        "cpc": "$27.51"
+      },
+      {
+        "name": "Leads-PMax Roofing",
+        "status": "Paused",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-"
+      }
+    ],
+    "adGroups": [
+      {
+        "name": "GENERAL ROOFING",
+        "campaign": "Leads - Roofing (PC)",
+        "status": "Active",
+        "clicks": 32,
+        "ctr": "3.00%",
+        "conv": 0,
+        "cost": "$162.71",
+        "cpc": "$5.08"
+      },
+      {
+        "name": "LOCAL MADISON AREA",
+        "campaign": "Leads - Roofing (PC)",
+        "status": "Active",
+        "clicks": 27,
+        "ctr": "2.13%",
+        "conv": 0,
+        "cost": "$141.05",
+        "cpc": "$5.22"
+      },
+      {
+        "name": "HAIL DAMAGE",
+        "campaign": "Leads - Roofing (PC)",
+        "status": "Active",
+        "clicks": 6,
+        "ctr": "2.87%",
+        "conv": 0,
+        "cost": "$36.73",
+        "cpc": "$6.12"
+      },
+      {
+        "name": "EMERGENCY ROOF REPAIR",
+        "campaign": "Leads - Roofing (PC)",
+        "status": "Active",
+        "clicks": 1,
+        "ctr": "1.59%",
+        "conv": 0,
+        "cost": "$4.85",
+        "cpc": "$4.85"
+      },
+      {
+        "name": "STORM DAMAGE",
+        "campaign": "Leads - Roofing (PC)",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-"
+      }
+    ],
+    "keywords": [
+      {
+        "name": "\"roof repair\"",
+        "match": "Phrase match",
+        "adgroup": "GENERAL ROOFING",
+        "status": "Active",
+        "clicks": 23,
+        "ctr": "3.37%",
+        "conv": 0,
+        "cost": "$118.48",
+        "cpc": "$5.15",
+        "qs": null
+      },
+      {
+        "name": "\"roofing contractor madison wi\"",
+        "match": "Phrase match",
+        "adgroup": "LOCAL MADISON AREA",
+        "status": "Active",
+        "clicks": 11,
+        "ctr": "1.85%",
+        "conv": 0,
+        "cost": "$62.48",
+        "cpc": "$5.68",
+        "qs": null
+      },
+      {
+        "name": "\"roof replacement madison wi\"",
+        "match": "Phrase match",
+        "adgroup": "LOCAL MADISON AREA",
+        "status": "Active",
+        "clicks": 8,
+        "ctr": "4.21%",
+        "conv": 0,
+        "cost": "$39.40",
+        "cpc": "$4.92",
+        "qs": null
+      },
+      {
+        "name": "\"madison roof repair\"",
+        "match": "Phrase match",
+        "adgroup": "LOCAL MADISON AREA",
+        "status": "Active",
+        "clicks": 4,
+        "ctr": "2.40%",
+        "conv": 0,
+        "cost": "$19.41",
+        "cpc": "$4.85",
+        "qs": null
+      },
+      {
+        "name": "\"roofing companies near me\"",
+        "match": "Phrase match",
+        "adgroup": "GENERAL ROOFING",
+        "status": "Active",
+        "clicks": 4,
+        "ctr": "4.08%",
+        "conv": 0,
+        "cost": "$19.56",
+        "cpc": "$4.89",
+        "qs": null
+      },
+      {
+        "name": "\"hail damage roof repair\"",
+        "match": "Phrase match",
+        "adgroup": "HAIL DAMAGE",
+        "status": "Active",
+        "clicks": 3,
+        "ctr": "6.98%",
+        "conv": 0,
+        "cost": "$17.66",
+        "cpc": "$5.89",
+        "qs": null
+      },
+      {
+        "name": "\"roofing contractor sun prairie wi\"",
+        "match": "Phrase match",
+        "adgroup": "LOCAL MADISON AREA",
+        "status": "Active",
+        "clicks": 2,
+        "ctr": "3.45%",
+        "conv": 0,
+        "cost": "$9.85",
+        "cpc": "$4.92",
+        "qs": null
+      },
+      {
+        "name": "[roofers near me]",
+        "match": "Exact match",
+        "adgroup": "GENERAL ROOFING",
+        "status": "Active",
+        "clicks": 2,
+        "ctr": "4.55%",
+        "conv": 0,
+        "cost": "$9.94",
+        "cpc": "$4.97",
+        "qs": null
+      },
+      {
+        "name": "\"roof repair middleton wi\"",
+        "match": "Phrase match",
+        "adgroup": "LOCAL MADISON AREA",
+        "status": "Active",
+        "clicks": 2,
+        "ctr": "8.33%",
+        "conv": 0,
+        "cost": "$9.91",
+        "cpc": "$4.95",
+        "qs": null
+      },
+      {
+        "name": "[roofing companies Madison WI]",
+        "match": "Exact match",
+        "adgroup": "GENERAL ROOFING",
+        "status": "Active",
+        "clicks": 1,
+        "ctr": "0.83%",
+        "conv": 0,
+        "cost": "$4.86",
+        "cpc": "$4.86",
+        "qs": "3/10"
+      },
+      {
+        "name": "[roof repair near me]",
+        "match": "Exact match",
+        "adgroup": "EMERGENCY ROOF REPAIR",
+        "status": "Active",
+        "clicks": 1,
+        "ctr": "2.27%",
+        "conv": 0,
+        "cost": "$4.85",
+        "cpc": "$4.85",
+        "qs": null
+      },
+      {
+        "name": "[roof damage from hail]",
+        "match": "Exact match",
+        "adgroup": "HAIL DAMAGE",
+        "status": "Active",
+        "clicks": 1,
+        "ctr": "5.88%",
+        "conv": 0,
+        "cost": "$9.67",
+        "cpc": "$9.67",
+        "qs": null
+      },
+      {
+        "name": "\"gutter installation Madison\"",
+        "match": "Phrase match",
+        "adgroup": "LOCAL MADISON AREA",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "[roof repair Madison WI]",
+        "match": "Exact match",
+        "adgroup": "LOCAL MADISON AREA",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "\"roof leaking repair\"",
+        "match": "Phrase match",
+        "adgroup": "STORM DAMAGE",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "\"hail damage roof repair madison wi\"",
+        "match": "Phrase match",
+        "adgroup": "HAIL DAMAGE",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "[roofing contractor near me]",
+        "match": "Exact match",
+        "adgroup": "GENERAL ROOFING",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "[roof inspection Madison WI]",
+        "match": "Exact match",
+        "adgroup": "EMERGENCY ROOF REPAIR",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "[roof replacement near me]",
+        "match": "Exact match",
+        "adgroup": "GENERAL ROOFING",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "\"emergency roof repair\"",
+        "match": "Phrase match",
+        "adgroup": "EMERGENCY ROOF REPAIR",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": "3/10"
+      },
+      {
+        "name": "\"chimney flashing repair\"",
+        "match": "Phrase match",
+        "adgroup": "STORM DAMAGE",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "\"roof damage repair near me\"",
+        "match": "Phrase match",
+        "adgroup": "STORM DAMAGE",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "[commercial roofing Madison WI]",
+        "match": "Exact match",
+        "adgroup": "GENERAL ROOFING",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "\"roof estimate Madison\"",
+        "match": "Phrase match",
+        "adgroup": "LOCAL MADISON AREA",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "\"emergency roofers near me\"",
+        "match": "Phrase match",
+        "adgroup": "EMERGENCY ROOF REPAIR",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      },
+      {
+        "name": "\"storm damage roof repair\"",
+        "match": "Phrase match",
+        "adgroup": "STORM DAMAGE",
+        "status": "Active",
+        "clicks": 0,
+        "ctr": "0.00%",
+        "conv": 0,
+        "cost": "$0.00",
+        "cpc": "-",
+        "qs": null
+      }
+    ]
+  },
+  "windows": {
+    "asOf": "2026-05-22",
+    "note": "7/14/30-day rolling Google Ads totals ending asOf (impressions, clicks, ctr, cpc, cost). Forms/calls/LSA-charged derive client-side from the daily arrays.",
+    "w7": {
+      "days": 7,
+      "totalSessions": 229,
+      "paidSessions": 19,
+      "paidPct": "8.3%",
+      "adsCost": "$39.28",
+      "adsCostDaily": "$5.61/day",
+      "impressions": "565",
+      "clicks": 8,
+      "ctr": "1.4%",
+      "cpc": "$4.91"
+    },
+    "w14": {
+      "days": 14,
+      "totalSessions": 464,
+      "paidSessions": 30,
+      "paidPct": "6.5%",
+      "adsCost": "$100.86",
+      "adsCostDaily": "$7.20/day",
+      "impressions": "1,068",
+      "clicks": 21,
+      "ctr": "2.0%",
+      "cpc": "$4.80"
+    },
+    "w30": {
+      "days": 30,
+      "totalSessions": 898,
+      "paidSessions": 83,
+      "paidPct": "9.2%",
+      "adsCost": "$391.73",
+      "adsCostDaily": "$13.06/day",
+      "impressions": "2,882",
+      "clicks": 77,
+      "ctr": "2.7%",
+      "cpc": "$5.09"
+    }
+  },
+  "leadDetails": [
+    {
+      "date": "2026-04-23",
+      "name": "Takushi K.",
+      "city": "Madison",
+      "cat": "qualified",
+      "note": "Hail-damage roof/siding inspection"
+    },
+    {
+      "date": "2026-04-23",
+      "name": "Cameron S.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Tree-damage exterior wall repair"
+    },
+    {
+      "date": "2026-04-23",
+      "name": "Benjamin N.",
+      "city": "Centerville, IA",
+      "cat": "ooa",
+      "note": "Out of area: out-of-state (Iowa); investor siding bid (Rural Revival)"
+    },
+    {
+      "date": "2026-04-23",
+      "name": "Roberthon",
+      "city": "",
+      "cat": "spam",
+      "note": "Spam: gibberish / non-English message"
+    },
+    {
+      "date": "2026-04-23",
+      "name": "Jordan V.",
+      "city": "",
+      "cat": "spam",
+      "note": "B2B: roofing-business acquisition offer"
+    },
+    {
+      "date": "2026-04-24",
+      "name": "Michael W.",
+      "city": "Fort Atkinson",
+      "cat": "qualified",
+      "note": "Re-side a duplex"
+    },
+    {
+      "date": "2026-04-25",
+      "name": "Daniel W.",
+      "city": "",
+      "cat": "spam",
+      "note": "SEO / paid-traffic solicitation"
+    },
+    {
+      "date": "2026-04-26",
+      "name": "Rise QA #2",
+      "city": "",
+      "cat": "spam",
+      "note": "Internal QA test submission (GCLID/UTM verify)"
+    },
+    {
+      "date": "2026-04-26",
+      "name": "Rise QA",
+      "city": "",
+      "cat": "spam",
+      "note": "Internal QA test submission (pipeline verify)"
+    },
+    {
+      "date": "2026-04-27",
+      "name": "Maria R.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Estimates: house roof, house siding, garage roof + siding"
+    },
+    {
+      "date": "2026-04-28",
+      "name": "Penny T.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Roof hail-damage check (neighborhood signs)"
+    },
+    {
+      "date": "2026-04-28",
+      "name": "Jonathan M.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Roof hail-damage inspection"
+    },
+    {
+      "date": "2026-04-29",
+      "name": "Margaret G.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Front-door eyebrow water damage + roof inspection"
+    },
+    {
+      "date": "2026-04-29",
+      "name": "Murray O.",
+      "city": "",
+      "cat": "spam",
+      "note": "B2B: Google Ad Grants / Ads-management pitch"
+    },
+    {
+      "date": "2026-04-30",
+      "name": "Terry R.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Roof replacement (house + attached & detached garage)"
+    },
+    {
+      "date": "2026-04-30",
+      "name": "Erik L.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Chimney cricket / saddle"
+    },
+    {
+      "date": "2026-04-30",
+      "name": "Susan D.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Shingle siding inquiry"
+    },
+    {
+      "date": "2026-04-30",
+      "name": "Angela F.",
+      "city": "Church Hill",
+      "cat": "ooa",
+      "note": "Out of area: Church Hill; full-home renovation, not roofing"
+    },
+    {
+      "date": "2026-05-01",
+      "name": "Christos K.",
+      "city": "",
+      "cat": "spam",
+      "note": "Internal test (Rise Marketing): body '77777'"
+    },
+    {
+      "date": "2026-05-01",
+      "name": "Mike S.",
+      "city": "",
+      "cat": "spam",
+      "note": "Test submission ('test')"
+    },
+    {
+      "date": "2026-05-03",
+      "name": "Susan D.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Shingle siding estimate (email/text preferred)"
+    },
+    {
+      "date": "2026-05-04",
+      "name": "Olivia S.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Hail damage: roof + siding, 3 structures"
+    },
+    {
+      "date": "2026-05-04",
+      "name": "Jean S.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Roof hail check + estimate (neighbor referral)"
+    },
+    {
+      "date": "2026-05-04",
+      "name": "Joseph M.",
+      "city": "",
+      "cat": "spam",
+      "note": "SEO solicitation (search-ranking service)"
+    },
+    {
+      "date": "2026-05-05",
+      "name": "Eric G.",
+      "city": "",
+      "cat": "spam",
+      "note": "B2B: commercial-roofing crew pitch (dibiz / otcroofs)"
+    },
+    {
+      "date": "2026-05-05",
+      "name": "Susan S.",
+      "city": "",
+      "cat": "spam",
+      "note": "B2B: AI / virtual-assistant pitch (parallelaid)"
+    },
+    {
+      "date": "2026-05-05",
+      "name": "Susan S.",
+      "city": "",
+      "cat": "spam",
+      "note": "B2B: AI / virtual-assistant pitch (parallelaid, duplicate)"
+    },
+    {
+      "date": "2026-05-08",
+      "name": "Nicole P.",
+      "city": "Janesville",
+      "cat": "qualified",
+      "note": "Roof hail-damage inspection"
+    },
+    {
+      "date": "2026-05-08",
+      "name": "Cara L.",
+      "city": "",
+      "cat": "spam",
+      "note": "B2B: virtual-assistant pitch (MAVIS / vettedvas)"
+    },
+    {
+      "date": "2026-05-14",
+      "name": "Rise QA",
+      "city": "",
+      "cat": "spam",
+      "note": "Internal QA test submission (mail-delivery diagnose)"
+    },
+    {
+      "date": "2026-05-14",
+      "name": "Test",
+      "city": "",
+      "cat": "spam",
+      "note": "Test submission ('test mail')"
+    },
+    {
+      "date": "2026-05-14",
+      "name": "Test",
+      "city": "",
+      "cat": "spam",
+      "note": "Test submission (test address)"
+    },
+    {
+      "date": "2026-05-14",
+      "name": "Test",
+      "city": "",
+      "cat": "spam",
+      "note": "Test submission (test address)"
+    },
+    {
+      "date": "2026-05-14",
+      "name": "Test",
+      "city": "",
+      "cat": "spam",
+      "note": "Test submission (test address)"
+    },
+    {
+      "date": "2026-05-14",
+      "name": "Test",
+      "city": "",
+      "cat": "spam",
+      "note": "Test submission (test address)"
+    },
+    {
+      "date": "2026-05-14",
+      "name": "Test",
+      "city": "",
+      "cat": "spam",
+      "note": "Test submission (test address)"
+    },
+    {
+      "date": "2026-05-15",
+      "name": "Elmer E.",
+      "city": "",
+      "cat": "spam",
+      "note": "SEO solicitation (site not ranking on Google)"
+    },
+    {
+      "date": "2026-05-16",
+      "name": "Test",
+      "city": "",
+      "cat": "spam",
+      "note": "Test submission ('test mail')"
+    },
+    {
+      "date": "2026-05-17",
+      "name": "Dennis D.",
+      "city": "",
+      "cat": "ooa",
+      "note": "Out of service area (per submitted address); whole-home remodel"
+    },
+    {
+      "date": "2026-05-18",
+      "name": "Ashley B.",
+      "city": "",
+      "cat": "spam",
+      "note": "B2B: AI / virtual-assistant pitch (parallelaid)"
+    },
+    {
+      "date": "2026-05-19",
+      "name": "Lisa L.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Roof + garage replacement, gutters, shed (insurance approved)"
+    },
+    {
+      "date": "2026-05-19",
+      "name": "Vaughn P.",
+      "city": "",
+      "cat": "qualified",
+      "note": "New roof, full/partial siding, gutters"
+    },
+    {
+      "date": "2026-05-19",
+      "name": "Daniel W.",
+      "city": "",
+      "cat": "qualified",
+      "note": "Appointment request; he and spouse interested in services"
+    },
+    {
+      "date": "2026-05-19",
+      "name": "Meredith W.",
+      "city": "",
+      "cat": "spam",
+      "note": "B2B: virtual-assistant service pitch (virtualhelpdesk)"
+    },
+    {
+      "date": "2026-05-20",
+      "name": "Steven M.",
+      "city": "",
+      "cat": "ooa",
+      "note": "Out of service area (per submitted address); roof-leak repair"
+    },
+    {
+      "date": "2026-05-21",
+      "name": "Aaron P.",
+      "city": "Madison",
+      "cat": "qualified",
+      "note": "Storm siding/facia repair estimate; Country Inn & Suites hotel"
+    },
+    {
+      "date": "2026-05-21",
+      "name": "Dan B.",
+      "city": "Madison",
+      "cat": "qualified",
+      "note": "Metal roof redo quote, north Madison"
+    },
+    {
+      "date": "2026-05-22",
+      "name": "Internal QA",
+      "city": "",
+      "cat": "spam",
+      "note": "Internal QA test - residential-roofing LP form wiring (spam folder)"
+    },
+    {
+      "date": "2026-05-22",
+      "name": "Internal QA",
+      "city": "",
+      "cat": "spam",
+      "note": "Internal QA test - LP hero form wiring (inbox)"
+    }
+  ],
+  "callDetails": [
+    {
+      "date": "2026-04-28",
+      "source": "LSA",
+      "status": "Not charged"
+    },
+    {
+      "date": "2026-04-30",
+      "source": "LSA",
+      "status": "Charged"
+    },
+    {
+      "date": "2026-05-19",
+      "source": "LSA",
+      "status": "Charged"
+    },
+    {
+      "date": "2026-05-19",
+      "source": "LSA",
+      "status": "Not charged"
+    }
+  ],
+  "leadDetailsNote": "Redacted per-lead log (first name + last initial; no email/phone). cat=qualified|ooa|spam. Reconciles to daily.forms per-day counts. OOA reflects submitted-address classification. Window buttons slice by date.",
+  "adsDaily": [
+    {
+      "date": "2026-05-21",
+      "impressions": 93,
+      "clicks": 0,
+      "cost": 0
+    },
+    {
+      "date": "2026-05-22",
+      "impressions": 27,
+      "clicks": 0,
+      "cost": 0
+    }
+  ],
+  "prior": {
+    "w7": {
+      "qualified": 0
+    },
+    "w14": {
+      "qualified": 12
+    },
+    "w30": null
+  }
+}
