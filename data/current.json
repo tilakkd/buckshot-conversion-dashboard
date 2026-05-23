@@ -1,17 +1,17 @@
 {
-  "snapshot_date": "2026-05-21",
+  "snapshot_date": "2026-05-22",
   "period_start": "2026-04-01",
-  "period_end": "2026-05-21",
+  "period_end": "2026-05-22",
   "schema_version": 1,
   "version": 6,
-  "captured_at": "2026-05-22T10:48:15+05:30",
-  "date": "2026-05-21",
-  "headline_state": "Finalized May 21, 2026. Cumulative since Apr 1: 62 form submissions (29 qualified, 4 out-of-area, 29 spam/test) and 8 LSA call leads (4 charged). 2 new qualified Madison roofing leads on May 21. Active campaign Leads - Roofing (PC) served 93 impressions but spent $0 (0 clicks) on May 21 - reach limited by bid setting, not a tracking gap.",
+  "captured_at": "2026-05-23T10:54:47+05:30",
+  "date": "2026-05-22",
+  "headline_state": "On May 22 the Buckshot account stayed in a reach-limited holding pattern: the active Leads - Roofing (PC) campaign logged 27 impressions but 0 clicks and $0 spend. No genuine web leads or LSA calls came in (only two internal QA test form submissions). Rolling 30-day Google Ads cost is $391.73 (77 clicks, 2,882 impressions, 2.7% CTR, $5.09 CPC); 90-day account spend is $4,583.36. Cumulative since Apr 1: 64 form submissions (29 qualified, 4 out-of-area, 31 spam/test) and 8 LSA leads (4 charged), for 37 qualified touches at about $124 each.",
   "kpis": {
-    "formSubmissions": 62,
+    "formSubmissions": 64,
     "qualifiedForms": 29,
     "ooaForms": 4,
-    "spamTestForms": 29,
+    "spamTestForms": 31,
     "lsaTotal": 8,
     "lsaCharged": 4,
     "lsaDisputed": 0,
@@ -23,17 +23,17 @@
     "totalSessions": 1004,
     "paidSessions": 91,
     "paidPct": "9.1%",
-    "adsImpressions": "2,858",
+    "adsImpressions": "2,882",
     "adsClicks": 77,
     "adsCtr": "2.7%",
     "adsCpc": "$5.09"
   },
   "enquiries": {
     "lead": {
-      "total": 62,
+      "total": 64,
       "qualified": 29,
       "ooa": 4,
-      "spamTest": 29,
+      "spamTest": 31,
       "trackingStatus": "[OK] Verified May 9"
     },
     "call": {
@@ -44,16 +44,16 @@
       "trackingStatus": "[OK] Goal repaired May 11"
     },
     "combined": {
-      "total": 70,
+      "total": 72,
       "qualified": 37,
       "costPerQualified": "~$124",
-      "formToCallRatio": "62 : 8"
+      "formToCallRatio": "64 : 8"
     }
   },
   "spamCounts": {
     "inbox": 1,
     "test": 4,
-    "flamingoSpamFolder": 577
+    "flamingoSpamFolder": 578
   },
   "sourceChart": {
     "paid": 1,
@@ -87,51 +87,40 @@
   },
   "insights": [
     {
-      "headline": "Two new qualified leads on May 21",
-      "body": "Both were Madison-area roofing requests (a hotel storm siding/facia repair and a north-Madison metal roof redo), lifting cumulative qualified forms to 29 since April 1."
+      "headline": "No new genuine leads on May 22",
+      "body": "The only May 22 form activity was two internal QA test submissions; no qualified prospects or LSA calls came in that day."
     },
     {
-      "headline": "Active campaign spent nothing on May 21",
-      "body": "Leads - Roofing (PC) served 93 impressions but drew 0 clicks and $0 cost, consistent with the standing Bid setting limited reach constraint."
+      "headline": "Active campaign stayed reach-limited",
+      "body": "Leads - Roofing (PC) served just 27 impressions on May 22 with 0 clicks and $0 spend, continuing the throttled-bid pattern from May 21."
     },
     {
-      "headline": "7-day ad spend flat at $49",
-      "body": "The campaign spent $49.14 over the last 7 days on 10 clicks and 596 impressions at a $4.91 CPC, unchanged from the prior week."
+      "headline": "30-day Google Ads cost steady at $391.73",
+      "body": "Across Apr 23 - May 22 the account spent $391.73 for 77 clicks and 2,882 impressions, a 2.7% CTR and $5.09 average CPC."
     },
     {
-      "headline": "30-day clicks holding at 77",
-      "body": "The last 30 days delivered 2,858 impressions and 77 clicks at a $5.09 CPC and 2.7% CTR for $391.73 of campaign spend."
+      "headline": "7-day pace lighter than the 14-day run rate",
+      "body": "Last 7 days cost $39.28 ($5.61/day) versus $7.20/day over 14 days, reflecting the reduced impression volume."
     },
     {
-      "headline": "No new LSA calls since May 19",
-      "body": "Local Services leads are flat at 8 total and 4 charged since April 1; the two most recent leads both arrived May 19."
+      "headline": "Blended cost per qualified lead near $124",
+      "body": "37 qualified touches (29 web plus 8 LSA) against $4,583.36 of 90-day account spend works out to about $124 per qualified lead."
     },
     {
-      "headline": "Blended cost per qualified near $124",
-      "body": "Against about $4,583 of trailing 90-day account spend and 37 combined qualified enquiries, cost per qualified lead sits near $124."
+      "headline": "LSA charged leads hold at 4 of 8",
+      "body": "No new Local Services Ads leads arrived on May 22; the cumulative total stays at 8 LSA leads with 4 charged."
     },
     {
-      "headline": "General Roofing leads ad-group spend",
-      "body": "Over 30 days General Roofing led with $162.71 and 32 clicks, ahead of Local Madison Area at $141.05 and 27 clicks."
-    },
-    {
-      "headline": "No spam landed on May 21",
-      "body": "No spam or test submissions arrived on May 21; the Flamingo spam folder holds 577 items."
+      "headline": "Spam and test volume ticks up",
+      "body": "Cumulative spam/test form submissions rose to 31 of 64 total, driven by two internal QA test posts on May 22; no external spam reached the inbox that day."
     }
   ],
   "daily": {
-    "rangeStart": "2026-04-22",
-    "rangeEnd": "2026-05-21",
-    "dateWindow": "last 30 days (2026-04-22 -> 2026-05-21); top-line totals are CUMULATIVE since 2026-04-01",
-    "note": "Finalized 2026-05-21. Day-of counts; cumulative totals anchored at 2026-04-01.",
+    "rangeStart": "2026-04-23",
+    "rangeEnd": "2026-05-22",
+    "dateWindow": "Apr 23 - May 22, 2026",
+    "note": "Rolling 30-day day-of counts, Apr 23 - May 22, 2026.",
     "calls": [
-      {
-        "date": "2026-04-22",
-        "lsaTotal": 0,
-        "lsaCharged": 0,
-        "googleAds": 0,
-        "telTracked": 0
-      },
       {
         "date": "2026-04-23",
         "lsaTotal": 0,
@@ -334,15 +323,16 @@
         "lsaCharged": 0,
         "googleAds": 0,
         "telTracked": 0
+      },
+      {
+        "date": "2026-05-22",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
       }
     ],
     "forms": [
-      {
-        "date": "2026-04-22",
-        "qualified": 0,
-        "ooa": 0,
-        "spamTest": 1
-      },
       {
         "date": "2026-04-23",
         "qualified": 2,
@@ -516,16 +506,20 @@
         "qualified": 2,
         "ooa": 0,
         "spamTest": 0
+      },
+      {
+        "date": "2026-05-22",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 2
       }
     ]
   },
   "stale_sources": [
-    "sourceChart_estimated_no_per_lead_GA4_attribution",
-    "funnel_servicePages_freeEstimate_carried_from_prior",
-    "ga4_sessions_and_traffic_carried_from_prior_secondary",
-    "adsCost90d_account_total_carried_from_prior_slow_moving",
-    "adPerformance_90d_carried_from_prior",
-    "adsDaily_30d_backfill_skipped_grid_blanked_yesterday_captured"
+    "ga4: carried forward (sessions, key events, sourceChart, trafficSources not re-read this run)",
+    "clarity: rolling 3-day metrics not re-read this run",
+    "adPerformance: carried forward (campaigns grid virtualized; account scorecard read live)",
+    "gtm: trackingState carried forward (container stable)"
   ],
   "verified": {
     "flamingo": "2026-05-22",
@@ -1011,18 +1005,18 @@
     ]
   },
   "windows": {
-    "asOf": "2026-05-21",
+    "asOf": "2026-05-22",
     "note": "7/14/30-day rolling Google Ads totals ending asOf (impressions, clicks, ctr, cpc, cost). Forms/calls/LSA-charged derive client-side from the daily arrays.",
     "w7": {
       "days": 7,
       "totalSessions": 229,
       "paidSessions": 19,
       "paidPct": "8.3%",
-      "adsCost": "$49.14",
-      "adsCostDaily": "$7.02/day",
-      "impressions": "596",
-      "clicks": 10,
-      "ctr": "1.7%",
+      "adsCost": "$39.28",
+      "adsCostDaily": "$5.61/day",
+      "impressions": "565",
+      "clicks": 8,
+      "ctr": "1.4%",
       "cpc": "$4.91"
     },
     "w14": {
@@ -1032,9 +1026,9 @@
       "paidPct": "6.5%",
       "adsCost": "$100.86",
       "adsCostDaily": "$7.20/day",
-      "impressions": "1,122",
+      "impressions": "1,068",
       "clicks": 21,
-      "ctr": "1.9%",
+      "ctr": "2.0%",
       "cpc": "$4.80"
     },
     "w30": {
@@ -1044,20 +1038,13 @@
       "paidPct": "9.2%",
       "adsCost": "$391.73",
       "adsCostDaily": "$13.06/day",
-      "impressions": "2,858",
+      "impressions": "2,882",
       "clicks": 77,
       "ctr": "2.7%",
       "cpc": "$5.09"
     }
   },
   "leadDetails": [
-    {
-      "date": "2026-04-22",
-      "name": "David C.",
-      "city": "",
-      "cat": "spam",
-      "note": "B2B sales pitch: ContractorOutsourcing.com (VA outsourcing)"
-    },
     {
       "date": "2026-04-23",
       "name": "Takushi K.",
@@ -1386,6 +1373,20 @@
       "city": "Madison",
       "cat": "qualified",
       "note": "Metal roof redo quote, north Madison"
+    },
+    {
+      "date": "2026-05-22",
+      "name": "Internal QA",
+      "city": "",
+      "cat": "spam",
+      "note": "Internal QA test - residential-roofing LP form wiring (spam folder)"
+    },
+    {
+      "date": "2026-05-22",
+      "name": "Internal QA",
+      "city": "",
+      "cat": "spam",
+      "note": "Internal QA test - LP hero form wiring (inbox)"
     }
   ],
   "callDetails": [
@@ -1417,11 +1418,17 @@
       "impressions": 93,
       "clicks": 0,
       "cost": 0
+    },
+    {
+      "date": "2026-05-22",
+      "impressions": 27,
+      "clicks": 0,
+      "cost": 0
     }
   ],
   "prior": {
     "w7": {
-      "qualified": 1
+      "qualified": 0
     },
     "w14": {
       "qualified": 12
