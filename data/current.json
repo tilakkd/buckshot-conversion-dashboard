@@ -518,7 +518,7 @@
   "stale_sources": [
     "ga4: carried forward (sessions, key events, sourceChart, trafficSources not re-read this run)",
     "clarity: rolling 3-day metrics not re-read this run",
-    "adPerformance: carried forward (campaigns grid virtualized; account scorecard read live)",
+    "adPerformance: ad-group statuses corrected 2026-05-22 (only Local Madison Area active; 4 ad groups paused per account owner). Per-row 90-day metrics last read 2026-05-20 - Google Ads ad-blocker modal blocks the live detail tables; disable the ad blocker on the Ads tab for a full metric refresh.",
     "gtm: trackingState carried forward (container stable)"
   ],
   "verified": {
@@ -576,10 +576,10 @@
     ]
   },
   "adPerformance": {
-    "scope": "Active campaign only: Leads - Roofing (PC). 5 Enabled ad groups shown. Keywords filtered to those Active ad groups. Paused entries excluded.",
+    "scope": "Active campaign only: Leads - Roofing (PC). 1 Enabled ad group (Local Madison Area); the other 4 ad groups (General Roofing, Hail Damage, Emergency Roof Repair, Storm Damage) were paused 2026-05-22. Keywords filtered to the Active ad group. Per-row metrics are 90-day; last full table read 2026-05-20 (Google Ads ad-blocker modal blocked a live re-pull this run).",
     "activeCampaign": "Leads - Roofing (PC)",
-    "activeAdGroupsCount": 5,
-    "window": "Feb 20 - May 20, 2026 (90 days)",
+    "activeAdGroupsCount": 1,
+    "window": "Feb 22 - May 22, 2026 (90 days)",
     "rankedBy": "clicks",
     "campaigns": [
       {
@@ -639,16 +639,6 @@
     ],
     "adGroups": [
       {
-        "name": "GENERAL ROOFING",
-        "campaign": "Leads - Roofing (PC)",
-        "status": "Active",
-        "clicks": 32,
-        "ctr": "3.00%",
-        "conv": 0,
-        "cost": "$162.71",
-        "cpc": "$5.08"
-      },
-      {
         "name": "LOCAL MADISON AREA",
         "campaign": "Leads - Roofing (PC)",
         "status": "Active",
@@ -657,51 +647,9 @@
         "conv": 0,
         "cost": "$141.05",
         "cpc": "$5.22"
-      },
-      {
-        "name": "HAIL DAMAGE",
-        "campaign": "Leads - Roofing (PC)",
-        "status": "Active",
-        "clicks": 6,
-        "ctr": "2.87%",
-        "conv": 0,
-        "cost": "$36.73",
-        "cpc": "$6.12"
-      },
-      {
-        "name": "EMERGENCY ROOF REPAIR",
-        "campaign": "Leads - Roofing (PC)",
-        "status": "Active",
-        "clicks": 1,
-        "ctr": "1.59%",
-        "conv": 0,
-        "cost": "$4.85",
-        "cpc": "$4.85"
-      },
-      {
-        "name": "STORM DAMAGE",
-        "campaign": "Leads - Roofing (PC)",
-        "status": "Active",
-        "clicks": 0,
-        "ctr": "0.00%",
-        "conv": 0,
-        "cost": "$0.00",
-        "cpc": "-"
       }
     ],
     "keywords": [
-      {
-        "name": "\"roof repair\"",
-        "match": "Phrase match",
-        "adgroup": "GENERAL ROOFING",
-        "status": "Active",
-        "clicks": 23,
-        "ctr": "3.37%",
-        "conv": 0,
-        "cost": "$118.48",
-        "cpc": "$5.15",
-        "qs": null
-      },
       {
         "name": "\"roofing contractor madison wi\"",
         "match": "Phrase match",
@@ -739,30 +687,6 @@
         "qs": null
       },
       {
-        "name": "\"roofing companies near me\"",
-        "match": "Phrase match",
-        "adgroup": "GENERAL ROOFING",
-        "status": "Active",
-        "clicks": 4,
-        "ctr": "4.08%",
-        "conv": 0,
-        "cost": "$19.56",
-        "cpc": "$4.89",
-        "qs": null
-      },
-      {
-        "name": "\"hail damage roof repair\"",
-        "match": "Phrase match",
-        "adgroup": "HAIL DAMAGE",
-        "status": "Active",
-        "clicks": 3,
-        "ctr": "6.98%",
-        "conv": 0,
-        "cost": "$17.66",
-        "cpc": "$5.89",
-        "qs": null
-      },
-      {
         "name": "\"roofing contractor sun prairie wi\"",
         "match": "Phrase match",
         "adgroup": "LOCAL MADISON AREA",
@@ -775,18 +699,6 @@
         "qs": null
       },
       {
-        "name": "[roofers near me]",
-        "match": "Exact match",
-        "adgroup": "GENERAL ROOFING",
-        "status": "Active",
-        "clicks": 2,
-        "ctr": "4.55%",
-        "conv": 0,
-        "cost": "$9.94",
-        "cpc": "$4.97",
-        "qs": null
-      },
-      {
         "name": "\"roof repair middleton wi\"",
         "match": "Phrase match",
         "adgroup": "LOCAL MADISON AREA",
@@ -796,42 +708,6 @@
         "conv": 0,
         "cost": "$9.91",
         "cpc": "$4.95",
-        "qs": null
-      },
-      {
-        "name": "[roofing companies Madison WI]",
-        "match": "Exact match",
-        "adgroup": "GENERAL ROOFING",
-        "status": "Active",
-        "clicks": 1,
-        "ctr": "0.83%",
-        "conv": 0,
-        "cost": "$4.86",
-        "cpc": "$4.86",
-        "qs": "3/10"
-      },
-      {
-        "name": "[roof repair near me]",
-        "match": "Exact match",
-        "adgroup": "EMERGENCY ROOF REPAIR",
-        "status": "Active",
-        "clicks": 1,
-        "ctr": "2.27%",
-        "conv": 0,
-        "cost": "$4.85",
-        "cpc": "$4.85",
-        "qs": null
-      },
-      {
-        "name": "[roof damage from hail]",
-        "match": "Exact match",
-        "adgroup": "HAIL DAMAGE",
-        "status": "Active",
-        "clicks": 1,
-        "ctr": "5.88%",
-        "conv": 0,
-        "cost": "$9.67",
-        "cpc": "$9.67",
         "qs": null
       },
       {
@@ -859,141 +735,9 @@
         "qs": null
       },
       {
-        "name": "\"roof leaking repair\"",
-        "match": "Phrase match",
-        "adgroup": "STORM DAMAGE",
-        "status": "Active",
-        "clicks": 0,
-        "ctr": "0.00%",
-        "conv": 0,
-        "cost": "$0.00",
-        "cpc": "-",
-        "qs": null
-      },
-      {
-        "name": "\"hail damage roof repair madison wi\"",
-        "match": "Phrase match",
-        "adgroup": "HAIL DAMAGE",
-        "status": "Active",
-        "clicks": 0,
-        "ctr": "0.00%",
-        "conv": 0,
-        "cost": "$0.00",
-        "cpc": "-",
-        "qs": null
-      },
-      {
-        "name": "[roofing contractor near me]",
-        "match": "Exact match",
-        "adgroup": "GENERAL ROOFING",
-        "status": "Active",
-        "clicks": 0,
-        "ctr": "0.00%",
-        "conv": 0,
-        "cost": "$0.00",
-        "cpc": "-",
-        "qs": null
-      },
-      {
-        "name": "[roof inspection Madison WI]",
-        "match": "Exact match",
-        "adgroup": "EMERGENCY ROOF REPAIR",
-        "status": "Active",
-        "clicks": 0,
-        "ctr": "0.00%",
-        "conv": 0,
-        "cost": "$0.00",
-        "cpc": "-",
-        "qs": null
-      },
-      {
-        "name": "[roof replacement near me]",
-        "match": "Exact match",
-        "adgroup": "GENERAL ROOFING",
-        "status": "Active",
-        "clicks": 0,
-        "ctr": "0.00%",
-        "conv": 0,
-        "cost": "$0.00",
-        "cpc": "-",
-        "qs": null
-      },
-      {
-        "name": "\"emergency roof repair\"",
-        "match": "Phrase match",
-        "adgroup": "EMERGENCY ROOF REPAIR",
-        "status": "Active",
-        "clicks": 0,
-        "ctr": "0.00%",
-        "conv": 0,
-        "cost": "$0.00",
-        "cpc": "-",
-        "qs": "3/10"
-      },
-      {
-        "name": "\"chimney flashing repair\"",
-        "match": "Phrase match",
-        "adgroup": "STORM DAMAGE",
-        "status": "Active",
-        "clicks": 0,
-        "ctr": "0.00%",
-        "conv": 0,
-        "cost": "$0.00",
-        "cpc": "-",
-        "qs": null
-      },
-      {
-        "name": "\"roof damage repair near me\"",
-        "match": "Phrase match",
-        "adgroup": "STORM DAMAGE",
-        "status": "Active",
-        "clicks": 0,
-        "ctr": "0.00%",
-        "conv": 0,
-        "cost": "$0.00",
-        "cpc": "-",
-        "qs": null
-      },
-      {
-        "name": "[commercial roofing Madison WI]",
-        "match": "Exact match",
-        "adgroup": "GENERAL ROOFING",
-        "status": "Active",
-        "clicks": 0,
-        "ctr": "0.00%",
-        "conv": 0,
-        "cost": "$0.00",
-        "cpc": "-",
-        "qs": null
-      },
-      {
         "name": "\"roof estimate Madison\"",
         "match": "Phrase match",
         "adgroup": "LOCAL MADISON AREA",
-        "status": "Active",
-        "clicks": 0,
-        "ctr": "0.00%",
-        "conv": 0,
-        "cost": "$0.00",
-        "cpc": "-",
-        "qs": null
-      },
-      {
-        "name": "\"emergency roofers near me\"",
-        "match": "Phrase match",
-        "adgroup": "EMERGENCY ROOF REPAIR",
-        "status": "Active",
-        "clicks": 0,
-        "ctr": "0.00%",
-        "conv": 0,
-        "cost": "$0.00",
-        "cpc": "-",
-        "qs": null
-      },
-      {
-        "name": "\"storm damage roof repair\"",
-        "match": "Phrase match",
-        "adgroup": "STORM DAMAGE",
         "status": "Active",
         "clicks": 0,
         "ctr": "0.00%",
