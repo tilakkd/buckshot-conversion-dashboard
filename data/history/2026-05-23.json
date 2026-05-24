@@ -1334,7 +1334,72 @@
       "sessions": 20,
       "avgDuration": "1m 21s",
       "avgDurationSec": 81,
-      "bounceRate": "45%"
+      "bounceRate": "45%",
+      "topPages": [
+        {
+          "path": "/",
+          "visitors": 16,
+          "views": 18,
+          "sharePct": "53%",
+          "bounce": "37.5%"
+        },
+        {
+          "path": "/fortified-roofing/",
+          "visitors": 3,
+          "views": 3,
+          "sharePct": "9%",
+          "bounce": "100.0%"
+        },
+        {
+          "path": "/residential-roofing/",
+          "visitors": 3,
+          "views": 3,
+          "sharePct": "9%",
+          "bounce": "100.0%"
+        },
+        {
+          "path": "/customer-reviews/",
+          "visitors": 1,
+          "views": 3,
+          "sharePct": "9%",
+          "bounce": "0.0%"
+        },
+        {
+          "path": "/recent-projects/",
+          "visitors": 2,
+          "views": 2,
+          "sharePct": "6%",
+          "bounce": "0.0%"
+        },
+        {
+          "path": "/residential-roofing-madison-wi/",
+          "visitors": 2,
+          "views": 2,
+          "sharePct": "6%",
+          "bounce": "50.0%"
+        },
+        {
+          "path": "/contact-us/",
+          "visitors": 1,
+          "views": 1,
+          "sharePct": "3%",
+          "bounce": "0.0%"
+        },
+        {
+          "path": "/gaf-master-elite/",
+          "visitors": 1,
+          "views": 1,
+          "sharePct": "3%",
+          "bounce": "0.0%"
+        },
+        {
+          "path": "/top-hail-storm-damage-contractor/",
+          "visitors": 1,
+          "views": 1,
+          "sharePct": "3%",
+          "bounce": "0.0%"
+        }
+      ]
     },
     "w14": {
       "visitors": 20,
@@ -1342,7 +1407,72 @@
       "sessions": 20,
       "avgDuration": "1m 21s",
       "avgDurationSec": 81,
-      "bounceRate": "45%"
+      "bounceRate": "45%",
+      "topPages": [
+        {
+          "path": "/",
+          "visitors": 16,
+          "views": 18,
+          "sharePct": "53%",
+          "bounce": "37.5%"
+        },
+        {
+          "path": "/fortified-roofing/",
+          "visitors": 3,
+          "views": 3,
+          "sharePct": "9%",
+          "bounce": "100.0%"
+        },
+        {
+          "path": "/residential-roofing/",
+          "visitors": 3,
+          "views": 3,
+          "sharePct": "9%",
+          "bounce": "100.0%"
+        },
+        {
+          "path": "/customer-reviews/",
+          "visitors": 1,
+          "views": 3,
+          "sharePct": "9%",
+          "bounce": "0.0%"
+        },
+        {
+          "path": "/recent-projects/",
+          "visitors": 2,
+          "views": 2,
+          "sharePct": "6%",
+          "bounce": "0.0%"
+        },
+        {
+          "path": "/residential-roofing-madison-wi/",
+          "visitors": 2,
+          "views": 2,
+          "sharePct": "6%",
+          "bounce": "50.0%"
+        },
+        {
+          "path": "/contact-us/",
+          "visitors": 1,
+          "views": 1,
+          "sharePct": "3%",
+          "bounce": "0.0%"
+        },
+        {
+          "path": "/gaf-master-elite/",
+          "visitors": 1,
+          "views": 1,
+          "sharePct": "3%",
+          "bounce": "0.0%"
+        },
+        {
+          "path": "/top-hail-storm-damage-contractor/",
+          "visitors": 1,
+          "views": 1,
+          "sharePct": "3%",
+          "bounce": "0.0%"
+        }
+      ]
     },
     "w30": {
       "visitors": 20,
@@ -1350,7 +1480,74 @@
       "sessions": 20,
       "avgDuration": "1m 21s",
       "avgDurationSec": 81,
-      "bounceRate": "45%"
-    }
+      "bounceRate": "45%",
+      "topPages": [
+        {
+          "path": "/",
+          "visitors": 16,
+          "views": 18,
+          "sharePct": "53%",
+          "bounce": "37.5%"
+        },
+        {
+          "path": "/fortified-roofing/",
+          "visitors": 3,
+          "views": 3,
+          "sharePct": "9%",
+          "bounce": "100.0%"
+        },
+        {
+          "path": "/residential-roofing/",
+          "visitors": 3,
+          "views": 3,
+          "sharePct": "9%",
+          "bounce": "100.0%"
+        },
+        {
+          "path": "/customer-reviews/",
+          "visitors": 1,
+          "views": 3,
+          "sharePct": "9%",
+          "bounce": "0.0%"
+        },
+        {
+          "path": "/recent-projects/",
+          "visitors": 2,
+          "views": 2,
+          "sharePct": "6%",
+          "bounce": "0.0%"
+        },
+        {
+          "path": "/residential-roofing-madison-wi/",
+          "visitors": 2,
+          "views": 2,
+          "sharePct": "6%",
+          "bounce": "50.0%"
+        },
+        {
+          "path": "/contact-us/",
+          "visitors": 1,
+          "views": 1,
+          "sharePct": "3%",
+          "bounce": "0.0%"
+        },
+        {
+          "path": "/gaf-master-elite/",
+          "visitors": 1,
+          "views": 1,
+          "sharePct": "3%",
+          "bounce": "0.0%"
+        },
+        {
+          "path": "/top-hail-storm-damage-contractor/",
+          "visitors": 1,
+          "views": 1,
+          "sharePct": "3%",
+          "bounce": "0.0%"
+        }
+      ]
+    },
+    "viewsTotal": 34,
+    "pagesNote": "Most-visited US pages by views (share = % of total page views in window)."
   }
 }
