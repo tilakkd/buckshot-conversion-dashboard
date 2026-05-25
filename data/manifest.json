@@ -6,6 +6,11 @@
   },
   "dates": [
     {
+      "date": "2026-05-24",
+      "label": "May 24, 2026 - Daily finalize",
+      "note": "Quiet day - no new web or call leads since May 21. PostHog US engagement refreshed (27 visitors, 43 views). Google Ads, GA4, GTM carried forward (Ads grid blocked by ad-blocker)."
+    },
+    {
       "date": "2026-05-08",
       "label": "May 8, 2026 - Pre-tag-install",
       "note": "Original audit. 0 GA4 Key Events. Phone call lead goal in 'Needs attention'."
