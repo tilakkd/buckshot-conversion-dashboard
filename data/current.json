@@ -1,12 +1,12 @@
 {
-  "snapshot_date": "2026-05-23",
+  "snapshot_date": "2026-05-24",
   "period_start": "2026-04-01",
-  "period_end": "2026-05-23",
+  "period_end": "2026-05-24",
   "schema_version": 1,
   "version": 6,
-  "captured_at": "2026-05-24T10:59:12+05:30",
-  "date": "2026-05-23",
-  "headline_state": "Quiet Saturday: 0 new leads on 2026-05-23 (no forms, no LSA calls). Cumulative qualified holds at 37. Active campaign Leads - Roofing (PC) spending lightly (7d: $39.28 / 8 clicks) with 0 tracked conversions on $1,175 over 90 days. Blended cost-per-qualified ~$124.",
+  "captured_at": "2026-05-25T10:47:09+05:30",
+  "date": "May 24, 2026",
+  "headline_state": "May 24, 2026 (finalized May 25): Quiet stretch - no new web or call leads since May 21. PostHog US-only engagement steady at 27 visitors, 43 views, 29 sessions. Google Ads metrics carried forward; grid blocked by ad-blocker this run.",
   "kpis": {
     "formSubmissions": 64,
     "qualifiedForms": 29,
@@ -87,51 +87,40 @@
   },
   "insights": [
     {
-      "headline": "Zero new leads logged Saturday",
-      "body": "No Flamingo form submissions or LSA calls were recorded on 2026-05-23. Cumulative qualified stays at 37 (29 forms + 8 LSA)."
+      "headline": "No new leads in the last three days",
+      "body": "The most recent inbound form was a qualified Madison estimate on May 21 and the latest LSA call was May 19, so qualified totals held at 29 forms plus 8 LSA leads (37 combined)."
     },
     {
-      "headline": "Paid spend has gone quiet",
-      "body": "Last 7 days drew just 501 impressions, 8 clicks and $39.28 spend; daily impressions fell 93 -> 27 -> 8 across May 21-23 at $0 cost."
+      "headline": "Homepage carries nearly all US traffic",
+      "body": "PostHog (US-only, bots and test excluded) shows 27 visitors and 43 views, with the homepage taking 26 of 43 views at a 50 percent bounce."
     },
     {
-      "headline": "One active campaign carrying the account",
-      "body": "Leads - Roofing (PC) is the only Enabled campaign; its single active ad group Local Madison Area logged 27 clicks over 90 days at a $5.22 avg CPC."
+      "headline": "Engagement is light but healthy",
+      "body": "Average US session runs about one minute across 29 sessions with a 55 percent bounce rate, consistent with the current low paid volume."
     },
     {
-      "headline": "Still no tracked conversions from the active campaign",
-      "body": "Leads - Roofing (PC) shows 0 conversions on $1,175.29 across 90 days; the only 2 account conversions trace to the now-paused Residential Roofing - Leads (PC)."
+      "headline": "Clarity shows clean UX",
+      "body": "Last three days had 0 rage clicks and 0 excessive scrolling; the lone dead-click flag traces to the known Elementor dropdown trigger, not a real defect."
     },
     {
-      "headline": "30-day CPC holding near $4.89",
-      "body": "Rolling 30-day window: 2,643 impressions, 61 clicks, $298.53 spend, 2.3% CTR, $4.89 CPC."
+      "headline": "Google Ads could not refresh today",
+      "body": "An ad-blocker prompt blocked the Ads grid this run, so impressions, clicks, CPC, spend, and per-day ad metrics are carried forward from May 23 and flagged stale."
     },
     {
-      "headline": "Cost per qualified lead steady at ~$124",
-      "body": "90-day account spend of $4,583.36 against 37 qualified leads keeps blended cost-per-qualified near $124."
+      "headline": "Paid footprint stays minimal",
+      "body": "Carried-forward windows show about $39 spend over 7 days and $299 over 30 days, in line with only the Local Madison Area ad group running."
     },
     {
-      "headline": "Active keywords are tightly Madison-geo",
-      "body": "Only roofing contractor madison wi and roof replacement madison wi are serving, both Phrase match in Local Madison Area, 19 clicks combined over 90 days."
-    },
-    {
-      "headline": "GTM live and stable",
-      "body": "Container GTM-KG87WZF2 is on live version 8 with 0 pending workspace changes."
+      "headline": "Cost per qualified lead steady near $124",
+      "body": "Against 37 combined qualified leads and the carried-forward 90-day spend of $4,583, cost per qualified lead holds at about $124."
     }
   ],
   "daily": {
-    "rangeStart": "2026-04-24",
-    "rangeEnd": "2026-05-23",
-    "dateWindow": "Apr 24 - May 23, 2026",
-    "note": "Rolling 30-day day-of counts, Apr 24 - May 23, 2026.",
+    "rangeStart": "2026-04-25",
+    "rangeEnd": "2026-05-24",
+    "dateWindow": "Apr 25 - May 24, 2026",
+    "note": "Rolling 30-day day-of counts, Apr 25 - May 24, 2026.",
     "calls": [
-      {
-        "date": "2026-04-24",
-        "lsaTotal": 0,
-        "lsaCharged": 0,
-        "googleAds": 0,
-        "telTracked": 0
-      },
       {
         "date": "2026-04-25",
         "lsaTotal": 0,
@@ -334,15 +323,16 @@
         "lsaCharged": 0,
         "googleAds": 0,
         "telTracked": 0
+      },
+      {
+        "date": "2026-05-24",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
       }
     ],
     "forms": [
-      {
-        "date": "2026-04-24",
-        "qualified": 1,
-        "ooa": 0,
-        "spamTest": 0
-      },
       {
         "date": "2026-04-25",
         "qualified": 0,
@@ -516,19 +506,27 @@
         "qualified": 0,
         "ooa": 0,
         "spamTest": 0
+      },
+      {
+        "date": "2026-05-24",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
       }
     ]
   },
   "stale_sources": [
-    "ga4: carried forward - 90-day traffic acquisition, sourceChart and sessions not re-pulled this run; 28-day Home card was live (622 users / 870 sessions / 57 key events).",
-    "adsDaily: backfill pending - only recent low-spend days May 21-23 (all $0) captured; per-day split for spend days May 17-20 not broken out.",
-    "clarity: 3-day rolling, all-traffic view (not US-filtered): 50 sessions, dead-clicks 18%, scroll depth 42.74%."
+    "googleAds",
+    "Ads-windows",
+    "adsDaily",
+    "ga4",
+    "gtm"
   ],
   "verified": {
-    "flamingo": "2026-05-23",
+    "flamingo": "2026-05-25",
     "ga4": "2026-05-21",
     "googleAds": "2026-05-23",
-    "lsa": "2026-05-23"
+    "lsa": "2026-05-25"
   },
   "trafficSources": {
     "window": "Feb 20 - May 20, 2026 (90 days)",
@@ -680,8 +678,8 @@
     ]
   },
   "windows": {
-    "asOf": "2026-05-23",
-    "note": "7/14/30-day rolling Google Ads totals ending asOf (impressions, clicks, ctr, cpc, cost). Forms/calls/LSA-charged derive client-side from the daily arrays.",
+    "asOf": "2026-05-24",
+    "note": "7/14/30-day rolling Google Ads totals. Carried forward from 2026-05-23 - Ads grid was blocked by an ad-blocker prompt this run (stale). Forms/calls/LSA derive client-side from daily arrays.",
     "w7": {
       "days": 7,
       "totalSessions": 229,
@@ -720,13 +718,6 @@
     }
   },
   "leadDetails": [
-    {
-      "date": "2026-04-24",
-      "name": "Michael W.",
-      "city": "Fort Atkinson",
-      "cat": "qualified",
-      "note": "Re-side a duplex"
-    },
     {
       "date": "2026-04-25",
       "name": "Daniel W.",
@@ -1311,243 +1302,233 @@
       "city": "",
       "cat": "qualified",
       "note": "Estimates: house roof, house siding, garage roof + siding"
-    },
-    {
-      "date": "2026-04-24",
-      "time": "5:32 PM",
-      "sort": "2026-04-24 17:32",
-      "src": "form",
-      "form": "Quick Contact",
-      "city": "Fort Atkinson",
-      "cat": "qualified",
-      "note": "Re-side a duplex"
     }
   ],
   "posthog": {
-    "asOf": "2026-05-23",
+    "asOf": "2026-05-24",
     "source": "PostHog Web Analytics (project 435721)",
     "filters": "United States only; test accounts and bots excluded",
-    "note": "PostHog tracking began ~2026-05-21, so the 7, 14 and 30-day windows currently show the same figures until ~30 days of history accumulate.",
+    "note": "PostHog tracking began about 2026-05-21, so the 7/14/30-day windows return identical figures until about 30 days of history accumulate. This is expected, not an error.",
+    "pagesNote": "Most-visited US pages by views (trailing window). Homepage took 26 of 43 views.",
+    "viewsTotal": 43,
     "w7": {
-      "visitors": 20,
-      "pageviews": 34,
-      "sessions": 20,
-      "avgDuration": "1m 21s",
-      "avgDurationSec": 81,
-      "bounceRate": "45%",
+      "visitors": 27,
+      "pageviews": 43,
+      "sessions": 29,
+      "avgDuration": "1m 1s",
+      "avgDurationSec": 61,
+      "bounceRate": "55%",
       "topPages": [
         {
           "path": "/",
-          "visitors": 16,
-          "views": 18,
-          "sharePct": "53%",
-          "bounce": "37.5%"
+          "visitors": 22,
+          "views": 26,
+          "sharePct": "60%",
+          "bounce": "50%"
         },
         {
           "path": "/fortified-roofing/",
           "visitors": 3,
           "views": 3,
-          "sharePct": "9%",
-          "bounce": "100.0%"
+          "sharePct": "7%",
+          "bounce": "100%"
         },
         {
           "path": "/residential-roofing/",
           "visitors": 3,
           "views": 3,
-          "sharePct": "9%",
-          "bounce": "100.0%"
+          "sharePct": "7%",
+          "bounce": "100%"
         },
         {
           "path": "/customer-reviews/",
           "visitors": 1,
           "views": 3,
-          "sharePct": "9%",
-          "bounce": "0.0%"
+          "sharePct": "7%",
+          "bounce": "0%"
         },
         {
           "path": "/recent-projects/",
           "visitors": 2,
           "views": 2,
-          "sharePct": "6%",
-          "bounce": "0.0%"
+          "sharePct": "5%",
+          "bounce": "0%"
         },
         {
           "path": "/residential-roofing-madison-wi/",
           "visitors": 2,
           "views": 2,
-          "sharePct": "6%",
-          "bounce": "50.0%"
+          "sharePct": "5%",
+          "bounce": "50%"
+        },
+        {
+          "path": "/top-hail-storm-damage-contractor/",
+          "visitors": 2,
+          "views": 2,
+          "sharePct": "5%",
+          "bounce": "100%"
         },
         {
           "path": "/contact-us/",
           "visitors": 1,
           "views": 1,
-          "sharePct": "3%",
-          "bounce": "0.0%"
+          "sharePct": "2%",
+          "bounce": "0%"
         },
         {
           "path": "/gaf-master-elite/",
           "visitors": 1,
           "views": 1,
-          "sharePct": "3%",
-          "bounce": "0.0%"
-        },
-        {
-          "path": "/top-hail-storm-damage-contractor/",
-          "visitors": 1,
-          "views": 1,
-          "sharePct": "3%",
-          "bounce": "0.0%"
+          "sharePct": "2%",
+          "bounce": "0%"
         }
       ]
     },
     "w14": {
-      "visitors": 20,
-      "pageviews": 34,
-      "sessions": 20,
-      "avgDuration": "1m 21s",
-      "avgDurationSec": 81,
-      "bounceRate": "45%",
+      "visitors": 27,
+      "pageviews": 43,
+      "sessions": 29,
+      "avgDuration": "1m 1s",
+      "avgDurationSec": 61,
+      "bounceRate": "55%",
       "topPages": [
         {
           "path": "/",
-          "visitors": 16,
-          "views": 18,
-          "sharePct": "53%",
-          "bounce": "37.5%"
+          "visitors": 22,
+          "views": 26,
+          "sharePct": "60%",
+          "bounce": "50%"
         },
         {
           "path": "/fortified-roofing/",
           "visitors": 3,
           "views": 3,
-          "sharePct": "9%",
-          "bounce": "100.0%"
+          "sharePct": "7%",
+          "bounce": "100%"
         },
         {
           "path": "/residential-roofing/",
           "visitors": 3,
           "views": 3,
-          "sharePct": "9%",
-          "bounce": "100.0%"
+          "sharePct": "7%",
+          "bounce": "100%"
         },
         {
           "path": "/customer-reviews/",
           "visitors": 1,
           "views": 3,
-          "sharePct": "9%",
-          "bounce": "0.0%"
+          "sharePct": "7%",
+          "bounce": "0%"
         },
         {
           "path": "/recent-projects/",
           "visitors": 2,
           "views": 2,
-          "sharePct": "6%",
-          "bounce": "0.0%"
+          "sharePct": "5%",
+          "bounce": "0%"
         },
         {
           "path": "/residential-roofing-madison-wi/",
           "visitors": 2,
           "views": 2,
-          "sharePct": "6%",
-          "bounce": "50.0%"
+          "sharePct": "5%",
+          "bounce": "50%"
+        },
+        {
+          "path": "/top-hail-storm-damage-contractor/",
+          "visitors": 2,
+          "views": 2,
+          "sharePct": "5%",
+          "bounce": "100%"
         },
         {
           "path": "/contact-us/",
           "visitors": 1,
           "views": 1,
-          "sharePct": "3%",
-          "bounce": "0.0%"
+          "sharePct": "2%",
+          "bounce": "0%"
         },
         {
           "path": "/gaf-master-elite/",
           "visitors": 1,
           "views": 1,
-          "sharePct": "3%",
-          "bounce": "0.0%"
-        },
-        {
-          "path": "/top-hail-storm-damage-contractor/",
-          "visitors": 1,
-          "views": 1,
-          "sharePct": "3%",
-          "bounce": "0.0%"
+          "sharePct": "2%",
+          "bounce": "0%"
         }
       ]
     },
     "w30": {
-      "visitors": 20,
-      "pageviews": 34,
-      "sessions": 20,
-      "avgDuration": "1m 21s",
-      "avgDurationSec": 81,
-      "bounceRate": "45%",
+      "visitors": 27,
+      "pageviews": 43,
+      "sessions": 29,
+      "avgDuration": "1m 1s",
+      "avgDurationSec": 61,
+      "bounceRate": "55%",
       "topPages": [
         {
           "path": "/",
-          "visitors": 16,
-          "views": 18,
-          "sharePct": "53%",
-          "bounce": "37.5%"
+          "visitors": 22,
+          "views": 26,
+          "sharePct": "60%",
+          "bounce": "50%"
         },
         {
           "path": "/fortified-roofing/",
           "visitors": 3,
           "views": 3,
-          "sharePct": "9%",
-          "bounce": "100.0%"
+          "sharePct": "7%",
+          "bounce": "100%"
         },
         {
           "path": "/residential-roofing/",
           "visitors": 3,
           "views": 3,
-          "sharePct": "9%",
-          "bounce": "100.0%"
+          "sharePct": "7%",
+          "bounce": "100%"
         },
         {
           "path": "/customer-reviews/",
           "visitors": 1,
           "views": 3,
-          "sharePct": "9%",
-          "bounce": "0.0%"
+          "sharePct": "7%",
+          "bounce": "0%"
         },
         {
           "path": "/recent-projects/",
           "visitors": 2,
           "views": 2,
-          "sharePct": "6%",
-          "bounce": "0.0%"
+          "sharePct": "5%",
+          "bounce": "0%"
         },
         {
           "path": "/residential-roofing-madison-wi/",
           "visitors": 2,
           "views": 2,
-          "sharePct": "6%",
-          "bounce": "50.0%"
+          "sharePct": "5%",
+          "bounce": "50%"
+        },
+        {
+          "path": "/top-hail-storm-damage-contractor/",
+          "visitors": 2,
+          "views": 2,
+          "sharePct": "5%",
+          "bounce": "100%"
         },
         {
           "path": "/contact-us/",
           "visitors": 1,
           "views": 1,
-          "sharePct": "3%",
-          "bounce": "0.0%"
+          "sharePct": "2%",
+          "bounce": "0%"
         },
         {
           "path": "/gaf-master-elite/",
           "visitors": 1,
           "views": 1,
-          "sharePct": "3%",
-          "bounce": "0.0%"
-        },
-        {
-          "path": "/top-hail-storm-damage-contractor/",
-          "visitors": 1,
-          "views": 1,
-          "sharePct": "3%",
-          "bounce": "0.0%"
+          "sharePct": "2%",
+          "bounce": "0%"
         }
       ]
-    },
-    "viewsTotal": 34,
-    "pagesNote": "Most-visited US pages by views (share = % of total page views in window)."
+    }
   }
 }
