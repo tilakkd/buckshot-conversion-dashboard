@@ -4,7 +4,7 @@
   "period_end": "2026-05-24",
   "schema_version": 1,
   "version": 6,
-  "captured_at": "2026-05-25T10:47:09+05:30",
+  "captured_at": "2026-05-25T11:47:31+05:30",
   "date": "May 24, 2026",
   "headline_state": "May 24, 2026 (finalized May 25): Quiet stretch - no new web or call leads since May 21. PostHog US-only engagement steady at 27 visitors, 43 views, 29 sessions. Google Ads metrics carried forward; grid blocked by ad-blocker this run.",
   "kpis": {
@@ -23,10 +23,10 @@
     "totalSessions": 1004,
     "paidSessions": 91,
     "paidPct": "9.1%",
-    "adsImpressions": "2,643",
-    "adsClicks": 61,
-    "adsCtr": "2.3%",
-    "adsCpc": "$4.89"
+    "adsImpressions": "2,553",
+    "adsClicks": 57,
+    "adsCtr": "2.2%",
+    "adsCpc": "$4.84"
   },
   "enquiries": {
     "lead": {
@@ -516,8 +516,6 @@
     ]
   },
   "stale_sources": [
-    "googleAds",
-    "Ads-windows",
     "adsDaily",
     "ga4",
     "gtm"
@@ -525,7 +523,7 @@
   "verified": {
     "flamingo": "2026-05-25",
     "ga4": "2026-05-21",
-    "googleAds": "2026-05-23",
+    "googleAds": "2026-05-25",
     "lsa": "2026-05-25"
   },
   "trafficSources": {
@@ -679,7 +677,7 @@
   },
   "windows": {
     "asOf": "2026-05-24",
-    "note": "7/14/30-day rolling Google Ads totals. Carried forward from 2026-05-23 - Ads grid was blocked by an ad-blocker prompt this run (stale). Forms/calls/LSA derive client-side from daily arrays.",
+    "note": "7/14/30-day rolling Google Ads ACCOUNT totals ending 2026-05-24 (live capture 2026-05-25 after third-party-cookie fix). Forms/calls/LSA derive client-side from daily arrays.",
     "w7": {
       "days": 7,
       "totalSessions": 229,
@@ -687,9 +685,9 @@
       "paidPct": "8.3%",
       "adsCost": "$39.28",
       "adsCostDaily": "$5.61/day",
-      "impressions": "501",
+      "impressions": "478",
       "clicks": 8,
-      "ctr": "1.6%",
+      "ctr": "1.7%",
       "cpc": "$4.91"
     },
     "w14": {
@@ -699,9 +697,9 @@
       "paidPct": "6.5%",
       "adsCost": "$99.54",
       "adsCostDaily": "$7.11/day",
-      "impressions": "1,042",
+      "impressions": "1,019",
       "clicks": 20,
-      "ctr": "1.9%",
+      "ctr": "2.0%",
       "cpc": "$4.98"
     },
     "w30": {
@@ -709,12 +707,12 @@
       "totalSessions": 898,
       "paidSessions": 83,
       "paidPct": "9.2%",
-      "adsCost": "$298.53",
-      "adsCostDaily": "$9.95/day",
-      "impressions": "2,643",
-      "clicks": 61,
-      "ctr": "2.3%",
-      "cpc": "$4.89"
+      "adsCost": "$275.87",
+      "adsCostDaily": "$9.20/day",
+      "impressions": "2,553",
+      "clicks": 57,
+      "ctr": "2.2%",
+      "cpc": "$4.84"
     }
   },
   "leadDetails": [
