@@ -1,12 +1,12 @@
 {
-  "snapshot_date": "2026-05-24",
+  "snapshot_date": "2026-05-25",
   "period_start": "2026-04-01",
-  "period_end": "2026-05-24",
+  "period_end": "2026-05-25",
   "schema_version": 1,
   "version": 6,
-  "captured_at": "2026-05-25T11:47:31+05:30",
-  "date": "May 24, 2026",
-  "headline_state": "May 24, 2026 (finalized May 25): Quiet stretch - no new web or call leads since May 21. PostHog US-only engagement steady at 27 visitors, 43 views, 29 sessions. Google Ads metrics carried forward; grid blocked by ad-blocker this run.",
+  "captured_at": "2026-05-26T10:57:20.999+05:30",
+  "date": "2026-05-25",
+  "headline_state": "No new leads May 25; 90d spend ~$4,590; LSA 8 leads / 4 charged; active campaign 0 tracked conv.",
   "kpis": {
     "formSubmissions": 64,
     "qualifiedForms": 29,
@@ -15,17 +15,17 @@
     "lsaTotal": 8,
     "lsaCharged": 4,
     "lsaDisputed": 0,
-    "adsCost90d": "$4,583.36",
-    "adsCostDaily": "$50.93/day",
+    "adsCost90d": "$4,590",
+    "adsCostDaily": "$51.00/day",
     "adsConversions": 2,
     "ga4ActiveUsers": 665,
     "ga4KeyEvents": 42,
     "totalSessions": 1004,
     "paidSessions": 91,
     "paidPct": "9.1%",
-    "adsImpressions": "2,553",
-    "adsClicks": 57,
-    "adsCtr": "2.2%",
+    "adsImpressions": "2,510",
+    "adsClicks": 58,
+    "adsCtr": "2.3%",
     "adsCpc": "$4.84"
   },
   "enquiries": {
@@ -53,7 +53,7 @@
   "spamCounts": {
     "inbox": 1,
     "test": 4,
-    "flamingoSpamFolder": 576
+    "flamingoSpamFolder": 575
   },
   "sourceChart": {
     "paid": 1,
@@ -87,47 +87,44 @@
   },
   "insights": [
     {
-      "headline": "No new leads in the last three days",
-      "body": "The most recent inbound form was a qualified Madison estimate on May 21 and the latest LSA call was May 19, so qualified totals held at 29 forms plus 8 LSA leads (37 combined)."
+      "headline": "No new leads logged on May 25",
+      "body": "No form submissions or LSA calls were received on May 25. The Flamingo inbox and spam folder both show no entries after May 22."
     },
     {
-      "headline": "Homepage carries nearly all US traffic",
-      "body": "PostHog (US-only, bots and test excluded) shows 27 visitors and 43 views, with the homepage taking 26 of 43 views at a 50 percent bounce."
+      "headline": "Account 90-day spend near $4,590",
+      "body": "The account spent about $4,590 over the trailing 90 days (Feb 25 to May 25) for 371 clicks and 15.9K impressions at a $12.38 average CPC."
     },
     {
-      "headline": "Engagement is light but healthy",
-      "body": "Average US session runs about one minute across 29 sessions with a 55 percent bounce rate, consistent with the current low paid volume."
+      "headline": "Recent 30-day spend light at $281",
+      "body": "Over the last 30 days the account spent $281 for 58 clicks and 2,510 impressions, a $4.84 CPC and 2.3 percent CTR - reflecting only the small active campaign running now."
     },
     {
-      "headline": "Clarity shows clean UX",
-      "body": "Last three days had 0 rage clicks and 0 excessive scrolling; the lone dead-click flag traces to the known Elementor dropdown trigger, not a real defect."
+      "headline": "Leads - Roofing PC still 0 tracked conversions",
+      "body": "The active Leads - Roofing (PC) campaign spent $1,184.87 over 90 days for 128 clicks with 0 tracked conversions; only the Local Madison Area ad group is active."
     },
     {
-      "headline": "Google Ads could not refresh today",
-      "body": "An ad-blocker prompt blocked the Ads grid this run, so impressions, clicks, CPC, spend, and per-day ad metrics are carried forward from May 23 and flagged stale."
+      "headline": "Local Madison Area carries active spend",
+      "body": "The only enabled ad group, Local Madison Area, spent $150.63 over 90 days for 29 clicks at a $5.19 CPC and a 2.1 percent CTR."
     },
     {
-      "headline": "Paid footprint stays minimal",
-      "body": "Carried-forward windows show about $39 spend over 7 days and $299 over 30 days, in line with only the Local Madison Area ad group running."
+      "headline": "LSA holds at 8 leads, 4 charged",
+      "body": "Local Services Ads show 8 leads since April 1 with 4 charged; the most recent was a charged Madison roof-repair call on May 19. No new LSA leads since."
     },
     {
       "headline": "Cost per qualified lead steady near $124",
-      "body": "Against 37 combined qualified leads and the carried-forward 90-day spend of $4,583, cost per qualified lead holds at about $124."
+      "body": "Against 37 qualified contacts (29 qualified forms plus 8 LSA leads), the 90-day spend works out to about $124 per qualified lead."
+    },
+    {
+      "headline": "Weekly ad pace slowing",
+      "body": "The last 14 days drew 16 clicks and $79.88 of spend at a 1.8 percent CTR, down from heavier spend earlier in the quarter."
     }
   ],
   "daily": {
-    "rangeStart": "2026-04-25",
-    "rangeEnd": "2026-05-24",
-    "dateWindow": "Apr 25 - May 24, 2026",
+    "rangeStart": "2026-04-26",
+    "rangeEnd": "2026-05-25",
+    "dateWindow": "Apr 26 - May 25, 2026",
     "note": "Rolling 30-day day-of counts, Apr 25 - May 24, 2026.",
     "calls": [
-      {
-        "date": "2026-04-25",
-        "lsaTotal": 0,
-        "lsaCharged": 0,
-        "googleAds": 0,
-        "telTracked": 0
-      },
       {
         "date": "2026-04-26",
         "lsaTotal": 0,
@@ -330,15 +327,16 @@
         "lsaCharged": 0,
         "googleAds": 0,
         "telTracked": 0
+      },
+      {
+        "date": "2026-05-25",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
       }
     ],
     "forms": [
-      {
-        "date": "2026-04-25",
-        "qualified": 0,
-        "ooa": 0,
-        "spamTest": 1
-      },
       {
         "date": "2026-04-26",
         "qualified": 0,
@@ -512,19 +510,30 @@
         "qualified": 0,
         "ooa": 0,
         "spamTest": 0
+      },
+      {
+        "date": "2026-05-25",
+        "qualified": 0,
+        "ooa": 0,
+        "spamTest": 0
       }
     ]
   },
   "stale_sources": [
-    "adsDaily",
     "ga4",
-    "gtm"
+    "gtm",
+    "clarity",
+    "posthog",
+    "adsDaily",
+    "adPerformance-campaigns",
+    "adPerformance-keywords",
+    "Ads-w7"
   ],
   "verified": {
-    "flamingo": "2026-05-25",
+    "flamingo": "Verified 2026-05-26 (inbox+spam)",
     "ga4": "2026-05-21",
-    "googleAds": "2026-05-25",
-    "lsa": "2026-05-25"
+    "googleAds": "Verified 2026-05-26 (overview+ad groups)",
+    "lsa": "Verified 2026-05-26 (LSA inbox)"
   },
   "trafficSources": {
     "window": "Feb 20 - May 20, 2026 (90 days)",
@@ -578,7 +587,7 @@
     "scope": "Active campaign only: Leads - Roofing (PC). 1 Enabled ad group (Local Madison Area); other ad groups in this campaign (General Roofing, Roofers) are Paused. Keywords filtered to the Active ad group. Per-row metrics are 90-day, re-pulled live this run.",
     "activeCampaign": "Leads - Roofing (PC)",
     "activeAdGroupsCount": 1,
-    "window": "Feb 23 - May 23, 2026 (90 days)",
+    "window": "(90 days)",
     "rankedBy": "clicks",
     "campaigns": [
       {
@@ -641,11 +650,12 @@
         "name": "Local Madison Area",
         "campaign": "Leads - Roofing (PC)",
         "status": "Enabled",
-        "clicks": 27,
-        "ctr": "2.0%",
+        "clicks": 29,
+        "ctr": "2.1%",
         "conv": 0,
-        "cost": "$141.05",
-        "cpc": "$5.22"
+        "cost": "$150.63",
+        "cpc": "$5.19",
+        "impr": 1371
       }
     ],
     "keywords": [
@@ -676,7 +686,7 @@
     ]
   },
   "windows": {
-    "asOf": "2026-05-24",
+    "asOf": "2026-05-25",
     "note": "7/14/30-day rolling Google Ads ACCOUNT totals ending 2026-05-24 (live capture 2026-05-25 after third-party-cookie fix). Forms/calls/LSA derive client-side from daily arrays.",
     "w7": {
       "days": 7,
@@ -695,34 +705,27 @@
       "totalSessions": 464,
       "paidSessions": 30,
       "paidPct": "6.5%",
-      "adsCost": "$99.54",
-      "adsCostDaily": "$7.11/day",
-      "impressions": "1,019",
-      "clicks": 20,
-      "ctr": "2.0%",
-      "cpc": "$4.98"
+      "adsCost": "$79.88",
+      "adsCostDaily": "$5.71/day",
+      "impressions": "883",
+      "clicks": 16,
+      "ctr": "1.8%",
+      "cpc": "$4.99"
     },
     "w30": {
       "days": 30,
       "totalSessions": 898,
       "paidSessions": 83,
       "paidPct": "9.2%",
-      "adsCost": "$275.87",
-      "adsCostDaily": "$9.20/day",
-      "impressions": "2,553",
-      "clicks": 57,
-      "ctr": "2.2%",
+      "adsCost": "$281.00",
+      "adsCostDaily": "$9.37/day",
+      "impressions": "2,510",
+      "clicks": 58,
+      "ctr": "2.3%",
       "cpc": "$4.84"
     }
   },
   "leadDetails": [
-    {
-      "date": "2026-04-25",
-      "name": "Daniel W.",
-      "city": "",
-      "cat": "spam",
-      "note": "SEO / paid-traffic solicitation"
-    },
     {
       "date": "2026-04-26",
       "name": "Rise QA #2",
@@ -1066,7 +1069,7 @@
       "qualified": 0
     },
     "w14": {
-      "qualified": 12
+      "qualified": 11
     },
     "w30": null
   },
