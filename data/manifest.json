@@ -2,6 +2,21 @@
   "latest": "2026-05-25",
   "dates": [
     {
+      "date": "2026-05-25",
+      "label": "May 25, 2026 - Finalized",
+      "note": "Day-of finalized May 26 at 10:55 IST. Cumulative since Apr 1: 64 forms (29 qualified, 4 OOA, 31 spam/test) / 8 LSA (4 charged); combined 72 touches, 37 qualified. No new leads on May 25 - Flamingo inbox and spam both empty after May 22, and 0 new LSA calls (latest LSA was a charged Madison roof-repair on May 19). 30-day Ads cost $281 (58 clicks, 2,510 impr, 2.3% CTR, $4.84 CPC); 90-day account spend ~$4,590 (371 clicks, 15.9K impr, $12.38 CPC). Active campaign Leads - Roofing (PC): only Local Madison Area ad group enabled, 0 tracked conversions. Carried forward and marked stale: GA4, GTM, Clarity, PostHog, adsDaily series, full campaign and keyword grids, Ads w7 window."
+    },
+    {
+      "date": "2026-05-24",
+      "label": "May 24, 2026 - Daily finalize",
+      "note": "Quiet day - no new web or call leads since May 21. PostHog US engagement refreshed (27 visitors, 43 views). Google Ads, GA4, GTM carried forward (Ads grid blocked by ad-blocker)."
+    },
+    {
+      "date": "2026-05-23",
+      "label": "May 23, 2026 - Finalized",
+      "note": "Finalized day-of."
+    },
+    {
       "date": "2026-05-22",
       "label": "May 22, 2026 - Finalized",
       "note": "Day-of finalized May 23 at 10:54 IST. Cumulative since Apr 1: 64 forms (29 qualified, 4 OOA, 31 spam/test) / 8 LSA (4 charged); combined 72 touches, 37 qualified. No new genuine leads on May 22 - only 2 internal QA test submissions and 0 new LSA calls. Active campaign Leads - Roofing (PC) served 27 impressions but spent $0 (0 clicks) - reach-limited. 30-day Ads cost $391.73 (77 clicks, 2,882 impr, 2.7% CTR, $5.09 CPC); 90-day account spend $4,583.36. Ad Performance: 4 ad groups in Leads-Roofing(PC) paused 2026-05-22 - only Local Madison Area active now."
@@ -70,13 +85,6 @@
       "date": "2026-05-08",
       "label": "May 8, 2026 - Pre-tag-install",
       "note": "Original audit. 0 GA4 Key Events. Phone call lead goal in 'Needs attention'."
-    },
-    {
-      "date": "2026-05-24",
-      "label": "May 24, 2026 - Daily finalize",
-      "note": "Quiet day - no new web or call leads since May 21. PostHog US engagement refreshed (27 visitors, 43 views). Google Ads, GA4, GTM carried forward (Ads grid blocked by ad-blocker)."
-    },
-    "2026-05-25",
-    "2026-05-23"
+    }
   ]
 }
