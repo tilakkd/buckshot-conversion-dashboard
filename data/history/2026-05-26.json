@@ -4,9 +4,9 @@
   "period_end": "2026-05-26",
   "schema_version": 1,
   "version": 6,
-  "captured_at": "2026-05-27T10:09:43.497+05:30",
+  "captured_at": "2026-05-27T10:39:43.000+05:30",
   "date": "2026-05-26",
-  "headline_state": "May 26 finalized: +1 qualified (Madison roof replacement) and +1 spam; cumulative 66 forms (30 qualified) / 8 LSA (4 charged); Ads data through May 25.",
+  "headline_state": "May 26 finalized: +1 qualified (Madison roof replacement) and +1 spam; cumulative 66 forms (30 qualified) / 8 LSA (4 charged). Ads complete through May 25 (Central TZ); active campaign Leads - Roofing (PC) now $1,184.87 / 128 clicks. PostHog engagement refreshed to May 26 (US-only: 56 sessions, 0m 59s avg, 41 pct bounce).",
   "kpis": {
     "formSubmissions": 66,
     "qualifiedForms": 30,
@@ -521,19 +521,20 @@
   },
   "stale_sources": [
     "ga4",
-    "gtm",
     "clarity",
-    "posthog",
     "adsDaily",
-    "adPerformance-campaigns",
+    "adPerformance-adgroups",
     "adPerformance-keywords",
+    "Ads-windows-thru-0524",
     "Ads-thru-0525"
   ],
   "verified": {
     "flamingo": "Verified 2026-05-27 (inbox+spam)",
     "ga4": "2026-05-21",
-    "googleAds": "Verified 2026-05-27 (overview; Ads data through May 25)",
-    "lsa": "Verified 2026-05-27 (LSA inbox)"
+    "googleAds": "Verified 2026-05-27 (Overview + campaigns live; Ads complete through May 25, Central TZ)",
+    "lsa": "Verified 2026-05-27 (LSA inbox)",
+    "gtm": "Verified 2026-05-27 (GTM-KG87WZF2 live Version 8; tag count unchanged since May 9)",
+    "posthog": "Verified 2026-05-27 (US-only web analytics, test/bots excluded; asOf May 26)"
   },
   "trafficSources": {
     "window": "Feb 20 - May 20, 2026 (90 days)",
@@ -584,7 +585,7 @@
     ]
   },
   "adPerformance": {
-    "scope": "Active campaign only: Leads - Roofing (PC). 1 Enabled ad group (Local Madison Area); other ad groups in this campaign (General Roofing, Roofers) are Paused. Keywords filtered to the Active ad group. Per-row metrics are 90-day, re-pulled live this run.",
+    "scope": "Active campaign only: Leads - Roofing (PC). 1 Enabled ad group (Local Madison Area); other ad groups (General Roofing, Roofers) Paused. Campaign-level + account metrics re-pulled live this run from Overview (90 days). Ad-group/keyword detail grids and 7/14/30 scorecard could not be re-read this run (Google Ads ad-blocker false-positive modal blocked the grids); carried from prior live pull (Ads complete through May 25, Central TZ).",
     "activeCampaign": "Leads - Roofing (PC)",
     "activeAdGroupsCount": 1,
     "window": "(90 days)",
@@ -602,11 +603,12 @@
       {
         "name": "Leads - Roofing (PC)",
         "status": "Enabled",
-        "clicks": 126,
-        "ctr": "3.2%",
+        "clicks": 128,
+        "ctr": "3.3%",
         "conv": 0,
-        "cost": "$1,175.29",
-        "cpc": "$9.33"
+        "cost": "$1,184.87",
+        "cpc": "$9.33",
+        "avgCPC": "$9.26"
       },
       {
         "name": "Residential Roofing - Leads (PC)",
@@ -1316,228 +1318,227 @@
     }
   ],
   "posthog": {
-    "asOf": "2026-05-24",
+    "asOf": "2026-05-26",
     "source": "PostHog Web Analytics (project 435721)",
     "filters": "United States only; test accounts and bots excluded",
-    "note": "PostHog tracking began about 2026-05-21, so the 7/14/30-day windows return identical figures until about 30 days of history accumulate. This is expected, not an error.",
-    "pagesNote": "Most-visited US pages by views (trailing window). Homepage took 26 of 43 views.",
-    "viewsTotal": 43,
+    "note": "PostHog tracking began 2026-05-21, so the 7/14/30-day windows currently return identical figures until ~30 days of history accumulate. This is expected, not an error.",
+    "pagesNote": "Most-visited US pages ranked by pageviews (test accounts and bots excluded).",
     "w7": {
-      "visitors": 27,
-      "pageviews": 43,
-      "sessions": 29,
-      "avgDuration": "1m 1s",
-      "avgDurationSec": 61,
-      "bounceRate": "55%",
+      "visitors": 54,
+      "pageviews": 83,
+      "sessions": 56,
+      "avgDuration": "0m 59s",
+      "avgDurationSec": 59,
+      "bounceRate": "41%",
       "topPages": [
         {
           "path": "/",
-          "visitors": 22,
-          "views": 26,
-          "sharePct": "60%",
-          "bounce": "50%"
+          "visitors": 39,
+          "views": 44,
+          "sharePct": "53%",
+          "bounce": "39%"
         },
         {
-          "path": "/fortified-roofing/",
-          "visitors": 3,
-          "views": 3,
-          "sharePct": "7%",
-          "bounce": "100%"
+          "path": "/residential-roofing-madison-wi/",
+          "visitors": 9,
+          "views": 9,
+          "sharePct": "11%",
+          "bounce": "33%"
         },
         {
           "path": "/residential-roofing/",
-          "visitors": 3,
-          "views": 3,
+          "visitors": 5,
+          "views": 6,
           "sharePct": "7%",
           "bounce": "100%"
         },
         {
+          "path": "/fortified-roofing/",
+          "visitors": 4,
+          "views": 5,
+          "sharePct": "6%",
+          "bounce": "50%"
+        },
+        {
           "path": "/customer-reviews/",
-          "visitors": 1,
+          "visitors": 3,
+          "views": 5,
+          "sharePct": "6%",
+          "bounce": "0%"
+        },
+        {
+          "path": "/contact-us/",
+          "visitors": 3,
           "views": 3,
-          "sharePct": "7%",
+          "sharePct": "4%",
           "bounce": "0%"
         },
         {
           "path": "/recent-projects/",
-          "visitors": 2,
-          "views": 2,
-          "sharePct": "5%",
+          "visitors": 3,
+          "views": 3,
+          "sharePct": "4%",
           "bounce": "0%"
         },
         {
-          "path": "/residential-roofing-madison-wi/",
+          "path": "/free-estimate/",
           "visitors": 2,
           "views": 2,
-          "sharePct": "5%",
-          "bounce": "50%"
+          "sharePct": "2%",
+          "bounce": "0%"
         },
         {
           "path": "/top-hail-storm-damage-contractor/",
           "visitors": 2,
           "views": 2,
-          "sharePct": "5%",
+          "sharePct": "2%",
           "bounce": "100%"
-        },
-        {
-          "path": "/contact-us/",
-          "visitors": 1,
-          "views": 1,
-          "sharePct": "2%",
-          "bounce": "0%"
-        },
-        {
-          "path": "/gaf-master-elite/",
-          "visitors": 1,
-          "views": 1,
-          "sharePct": "2%",
-          "bounce": "0%"
         }
       ]
     },
     "w14": {
-      "visitors": 27,
-      "pageviews": 43,
-      "sessions": 29,
-      "avgDuration": "1m 1s",
-      "avgDurationSec": 61,
-      "bounceRate": "55%",
+      "visitors": 54,
+      "pageviews": 83,
+      "sessions": 56,
+      "avgDuration": "0m 59s",
+      "avgDurationSec": 59,
+      "bounceRate": "41%",
       "topPages": [
         {
           "path": "/",
-          "visitors": 22,
-          "views": 26,
-          "sharePct": "60%",
-          "bounce": "50%"
+          "visitors": 39,
+          "views": 44,
+          "sharePct": "53%",
+          "bounce": "39%"
         },
         {
-          "path": "/fortified-roofing/",
-          "visitors": 3,
-          "views": 3,
-          "sharePct": "7%",
-          "bounce": "100%"
+          "path": "/residential-roofing-madison-wi/",
+          "visitors": 9,
+          "views": 9,
+          "sharePct": "11%",
+          "bounce": "33%"
         },
         {
           "path": "/residential-roofing/",
-          "visitors": 3,
-          "views": 3,
+          "visitors": 5,
+          "views": 6,
           "sharePct": "7%",
           "bounce": "100%"
         },
         {
+          "path": "/fortified-roofing/",
+          "visitors": 4,
+          "views": 5,
+          "sharePct": "6%",
+          "bounce": "50%"
+        },
+        {
           "path": "/customer-reviews/",
-          "visitors": 1,
+          "visitors": 3,
+          "views": 5,
+          "sharePct": "6%",
+          "bounce": "0%"
+        },
+        {
+          "path": "/contact-us/",
+          "visitors": 3,
           "views": 3,
-          "sharePct": "7%",
+          "sharePct": "4%",
           "bounce": "0%"
         },
         {
           "path": "/recent-projects/",
-          "visitors": 2,
-          "views": 2,
-          "sharePct": "5%",
+          "visitors": 3,
+          "views": 3,
+          "sharePct": "4%",
           "bounce": "0%"
         },
         {
-          "path": "/residential-roofing-madison-wi/",
+          "path": "/free-estimate/",
           "visitors": 2,
           "views": 2,
-          "sharePct": "5%",
-          "bounce": "50%"
+          "sharePct": "2%",
+          "bounce": "0%"
         },
         {
           "path": "/top-hail-storm-damage-contractor/",
           "visitors": 2,
           "views": 2,
-          "sharePct": "5%",
+          "sharePct": "2%",
           "bounce": "100%"
-        },
-        {
-          "path": "/contact-us/",
-          "visitors": 1,
-          "views": 1,
-          "sharePct": "2%",
-          "bounce": "0%"
-        },
-        {
-          "path": "/gaf-master-elite/",
-          "visitors": 1,
-          "views": 1,
-          "sharePct": "2%",
-          "bounce": "0%"
         }
       ]
     },
     "w30": {
-      "visitors": 27,
-      "pageviews": 43,
-      "sessions": 29,
-      "avgDuration": "1m 1s",
-      "avgDurationSec": 61,
-      "bounceRate": "55%",
+      "visitors": 54,
+      "pageviews": 83,
+      "sessions": 56,
+      "avgDuration": "0m 59s",
+      "avgDurationSec": 59,
+      "bounceRate": "41%",
       "topPages": [
         {
           "path": "/",
-          "visitors": 22,
-          "views": 26,
-          "sharePct": "60%",
-          "bounce": "50%"
+          "visitors": 39,
+          "views": 44,
+          "sharePct": "53%",
+          "bounce": "39%"
         },
         {
-          "path": "/fortified-roofing/",
-          "visitors": 3,
-          "views": 3,
-          "sharePct": "7%",
-          "bounce": "100%"
+          "path": "/residential-roofing-madison-wi/",
+          "visitors": 9,
+          "views": 9,
+          "sharePct": "11%",
+          "bounce": "33%"
         },
         {
           "path": "/residential-roofing/",
-          "visitors": 3,
-          "views": 3,
+          "visitors": 5,
+          "views": 6,
           "sharePct": "7%",
           "bounce": "100%"
         },
         {
+          "path": "/fortified-roofing/",
+          "visitors": 4,
+          "views": 5,
+          "sharePct": "6%",
+          "bounce": "50%"
+        },
+        {
           "path": "/customer-reviews/",
-          "visitors": 1,
+          "visitors": 3,
+          "views": 5,
+          "sharePct": "6%",
+          "bounce": "0%"
+        },
+        {
+          "path": "/contact-us/",
+          "visitors": 3,
           "views": 3,
-          "sharePct": "7%",
+          "sharePct": "4%",
           "bounce": "0%"
         },
         {
           "path": "/recent-projects/",
-          "visitors": 2,
-          "views": 2,
-          "sharePct": "5%",
+          "visitors": 3,
+          "views": 3,
+          "sharePct": "4%",
           "bounce": "0%"
         },
         {
-          "path": "/residential-roofing-madison-wi/",
+          "path": "/free-estimate/",
           "visitors": 2,
           "views": 2,
-          "sharePct": "5%",
-          "bounce": "50%"
+          "sharePct": "2%",
+          "bounce": "0%"
         },
         {
           "path": "/top-hail-storm-damage-contractor/",
           "visitors": 2,
           "views": 2,
-          "sharePct": "5%",
+          "sharePct": "2%",
           "bounce": "100%"
-        },
-        {
-          "path": "/contact-us/",
-          "visitors": 1,
-          "views": 1,
-          "sharePct": "2%",
-          "bounce": "0%"
-        },
-        {
-          "path": "/gaf-master-elite/",
-          "visitors": 1,
-          "views": 1,
-          "sharePct": "2%",
-          "bounce": "0%"
         }
       ]
     }
