@@ -1,17 +1,17 @@
 {
-  "snapshot_date": "2026-05-25",
+  "snapshot_date": "2026-05-26",
   "period_start": "2026-04-01",
-  "period_end": "2026-05-25",
+  "period_end": "2026-05-26",
   "schema_version": 1,
   "version": 6,
-  "captured_at": "2026-05-26T10:57:20.999+05:30",
-  "date": "2026-05-25",
-  "headline_state": "No new leads May 25; 90d spend ~$4,590; LSA 8 leads / 4 charged; active campaign 0 tracked conv.",
+  "captured_at": "2026-05-27T10:09:43.497+05:30",
+  "date": "2026-05-26",
+  "headline_state": "May 26 finalized: +1 qualified (Madison roof replacement) and +1 spam; cumulative 66 forms (30 qualified) / 8 LSA (4 charged); Ads data through May 25.",
   "kpis": {
-    "formSubmissions": 64,
-    "qualifiedForms": 29,
+    "formSubmissions": 66,
+    "qualifiedForms": 30,
     "ooaForms": 4,
-    "spamTestForms": 31,
+    "spamTestForms": 32,
     "lsaTotal": 8,
     "lsaCharged": 4,
     "lsaDisputed": 0,
@@ -30,10 +30,10 @@
   },
   "enquiries": {
     "lead": {
-      "total": 64,
-      "qualified": 29,
+      "total": 66,
+      "qualified": 30,
       "ooa": 4,
-      "spamTest": 31,
+      "spamTest": 32,
       "trackingStatus": "[OK] Verified May 9"
     },
     "call": {
@@ -44,10 +44,10 @@
       "trackingStatus": "[OK] Goal repaired May 11"
     },
     "combined": {
-      "total": 72,
-      "qualified": 37,
-      "costPerQualified": "~$124",
-      "formToCallRatio": "64 : 8"
+      "total": 74,
+      "qualified": 38,
+      "costPerQualified": "~$121",
+      "formToCallRatio": "66 : 8"
     }
   },
   "spamCounts": {
@@ -87,51 +87,44 @@
   },
   "insights": [
     {
-      "headline": "No new leads logged on May 25",
-      "body": "No form submissions or LSA calls were received on May 25. The Flamingo inbox and spam folder both show no entries after May 22."
+      "headline": "New qualified roofing lead on May 26",
+      "body": "A Madison homeowner (608 area code) submitted a Quick Contact form on May 26 asking for a roof-replacement quote on the home and possibly the garage in asphalt shingles, landing on the Madison replacement page."
     },
     {
-      "headline": "Account 90-day spend near $4,590",
-      "body": "The account spent about $4,590 over the trailing 90 days (Feb 25 to May 25) for 371 clicks and 15.9K impressions at a $12.38 average CPC."
+      "headline": "One spam solicitation also logged May 26",
+      "body": "A Missouri gutter contractor in Trenton, MO sent a B2B solicitation through the form; classified as spam, not a customer lead."
     },
     {
-      "headline": "Recent 30-day spend light at $281",
-      "body": "Over the last 30 days the account spent $281 for 58 clicks and 2,510 impressions, a $4.84 CPC and 2.3 percent CTR - reflecting only the small active campaign running now."
+      "headline": "Cumulative qualified contacts reach 38",
+      "body": "Since April 1 the account now shows 30 qualified forms plus 8 LSA leads (4 charged) - 38 qualified contacts across 74 total touches."
+    },
+    {
+      "headline": "Cost per qualified lead eases to ~$121",
+      "body": "With 38 qualified contacts against about $4,590 of 90-day spend, blended cost per qualified lead improved to roughly $121."
+    },
+    {
+      "headline": "Google Ads reporting lags to May 25",
+      "body": "The account is still on May 26 in Central Time, so Ads metrics reflect data through May 25: about $4,590 over 90 days (371 clicks, 15.9K impr, $12.38 CPC) and $281 over the last 30 days."
     },
     {
       "headline": "Leads - Roofing PC still 0 tracked conversions",
-      "body": "The active Leads - Roofing (PC) campaign spent $1,184.87 over 90 days for 128 clicks with 0 tracked conversions; only the Local Madison Area ad group is active."
+      "body": "The only active campaign, Leads - Roofing (PC), shows 0 tracked conversions on about $1,185 of 90-day spend; only the Local Madison Area ad group is enabled."
     },
     {
-      "headline": "Local Madison Area carries active spend",
-      "body": "The only enabled ad group, Local Madison Area, spent $150.63 over 90 days for 29 clicks at a $5.19 CPC and a 2.1 percent CTR."
+      "headline": "New LSA call pending for May 27",
+      "body": "A Madison phone lead (In review) arrived early May 27 via Local Services Ads and will be counted in tomorrow's finalization."
     },
     {
       "headline": "LSA holds at 8 leads, 4 charged",
-      "body": "Local Services Ads show 8 leads since April 1 with 4 charged; the most recent was a charged Madison roof-repair call on May 19. No new LSA leads since."
-    },
-    {
-      "headline": "Cost per qualified lead steady near $124",
-      "body": "Against 37 qualified contacts (29 qualified forms plus 8 LSA leads), the 90-day spend works out to about $124 per qualified lead."
-    },
-    {
-      "headline": "Weekly ad pace slowing",
-      "body": "The last 14 days drew 16 clicks and $79.88 of spend at a 1.8 percent CTR, down from heavier spend earlier in the quarter."
+      "body": "Through May 26, Local Services Ads total 8 leads since April 1 with 4 charged; no new charged calls since May 19."
     }
   ],
   "daily": {
-    "rangeStart": "2026-04-26",
-    "rangeEnd": "2026-05-25",
-    "dateWindow": "Apr 26 - May 25, 2026",
+    "rangeStart": "2026-04-27",
+    "rangeEnd": "2026-05-26",
+    "dateWindow": "Apr 27 - May 26, 2026",
     "note": "Rolling 30-day day-of counts, Apr 25 - May 24, 2026.",
     "calls": [
-      {
-        "date": "2026-04-26",
-        "lsaTotal": 0,
-        "lsaCharged": 0,
-        "googleAds": 0,
-        "telTracked": 0
-      },
       {
         "date": "2026-04-27",
         "lsaTotal": 0,
@@ -334,15 +327,16 @@
         "lsaCharged": 0,
         "googleAds": 0,
         "telTracked": 0
+      },
+      {
+        "date": "2026-05-26",
+        "lsaTotal": 0,
+        "lsaCharged": 0,
+        "googleAds": 0,
+        "telTracked": 0
       }
     ],
     "forms": [
-      {
-        "date": "2026-04-26",
-        "qualified": 0,
-        "ooa": 0,
-        "spamTest": 2
-      },
       {
         "date": "2026-04-27",
         "qualified": 1,
@@ -516,6 +510,12 @@
         "qualified": 0,
         "ooa": 0,
         "spamTest": 0
+      },
+      {
+        "date": "2026-05-26",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 1
       }
     ]
   },
@@ -527,13 +527,13 @@
     "adsDaily",
     "adPerformance-campaigns",
     "adPerformance-keywords",
-    "Ads-w7"
+    "Ads-thru-0525"
   ],
   "verified": {
-    "flamingo": "Verified 2026-05-26 (inbox+spam)",
+    "flamingo": "Verified 2026-05-27 (inbox+spam)",
     "ga4": "2026-05-21",
-    "googleAds": "Verified 2026-05-26 (overview+ad groups)",
-    "lsa": "Verified 2026-05-26 (LSA inbox)"
+    "googleAds": "Verified 2026-05-27 (overview; Ads data through May 25)",
+    "lsa": "Verified 2026-05-27 (LSA inbox)"
   },
   "trafficSources": {
     "window": "Feb 20 - May 20, 2026 (90 days)",
@@ -726,20 +726,6 @@
     }
   },
   "leadDetails": [
-    {
-      "date": "2026-04-26",
-      "name": "Rise QA #2",
-      "city": "",
-      "cat": "spam",
-      "note": "Internal QA test submission (GCLID/UTM verify)"
-    },
-    {
-      "date": "2026-04-26",
-      "name": "Rise QA",
-      "city": "",
-      "cat": "spam",
-      "note": "Internal QA test submission (pipeline verify)"
-    },
     {
       "date": "2026-04-27",
       "name": "Maria R.",
@@ -1019,6 +1005,20 @@
       "city": "",
       "cat": "spam",
       "note": "Internal QA test - LP hero form wiring (inbox)"
+    },
+    {
+      "date": "2026-05-26",
+      "name": "Ron W.",
+      "city": "Madison",
+      "cat": "qualified",
+      "note": "Roof replacement quote - home and possibly garage, asphalt shingles; 608 area code, Madison replacement landing page."
+    },
+    {
+      "date": "2026-05-26",
+      "name": "Marvin P.",
+      "city": "",
+      "cat": "spam",
+      "note": "B2B solicitation - gutter contractor offering services for the Trenton MO area."
     }
   ],
   "callDetails": [
@@ -1066,14 +1066,24 @@
   ],
   "prior": {
     "w7": {
-      "qualified": 0
+      "qualified": 4
     },
     "w14": {
-      "qualified": 11
+      "qualified": 9
     },
     "w30": null
   },
   "leadTimeline": [
+    {
+      "date": "2026-05-26",
+      "time": "9:28 AM",
+      "sort": "2026-05-26 09:28",
+      "src": "form",
+      "form": "Quick Contact",
+      "city": "Madison",
+      "cat": "qualified",
+      "note": "Roof replacement quote - asphalt shingles."
+    },
     {
       "date": "2026-05-21",
       "time": "12:03 PM",
