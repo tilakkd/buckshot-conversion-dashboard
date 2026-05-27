@@ -4,7 +4,7 @@
   "period_end": "2026-05-26",
   "schema_version": 1,
   "version": 6,
-  "captured_at": "2026-05-27T10:39:43.000+05:30",
+  "captured_at": "2026-05-27T11:02:48.000+05:30",
   "date": "2026-05-26",
   "headline_state": "May 26 finalized: +1 qualified (Madison roof replacement) and +1 spam; cumulative 66 forms (30 qualified) / 8 LSA (4 charged). Ads complete through May 25 (Central TZ); active campaign Leads - Roofing (PC) now $1,184.87 / 128 clicks. PostHog engagement refreshed to May 26 (US-only: 56 sessions, 0m 59s avg, 41 pct bounce).",
   "kpis": {
@@ -688,8 +688,8 @@
     ]
   },
   "windows": {
-    "asOf": "2026-05-25",
-    "note": "7/14/30-day rolling Google Ads ACCOUNT totals ending 2026-05-24 (live capture 2026-05-25 after third-party-cookie fix). Forms/calls/LSA derive client-side from daily arrays.",
+    "asOf": "2026-05-26",
+    "note": "Window anchor aligned to snapshot date 2026-05-26 so the latest leads/forms/calls are visible. Google Ads metric VALUES (impressions/clicks/cost in w7/w14/w30) reflect data complete through May 25 only (Central TZ lag); lead/form/call counts derive client-side from the daily arrays which run through May 26.",
     "w7": {
       "days": 7,
       "totalSessions": 229,
