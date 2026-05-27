@@ -1,6 +1,11 @@
 {
-  "latest": "2026-05-25",
+  "latest": "2026-05-26",
   "dates": [
+    {
+      "date": "2026-05-26",
+      "label": "May 26, 2026 - Finalized",
+      "note": "Day-of finalized May 27 at 10:20 IST. Cumulative since Apr 1: 66 forms (30 qualified, 4 OOA, 32 spam/test) / 8 LSA (4 charged); combined 74 touches, 38 qualified. May 26 added 1 qualified lead (Madison homeowner, roof replacement, 608 area code via Madison landing page) and 1 spam (Trenton MO gutter-contractor solicitation); 0 LSA calls. Google Ads data lags to May 25 (account still on May 26 in Central): about $4,590 over 90 days (371 clicks, 15.9K impr, $12.38 CPC), $281 over 30 days, 0 tracked conversions on Leads - Roofing (PC). Cost per qualified ~$121. Carried forward and marked stale: GA4, GTM, Clarity, PostHog, adsDaily series, full campaign and keyword grids."
+    },
     {
       "date": "2026-05-25",
       "label": "May 25, 2026 - Finalized",
