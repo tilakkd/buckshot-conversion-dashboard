@@ -2,6 +2,11 @@
   "latest": "2026-05-26",
   "dates": [
     {
+      "date": "2026-05-27",
+      "label": "May 27, 2026 - Finalized",
+      "note": "Day-of finalized 2026-05-28 ~10:38 IST. Cumulative since Apr 1: 71 forms (30 qualified, 4 OOA, 37 spam/test) / 9 LSA (5 charged); combined 80 touches, 35 qualified. New on May 27: 1 LSA charged Madison phone lead (608-219-7721) at 2:17 AM Central; no qualified Flamingo forms (5 spam-folder entries - 2 B2B pitches, 2 Franchise Creator duplicates, 1 attribution test). Carried forward and marked stale: GA4, GTM, Clarity, PostHog (US-only 56 sessions thru May 26), Ads windows/grid/adsDaily (operator did not refresh Ads tabs today; Ads data complete through May 25). costPerQualified now ~$131 (~$4,590 90-day spend / 35 qualified)."
+    },
+    {
       "date": "2026-05-26",
       "label": "May 26, 2026 - Finalized",
       "note": "Re-finalized 2026-05-27 10:39 IST: PostHog engagement refreshed to May 26 (US-only, 56 sessions); active campaign Leads - Roofing (PC) metrics refreshed; GA4/Clarity and Ads grid detail carried forward (Ads complete through May 25)."
