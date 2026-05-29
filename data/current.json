@@ -1,12 +1,12 @@
 {
-  "snapshot_date": "2026-05-27",
+  "snapshot_date": "2026-05-28",
   "period_start": "2026-04-01",
-  "period_end": "2026-05-27",
+  "period_end": "2026-05-28",
   "schema_version": 1,
   "version": 6,
-  "captured_at": "2026-05-28T10:37:31.000+05:30",
-  "date": "2026-05-27",
-  "headline_state": "71 forms (30 qualified, 4 OOA, 37 spam/test) and 9 LSA calls (5 charged) since Apr 1. 1 new LSA charged Madison phone lead on May 27; no new Flamingo qualified forms (5 B2B/test spam-folder entries). Active campaign Leads - Roofing (PC) still 0 tracked conv on ~$4,590 90-day spend.",
+  "captured_at": "2026-05-29T11:17:26+05:30",
+  "date": "2026-05-28",
+  "headline_state": "DEGRADED RUN 2026-05-29: Stage 1 (leads) and Stage 2 (ads) state files were missing, so no fresh lead/ad/GA4/Clarity/GTM/PostHog data could be gathered. All figures are carried forward from the 2026-05-27 snapshot and flagged stale. Cumulative totals unchanged: 71 forms (30 qualified, 4 OOA, 37 spam/test), 9 LSA (5 charged).",
   "kpis": {
     "formSubmissions": 71,
     "qualifiedForms": 30,
@@ -88,8 +88,12 @@
   },
   "insights": [
     {
+      "headline": "Dashboard refresh ran in degraded mode May 29",
+      "body": "Upstream lead and ad collection stages produced no state files, so this 2026-05-28 snapshot carries forward 2026-05-27 figures unchanged. All sources are marked stale; treat numbers as last-known, not current."
+    },
+    {
       "headline": "New LSA charged lead in Madison May 27",
-      "body": "Phone lead 608-219-7721 received 2:17 AM Central, charged; brings LSA totals to 9 received / 5 charged since Apr 1. LSA continues to be the primary channel converting to billable contacts."
+      "body": "Phone lead [redacted] received 2:17 AM Central, charged; brings LSA totals to 9 received / 5 charged since Apr 1. LSA continues to be the primary channel converting to billable contacts."
     },
     {
       "headline": "No qualified Flamingo forms on May 27",
@@ -521,23 +525,25 @@
     ]
   },
   "stale_sources": [
-    "ga4",
-    "clarity",
+    "leads-state-stale",
+    "ads-state-stale",
+    "flamingo-inbox",
+    "lsa",
+    "Ads-windows",
     "adsDaily",
-    "adPerformance-adgroups",
-    "adPerformance-keywords",
-    "Ads-windows-thru-0525",
-    "Ads-thru-0525",
-    "posthog",
-    "gtm"
+    "cost90d",
+    "ga4",
+    "gtm",
+    "clarity",
+    "posthog"
   ],
   "verified": {
-    "flamingo": "Verified 2026-05-27 (inbox+spam)",
-    "ga4": "2026-05-21",
-    "googleAds": "Verified 2026-05-27 (Overview + campaigns live; Ads complete through May 25, Central TZ)",
-    "lsa": "Verified 2026-05-27 (LSA inbox)",
-    "gtm": "Verified 2026-05-27 (GTM-KG87WZF2 live Version 8; tag count unchanged since May 9)",
-    "posthog": "Verified 2026-05-27 (US-only web analytics, test/bots excluded; asOf May 26)"
+    "flamingo": "Carried forward from 2026-05-27; not re-verified (upstream state missing 2026-05-29)",
+    "ga4": "Carried forward from prior; not re-verified 2026-05-29",
+    "googleAds": "Carried forward from 2026-05-27; not re-verified (upstream Ads state missing)",
+    "lsa": "Carried forward from 2026-05-27; not re-verified",
+    "gtm": "Carried forward; GTM-KG87WZF2 Version 8 (last verified 2026-05-27)",
+    "posthog": "Carried forward from 2026-05-26; not re-verified 2026-05-29"
   },
   "trafficSources": {
     "window": "Feb 20 - May 20, 2026 (90 days)",
@@ -691,8 +697,8 @@
     ]
   },
   "windows": {
-    "asOf": "2026-05-27",
-    "note": "Window anchor aligned to snapshot date 2026-05-27 so the latest leads/forms/calls are visible. Google Ads metric VALUES (impressions/clicks/cost in w7/w14/w30) reflect data complete through May 25 only (Central TZ lag, operator did not refresh Ads tabs today); lead/form/call counts derive client-side from the daily arrays which run through 2026-05-27.",
+    "asOf": "2026-05-28",
+    "note": "Window anchor aligned to snapshot date 2026-05-27 so the latest leads/forms/calls are visible. Google Ads metric VALUES (impressions/clicks/cost in w7/w14/w30) reflect data complete through May 25 only (Central TZ lag, operator did not refresh Ads tabs today); lead/form/call counts derive client-side from the daily arrays which run through 2026-05-27. [Carried forward to 2026-05-28: upstream Stage 1/2 state files missing on 2026-05-29 run; lead/ads data is last-known through 2026-05-27.]",
     "w7": {
       "days": 7,
       "totalSessions": 229,
