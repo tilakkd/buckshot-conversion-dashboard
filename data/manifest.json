@@ -1,10 +1,15 @@
 {
-  "latest": "2026-05-26",
+  "latest": "2026-05-28",
   "dates": [
+    {
+      "date": "2026-05-28",
+      "label": "May 28, 2026 - Finalized (degraded)",
+      "note": "Day-of finalized 2026-05-29 ~11:1x IST in DEGRADED mode: upstream Stage 1 (leads) and Stage 2 (ads) state files were missing, so no fresh data was gathered. Carried forward from 2026-05-27 and flagged stale: leads, ads/windows, adsDaily, cost90d, GA4, GTM, Clarity, PostHog. Cumulative since Apr 1 unchanged: 71 forms (30 qualified, 4 OOA, 37 spam/test) / 9 LSA (5 charged); combined 80 touches, 35 qualified."
+    },
     {
       "date": "2026-05-27",
       "label": "May 27, 2026 - Finalized",
-      "note": "Day-of finalized 2026-05-28 ~10:38 IST. Cumulative since Apr 1: 71 forms (30 qualified, 4 OOA, 37 spam/test) / 9 LSA (5 charged); combined 80 touches, 35 qualified. New on May 27: 1 LSA charged Madison phone lead (608-219-7721) at 2:17 AM Central; no qualified Flamingo forms (5 spam-folder entries - 2 B2B pitches, 2 Franchise Creator duplicates, 1 attribution test). Carried forward and marked stale: GA4, GTM, Clarity, PostHog (US-only 56 sessions thru May 26), Ads windows/grid/adsDaily (operator did not refresh Ads tabs today; Ads data complete through May 25). costPerQualified now ~$131 (~$4,590 90-day spend / 35 qualified)."
+      "note": "Day-of finalized 2026-05-28 ~10:38 IST. Cumulative since Apr 1: 71 forms (30 qualified, 4 OOA, 37 spam/test) / 9 LSA (5 charged); combined 80 touches, 35 qualified. New on May 27: 1 LSA charged Madison phone lead [redacted]) at 2:17 AM Central; no qualified Flamingo forms (5 spam-folder entries - 2 B2B pitches, 2 Franchise Creator duplicates, 1 attribution test). Carried forward and marked stale: GA4, GTM, Clarity, PostHog (US-only 56 sessions thru May 26), Ads windows/grid/adsDaily (operator did not refresh Ads tabs today; Ads data complete through May 25). costPerQualified now ~$131 (~$4,590 90-day spend / 35 qualified)."
     },
     {
       "date": "2026-05-26",
