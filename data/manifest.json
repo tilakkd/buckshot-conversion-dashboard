@@ -2,6 +2,11 @@
   "latest": "2026-05-28",
   "dates": [
     {
+      "date": "2026-05-29",
+      "label": "May 29, 2026 - Finalized (degraded)",
+      "note": "Day-of finalized 2026-05-30 ~11:1x IST in DEGRADED mode: upstream Stage 1 (leads) and Stage 2 (ads) state files were missing again (2nd consecutive day). No fresh data gathered; carried forward from prior snapshot and flagged stale: leads, ads/windows, adsDaily, cost90d, GA4, GTM, Clarity. PostHog dropped from schema. Cumulative since Apr 1 unchanged: 71 forms (30 qualified, 4 OOA, 37 spam/test), 9 LSA (5 charged)."
+    },
+    {
       "date": "2026-05-28",
       "label": "May 28, 2026 - Finalized (degraded)",
       "note": "Day-of finalized 2026-05-29 ~11:1x IST in DEGRADED mode: upstream Stage 1 (leads) and Stage 2 (ads) state files were missing, so no fresh data was gathered. Carried forward from 2026-05-27 and flagged stale: leads, ads/windows, adsDaily, cost90d, GA4, GTM, Clarity, PostHog. Cumulative since Apr 1 unchanged: 71 forms (30 qualified, 4 OOA, 37 spam/test) / 9 LSA (5 charged); combined 80 touches, 35 qualified."
