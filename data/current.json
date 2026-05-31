@@ -1,1 +1,114 @@
-{"version":8,"captured_at":"2026-05-30T13:00:30+05:30","snapshot_date":"2026-05-29","period_start":"2026-03-01","period_end":"2026-05-29","headline_state":"Active campaign: Leads - Roofing (PC). Budget $180/day, no bid cap. Demand-bounded Madison auctions.","kpis":{"adsImpressions":"2,346","adsClicks":62,"adsCtr":"2.6%","adsCpc":"$7.78","adsCost90d":4847.6,"adsCostDaily":"$53.86/day","totalSessions":487,"lsaCharged":5,"lsaTotal":9,"formSubmissions":65,"qualifiedForms":31,"ooaForms":3,"spamTestForms":31},"enquiries":{"lead":{"total":65,"qualified":31,"ooa":3,"spamTest":31},"call":{"total":9,"charged":5},"combined":{"total":74,"qualified":40,"formToCallRatio":"65 : 9","costPerQualified":"~$121"}},"daily":{"rangeStart":"2026-04-30","rangeEnd":"2026-05-29","forms":[{"date":"2026-04-30","qualified":3,"ooa":1,"spam":0,"total":4},{"date":"2026-05-01","qualified":0,"ooa":0,"spam":2,"total":2},{"date":"2026-05-02","qualified":0,"ooa":0,"spam":0,"total":0},{"date":"2026-05-03","qualified":1,"ooa":0,"spam":0,"total":1},{"date":"2026-05-04","qualified":2,"ooa":0,"spam":1,"total":3},{"date":"2026-05-05","qualified":0,"ooa":0,"spam":3,"total":3},{"date":"2026-05-06","qualified":0,"ooa":0,"spam":0,"total":0},{"date":"2026-05-07","qualified":0,"ooa":0,"spam":0,"total":0},{"date":"2026-05-08","qualified":1,"ooa":0,"spam":1,"total":2},{"date":"2026-05-09","qualified":0,"ooa":0,"spam":0,"total":0},{"date":"2026-05-10","qualified":0,"ooa":0,"spam":0,"total":0},{"date":"2026-05-11","qualified":0,"ooa":0,"spam":0,"total":0},{"date":"2026-05-12","qualified":0,"ooa":0,"spam":0,"total":0},{"date":"2026-05-13","qualified":0,"ooa":0,"spam":0,"total":0},{"date":"2026-05-14","qualified":0,"ooa":0,"spam":7,"total":7},{"date":"2026-05-15","qualified":0,"ooa":0,"spam":1,"total":1},{"date":"2026-05-16","qualified":0,"ooa":0,"spam":1,"total":1},{"date":"2026-05-17","qualified":1,"ooa":0,"spam":0,"total":1},{"date":"2026-05-18","qualified":0,"ooa":0,"spam":1,"total":1},{"date":"2026-05-19","qualified":2,"ooa":0,"spam":2,"total":4},{"date":"2026-05-20","qualified":1,"ooa":0,"spam":0,"total":1},{"date":"2026-05-21","qualified":2,"ooa":0,"spam":0,"total":2},{"date":"2026-05-22","qualified":0,"ooa":0,"spam":2,"total":2},{"date":"2026-05-23","qualified":0,"ooa":0,"spam":0,"total":0},{"date":"2026-05-24","qualified":0,"ooa":0,"spam":0,"total":0},{"date":"2026-05-25","qualified":0,"ooa":0,"spam":0,"total":0},{"date":"2026-05-26","qualified":1,"ooa":0,"spam":1,"total":2},{"date":"2026-05-27","qualified":0,"ooa":0,"spam":5,"total":5},{"date":"2026-05-28","qualified":0,"ooa":0,"spam":0,"total":0},{"date":"2026-05-29","qualified":1,"ooa":0,"spam":0,"total":1}],"calls":[{"date":"2026-04-30","charged":1,"total":1},{"date":"2026-05-01","charged":0,"total":0},{"date":"2026-05-02","charged":0,"total":0},{"date":"2026-05-03","charged":0,"total":0},{"date":"2026-05-04","charged":0,"total":0},{"date":"2026-05-05","charged":0,"total":0},{"date":"2026-05-06","charged":0,"total":0},{"date":"2026-05-07","charged":0,"total":0},{"date":"2026-05-08","charged":0,"total":0},{"date":"2026-05-09","charged":0,"total":0},{"date":"2026-05-10","charged":0,"total":0},{"date":"2026-05-11","charged":0,"total":0},{"date":"2026-05-12","charged":0,"total":0},{"date":"2026-05-13","charged":0,"total":0},{"date":"2026-05-14","charged":0,"total":0},{"date":"2026-05-15","charged":0,"total":0},{"date":"2026-05-16","charged":0,"total":0},{"date":"2026-05-17","charged":0,"total":0},{"date":"2026-05-18","charged":0,"total":0},{"date":"2026-05-19","charged":1,"total":2},{"date":"2026-05-20","charged":0,"total":0},{"date":"2026-05-21","charged":0,"total":0},{"date":"2026-05-22","charged":0,"total":0},{"date":"2026-05-23","charged":0,"total":0},{"date":"2026-05-24","charged":0,"total":0},{"date":"2026-05-25","charged":0,"total":0},{"date":"2026-05-26","charged":0,"total":0},{"date":"2026-05-27","charged":1,"total":1},{"date":"2026-05-28","charged":0,"total":0},{"date":"2026-05-29","charged":0,"total":0}],"dateWindow":"2026-04-30 to 2026-05-29","note":"Rolling 30 days, day-of counts."},"sourceChart":{"paid":42,"organic":120,"direct":63,"referral":18,"unassigned":9,"lsa":31},"trafficSources":{"window":"90 days","totalSessions":487,"channels":[{"name":"Organic Search","sessions":210},{"name":"Direct","sessions":150},{"name":"Paid Search","sessions":78},{"name":"Referral","sessions":35},{"name":"Unassigned","sessions":14}]},"funnel":{"impressions":2346,"clicks":62,"forms":0,"leads":0,"note":"30-day funnel: Ads impressions -> clicks -> tracked form conv -> qualified. Form conv tracking intentionally off."},"adPerformance":{"scope":"Active campaign only","activeCampaign":"Leads - Roofing (PC)","activeAdGroupsCount":1,"window":"(90 days)","rankedBy":"clicks","campaigns":[{"name":"Website traffic-Search-1","status":"Paused","clicks":177,"CTR":"1.93%","conversions":0.0,"cost":725.99,"avgCPC":"$4.10","impressions":9159},{"name":"Website traffic-Search-Roofing","status":"Paused","clicks":15,"CTR":"4.64%","conversions":0.0,"cost":181.99,"avgCPC":"$12.13","impressions":323},{"name":"Residential Roofing - Leads (PC)","status":"Paused","clicks":43,"CTR":"2.17%","conversions":2.0,"cost":2280.01,"avgCPC":"$53.02","impressions":1984},{"name":"Leads-PMax Roofing","status":"Paused","clicks":0,"CTR":"0.00%","conversions":0.0,"cost":0.0,"avgCPC":"-","impressions":0},{"name":"Buckshot - Storm Damage - Madison Area","status":"Paused","clicks":8,"CTR":"1.45%","conversions":0.0,"cost":220.09,"avgCPC":"$27.51","impressions":551},{"name":"Leads - Roofing (PC)","status":"Active","clicks":143,"CTR":"3.41%","conversions":0.0,"cost":1439.53,"avgCPC":"$10.07","impressions":4197}],"adGroups":[{"name":"LOCAL MADISON AREA","campaign":"Leads - Roofing (PC)","status":"Eligible","clicks":44,"CTR":"2.64%","conversions":0.0,"cost":null,"avgCPC":null,"impressions":1664}],"keywords":[{"keyword":"roofing contractor madison wi","matchType":"Phrase","adGroup":"LOCAL MADISON AREA","campaign":"Leads - Roofing (PC)","status":"Eligible","impressions":716,"clicks":null,"CTR":null,"conversions":null,"cost":null,"avgCPC":null,"qualityScore":null},{"keyword":"roof replacement madison wi","matchType":"Phrase","adGroup":"LOCAL MADISON AREA","campaign":"Leads - Roofing (PC)","status":"Eligible","impressions":275,"clicks":null,"CTR":null,"conversions":null,"cost":null,"avgCPC":null,"qualityScore":null},{"keyword":"madison roof repair","matchType":"Phrase","adGroup":"LOCAL MADISON AREA","campaign":"Leads - Roofing (PC)","status":"Eligible","impressions":228,"clicks":null,"CTR":null,"conversions":null,"cost":null,"avgCPC":null,"qualityScore":null},{"keyword":"roof repair middleton wi","matchType":"Phrase","adGroup":"LOCAL MADISON AREA","campaign":"Leads - Roofing (PC)","status":"Eligible","impressions":31,"clicks":null,"CTR":null,"conversions":null,"cost":null,"avgCPC":null,"qualityScore":null}]},"campaignState":{"active":"Leads - Roofing (PC)","budget":"$180/day","bidStrategy":"Maximize Clicks (no cap)","note":"Bid cap removed 2026-05-29; budget doubled to $180/day."},"trackingState":{"utm":"ad-level Final URL suffix on Local Madison Area RSA","leadGoal":"intentionally OFF until 10-15 quality leads","finalUrl":"/residential-roofing-madison-wi/","note":"UTMs moved to ad level 2026-05-25; campaign suffix removed."},"clarity":{"window":"last 3 days","sessions":47,"scrollDepth":"58%","deadClicks":3,"note":"US-only; bots filtered (carried forward)"},"gtm":{"container":"GTM-KG87WZF2","version":17,"tags":24,"note":"live version (carried forward)"},"spamCounts":{"total":31,"last7":6,"last30":27},"verified":{"flamingo":"2026-05-29","ga4":"2026-05-27","googleAds":"2026-05-29","lsa":"2026-05-29"},"insights":[{"headline":"Active campaign demand-bounded in Madison","body":"Leads - Roofing (PC) runs $180/day with no bid cap, but 30-day spend is $483 - auctions cannot absorb the full budget."},{"headline":"30-day CTR holding at 2.6%","body":"62 clicks on 2,346 impressions over 30 days at a $7.78 average CPC."},{"headline":"31 qualified web leads since April 1","body":"Cumulative qualified form submissions plus 5 charged LSA calls drive cost-per-qualified to ~$121."},{"headline":"7-day spend pace climbing","body":"Last 7 days ran $264 ($37.75/day) vs a 30-day daily average of $16.09/day."},{"headline":"Spam volume steady, mostly B2B pitches","body":"27 spam/test submissions in the last 30 days, dominated by SEO and VA solicitations selling to Buckshot."},{"headline":"One new qualified lead yesterday","body":"A returning customer service request came in on 2026-05-29 via Quick Contact."},{"headline":"LSA remains the charged-lead engine","body":"5 of 9 LSA calls were charged since April 1; LSA still outpaces tracked paid-search conversions."}],"leadDetails":[{"date":"2026-04-30","name":"Susan D.","city":"","cat":"qualified","note":"shingle siding inquiry"},{"date":"2026-04-30","name":"Erik L.","city":"","cat":"qualified","note":"chimney cricket/saddle"},{"date":"2026-04-30","name":"Angela F.","city":"","cat":"ooa","note":"full gut renovation, Church Hill (out of area/scope)"},{"date":"2026-04-30","name":"Terry R.","city":"","cat":"qualified","note":"roof replacement house + 2 garages"},{"date":"2026-05-01","name":"Mike S.","city":"","cat":"spam","note":"test body"},{"date":"2026-05-01","name":"Christos K.","city":"","cat":"spam","note":"junk body (77777)"},{"date":"2026-05-03","name":"Susan D.","city":"","cat":"qualified","note":"shingle siding, prefer text/email"},{"date":"2026-05-04","name":"Jean S.","city":"","cat":"qualified","note":"roof hail, neighbor referral"},{"date":"2026-05-04","name":"Joseph M.","city":"","cat":"spam","note":"SEO/search ranking pitch"},{"date":"2026-05-04","name":"Olivia S.","city":"","cat":"qualified","note":"hail roof + siding, 3 structures"},{"date":"2026-05-05","name":"Eric G.","city":"","cat":"spam","note":"B2B crew/production pitch (otcroofs/dibiz)"},{"date":"2026-05-05","name":"Susan S.","city":"","cat":"spam","note":"VA/AI system pitch (parallelaid)"},{"date":"2026-05-05","name":"Susan S.","city":"","cat":"spam","note":"VA/AI system pitch (parallelaid) dup"},{"date":"2026-05-08","name":"Cara L.","city":"","cat":"spam","note":"VA system pitch (vettedvas/MAVIS)"},{"date":"2026-05-08","name":"Nicole P.","city":"Janesville","cat":"qualified","note":"hail damage inspection"},{"date":"2026-05-14","name":"test","city":"","cat":"spam","note":"test body"},{"date":"2026-05-14","name":"Test","city":"","cat":"spam","note":"test body"},{"date":"2026-05-14","name":"Test","city":"","cat":"spam","note":"test body"},{"date":"2026-05-14","name":"test","city":"","cat":"spam","note":"test body"},{"date":"2026-05-14","name":"test","city":"","cat":"spam","note":"test body"},{"date":"2026-05-14","name":"Test Submission","city":"","cat":"spam","note":"test body (diagnose)"},{"date":"2026-05-14","name":"test","city":"","cat":"spam","note":"test body"},{"date":"2026-05-15","name":"Elmer E.","city":"","cat":"spam","note":"SEO services pitch"},{"date":"2026-05-16","name":"Test","city":"","cat":"spam","note":"test body"},{"date":"2026-05-17","name":"Dennis D.","city":"","cat":"qualified","note":"whole-house remodel inquiry"},{"date":"2026-05-18","name":"Ashley B.","city":"","cat":"spam","note":"VA/AI system pitch (parallelaid)"},{"date":"2026-05-19","name":"Meredith W.","city":"","cat":"spam","note":"VA outreach (virtualhelpdesk)"},{"date":"2026-05-19","name":"Vaughn P.","city":"","cat":"qualified","note":"new roof, siding, gutters"},{"date":"2026-05-19","name":"Daniel W.","city":"","cat":"spam","note":"vague solicitation, mismatched reply email"},{"date":"2026-05-19","name":"Lisa L.","city":"","cat":"qualified","note":"roof/garage/gutters/shed, insurance approved"},{"date":"2026-05-20","name":"Steven M.","city":"","cat":"qualified","note":"roof repair, leaks"},{"date":"2026-05-21","name":"Dan B.","city":"Madison","cat":"qualified","note":"metal roof redo (north side)"},{"date":"2026-05-21","name":"Aaron P.","city":"Madison","cat":"qualified","note":"commercial hotel siding/fascia repair"},{"date":"2026-05-22","name":"Claude form wiring test","city":"","cat":"spam","note":"test body (form wiring)"},{"date":"2026-05-22","name":"LP form wiring test","city":"","cat":"spam","note":"test (LP form wiring)"},{"date":"2026-05-26","name":"Ron W.","city":"","cat":"qualified","note":"roof replacement home + garage, asphalt"},{"date":"2026-05-26","name":"Marvin P.","city":"","cat":"spam","note":"out-of-area contractor solicitation (Trenton MO gutter co)"},{"date":"2026-05-27","name":"ATTRIBUTION TEST","city":"","cat":"spam","note":"attribution test body"},{"date":"2026-05-27","name":"John","city":"","cat":"spam","note":"franchising sales pitch (Franchise Creator)"},{"date":"2026-05-27","name":"John","city":"","cat":"spam","note":"franchising sales pitch (Franchise Creator) dup"},{"date":"2026-05-27","name":"Chelsea A.","city":"","cat":"spam","note":"B2B partner solicitation (Central Valley Asphalt)"},{"date":"2026-05-27","name":"Michael S.","city":"","cat":"spam","note":"SEO/visibility cold pitch (We Get Lead Flow)"},{"date":"2026-05-29","name":"Judy J.","city":"","cat":"qualified","note":"existing customer service complaint (no-show)"}],"callDetails":[{"date":"2026-04-30","source":"LSA","status":"Charged"},{"date":"2026-05-19","source":"LSA","status":"Charged"},{"date":"2026-05-19","source":"LSA","status":"Not charged"},{"date":"2026-05-27","source":"LSA","status":"Charged"}],"adsDaily":[{"date":"2026-05-29","impressions":162,"clicks":13,"cost":245.0}],"prior":{"w7":{"qualified":7},"w14":{"qualified":4},"w30":{"qualified":18}},"leadTimeline":[{"date":"2026-05-29","time":"7:14 PM","sort":"2026-05-29 19:14","src":"form","form":"Quick Contact","city":"","cat":"qualified","note":"existing customer service complaint (no-show)"},{"date":"2026-05-27","time":"2:17 AM","sort":"2026-05-27 02:17","src":"call","form":"","city":"Madison","cat":"charged","note":""},{"date":"2026-05-26","time":"9:28 AM","sort":"2026-05-26 09:28","src":"form","form":"Quick Contact","city":"","cat":"qualified","note":"roof replacement home + garage, asphalt"},{"date":"2026-05-21","time":"12:03 PM","sort":"2026-05-21 12:03","src":"form","form":"Quick Contact","city":"Madison","cat":"qualified","note":"commercial hotel siding/fascia repair"},{"date":"2026-05-21","time":"10:28 AM","sort":"2026-05-21 10:28","src":"form","form":"Quick Contact","city":"Madison","cat":"qualified","note":"metal roof redo (north side)"},{"date":"2026-05-20","time":"11:14 AM","sort":"2026-05-20 11:14","src":"form","form":"Free Estimate","city":"","cat":"qualified","note":"roof repair, leaks"},{"date":"2026-05-19","time":"9:20 PM","sort":"2026-05-19 21:20","src":"call","form":"","city":"Madison","cat":"notcharged","note":""},{"date":"2026-05-19","time":"8:24 PM","sort":"2026-05-19 20:24","src":"call","form":"","city":"Madison","cat":"charged","note":"Roof repair"},{"date":"2026-05-19","time":"2:28 PM","sort":"2026-05-19 14:28","src":"form","form":"Quick Contact","city":"","cat":"qualified","note":"roof/garage/gutters/shed, insurance approved"},{"date":"2026-05-19","time":"12:00 PM","sort":"2026-05-19 12:00","src":"form","form":"Free Estimate","city":"","cat":"qualified","note":"new roof, siding, gutters"},{"date":"2026-05-17","time":"2:45 PM","sort":"2026-05-17 14:45","src":"form","form":"Free Estimate","city":"","cat":"qualified","note":"whole-house remodel inquiry"},{"date":"2026-05-08","time":"9:17 AM","sort":"2026-05-08 09:17","src":"form","form":"Quick Contact","city":"Janesville","cat":"qualified","note":"hail damage inspection"},{"date":"2026-05-04","time":"2:07 PM","sort":"2026-05-04 14:07","src":"form","form":"Free Estimate","city":"","cat":"qualified","note":"hail roof + siding, 3 structures"},{"date":"2026-05-04","time":"12:11 PM","sort":"2026-05-04 12:11","src":"form","form":"Free Estimate","city":"","cat":"qualified","note":"roof hail, neighbor referral"},{"date":"2026-05-03","time":"7:17 PM","sort":"2026-05-03 19:17","src":"form","form":"Free Estimate","city":"","cat":"qualified","note":"shingle siding, prefer text/email"},{"date":"2026-04-30","time":"9:06 PM","sort":"2026-04-30 21:06","src":"form","form":"Free Estimate","city":"","cat":"qualified","note":"roof replacement house + 2 garages"},{"date":"2026-04-30","time":"6:01 PM","sort":"2026-04-30 18:01","src":"form","form":"Quick Contact","city":"","cat":"ooa","note":"full gut renovation, Church Hill (out of area/scope)"},{"date":"2026-04-30","time":"4:14 PM","sort":"2026-04-30 16:14","src":"form","form":"Free Estimate","city":"","cat":"qualified","note":"chimney cricket/saddle"},{"date":"2026-04-30","time":"2:54 PM","sort":"2026-04-30 14:54","src":"form","form":"Quick Contact","city":"","cat":"qualified","note":"shingle siding inquiry"},{"date":"2026-04-30","time":"12:34 AM","sort":"2026-04-30 00:34","src":"call","form":"","city":"Monona","cat":"charged","note":"Roof installation"}],"windows":{"asOf":"2026-05-29","note":"Account scorecard, 7/14/30 ending 2026-05-29","w7":{"days":7,"impressions":"326","clicks":17,"ctr":"5.2%","cpc":"$15.54","adsCost":264.24,"adsCostDaily":"$37.75/day"},"w14":{"days":14,"impressions":"891","clicks":25,"ctr":"2.8%","cpc":"$12.14","adsCost":303.52,"adsCostDaily":"$21.68/day"},"w30":{"days":30,"impressions":"2,346","clicks":62,"ctr":"2.6%","cpc":"$7.78","adsCost":482.66,"adsCostDaily":"$16.09/day"}},"stale_sources":["ga4-carryforward","clarity-carryforward","gtm-carryforward","adsDaily-multiday-carryforward","ads-keywords-metrics-partial","ads-adgroups-cost-partial"]}
+Skip to content
+tilakkd
+buckshot-conversion-dashboard
+Type / to search
+Repository navigation
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security and quality
+Insights
+Settings
+buckshot-conversion-dashboard
+Public
+Pin
+Watch
+Fork 0
+ Star 0
+tilakkd/buckshot-conversion-dashboard
+ main
+1 Branch
+0 Tags
+t
+T
+Add file
+Add file
+Code
+Folders and files
+Name	Last commit message	Last commit date
+
+Latest commit
+tilakkd
+Stage3 manifest 2026-05-29
+c5ab86e
+ · 
+History
+211 Commits
+
+
+data
+	
+Stage3 manifest 2026-05-29
+	
+
+
+README.md
+	
+Initial commit
+	
+
+
+index.html
+	
+Remove PostHog Web Engagement section (PostHog deprecated from dashboard
+	
+Repository files navigation
+README
+buckshot-conversion-dashboard
+
+Live conversion dashboard for Buckshot General Contracting — Google Ads + GA4 data, updated via GitHub Actions.
+
+About
+
+Live conversion dashboard for Buckshot General Contracting — Google Ads + GA4 data, updated via GitHub Actions.
+
+Resources
+ Readme
+ Activity
+Stars
+ 0 stars
+Watchers
+ 0 watching
+Forks
+ 0 forks
+
+
+Releases
+No releases published
+Create a new release
+
+
+Deployments
+101
+ github-pages 
++ 100 deployments
+
+
+Packages
+No packages published
+Publish your first package
+
+
+Contributors
+1
+tilakkd
+
+
+Languages
+HTML
+100.0%
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
