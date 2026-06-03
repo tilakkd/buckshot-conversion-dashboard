@@ -1,6 +1,11 @@
 {
-  "latest": "2026-06-01",
+  "latest": "2026-06-02",
   "dates": [
+    {
+      "date": "2026-06-02",
+      "label": "June 2, 2026 - Finalized",
+      "note": "Carry-forward run finalized 2026-06-03 10:39 IST. Stages 1-2 did not refresh on 2026-06-03; leads+ads anchored to Stage 1/2 state asOf 2026-06-01. No new submissions or qualified leads on 2026-06-02. Cumulative since Apr 1: 69 forms (31 qualified, 3 OOA, 35 spam/test) / 9 LSA (5 charged); combined 78 touches, 40 qualified. GA4/Clarity/GTM carried forward (no operator source tabs; GA4 unverified)."
+    },
     {
       "date": "2026-06-01",
       "label": "June 1, 2026 - Finalized",
