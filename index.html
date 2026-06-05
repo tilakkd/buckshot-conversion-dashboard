@@ -341,35 +341,34 @@ table.perf .status.eligible{background:var(--green-bg);color:var(--green)}
     el.innerHTML = t.svg + ' ' + t.label;
   }
 
-  function renderVerdict(k){
+    function renderVerdict(k){
     var v = document.getElementById('verdict');
     var line = document.getElementById('verdictLine');
     var sub = document.getElementById('verdictSub');
-    var pq = priorQualified(k.win);
-    var trend = trendBadge(k.qualified, pq, 'good');
+    var d = state.data;
+
+    // PAID leads only. Calls are attributed to Google LSA; form leads to Google Ads.
+    var paidCalls = k.lsaCharged || 0; // LSA charged calls in window
+    var paidForms = (d && d.kpis && typeof d.kpis.paidFormLeads === 'number') ? d.kpis.paidFormLeads : 0; // Google Ads form conversions (paid-attributed)
+    var totalPaid = paidCalls + paidForms;
     var spendStr = fmtMoney(k.spend);
-    var cpqStr = k.cpq != null ? '$' + k.cpq.toLocaleString() : 'N/A';
+    var cppStr = totalPaid > 0 ? '$' + Math.round(k.spend / totalPaid).toLocaleString() : 'N/A';
 
     v.classList.remove('good','bad');
-    if (k.qualified === 0 || (pq != null && pq > 0 && k.qualified < pq * 0.5)) v.classList.add('bad');
-    else if (pq != null && k.qualified > pq) v.classList.add('good');
+    if (totalPaid === 0) v.classList.add('bad');
+    else v.classList.add('good');
 
-    var paceTxt = '';
-    if (pq != null) {
-      if (pq === 0 && k.qualified === 0) paceTxt = 'Flat vs prior ' + k.win + ' days (both zero).';
-      else if (pq === 0) paceTxt = 'Up from zero in the prior ' + k.win + ' days.';
-      else {
-        var pct = Math.round(((k.qualified - pq) / pq) * 100);
-        var direction = pct >= 0 ? 'up' : 'down';
-        var cls = pct >= 0 ? 'pos' : 'neg';
-        paceTxt = 'Pace is <span class="' + cls + '"><b>' + direction + ' ' + Math.abs(pct) + '%</b></span> vs prior ' + k.win + ' days (' + pq + ' qualified).';
-      }
+    var breakdown = '<b>' + paidCalls + '</b> call' + (paidCalls === 1 ? '' : 's') + ' via LSA, <b>' + paidForms + '</b> form lead' + (paidForms === 1 ? '' : 's') + ' via Google Ads';
+
+    if (totalPaid > 0) {
+      line.innerHTML = 'Last ' + k.win + ' days: <b>' + totalPaid + ' paid lead' + (totalPaid === 1 ? '' : 's') + '</b> on <b>' + spendStr + '</b> ad spend - that is <b>' + cppStr + '</b> per paid lead. ' + breakdown + '.';
+    } else {
+      line.innerHTML = 'Last ' + k.win + ' days: <b>0 paid leads</b> on <b>' + spendStr + '</b> ad spend. ' + breakdown + '.';
     }
 
-    line.innerHTML = 'Last ' + k.win + ' days: <b>' + k.qualified + ' qualified leads</b> on <b>' + spendStr + '</b> ad spend - that is <b>' + cpqStr + '</b> per qualified lead. ' + paceTxt;
-
     var subParts = [];
-    if (k.lsaCharged) subParts.push(k.lsaCharged + ' LSA charged calls');
+    var formQ = k.qualified || 0;
+    subParts.push(formQ + ' qualified form enquir' + (formQ === 1 ? 'y' : 'ies') + ' (no paid attribution)');
     if (k.clicks) subParts.push(k.clicks + ' ad clicks at ' + k.cpc + ' avg CPC');
     if (k.spendDaily) subParts.push(k.spendDaily);
     sub.textContent = subParts.join(' . ');
