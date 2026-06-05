@@ -234,6 +234,15 @@ table.perf .status.eligible{background:var(--green-bg);color:var(--green)}
   .topbar{gap:10px}
   .meta-area{order:3;width:100%;justify-content:space-between}
 }
+
+.perf-totals{display:flex;flex-wrap:wrap;gap:18px;padding:14px 16px;margin-bottom:14px;background:rgba(255,255,255,0.025);border:1px solid var(--border);border-radius:10px;align-items:center}
+.perf-totals .pt-stat{display:flex;flex-direction:column;gap:2px;min-width:90px}
+.perf-totals .pt-lbl{font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;font-weight:600}
+.perf-totals .pt-val{font-size:16px;font-weight:700;color:var(--text);font-variant-numeric:tabular-nums;letter-spacing:-.3px}
+.perf-totals .pt-val.green{color:var(--green)}
+.perf-totals .pt-val.amber{color:var(--amber)}
+.perf-sub{font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.7px;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.perf-sub .sub-tag{font-size:9.5px;background:var(--border);color:var(--muted);padding:2px 7px;border-radius:99px;letter-spacing:.4px}
 </style>
 </head>
 <body>
@@ -316,7 +325,9 @@ table.perf .status.eligible{background:var(--green-bg);color:var(--green)}
 </div>
 
 <div class="panel glass perf-section">
-  <h2>Ad Performance <span class="badge">90D Rollup</span></h2>
+  <h2>Ad Performance <span class="badge" id="perfBadge">--</span></h2>
+  <div id="perfTotals" class="perf-totals"></div>
+  <div class="perf-sub">Top performers <span class="sub-tag">Last 90 Days</span></div>
   <div class="perf-tabs" id="perfTabs">
     <button data-tab="campaigns" class="on">Campaigns</button>
     <button data-tab="adGroups">Ad Groups</button>
@@ -755,6 +766,21 @@ table.perf .status.eligible{background:var(--green-bg);color:var(--green)}
 
   function renderPerf(){
     var d = state.data;
+    // Windowed totals header (responds to 7/14/30 filter)
+    var win = state.window;
+    var w = (d && d.windows && d.windows["w" + win]) || {};
+    var pb = document.getElementById("perfBadge");
+    if (pb) pb.textContent = win + "D Totals";
+    var pt = document.getElementById("perfTotals");
+    if (pt){
+      pt.innerHTML =
+        '<div class="pt-stat"><span class="pt-lbl">Impressions</span><span class="pt-val">' + (w.impressions || "--") + '</span></div>' +
+        '<div class="pt-stat"><span class="pt-lbl">Clicks</span><span class="pt-val">' + (w.clicks || 0) + '</span></div>' +
+        '<div class="pt-stat"><span class="pt-lbl">Ad Spend</span><span class="pt-val amber">' + fmtMoney(w.adsCost) + '</span></div>' +
+        '<div class="pt-stat"><span class="pt-lbl">Avg CPC</span><span class="pt-val">' + (w.cpc || "--") + '</span></div>' +
+        '<div class="pt-stat"><span class="pt-lbl">CTR</span><span class="pt-val">' + (w.ctr || "--") + '</span></div>' +
+        '<div class="pt-stat"><span class="pt-lbl">Daily Avg</span><span class="pt-val">' + (w.adsCostDaily || "--") + '</span></div>';
+    }
     if (!d || !d.adPerformance){ document.getElementById('perfTable').innerHTML = '<div class="loading">No ad performance data</div>'; return; }
     var key = state.perfTab, arr = d.adPerformance[key] || [];
     if (!arr.length){ document.getElementById('perfTable').innerHTML = '<div class="loading">No ' + key + '</div>'; return; }
