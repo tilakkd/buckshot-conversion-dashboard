@@ -184,7 +184,9 @@ html[data-theme="light"] .windowpicker button.on{background:#0f172a;color:#fff;b
 .lead-item .top .icon.form{background:var(--blue-bg);color:var(--blue)}
 .lead-item .top .icon.call{background:var(--amber-bg);color:var(--amber)}
 .lead-item .top .icon svg{width:12px;height:12px}
+.lead-item .top .title-wrap{display:flex;flex-direction:column;min-width:0;line-height:1.2}
 .lead-item .top .title{font-weight:600;color:var(--text);font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lead-item .top .subline{color:var(--muted);font-size:10.5px;font-weight:500;margin-top:1px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .lead-item .top .when{color:var(--muted);font-size:11px;flex-shrink:0;font-variant-numeric:tabular-nums}
 .lead-item .note{color:var(--muted);font-size:11.5px;margin-top:3px;padding-left:32px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
 .lead-item.open .note{-webkit-line-clamp:unset;display:block}
@@ -690,6 +692,20 @@ table.perf .status.eligible{background:var(--green-bg);color:var(--green)}
     }).join('') + '</div>';
   }
 
+  function lookupLeadName(l){
+    var d = state.data;
+    if (!d || !d.leadDetails || l.src === 'call') return '';
+    var matches = d.leadDetails.filter(function(ld){
+      if (!ld.name) return false;
+      if (/^test$/i.test(ld.name) || /^test\s/i.test(ld.name)) return false;
+      if (ld.date !== l.date) return false;
+      if (ld.cat !== l.cat) return false;
+      if ((l.city || '') && (ld.city || '') && ld.city !== l.city) return false;
+      return true;
+    });
+    return matches.length ? matches[0].name : '';
+  }
+
   function renderLeads(){
     var win = state.window;
     document.getElementById('leadsWin').textContent = win + 'D';
@@ -706,17 +722,24 @@ table.perf .status.eligible{background:var(--green-bg);color:var(--green)}
       var iconSvg = l.src === 'call'
         ? '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5c-1.2 0-2.5-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.4-1.1-.6-2.4-.6-3.6 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1z"/></svg>'
         : '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>';
-      var title = (l.form || 'Inquiry') + (l.city ? ' - ' + l.city : '');
+      var name = lookupLeadName(l);
+      var subtitle = l.src === 'call' ? 'LSA Charged Call' : ((l.form || 'Form') + (l.city ? ' - ' + l.city : ''));
+      var title = name || subtitle;
+      var subLine = name ? subtitle : '';
       var when = fmtDateShort(l.date);
       return '<div class="lead-item" data-i="' + i + '">' +
         '<div class="top"><div class="left">' +
           '<span class="icon ' + iconClass + '">' + iconSvg + '</span>' +
-          '<span class="title">' + escapeHtml(title) + '</span>' +
+          '<div class="title-wrap">' +
+            '<span class="title">' + escapeHtml(title) + '</span>' +
+            (subLine ? '<span class="subline">' + escapeHtml(subLine) + '</span>' : '') +
+          '</div>' +
         '</div><span class="when">' + when + '</span></div>' +
         '<div class="note">' + escapeHtml(l.note || '') + '</div>' +
         '<div class="detail">' +
+          (name ? '<div class="row"><span class="k">Name</span><span>' + escapeHtml(name) + '</span></div>' : '') +
           '<div class="row"><span class="k">When</span><span>' + escapeHtml(l.date + ' ' + (l.time || '')) + '</span></div>' +
-          '<div class="row"><span class="k">Source</span><span>' + escapeHtml(l.src === 'call' ? 'LSA call' : 'Form: ' + (l.form || '-')) + '</span></div>' +
+          '<div class="row"><span class="k">Source</span><span>' + escapeHtml(l.src === 'call' ? 'LSA call (charged)' : 'Form: ' + (l.form || '-')) + '</span></div>' +
           (l.city ? '<div class="row"><span class="k">City</span><span>' + escapeHtml(l.city) + '</span></div>' : '') +
           '<div class="row"><span class="k">Notes</span><span>' + escapeHtml(l.note || '-') + '</span></div>' +
         '</div>' +
