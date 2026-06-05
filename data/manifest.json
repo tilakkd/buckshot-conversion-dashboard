@@ -1,6 +1,11 @@
 {
- "latest": "2026-06-03",
+ "latest": "2026-06-04",
  "dates": [
+  {
+   "date": "2026-06-04",
+   "label": "June 4, 2026 - Finalized",
+   "note": "Day-of finalized 2026-06-05 IST via buckshot-dashboard-daily orchestrator (single pass). Quiet day: 2 test submissions in Flamingo inbox (spam/test), 0 new qualified forms, 0 new LSA calls. Cumulative since Apr 1: 75 forms (30 qualified, 3 OOA, 42 spam/test) / 9 LSA (5 charged); combined 84 touches, 39 qualified. Ads 90-day $5,962.75 (4 phone-call conversions); 7-day pace $194.31/day, 7-day CPC $27.76. GA4 read LIVE (90-day 1,487 sessions: Direct 661 / Organic 527 / Paid 141). Clarity/GTM skipped per override."
+  },
   {
    "date": "2026-06-03",
    "label": "June 3, 2026 - Finalized",
