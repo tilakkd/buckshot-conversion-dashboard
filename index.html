@@ -345,31 +345,24 @@ table.perf .status.eligible{background:var(--green-bg);color:var(--green)}
     var v = document.getElementById('verdict');
     var line = document.getElementById('verdictLine');
     var sub = document.getElementById('verdictSub');
-    var d = state.data;
 
-    // PAID leads only. Calls are attributed to Google LSA; form leads to Google Ads.
-    var paidCalls = k.lsaCharged || 0; // LSA charged calls in window
-    var paidForms = (d && d.kpis && typeof d.kpis.paidFormLeads === 'number') ? d.kpis.paidFormLeads : 0; // Google Ads form conversions (paid-attributed)
-    var totalPaid = paidCalls + paidForms;
-    var spendStr = fmtMoney(k.spend);
-    var cppStr = totalPaid > 0 ? '$' + Math.round(k.spend / totalPaid).toLocaleString() : 'N/A';
+    var adsLeads = k.qualified || 0;   // qualified leads from website/ads forms in window
+    var lsaCalls = k.lsaCharged || 0;  // new LSA charged calls in window
 
     v.classList.remove('good','bad');
-    if (totalPaid === 0) v.classList.add('bad');
-    else v.classList.add('good');
+    if (adsLeads === 0 && lsaCalls === 0) v.classList.add('bad');
+    else if (adsLeads > 0) v.classList.add('good');
 
-    var breakdown = '<b>' + paidCalls + '</b> call' + (paidCalls === 1 ? '' : 's') + ' via LSA, <b>' + paidForms + '</b> form lead' + (paidForms === 1 ? '' : 's') + ' via Google Ads';
+    var adsPart = '<b>' + adsLeads + ' lead' + (adsLeads === 1 ? '' : 's') + ' from ads</b>';
+    var lsaPart = lsaCalls > 0
+      ? '<b>' + lsaCalls + ' new call' + (lsaCalls === 1 ? '' : 's') + ' on LSA</b>'
+      : '<b>no new calls on LSA</b>';
 
-    if (totalPaid > 0) {
-      line.innerHTML = 'Last ' + k.win + ' days: <b>' + totalPaid + ' paid lead' + (totalPaid === 1 ? '' : 's') + '</b> on <b>' + spendStr + '</b> ad spend - that is <b>' + cppStr + '</b> per paid lead. ' + breakdown + '.';
-    } else {
-      line.innerHTML = 'Last ' + k.win + ' days: <b>0 paid leads</b> on <b>' + spendStr + '</b> ad spend. ' + breakdown + '.';
-    }
+    line.innerHTML = 'Last ' + k.win + ' days: ' + adsPart + '. ' + lsaPart + '.';
 
     var subParts = [];
-    var formQ = k.qualified || 0;
-    subParts.push(formQ + ' qualified form enquir' + (formQ === 1 ? 'y' : 'ies') + ' (no paid attribution)');
-    if (k.clicks) subParts.push(k.clicks + ' ad clicks at ' + k.cpc + ' avg CPC');
+    if (k.spend) subParts.push(fmtMoney(k.spend) + ' ad spend');
+    if (k.clicks) subParts.push(k.clicks + ' ad clicks');
     if (k.spendDaily) subParts.push(k.spendDaily);
     sub.textContent = subParts.join(' . ');
   }
