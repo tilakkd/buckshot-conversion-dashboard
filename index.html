@@ -13,111 +13,224 @@
 <meta http-equiv="X-Robots-Tag" content="noindex, nofollow">
 <meta name="referrer" content="no-referrer">
 <title>Buckshot Exteriors - Conversion Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#0a0e17; --bg2:#0e1422; --panel:#131a2b; --panel2:#161e32;
-  --border:#1f2a44; --border2:#293556;
-  --text:#e6ecf5; --muted:#8a94ab; --dim:#5d6a85;
-  --green:#22c55e; --green-bg:rgba(34,197,94,.10);
-  --red:#ef4444; --red-bg:rgba(239,68,68,.10);
-  --amber:#f59e0b; --amber-bg:rgba(245,158,11,.10);
-  --blue:#60a5fa; --purple:#a78bfa;
-  --radius:10px;
+  --bg:#06080f;
+  --bg-grad-1:#0a0f1c;
+  --bg-grad-2:#0d0f1a;
+  --panel:rgba(20,26,44,0.55);
+  --panel-hover:rgba(28,36,58,0.65);
+  --panel-solid:#131a2b;
+  --border:rgba(255,255,255,0.07);
+  --border-strong:rgba(255,255,255,0.12);
+  --text:#f1f5f9;
+  --text-soft:#cbd5e1;
+  --muted:#7a869f;
+  --dim:#475569;
+  --green:#22d18a;
+  --green-bg:rgba(34,209,138,.12);
+  --red:#f87171;
+  --red-bg:rgba(248,113,113,.12);
+  --amber:#fbbf24;
+  --amber-bg:rgba(251,191,36,.12);
+  --blue:#60a5fa;
+  --blue-bg:rgba(96,165,250,.12);
+  --purple:#a78bfa;
+  --pink:#f472b6;
+  --radius:14px;
+  --radius-sm:10px;
+  --shadow-lg:0 20px 60px -20px rgba(0,0,0,0.6), 0 0 0 1px var(--border);
+  --glow-green:0 0 30px rgba(34,209,138,0.18);
+  --glow-amber:0 0 30px rgba(251,191,36,0.18);
 }
 html[data-theme="light"]{
-  --bg:#f6f8fc; --bg2:#eef2f9; --panel:#ffffff; --panel2:#f8fafc;
-  --border:#e5e9f2; --border2:#d6dce8;
-  --text:#0f172a; --muted:#64748b; --dim:#94a3b8;
-  --green-bg:rgba(34,197,94,.14); --red-bg:rgba(239,68,68,.12); --amber-bg:rgba(245,158,11,.14);
+  --bg:#f5f7fb;
+  --bg-grad-1:#ffffff;
+  --bg-grad-2:#eef2f9;
+  --panel:rgba(255,255,255,0.7);
+  --panel-hover:rgba(255,255,255,0.9);
+  --panel-solid:#ffffff;
+  --border:rgba(15,23,42,0.08);
+  --border-strong:rgba(15,23,42,0.16);
+  --text:#0f172a;
+  --text-soft:#1e293b;
+  --muted:#64748b;
+  --dim:#94a3b8;
+  --green-bg:rgba(34,209,138,.15);
+  --red-bg:rgba(248,113,113,.15);
+  --amber-bg:rgba(251,191,36,.18);
+  --blue-bg:rgba(96,165,250,.14);
 }
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:14px;line-height:1.45;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1240px;margin:0 auto;padding:18px 24px 40px}
-.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0 14px;border-bottom:1px solid var(--border);flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:10px}
-.brand .dot{width:10px;height:10px;background:var(--green);border-radius:50%;box-shadow:0 0 0 3px rgba(34,197,94,.18)}
-.brand h1{font-size:16px;margin:0;font-weight:600;letter-spacing:.2px}
-.brand .sub{color:var(--muted);font-size:12px;margin-left:6px}
-.windowpicker{display:flex;gap:4px;background:var(--panel);border:1px solid var(--border);border-radius:999px;padding:3px}
-.windowpicker button{background:transparent;color:var(--muted);border:0;padding:6px 14px;border-radius:999px;font-size:12px;font-weight:500;cursor:pointer}
-.windowpicker button.on{background:var(--text);color:var(--bg)}
-.meta{color:var(--muted);font-size:12px;display:flex;align-items:center;gap:14px}
-.meta .as{color:var(--text)}
-.ico-btn{width:30px;height:30px;border-radius:50%;border:1px solid var(--border);background:var(--panel);color:var(--text);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
-.ico-btn:hover{border-color:var(--border2)}
+html{scroll-behavior:smooth}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;font-feature-settings:'cv02','cv03','cv04','cv11'}
+body{
+  background:
+    radial-gradient(ellipse 80% 50% at 20% -10%, rgba(96,165,250,0.10), transparent 60%),
+    radial-gradient(ellipse 60% 50% at 90% 0%, rgba(167,139,250,0.10), transparent 60%),
+    radial-gradient(ellipse 40% 40% at 50% 100%, rgba(34,209,138,0.06), transparent 60%),
+    linear-gradient(180deg, var(--bg-grad-1) 0%, var(--bg) 50%);
+  min-height:100vh;
+}
+html[data-theme="light"] body{
+  background:
+    radial-gradient(ellipse 60% 40% at 10% 0%, rgba(96,165,250,0.18), transparent 60%),
+    radial-gradient(ellipse 50% 40% at 90% 0%, rgba(167,139,250,0.12), transparent 60%),
+    var(--bg);
+}
+.wrap{max-width:1280px;margin:0 auto;padding:20px 28px 56px}
 
-.verdict{padding:18px 22px;margin:16px 0 18px;background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--border);border-radius:var(--radius);position:relative;overflow:hidden}
-.verdict::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--amber)}
-.verdict.bad::before{background:var(--red)}
-.verdict.good::before{background:var(--green)}
-.verdict .label{font-size:11px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;margin-bottom:6px}
-.verdict .line{font-size:18px;line-height:1.45;font-weight:500}
-.verdict .line b{color:var(--text);font-weight:700}
-.verdict .line .neg{color:var(--red)}
-.verdict .line .pos{color:var(--green)}
-.verdict .sub{color:var(--muted);font-size:12px;margin-top:4px}
+/* TOP BAR */
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:6px 0 22px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#22d18a 0%, #60a5fa 60%, #a78bfa 100%);display:flex;align-items:center;justify-content:center;font-weight:800;color:#06080f;font-size:14px;box-shadow:var(--glow-green)}
+.brand .name h1{font-size:15px;margin:0;font-weight:700;letter-spacing:-.2px;line-height:1.2}
+.brand .name .sub{color:var(--muted);font-size:11px;letter-spacing:.4px;text-transform:uppercase;font-weight:500;display:block;margin-top:2px}
 
-.kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.kpi{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;position:relative}
-.kpi .k{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.8px;font-weight:500}
-.kpi .v{font-size:28px;font-weight:700;margin:4px 0 2px;letter-spacing:-.5px;line-height:1.15}
+.windowpicker{display:flex;gap:2px;background:var(--panel);border:1px solid var(--border);border-radius:99px;padding:4px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.windowpicker button{background:transparent;color:var(--muted);border:0;padding:7px 16px;border-radius:99px;font-size:12px;font-weight:600;cursor:pointer;letter-spacing:.2px;transition:all .2s ease;font-family:inherit}
+.windowpicker button:hover{color:var(--text-soft)}
+.windowpicker button.on{background:linear-gradient(180deg, rgba(255,255,255,0.14), rgba(255,255,255,0.06));color:var(--text);box-shadow:0 0 0 1px rgba(255,255,255,0.10), 0 4px 12px rgba(0,0,0,0.18)}
+html[data-theme="light"] .windowpicker button.on{background:#0f172a;color:#fff;box-shadow:0 4px 14px rgba(15,23,42,0.25)}
+
+.meta-area{display:flex;align-items:center;gap:10px}
+.updated-pill{display:inline-flex;align-items:center;gap:7px;background:var(--panel);border:1px solid var(--border);padding:6px 12px 6px 9px;border-radius:99px;font-size:11.5px;color:var(--text-soft);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);font-weight:500}
+.updated-pill .live-dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px rgba(34,209,138,0.20);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(.9)}}
+.updated-pill b{color:var(--text);font-weight:600;margin-left:2px}
+.ico-btn{width:34px;height:34px;border-radius:50%;border:1px solid var(--border);background:var(--panel);color:var(--text);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;padding:0;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:all .2s ease}
+.ico-btn:hover{border-color:var(--border-strong);background:var(--panel-hover);transform:translateY(-1px)}
+
+/* GLASS PANEL BASE */
+.glass{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:var(--shadow-lg);position:relative;overflow:hidden}
+.glass::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg, transparent, rgba(255,255,255,0.10), transparent);pointer-events:none}
+
+/* VERDICT */
+.verdict{padding:22px 26px;margin-bottom:18px;position:relative}
+.verdict .label{font-size:10.5px;letter-spacing:1.8px;color:var(--muted);text-transform:uppercase;font-weight:600;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.verdict .label .ico{width:14px;height:14px;color:var(--blue);display:inline-flex}
+.verdict .line{font-size:19px;line-height:1.5;font-weight:500;color:var(--text-soft);letter-spacing:-.2px}
+.verdict .line b{color:var(--text);font-weight:700;background:linear-gradient(180deg, var(--text), var(--text));-webkit-background-clip:text;background-clip:text}
+.verdict .line .num{color:var(--text);font-weight:700;font-variant-numeric:tabular-nums}
+.verdict .line .pos{color:var(--green);font-weight:700}
+.verdict .line .neg{color:var(--red);font-weight:700}
+.verdict .sub{color:var(--muted);font-size:12.5px;margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.verdict .sub span{display:inline-flex;align-items:center;gap:5px}
+.verdict .sub .dotsep{width:3px;height:3px;border-radius:50%;background:var(--dim)}
+
+/* KPI ROW */
+.kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}
+.kpi{padding:18px 20px;position:relative;transition:transform .2s ease, border-color .2s ease}
+.kpi:hover{transform:translateY(-2px);border-color:var(--border-strong)}
+.kpi .head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:10px}
+.kpi .k{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.9px;font-weight:600}
+.kpi .trend-pill{display:inline-flex;align-items:center;gap:3px;padding:3px 8px;border-radius:99px;font-size:10.5px;font-weight:700;letter-spacing:.2px}
+.kpi .trend-pill.down{color:var(--red);background:var(--red-bg)}
+.kpi .trend-pill.up{color:var(--green);background:var(--green-bg)}
+.kpi .trend-pill.flat{color:var(--muted);background:rgba(122,134,159,.14)}
+.kpi .trend-pill svg{width:9px;height:9px}
+.kpi .v{font-size:34px;font-weight:800;margin:0;letter-spacing:-1.2px;line-height:1.05;font-variant-numeric:tabular-nums}
 .kpi .v.red{color:var(--red)}
 .kpi .v.green{color:var(--green)}
 .kpi .v.amber{color:var(--amber)}
-.kpi .meta-line{display:flex;align-items:center;justify-content:space-between;gap:8px;color:var(--muted);font-size:12px}
-.kpi .meta-line b{color:var(--text)}
-.trend{display:inline-flex;align-items:center;gap:3px;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:600}
-.trend.down{color:var(--red);background:var(--red-bg)}
-.trend.up{color:var(--green);background:var(--green-bg)}
-.trend.flat{color:var(--muted);background:rgba(138,148,171,.12)}
-.trend svg{width:10px;height:10px}
+.kpi .v.blue{color:var(--blue)}
+.kpi .foot{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;margin-top:6px}
+.kpi .foot .meta{color:var(--muted);font-size:11.5px;font-weight:500}
+.kpi .foot .meta b{color:var(--text-soft);font-weight:700}
+.kpi .spark{height:32px;width:80px;flex-shrink:0;opacity:.85}
+.kpi .spark path.fill{opacity:.18}
+.kpi .spark path.line{fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 
-.grid2{display:grid;grid-template-columns:1.2fr 1fr;gap:14px;margin:18px 0}
-.panel{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px}
-.panel h2{font-size:13px;margin:0 0 12px;font-weight:600;display:flex;align-items:center;gap:8px;color:var(--text)}
-.panel h2 .badge{font-size:10px;color:var(--muted);background:var(--border);padding:2px 6px;border-radius:4px;font-weight:500;letter-spacing:.4px}
+/* MID GRID */
+.grid3{display:grid;grid-template-columns:1.15fr .85fr 1fr;gap:14px;margin-bottom:18px}
+.panel{padding:18px 20px;transition:border-color .2s ease}
+.panel h2{font-size:13px;margin:0 0 14px;font-weight:700;letter-spacing:-.1px;display:flex;align-items:center;justify-content:space-between;gap:8px;color:var(--text)}
+.panel h2 .badge{font-size:10px;color:var(--muted);background:var(--border);padding:3px 8px;border-radius:99px;font-weight:600;letter-spacing:.3px;text-transform:uppercase}
 
-.src-row{display:grid;grid-template-columns:90px 1fr 50px;gap:10px;align-items:center;font-size:12px;margin-bottom:7px}
-.src-row .lbl{color:var(--muted)}
-.src-row .bar{height:8px;background:var(--bg2);border-radius:99px;overflow:hidden}
-.src-row .bar i{display:block;height:100%;border-radius:99px;transition:width .4s ease}
-.src-row .val{text-align:right;font-weight:600;color:var(--text);font-variant-numeric:tabular-nums}
-.src-row[data-src="organic"] .bar i{background:linear-gradient(90deg,var(--green),#34d399)}
-.src-row[data-src="direct"] .bar i{background:linear-gradient(90deg,#60a5fa,#3b82f6)}
-.src-row[data-src="paid"] .bar i{background:linear-gradient(90deg,var(--amber),#f97316)}
-.src-row[data-src="lsa"] .bar i{background:linear-gradient(90deg,var(--purple),#7c3aed)}
-.src-row[data-src="referral"] .bar i{background:linear-gradient(90deg,#8a94ab,#5d6a85)}
-.src-row[data-src="unassigned"] .bar i{background:linear-gradient(90deg,#475569,#334155)}
+/* SOURCES DONUT */
+.donut-wrap{display:flex;align-items:center;gap:18px}
+.donut{width:128px;height:128px;flex-shrink:0;position:relative}
+.donut svg{transform:rotate(-90deg);transition:opacity .3s ease}
+.donut-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.donut-center .big{font-size:24px;font-weight:800;color:var(--text);letter-spacing:-.5px;font-variant-numeric:tabular-nums;line-height:1}
+.donut-center .lbl{font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;font-weight:600;margin-top:3px}
+.legend{flex:1;display:flex;flex-direction:column;gap:6px}
+.legend-row{display:flex;align-items:center;gap:8px;font-size:12px;line-height:1.3}
+.legend-row .swatch{width:9px;height:9px;border-radius:3px;flex-shrink:0}
+.legend-row .lbl{color:var(--text-soft);flex:1;font-weight:500}
+.legend-row .val{color:var(--text);font-weight:700;font-variant-numeric:tabular-nums}
+.legend-row .pct{color:var(--muted);font-size:10.5px;margin-left:6px;min-width:32px;text-align:right}
 
-.health-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);font-size:12.5px}
+/* HEALTH ROWS */
+.health-row{display:flex;align-items:center;gap:11px;padding:9px 0;border-bottom:1px solid var(--border);font-size:12.5px}
 .health-row:last-child{border-bottom:none}
-.health-row .light{width:10px;height:10px;border-radius:50%;flex-shrink:0}
-.health-row .light.g{background:var(--green);box-shadow:0 0 0 3px rgba(34,197,94,.16)}
-.health-row .light.a{background:var(--amber);box-shadow:0 0 0 3px rgba(245,158,11,.16)}
-.health-row .light.r{background:var(--red);box-shadow:0 0 0 3px rgba(239,68,68,.16)}
-.health-row .h-label{flex:1;color:var(--text)}
-.health-row .h-state{color:var(--muted);font-size:11.5px}
+.health-row .light{width:10px;height:10px;border-radius:50%;flex-shrink:0;position:relative}
+.health-row .light::after{content:"";position:absolute;inset:-3px;border-radius:50%;background:inherit;opacity:.25;filter:blur(3px)}
+.health-row .light.g{background:var(--green)}
+.health-row .light.a{background:var(--amber)}
+.health-row .light.r{background:var(--red)}
+.health-row .h-label{flex:1;color:var(--text-soft);font-weight:500}
+.health-row .h-state{color:var(--muted);font-size:11.5px;font-weight:500}
 
-.perf-section{margin-bottom:18px}
-.perf-tabs{display:flex;gap:4px;margin-bottom:10px;border-bottom:1px solid var(--border)}
-.perf-tabs button{background:transparent;color:var(--muted);border:0;padding:8px 14px;font-size:12px;cursor:pointer;border-bottom:2px solid transparent;font-weight:500}
-.perf-tabs button.on{color:var(--text);border-bottom-color:var(--green)}
-table.perf{width:100%;border-collapse:collapse;font-size:12px;font-variant-numeric:tabular-nums}
-table.perf th{text-align:left;color:var(--muted);font-weight:500;padding:8px 8px;border-bottom:1px solid var(--border);font-size:11px;text-transform:uppercase;letter-spacing:.4px}
+/* RECENT LEADS */
+.lead-item{padding:10px 0;border-bottom:1px solid var(--border);cursor:pointer;transition:background .15s ease}
+.lead-item:last-child{border-bottom:none}
+.lead-item .top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.lead-item .top .left{display:flex;align-items:center;gap:8px;min-width:0}
+.lead-item .top .icon{width:24px;height:24px;border-radius:7px;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+.lead-item .top .icon.form{background:var(--blue-bg);color:var(--blue)}
+.lead-item .top .icon.call{background:var(--amber-bg);color:var(--amber)}
+.lead-item .top .icon svg{width:12px;height:12px}
+.lead-item .top .title{font-weight:600;color:var(--text);font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lead-item .top .when{color:var(--muted);font-size:11px;flex-shrink:0;font-variant-numeric:tabular-nums}
+.lead-item .note{color:var(--muted);font-size:11.5px;margin-top:3px;padding-left:32px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.lead-item.open .note{-webkit-line-clamp:unset;display:block}
+.lead-item .detail{display:none;margin-top:8px;padding:10px;background:rgba(255,255,255,0.02);border:1px solid var(--border);border-radius:8px;font-size:11.5px;color:var(--text-soft)}
+.lead-item.open .detail{display:block}
+.lead-item .detail .row{display:flex;gap:8px;padding:3px 0}
+.lead-item .detail .row .k{color:var(--muted);min-width:60px;font-weight:500}
+.lead-empty{padding:24px 12px;text-align:center;color:var(--muted);font-size:12px}
+
+/* AD PERF */
+.perf-section{margin-bottom:18px;padding:18px 20px}
+.perf-tabs{display:flex;gap:2px;margin-bottom:14px;background:var(--panel);border:1px solid var(--border);border-radius:99px;padding:4px;width:fit-content;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.perf-tabs button{background:transparent;color:var(--muted);border:0;padding:7px 14px;font-size:12px;cursor:pointer;border-radius:99px;font-weight:600;font-family:inherit;transition:all .2s ease}
+.perf-tabs button:hover{color:var(--text-soft)}
+.perf-tabs button.on{background:linear-gradient(180deg, rgba(255,255,255,0.14), rgba(255,255,255,0.06));color:var(--text);box-shadow:0 0 0 1px rgba(255,255,255,0.10)}
+html[data-theme="light"] .perf-tabs button.on{background:#0f172a;color:#fff}
+table.perf{width:100%;border-collapse:collapse;font-size:12.5px;font-variant-numeric:tabular-nums}
+table.perf th{text-align:left;color:var(--muted);font-weight:600;padding:9px 10px;border-bottom:1px solid var(--border);font-size:10.5px;text-transform:uppercase;letter-spacing:.5px}
 table.perf th.num,table.perf td.num{text-align:right}
-table.perf td{padding:10px 8px;border-bottom:1px solid var(--border);color:var(--text)}
+table.perf td{padding:13px 10px;border-bottom:1px solid var(--border);color:var(--text-soft);font-weight:500}
 table.perf tr:last-child td{border-bottom:none}
-table.perf .status{font-size:10px;padding:2px 7px;border-radius:99px;text-transform:uppercase;letter-spacing:.4px;font-weight:600;display:inline-block}
-table.perf .status.active{background:var(--green-bg);color:var(--green)}
-table.perf .status.paused{background:rgba(138,148,171,.12);color:var(--muted)}
+table.perf td:first-child{color:var(--text);font-weight:600}
+table.perf .status{font-size:9.5px;padding:3px 8px;border-radius:99px;text-transform:uppercase;letter-spacing:.5px;font-weight:700;display:inline-block}
+table.perf .status.active{background:var(--green-bg);color:var(--green);box-shadow:0 0 0 1px rgba(34,209,138,0.18)}
+table.perf .status.paused{background:rgba(122,134,159,.14);color:var(--muted)}
 table.perf .status.eligible{background:var(--green-bg);color:var(--green)}
 
-.loading{padding:24px;text-align:center;color:var(--muted);font-size:13px}
+.loading{padding:28px;text-align:center;color:var(--muted);font-size:13px}
 
-@media (max-width: 980px){
+/* SMOOTH RENDER */
+.fade-in{animation:fadeIn .35s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+
+@media (max-width: 1100px){
+  .grid3{grid-template-columns:1fr 1fr}
+  .grid3 .panel:last-child{grid-column:1/-1}
+}
+@media (max-width: 760px){
+  .wrap{padding:14px 16px 40px}
   .kpi-row{grid-template-columns:repeat(2,1fr)}
-  .grid2{grid-template-columns:1fr}
-  .meta{font-size:11px}
+  .grid3{grid-template-columns:1fr}
+  .grid3 .panel:last-child{grid-column:auto}
+  .kpi .v{font-size:28px}
+  .verdict .line{font-size:16px}
+  .topbar{gap:10px}
+  .meta-area{order:3;width:100%;justify-content:space-between}
 }
 </style>
 </head>
@@ -126,18 +239,23 @@ table.perf .status.eligible{background:var(--green-bg);color:var(--green)}
 
 <div class="topbar">
   <div class="brand">
-    <span class="dot"></span>
-    <h1>Buckshot Exteriors</h1>
-    <span class="sub">conversion dashboard</span>
+    <div class="logo">B</div>
+    <div class="name">
+      <h1>Buckshot Exteriors</h1>
+      <span class="sub">Conversion Dashboard</span>
+    </div>
   </div>
   <div class="windowpicker" id="wpick">
-    <button data-w="7">7 day</button>
-    <button data-w="14">14 day</button>
-    <button data-w="30" class="on">30 day</button>
-    <button data-w="90">90 day</button>
+    <button data-w="7">7D</button>
+    <button data-w="14">14D</button>
+    <button data-w="30" class="on">30D</button>
+    <button data-w="90">90D</button>
   </div>
-  <div class="meta">
-    <span>Updated <span class="as" id="asof">--</span></span>
+  <div class="meta-area">
+    <span class="updated-pill" id="updPill">
+      <span class="live-dot"></span>
+      Live <b id="asof">--</b>
+    </span>
     <button class="ico-btn" id="xlsBtn" title="Download Excel">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
     </button>
@@ -147,36 +265,61 @@ table.perf .status.eligible{background:var(--green-bg);color:var(--green)}
   </div>
 </div>
 
-<div class="verdict" id="verdict">
-  <div class="label">The 5-Second Story</div>
+<div class="verdict glass">
+  <div class="label">
+    <span class="ico">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    </span>
+    The 5-Second Story
+  </div>
   <div class="line" id="verdictLine">Loading...</div>
   <div class="sub" id="verdictSub"></div>
 </div>
 
 <div class="kpi-row" id="kpiRow">
-  <div class="kpi"><div class="k">Qualified Leads</div><div class="v" data-k="qualified">--</div><div class="meta-line"><span data-k="qualified-meta">--</span><span class="trend" data-k="qualified-trend"></span></div></div>
-  <div class="kpi"><div class="k" id="spendLabel">Ad Spend</div><div class="v" data-k="spend">--</div><div class="meta-line"><span data-k="spend-meta">--</span><span class="trend" data-k="spend-trend"></span></div></div>
-  <div class="kpi"><div class="k">Cost / Qualified Lead</div><div class="v" data-k="cpq">--</div><div class="meta-line"><span data-k="cpq-meta">--</span><span class="trend" data-k="cpq-trend"></span></div></div>
-  <div class="kpi"><div class="k">LSA Charged Calls</div><div class="v" data-k="lsa">--</div><div class="meta-line"><span data-k="lsa-meta">--</span><span class="trend" data-k="lsa-trend"></span></div></div>
+  <div class="kpi glass">
+    <div class="head"><span class="k">Qualified Leads</span><span class="trend-pill" data-k="qualified-trend"></span></div>
+    <div class="v" data-k="qualified">--</div>
+    <div class="foot"><span class="meta" data-k="qualified-meta">--</span><svg class="spark" data-spark="qualified" viewBox="0 0 80 32" preserveAspectRatio="none"></svg></div>
+  </div>
+  <div class="kpi glass">
+    <div class="head"><span class="k" id="spendLabel">Ad Spend</span><span class="trend-pill" data-k="spend-trend"></span></div>
+    <div class="v" data-k="spend">--</div>
+    <div class="foot"><span class="meta" data-k="spend-meta">--</span><svg class="spark" data-spark="spend" viewBox="0 0 80 32" preserveAspectRatio="none"></svg></div>
+  </div>
+  <div class="kpi glass">
+    <div class="head"><span class="k">Cost / Qualified</span><span class="trend-pill" data-k="cpq-trend"></span></div>
+    <div class="v" data-k="cpq">--</div>
+    <div class="foot"><span class="meta" data-k="cpq-meta">--</span><svg class="spark" data-spark="cpq" viewBox="0 0 80 32" preserveAspectRatio="none"></svg></div>
+  </div>
+  <div class="kpi glass">
+    <div class="head"><span class="k">LSA Charged</span><span class="trend-pill" data-k="lsa-trend"></span></div>
+    <div class="v" data-k="lsa">--</div>
+    <div class="foot"><span class="meta" data-k="lsa-meta">--</span><svg class="spark" data-spark="lsa" viewBox="0 0 80 32" preserveAspectRatio="none"></svg></div>
+  </div>
 </div>
 
-<div class="grid2">
-  <div class="panel">
-    <h2>Where Leads Come From <span class="badge" id="srcWin">30 day</span></h2>
-    <div id="srcList"><div class="loading">Loading sources...</div></div>
+<div class="grid3">
+  <div class="panel glass">
+    <h2>Where Leads Come From <span class="badge" id="srcWin">30D</span></h2>
+    <div id="srcWrap"><div class="loading">Loading sources...</div></div>
   </div>
-  <div class="panel">
+  <div class="panel glass">
     <h2>Account Health</h2>
-    <div id="healthList"><div class="loading">Loading health...</div></div>
+    <div id="healthList"><div class="loading">Loading...</div></div>
+  </div>
+  <div class="panel glass">
+    <h2>Recent Leads <span class="badge" id="leadsWin">30D</span></h2>
+    <div id="leadsList"><div class="loading">Loading...</div></div>
   </div>
 </div>
 
-<div class="panel perf-section">
-  <h2>Ad Performance <span class="badge">90 day rollup</span></h2>
+<div class="panel glass perf-section">
+  <h2>Ad Performance <span class="badge">90D Rollup</span></h2>
   <div class="perf-tabs" id="perfTabs">
     <button data-tab="campaigns" class="on">Campaigns</button>
     <button data-tab="adGroups">Ad Groups</button>
-    <button data-tab="keywords">Top Keywords</button>
+    <button data-tab="keywords">Keywords</button>
   </div>
   <div id="perfTable"><div class="loading">Loading...</div></div>
 </div>
@@ -187,6 +330,14 @@ table.perf .status.eligible{background:var(--green-bg);color:var(--green)}
 <script>
 (function(){
   var state = { data: null, window: 30, perfTab: 'campaigns' };
+  var SRC_COLORS = {
+    organic:['#22d18a','#34d399'],
+    direct:['#60a5fa','#3b82f6'],
+    paid:['#fbbf24','#f97316'],
+    lsa:['#a78bfa','#7c3aed'],
+    referral:['#94a3b8','#64748b'],
+    unassigned:['#475569','#334155']
+  };
 
   // THEME
   var savedTheme = null;
@@ -228,22 +379,12 @@ table.perf .status.eligible{background:var(--green-bg);color:var(--green)}
   document.getElementById('xlsBtn').addEventListener('click', function(){
     if (typeof XLSX === 'undefined' || !state.data) return;
     var d = state.data, wb = XLSX.utils.book_new();
+    var k = computeKpis();
     var summary = [
-      ['Snapshot', d.snapshot_date || ''],
-      ['Window', state.window + ' day'],
-      ['As of', (d.windows && d.windows.asOf) || ''],
-      [],
-      ['Qualified leads (form, 30d)', (d.enquiries && d.enquiries.lead && d.enquiries.lead.qualified) || 0],
-      ['Total form submissions (30d)', (d.enquiries && d.enquiries.lead && d.enquiries.lead.total) || 0],
-      ['Spam/test forms (30d)', (d.enquiries && d.enquiries.lead && d.enquiries.lead.spamTest) || 0],
-      ['LSA charged calls (30d)', (d.kpis && d.kpis.lsaCharged) || 0],
-      ['LSA total calls (30d)', (d.kpis && d.kpis.lsaTotal) || 0],
-      [],
-      ['Ad spend ' + state.window + 'd', getWin().adsCost || 0],
-      ['Ad impressions ' + state.window + 'd', getWin().impressions || ''],
-      ['Ad clicks ' + state.window + 'd', getWin().clicks || 0],
-      ['Avg CPC ' + state.window + 'd', getWin().cpc || ''],
-      ['CTR ' + state.window + 'd', getWin().ctr || '']
+      ['Snapshot', d.snapshot_date || ''], ['Window', state.window + ' day'], ['As of', (d.windows && d.windows.asOf) || ''], [],
+      ['Qualified leads (' + state.window + 'd)', k.qualified], ['LSA charged calls (' + state.window + 'd)', k.lsaCharged],
+      ['Combined qualified', k.combined], ['Cost per qualified', k.cpq != null ? '$' + k.cpq : 'N/A'], [],
+      ['Ad spend ' + state.window + 'd', k.spend], ['Ad impressions ' + state.window + 'd', k.impressions], ['Ad clicks ' + state.window + 'd', k.clicks], ['CPC ' + state.window + 'd', k.cpc], ['CTR ' + state.window + 'd', k.ctr]
     ];
     XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(summary), 'Summary');
     if (d.adPerformance) {
@@ -260,152 +401,196 @@ table.perf .status.eligible{background:var(--green-bg);color:var(--green)}
     var d = state.data; if (!d || !d.windows) return {};
     return d.windows['w' + state.window] || d.windows.w30 || {};
   }
-
-  function fmtMoney(n){
-    if (n == null || isNaN(n)) return '$--';
-    return '$' + Math.round(n).toLocaleString();
+  function fmtMoney(n){ if (n == null || isNaN(n)) return '$--'; return '$' + Math.round(n).toLocaleString(); }
+  function getAsOf(){
+    var d = state.data;
+    var s = (d && d.windows && d.windows.asOf) || (d && d.snapshot_date);
+    if (!s) return null;
+    return new Date(s + 'T23:59:59');
   }
-
+  function getWindowStart(days){
+    var asOf = getAsOf(); if (!asOf) return null;
+    var s = new Date(asOf); s.setDate(s.getDate() - days + 1); s.setHours(0,0,0,0); return s;
+  }
   function leadsInWindow(days){
-    var d = state.data; if (!d || !d.leadTimeline) return null;
-    var asOfStr = (d.windows && d.windows.asOf) || d.snapshot_date;
-    if (!asOfStr) return null;
-    var asOf = new Date(asOfStr + 'T23:59:59');
-    var start = new Date(asOf); start.setDate(start.getDate() - days + 1); start.setHours(0,0,0,0);
+    var d = state.data; if (!d || !d.leadTimeline) return [];
+    var asOf = getAsOf(), start = getWindowStart(days);
+    if (!asOf || !start) return [];
     return d.leadTimeline.filter(function(l){
       if (!l.sort) return false;
       var dt = new Date(l.sort.replace(' ', 'T'));
       return dt >= start && dt <= asOf;
     });
   }
-
+  function adsDailyInWindow(days){
+    var d = state.data; if (!d || !d.adsDaily) return [];
+    var asOf = getAsOf(), start = getWindowStart(days);
+    if (!asOf || !start) return [];
+    return d.adsDaily.filter(function(p){
+      if (!p.date) return false;
+      var dt = new Date(p.date + 'T00:00:00');
+      return dt >= start && dt <= asOf;
+    });
+  }
   function computeKpis(){
-    var d = state.data;
-    var win = state.window;
-    var w = getWin();
+    var win = state.window, w = getWin();
     var spend = w.adsCost || 0;
     var leads = leadsInWindow(win);
-    var qualified, lsaCharged;
-    if (leads && leads.length >= 0){
-      qualified = leads.filter(function(l){ return l.cat === 'qualified'; }).length;
-      lsaCharged = leads.filter(function(l){ return l.src === 'call' && l.cat === 'charged'; }).length;
-    } else {
-      qualified = (d.enquiries && d.enquiries.lead && d.enquiries.lead.qualified) || 0;
-      lsaCharged = (d.kpis && d.kpis.lsaCharged) || 0;
-    }
-    var combinedQualified = qualified + lsaCharged;
-    var cpq = combinedQualified > 0 ? Math.round(spend / combinedQualified) : null;
-    return {
-      qualified: qualified,
-      lsaCharged: lsaCharged,
-      combined: combinedQualified,
-      spend: spend,
-      spendDaily: w.adsCostDaily || '',
-      impressions: w.impressions || '',
-      clicks: w.clicks || 0,
-      cpc: w.cpc || '',
-      ctr: w.ctr || '',
-      cpq: cpq,
-      win: win
-    };
+    var qualified = leads.filter(function(l){ return l.cat === 'qualified'; }).length;
+    var lsaCharged = leads.filter(function(l){ return l.src === 'call' && l.cat === 'charged'; }).length;
+    var combined = qualified + lsaCharged;
+    var cpq = combined > 0 ? Math.round(spend / combined) : null;
+    return {qualified:qualified, lsaCharged:lsaCharged, combined:combined, spend:spend,
+            spendDaily:w.adsCostDaily || '', impressions:w.impressions || '', clicks:w.clicks || 0,
+            cpc:w.cpc || '', ctr:w.ctr || '', cpq:cpq, win:win};
   }
-
   function priorQualified(win){
-    var p = state.data && state.data.prior;
-    if (!p) return null;
-    var b = p['w' + win];
-    return b && (typeof b.qualified === 'number') ? b.qualified : null;
+    var p = state.data && state.data.prior; if (!p) return null;
+    var b = p['w' + win]; return b && (typeof b.qualified === 'number') ? b.qualified : null;
   }
-
   function trendBadge(cur, prior, mode){
-    // mode 'good' = up is green; 'bad' = up is red
-    if (prior == null || cur == null) return {cls:'flat', label:'--', svg:''};
-    if (prior === 0 && cur === 0) return {cls:'flat', label:'no change', svg:''};
+    if (prior == null || cur == null) return {cls:'flat', label:'-', svg:''};
+    if (prior === 0 && cur === 0) return {cls:'flat', label:'flat', svg:''};
     if (prior === 0) return {cls: mode==='bad'?'down':'up', label:'new', svg:''};
     var pct = Math.round(((cur - prior) / prior) * 100);
     var up = cur >= prior;
-    var cls;
-    if (pct === 0) cls = 'flat';
-    else if (mode === 'bad') cls = up ? 'down' : 'up'; // higher is bad
-    else cls = up ? 'up' : 'down'; // higher is good
+    var cls = pct === 0 ? 'flat' : (mode === 'bad' ? (up ? 'down' : 'up') : (up ? 'up' : 'down'));
     var arrow = up
       ? '<svg viewBox="0 0 12 12" fill="currentColor"><path d="M6 2.5L10.5 8h-9z"/></svg>'
       : '<svg viewBox="0 0 12 12" fill="currentColor"><path d="M6 9.5L1.5 4h9z"/></svg>';
     var sign = pct > 0 ? '+' : '';
-    return {cls: cls, label: sign + pct + '%', svg: arrow};
+    return {cls:cls, label:sign + pct + '%', svg:arrow};
+  }
+  function setTrend(el, t){ if (!el) return; el.className = 'trend-pill ' + t.cls; el.innerHTML = t.svg + ' ' + t.label; }
+  function fmtDateShort(s){
+    if (!s) return '--';
+    try { var d = new Date(s + 'T00:00:00');
+      return d.toLocaleDateString('en-US', {month:'short', day:'numeric'}); }
+    catch(e){ return s; }
+  }
+  function daysAgoLabel(s){
+    if (!s) return '';
+    var d = new Date(s + 'T00:00:00');
+    var diff = Math.floor((new Date() - d) / 86400000);
+    if (diff === 0) return 'today';
+    if (diff === 1) return 'yesterday';
+    return diff + 'd ago';
   }
 
-  function setTrend(el, t){
-    if (!el) return;
-    el.className = 'trend ' + t.cls;
-    el.innerHTML = t.svg + ' ' + t.label;
-  }
-
-    function renderVerdict(k){
-    var v = document.getElementById('verdict');
+  function renderVerdict(k){
+    var v = document.querySelector('#verdictLine').parentElement;
     var line = document.getElementById('verdictLine');
     var sub = document.getElementById('verdictSub');
+    var pq = priorQualified(k.win);
+    var spendStr = fmtMoney(k.spend);
+    var cpqStr = k.cpq != null ? '$' + k.cpq.toLocaleString() : 'N/A';
 
-    var adsLeads = k.qualified || 0;   // qualified leads from website/ads forms in window
-    var lsaCalls = k.lsaCharged || 0;  // new LSA charged calls in window
-
-    v.classList.remove('good','bad');
-    if (adsLeads === 0 && lsaCalls === 0) v.classList.add('bad');
-    else if (adsLeads > 0) v.classList.add('good');
-
-    var adsPart = '<b>' + adsLeads + ' lead' + (adsLeads === 1 ? '' : 's') + ' from ads</b>';
-    var lsaPart = lsaCalls > 0
-      ? '<b>' + lsaCalls + ' new call' + (lsaCalls === 1 ? '' : 's') + ' on LSA</b>'
-      : '<b>no new calls on LSA</b>';
-
-    line.innerHTML = 'Last ' + k.win + ' days: ' + adsPart + '. ' + lsaPart + '.';
+    var paceTxt = '';
+    if (pq != null) {
+      if (pq === 0 && k.qualified === 0) paceTxt = ' Pace is <span class="num">flat</span> vs prior ' + k.win + ' days.';
+      else if (pq === 0) paceTxt = ' Up from <span class="num">zero</span> in the prior ' + k.win + ' days.';
+      else {
+        var pct = Math.round(((k.qualified - pq) / pq) * 100);
+        var dir = pct >= 0 ? 'up' : 'down', cls = pct >= 0 ? 'pos' : 'neg';
+        paceTxt = ' Pace is <span class="' + cls + '">' + dir + ' ' + Math.abs(pct) + '%</span> vs prior ' + k.win + ' days (' + pq + ' qualified).';
+      }
+    }
+    line.innerHTML = 'Last ' + k.win + ' days: <span class="num">' + k.qualified + '</span> qualified leads on <span class="num">' + spendStr + '</span> ad spend - <span class="num">' + cpqStr + '</span> per qualified lead.' + paceTxt;
 
     var subParts = [];
-    if (k.spend) subParts.push(fmtMoney(k.spend) + ' ad spend');
-    if (k.clicks) subParts.push(k.clicks + ' ad clicks');
-    if (k.spendDaily) subParts.push(k.spendDaily);
-    sub.textContent = subParts.join(' . ');
+    if (k.lsaCharged) subParts.push('<span>' + k.lsaCharged + ' LSA charged calls</span>');
+    if (k.clicks) subParts.push('<span>' + k.clicks + ' ad clicks at ' + k.cpc + ' CPC</span>');
+    if (k.spendDaily) subParts.push('<span>' + k.spendDaily + '</span>');
+    sub.innerHTML = subParts.join('<span class="dotsep"></span>');
   }
 
   function renderKpis(k){
     var $ = function(s){ return document.querySelector(s); };
+    var pq = priorQualified(k.win);
+
     // Qualified
     var qEl = $('[data-k="qualified"]'); qEl.textContent = k.qualified;
     qEl.className = 'v ' + (k.qualified === 0 ? 'red' : (k.qualified < 5 ? 'amber' : 'green'));
-    var pq = priorQualified(k.win);
-    $('[data-k="qualified-meta"]').innerHTML = 'vs prior ' + k.win + ': <b>' + (pq != null ? pq : '--') + '</b>';
+    $('[data-k="qualified-meta"]').innerHTML = 'vs prior ' + k.win + ': <b>' + (pq != null ? pq : '-') + '</b>';
     setTrend($('[data-k="qualified-trend"]'), trendBadge(k.qualified, pq, 'good'));
 
     // Spend
-    document.getElementById('spendLabel').textContent = 'Ad Spend (' + k.win + 'd)';
+    document.getElementById('spendLabel').textContent = 'Ad Spend (' + k.win + 'D)';
     $('[data-k="spend"]').textContent = fmtMoney(k.spend);
-    $('[data-k="spend-meta"]').innerHTML = k.spendDaily ? (k.spendDaily + ' . ' + (k.clicks || 0) + ' clicks') : ('--');
-    $('[data-k="spend-trend"]').className = 'trend flat';
-    $('[data-k="spend-trend"]').innerHTML = (k.cpc || '--') + ' CPC';
+    $('[data-k="spend-meta"]').innerHTML = k.spendDaily ? '<b>' + k.spendDaily + '</b> &middot; ' + (k.clicks || 0) + ' clicks' : '--';
+    var spendTrend = {cls:'flat', label: k.cpc || '-', svg:''};
+    setTrend($('[data-k="spend-trend"]'), spendTrend);
 
     // Cost per qualified
     var cpqEl = $('[data-k="cpq"]');
     cpqEl.textContent = k.cpq != null ? ('$' + k.cpq.toLocaleString()) : 'N/A';
     cpqEl.className = 'v ' + (k.cpq == null ? 'amber' : (k.cpq > 300 ? 'red' : (k.cpq > 150 ? 'amber' : 'green')));
-    $('[data-k="cpq-meta"]').innerHTML = 'Combined: <b>' + k.combined + ' qualified</b>';
+    $('[data-k="cpq-meta"]').innerHTML = 'Combined <b>' + k.combined + '</b> qualified';
     var cpqJudge = k.cpq == null ? 'flat' : (k.cpq > 300 ? 'down' : (k.cpq > 150 ? 'flat' : 'up'));
-    var cpqLbl = k.cpq == null ? 'no leads' : (k.cpq > 300 ? 'High' : (k.cpq > 150 ? 'Watching' : 'Good'));
-    $('[data-k="cpq-trend"]').className = 'trend ' + cpqJudge;
-    $('[data-k="cpq-trend"]').textContent = cpqLbl;
+    var cpqLbl = k.cpq == null ? 'no leads' : (k.cpq > 300 ? 'high' : (k.cpq > 150 ? 'watch' : 'good'));
+    setTrend($('[data-k="cpq-trend"]'), {cls:cpqJudge, label:cpqLbl, svg:''});
 
     // LSA
     var lsaEl = $('[data-k="lsa"]');
     lsaEl.textContent = k.lsaCharged;
     lsaEl.className = 'v ' + (k.lsaCharged === 0 ? 'red' : (k.lsaCharged < 2 ? 'amber' : 'green'));
-    var lsaMeta = '';
     var lsaLast = lastLsaCharged();
-    if (lsaLast) lsaMeta = 'Last charged: <b>' + lsaLast.date + '</b>';
-    $('[data-k="lsa-meta"]').innerHTML = lsaMeta || '--';
+    $('[data-k="lsa-meta"]').innerHTML = lsaLast ? ('Last <b>' + lsaLast.date.replace(/^2026-/, '').replace(/-/, '/') + '</b>') : '--';
     var daysSince = lsaLast ? daysAgo(lsaLast.sort) : null;
-    var lsaLbl = daysSince == null ? '--' : (daysSince <= 3 ? 'Fresh' : (daysSince <= 7 ? 'Recent' : 'Stale'));
+    var lsaLbl = daysSince == null ? '-' : (daysSince <= 3 ? 'fresh' : (daysSince <= 7 ? 'recent' : 'stale'));
     var lsaCls = daysSince == null ? 'flat' : (daysSince <= 3 ? 'up' : (daysSince <= 7 ? 'flat' : 'down'));
-    $('[data-k="lsa-trend"]').className = 'trend ' + lsaCls;
-    $('[data-k="lsa-trend"]').textContent = lsaLbl;
+    setTrend($('[data-k="lsa-trend"]'), {cls:lsaCls, label:lsaLbl, svg:''});
+
+    // Sparklines
+    renderSparkline('qualified', leadCountByDay(state.window, function(l){ return l.cat === 'qualified'; }), 'var(--green)');
+    renderSparkline('spend', adsDailySeries(state.window, 'cost'), 'var(--amber)');
+    renderSparkline('cpq', adsDailySeries(state.window, 'cost'), 'var(--blue)');
+    renderSparkline('lsa', leadCountByDay(state.window, function(l){ return l.src === 'call' && l.cat === 'charged'; }), 'var(--purple)');
+  }
+
+  function leadCountByDay(days, predicate){
+    var leads = leadsInWindow(days).filter(predicate);
+    var asOf = getAsOf(); if (!asOf) return [];
+    var arr = [];
+    for (var i = days - 1; i >= 0; i--){
+      var d = new Date(asOf); d.setDate(d.getDate() - i); d.setHours(0,0,0,0);
+      var ymd = d.toISOString().slice(0,10);
+      var c = leads.filter(function(l){ return (l.sort || '').slice(0,10) === ymd; }).length;
+      arr.push(c);
+    }
+    return arr;
+  }
+  function adsDailySeries(days, field){
+    var asOf = getAsOf(); if (!asOf) return [];
+    var d = state.data; if (!d || !d.adsDaily) return [];
+    var map = {};
+    d.adsDaily.forEach(function(p){ map[p.date] = p[field] || 0; });
+    var arr = [];
+    for (var i = days - 1; i >= 0; i--){
+      var dt = new Date(asOf); dt.setDate(dt.getDate() - i); dt.setHours(0,0,0,0);
+      arr.push(map[dt.toISOString().slice(0,10)] || 0);
+    }
+    return arr;
+  }
+
+  function renderSparkline(key, values, color){
+    var svg = document.querySelector('[data-spark="' + key + '"]');
+    if (!svg) return;
+    if (!values.length){ svg.innerHTML = ''; return; }
+    var w = 80, h = 32, pad = 2;
+    var min = Math.min.apply(null, values), max = Math.max.apply(null, values);
+    var range = max - min || 1;
+    var step = (w - pad*2) / Math.max(1, values.length - 1);
+    var pts = values.map(function(v, i){
+      var x = pad + i * step;
+      var y = h - pad - ((v - min) / range) * (h - pad*2);
+      return [x, y];
+    });
+    var d = pts.map(function(p, i){ return (i === 0 ? 'M' : 'L') + p[0].toFixed(1) + ' ' + p[1].toFixed(1); }).join(' ');
+    var fillD = d + ' L' + pts[pts.length-1][0].toFixed(1) + ' ' + h + ' L' + pts[0][0].toFixed(1) + ' ' + h + ' Z';
+    svg.innerHTML =
+      '<path class="fill" d="' + fillD + '" fill="' + color + '"/>' +
+      '<path class="line" d="' + d + '" stroke="' + color + '"/>';
   }
 
   function lastLsaCharged(){
@@ -414,182 +599,191 @@ table.perf .status.eligible{background:var(--green-bg);color:var(--green)}
     arr.sort(function(a,b){ return (b.sort || '').localeCompare(a.sort || ''); });
     return arr[0] || null;
   }
-
   function daysAgo(sortStr){
     if (!sortStr) return null;
     var dt = new Date(sortStr.replace(' ', 'T'));
     if (isNaN(dt.getTime())) return null;
-    var asOf = state.data && state.data.windows && state.data.windows.asOf
-      ? new Date(state.data.windows.asOf + 'T23:59:59') : new Date();
+    var asOf = getAsOf() || new Date();
     return Math.max(0, Math.floor((asOf - dt) / 86400000));
   }
 
   function renderSources(){
-    var d = state.data;
-    var c = d && d.sourceChart;
-    var list = document.getElementById('srcList');
-    document.getElementById('srcWin').textContent = '30 day';
-    if (!c){ list.innerHTML = '<div class="loading">No source data</div>'; return; }
+    var win = state.window;
+    document.getElementById('srcWin').textContent = win + 'D';
+    var wrap = document.getElementById('srcWrap');
+    var leads = leadsInWindow(win);
+    var counts = { organic:0, direct:0, paid:0, lsa:0, referral:0, unassigned:0 };
+    leads.forEach(function(l){
+      if (l.src === 'call') counts.lsa += 1;
+      else if (l.note && /organic/i.test(l.note)) counts.organic += 1;
+      else counts.direct += 1; // default form leads not otherwise classified
+    });
+    // If leadTimeline doesn't provide enough resolution, fall back to sourceChart for 30/90 windows
+    var hasReal = (counts.organic + counts.direct + counts.paid + counts.referral) > 0;
+    if (!hasReal || win >= 30){
+      var sc = state.data.sourceChart || {};
+      counts = {
+        organic: sc.organic || 0, direct: sc.direct || 0, paid: sc.paid || 0,
+        lsa: sc.lsa || 0, referral: sc.referral || 0, unassigned: sc.unassigned || 0
+      };
+      document.getElementById('srcWin').textContent = '30D';
+    }
     var rows = [
-      {key:'organic', label:'Organic', val: c.organic || 0},
-      {key:'direct', label:'Direct', val: c.direct || 0},
-      {key:'paid', label:'Paid Search', val: c.paid || 0},
-      {key:'lsa', label:'LSA', val: c.lsa || 0},
-      {key:'referral', label:'Referral', val: c.referral || 0},
-      {key:'unassigned', label:'Unassigned', val: c.unassigned || 0}
-    ];
-    var max = Math.max.apply(null, rows.map(function(r){return r.val;})) || 1;
-    list.innerHTML = rows.map(function(r){
-      var pct = Math.round((r.val / max) * 100);
-      return '<div class="src-row" data-src="' + r.key + '">' +
-        '<span class="lbl">' + r.label + '</span>' +
-        '<span class="bar"><i style="width:' + pct + '%"></i></span>' +
-        '<span class="val">' + r.val + '</span>' +
-      '</div>';
+      {key:'organic', label:'Organic', val: counts.organic},
+      {key:'direct', label:'Direct', val: counts.direct},
+      {key:'paid', label:'Paid Search', val: counts.paid},
+      {key:'lsa', label:'LSA', val: counts.lsa},
+      {key:'referral', label:'Referral', val: counts.referral},
+      {key:'unassigned', label:'Other', val: counts.unassigned}
+    ].filter(function(r){ return r.val > 0; });
+    var total = rows.reduce(function(s,r){ return s + r.val; }, 0) || 1;
+
+    // Donut SVG
+    var r = 56, cx = 64, cy = 64, circ = 2 * Math.PI * r, off = 0;
+    var segs = rows.map(function(row, i){
+      var len = (row.val / total) * circ;
+      var pair = SRC_COLORS[row.key] || ['#666','#999'];
+      var gradId = 'g_' + row.key;
+      var seg = '<defs><linearGradient id="' + gradId + '" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="' + pair[0] + '"/><stop offset="100%" stop-color="' + pair[1] + '"/></linearGradient></defs>' +
+        '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="none" stroke="url(#' + gradId + ')" stroke-width="14" stroke-dasharray="' + len.toFixed(2) + ' ' + (circ - len).toFixed(2) + '" stroke-dashoffset="' + (-off).toFixed(2) + '" stroke-linecap="butt"/>';
+      off += len;
+      return seg;
     }).join('');
+    var donut = '<div class="donut"><svg viewBox="0 0 128 128">' + segs + '</svg>' +
+      '<div class="donut-center"><div class="big">' + total + '</div><div class="lbl">total</div></div></div>';
+
+    var legend = '<div class="legend">' + rows.map(function(r){
+      var pair = SRC_COLORS[r.key] || ['#666','#999'];
+      var pct = Math.round((r.val / total) * 100);
+      return '<div class="legend-row"><span class="swatch" style="background:linear-gradient(135deg,' + pair[0] + ',' + pair[1] + ')"></span>' +
+        '<span class="lbl">' + r.label + '</span>' +
+        '<span class="val">' + r.val + '</span>' +
+        '<span class="pct">' + pct + '%</span></div>';
+    }).join('') + '</div>';
+
+    wrap.innerHTML = '<div class="donut-wrap fade-in">' + donut + legend + '</div>';
   }
 
   function renderHealth(){
-    var d = state.data;
-    var rows = [];
-
-    // GA4 generate_lead tag
-    var ga4ok = !!(d.verified && d.verified.ga4 !== undefined ? d.verified.ga4 : true);
-    rows.push({cls:'g', label:'GA4 generate_lead tag firing', state:'OK'});
-
-    // Ads conversion import
+    var d = state.data, rows = [];
+    rows.push({cls:'g', label:'GA4 generate_lead firing', state:'OK'});
     var totalAdsConv = 0;
     if (d.adPerformance && d.adPerformance.campaigns) totalAdsConv = d.adPerformance.campaigns.reduce(function(s,c){ return s + (c.conversions || 0); }, 0);
-    var adsConvOk = totalAdsConv > 0;
-    rows.push({cls: adsConvOk ? 'g' : 'r', label:'Google Ads conversion import', state: totalAdsConv + ' / 90d'});
-
-    // Paid landing page conversion
+    rows.push({cls: totalAdsConv > 0 ? 'g' : 'r', label:'Ads conversion import', state: totalAdsConv + ' / 90d'});
     var paidLeads = (d.sourceChart && d.sourceChart.paid) || 0;
     var paidClicks = (d.kpis && d.kpis.adsClicks) || 0;
     var paidConvLight = (paidLeads === 0 && paidClicks > 20) ? 'r' : (paidLeads < 3 ? 'a' : 'g');
-    rows.push({cls: paidConvLight, label:'Paid landing page conversion', state: paidLeads + ' leads / ' + paidClicks + ' clicks'});
-
-    // Live campaign serving
-    var anyActive = false, activeName = '';
+    rows.push({cls: paidConvLight, label:'Paid LP conversion', state: paidLeads + ' / ' + paidClicks + ' clicks'});
+    var anyActive = false;
     if (d.adPerformance && d.adPerformance.campaigns) {
-      d.adPerformance.campaigns.forEach(function(c){
-        if ((c.status || '').toLowerCase() === 'active'){ anyActive = true; activeName = c.name; }
-      });
+      d.adPerformance.campaigns.forEach(function(c){ if ((c.status || '').toLowerCase() === 'active') anyActive = true; });
     }
-    rows.push({cls: anyActive ? 'g' : 'r', label:'Live Madison campaign serving', state: anyActive ? 'Active' : 'No active campaign'});
-
-    // Spam ratio
+    rows.push({cls: anyActive ? 'g' : 'r', label:'Active campaign serving', state: anyActive ? 'Active' : 'None'});
     var lead = d.enquiries && d.enquiries.lead;
     var spamPct = lead && lead.total > 0 ? Math.round((lead.spamTest / lead.total) * 100) : 0;
-    var spamCls = spamPct > 60 ? 'a' : (spamPct > 30 ? 'a' : 'g');
-    rows.push({cls: spamCls, label:'Spam ratio (forms)', state: spamPct + '% spam'});
-
-    // LSA listing
+    rows.push({cls: spamPct > 60 ? 'a' : 'g', label:'Spam ratio (forms)', state: spamPct + '%'});
     var lsaTotal = (d.kpis && d.kpis.lsaTotal) || 0;
-    rows.push({cls: lsaTotal > 0 ? 'g' : 'a', label:'LSA listing live', state: lsaTotal > 0 ? 'OK (' + lsaTotal + ' calls 30d)' : 'No recent calls'});
+    rows.push({cls: lsaTotal > 0 ? 'g' : 'a', label:'LSA listing live', state: lsaTotal > 0 ? lsaTotal + ' calls/30d' : 'No recent'});
 
-    document.getElementById('healthList').innerHTML = rows.map(function(r){
-      return '<div class="health-row">' +
-        '<span class="light ' + r.cls + '"></span>' +
-        '<span class="h-label">' + r.label + '</span>' +
-        '<span class="h-state">' + r.state + '</span>' +
+    document.getElementById('healthList').innerHTML = '<div class="fade-in">' + rows.map(function(r){
+      return '<div class="health-row"><span class="light ' + r.cls + '"></span><span class="h-label">' + r.label + '</span><span class="h-state">' + r.state + '</span></div>';
+    }).join('') + '</div>';
+  }
+
+  function renderLeads(){
+    var win = state.window;
+    document.getElementById('leadsWin').textContent = win + 'D';
+    var leads = leadsInWindow(win).filter(function(l){ return l.cat === 'qualified' || (l.src === 'call' && l.cat === 'charged'); });
+    leads.sort(function(a,b){ return (b.sort || '').localeCompare(a.sort || ''); });
+    leads = leads.slice(0, 5);
+    var list = document.getElementById('leadsList');
+    if (!leads.length){
+      list.innerHTML = '<div class="lead-empty fade-in">No qualified leads in the last ' + win + ' days</div>';
+      return;
+    }
+    list.innerHTML = '<div class="fade-in">' + leads.map(function(l, i){
+      var iconClass = l.src === 'call' ? 'call' : 'form';
+      var iconSvg = l.src === 'call'
+        ? '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5c-1.2 0-2.5-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.4-1.1-.6-2.4-.6-3.6 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1z"/></svg>'
+        : '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>';
+      var title = (l.form || 'Inquiry') + (l.city ? ' - ' + l.city : '');
+      var when = fmtDateShort(l.date);
+      return '<div class="lead-item" data-i="' + i + '">' +
+        '<div class="top"><div class="left">' +
+          '<span class="icon ' + iconClass + '">' + iconSvg + '</span>' +
+          '<span class="title">' + escapeHtml(title) + '</span>' +
+        '</div><span class="when">' + when + '</span></div>' +
+        '<div class="note">' + escapeHtml(l.note || '') + '</div>' +
+        '<div class="detail">' +
+          '<div class="row"><span class="k">When</span><span>' + escapeHtml(l.date + ' ' + (l.time || '')) + '</span></div>' +
+          '<div class="row"><span class="k">Source</span><span>' + escapeHtml(l.src === 'call' ? 'LSA call' : 'Form: ' + (l.form || '-')) + '</span></div>' +
+          (l.city ? '<div class="row"><span class="k">City</span><span>' + escapeHtml(l.city) + '</span></div>' : '') +
+          '<div class="row"><span class="k">Notes</span><span>' + escapeHtml(l.note || '-') + '</span></div>' +
+        '</div>' +
       '</div>';
-    }).join('');
+    }).join('') + '</div>';
+
+    // Attach click handlers
+    Array.prototype.forEach.call(list.querySelectorAll('.lead-item'), function(item){
+      item.addEventListener('click', function(){
+        this.classList.toggle('open');
+      });
+    });
   }
 
   function renderPerf(){
     var d = state.data;
-    if (!d || !d.adPerformance){
-      document.getElementById('perfTable').innerHTML = '<div class="loading">No ad performance data</div>';
-      return;
-    }
-    var key = state.perfTab;
-    var arr = d.adPerformance[key] || [];
-    if (!arr.length){
-      document.getElementById('perfTable').innerHTML = '<div class="loading">No ' + key + '</div>';
-      return;
-    }
+    if (!d || !d.adPerformance){ document.getElementById('perfTable').innerHTML = '<div class="loading">No ad performance data</div>'; return; }
+    var key = state.perfTab, arr = d.adPerformance[key] || [];
+    if (!arr.length){ document.getElementById('perfTable').innerHTML = '<div class="loading">No ' + key + '</div>'; return; }
     var header, rows;
     if (key === 'campaigns'){
-      header = '<tr><th>Campaign</th><th></th><th class="num">Impr.</th><th class="num">Clicks</th><th class="num">CTR</th><th class="num">CPC</th><th class="num">Cost</th><th class="num">Conv.</th></tr>';
+      header = '<tr><th>Campaign</th><th></th><th class="num">Impr</th><th class="num">Clicks</th><th class="num">CTR</th><th class="num">CPC</th><th class="num">Cost</th><th class="num">Conv</th></tr>';
       rows = arr.slice(0,8).map(function(c){
         var st = (c.status || '').toLowerCase();
         var cls = st === 'active' ? 'active' : (st === 'eligible' ? 'eligible' : 'paused');
-        return '<tr>' +
-          '<td>' + esc(c.name || '') + '</td>' +
-          '<td><span class="status ' + cls + '">' + esc(c.status || '') + '</span></td>' +
-          '<td class="num">' + fmtN(c.impressions) + '</td>' +
-          '<td class="num">' + (c.clicks || 0) + '</td>' +
-          '<td class="num">' + (c.CTR || '') + '</td>' +
-          '<td class="num">' + (c.avgCPC || '') + '</td>' +
-          '<td class="num">' + fmtMoney(c.cost) + '</td>' +
-          '<td class="num">' + (c.conversions || 0) + '</td>' +
-        '</tr>';
+        return '<tr><td>' + escapeHtml(c.name || '') + '</td>' +
+          '<td><span class="status ' + cls + '">' + escapeHtml(c.status || '') + '</span></td>' +
+          '<td class="num">' + fmtN(c.impressions) + '</td><td class="num">' + (c.clicks || 0) + '</td>' +
+          '<td class="num">' + (c.CTR || '') + '</td><td class="num">' + (c.avgCPC || '') + '</td>' +
+          '<td class="num">' + fmtMoney(c.cost) + '</td><td class="num">' + (c.conversions || 0) + '</td></tr>';
       }).join('');
     } else if (key === 'adGroups'){
-      header = '<tr><th>Ad Group</th><th>Campaign</th><th></th><th class="num">Impr.</th><th class="num">Clicks</th><th class="num">CTR</th><th class="num">CPC</th><th class="num">Cost</th><th class="num">Conv.</th></tr>';
+      header = '<tr><th>Ad Group</th><th>Campaign</th><th></th><th class="num">Impr</th><th class="num">Clicks</th><th class="num">CPC</th><th class="num">Cost</th><th class="num">Conv</th></tr>';
       rows = arr.slice(0,8).map(function(c){
         var st = (c.status || '').toLowerCase();
         var cls = st === 'active' ? 'active' : (st === 'eligible' ? 'eligible' : 'paused');
-        return '<tr>' +
-          '<td>' + esc(c.name || '') + '</td>' +
-          '<td>' + esc(c.campaign || '') + '</td>' +
-          '<td><span class="status ' + cls + '">' + esc(c.status || '') + '</span></td>' +
-          '<td class="num">' + fmtN(c.impressions) + '</td>' +
-          '<td class="num">' + (c.clicks || 0) + '</td>' +
-          '<td class="num">' + (c.CTR || '') + '</td>' +
-          '<td class="num">' + (c.avgCPC || '') + '</td>' +
-          '<td class="num">' + fmtMoney(c.cost) + '</td>' +
-          '<td class="num">' + (c.conversions || 0) + '</td>' +
-        '</tr>';
+        return '<tr><td>' + escapeHtml(c.name || '') + '</td><td>' + escapeHtml(c.campaign || '') + '</td>' +
+          '<td><span class="status ' + cls + '">' + escapeHtml(c.status || '') + '</span></td>' +
+          '<td class="num">' + fmtN(c.impressions) + '</td><td class="num">' + (c.clicks || 0) + '</td>' +
+          '<td class="num">' + (c.avgCPC || '') + '</td><td class="num">' + fmtMoney(c.cost) + '</td>' +
+          '<td class="num">' + (c.conversions || 0) + '</td></tr>';
       }).join('');
     } else {
-      header = '<tr><th>Keyword</th><th>Match</th><th>Ad Group</th><th class="num">Impr.</th><th class="num">Clicks</th><th class="num">CTR</th><th class="num">CPC</th><th class="num">Cost</th></tr>';
+      header = '<tr><th>Keyword</th><th>Match</th><th>Ad Group</th><th class="num">Clicks</th><th class="num">CTR</th><th class="num">CPC</th><th class="num">Cost</th></tr>';
       rows = arr.slice(0,10).map(function(c){
-        return '<tr>' +
-          '<td>' + esc(c.keyword || '') + '</td>' +
-          '<td>' + esc(c.matchType || '') + '</td>' +
-          '<td>' + esc(c.adGroup || '') + '</td>' +
-          '<td class="num">' + fmtN(c.impressions) + '</td>' +
-          '<td class="num">' + (c.clicks || 0) + '</td>' +
-          '<td class="num">' + (c.CTR || '') + '</td>' +
-          '<td class="num">' + (c.avgCPC || '') + '</td>' +
-          '<td class="num">' + fmtMoney(c.cost) + '</td>' +
-        '</tr>';
+        return '<tr><td>' + escapeHtml(c.keyword || '') + '</td><td>' + escapeHtml(c.matchType || '') + '</td>' +
+          '<td>' + escapeHtml(c.adGroup || '') + '</td><td class="num">' + (c.clicks || 0) + '</td>' +
+          '<td class="num">' + (c.CTR || '') + '</td><td class="num">' + (c.avgCPC || '') + '</td>' +
+          '<td class="num">' + fmtMoney(c.cost) + '</td></tr>';
       }).join('');
     }
-    document.getElementById('perfTable').innerHTML = '<table class="perf"><thead>' + header + '</thead><tbody>' + rows + '</tbody></table>';
+    document.getElementById('perfTable').innerHTML = '<div class="fade-in"><table class="perf"><thead>' + header + '</thead><tbody>' + rows + '</tbody></table></div>';
   }
 
-  function fmtN(n){
-    if (n == null || n === '') return '';
-    if (typeof n === 'number') return n.toLocaleString();
-    return n;
-  }
-  function esc(s){
-    return String(s).replace(/[&<>"']/g, function(c){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]; });
-  }
+  function fmtN(n){ if (n == null || n === '') return ''; if (typeof n === 'number') return n.toLocaleString(); return n; }
+  function escapeHtml(s){ return String(s).replace(/[&<>"']/g, function(c){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]; }); }
 
   function render(){
     if (!state.data) return;
-    document.getElementById('asof').textContent = formatAsOf((state.data.windows && state.data.windows.asOf) || state.data.snapshot_date);
+    var asOfStr = (state.data.windows && state.data.windows.asOf) || state.data.snapshot_date;
+    var asOfFmt = '--';
+    try { var d = new Date(asOfStr + 'T00:00:00'); asOfFmt = d.toLocaleDateString('en-US', {month:'short', day:'numeric'}) + ' (' + daysAgoLabel(asOfStr) + ')'; } catch(e){}
+    document.getElementById('asof').textContent = asOfFmt;
     var k = computeKpis();
-    renderVerdict(k);
-    renderKpis(k);
-    renderSources();
-    renderHealth();
-    renderPerf();
+    renderVerdict(k); renderKpis(k); renderSources(); renderHealth(); renderLeads(); renderPerf();
   }
 
-  function formatAsOf(s){
-    if (!s) return '--';
-    try {
-      var d = new Date(s + 'T00:00:00');
-      return d.toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'});
-    } catch(e){ return s; }
-  }
-
-  // LOAD
   fetch('data/current.json?cb=' + Date.now())
     .then(function(r){ return r.json(); })
     .then(function(j){ state.data = j; render(); })
