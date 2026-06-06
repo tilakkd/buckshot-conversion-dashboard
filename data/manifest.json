@@ -1,140 +1,145 @@
 {
- "latest": "2026-06-04",
- "dates": [
-  {
-   "date": "2026-06-04",
-   "label": "June 4, 2026 - Finalized",
-   "note": "Day-of finalized 2026-06-05 IST via buckshot-dashboard-daily orchestrator (single pass). Quiet day: 2 test submissions in Flamingo inbox (spam/test), 0 new qualified forms, 0 new LSA calls. Cumulative since Apr 1: 75 forms (30 qualified, 3 OOA, 42 spam/test) / 9 LSA (5 charged); combined 84 touches, 39 qualified. Ads 90-day $5,962.75 (4 phone-call conversions); 7-day pace $194.31/day, 7-day CPC $27.76. GA4 read LIVE (90-day 1,487 sessions: Direct 661 / Organic 527 / Paid 141). Clarity/GTM skipped per override."
-  },
-  {
-   "date": "2026-06-03",
-   "label": "June 3, 2026 - Finalized",
-   "note": "Finalized 2026-06-04 IST via manual operator-requested run (Stages 1+2+3 in one session) to complete the 2026-06-03 dashboard. 1 new qualified form (approved-insurance roof + siding, E Gorham St); 2 spam-foldered pitches. Cumulative since Apr 1: 73 forms (30 qualified, 3 OOA, 40 spam/test) / 9 LSA (5 charged); combined 82 touches, 39 qualified. Ads 90-day $5,869.25; 7-day pace $180.95/day. GA4/Clarity/GTM carried forward (no source tabs; ga4 unverified)."
-  },
-  {
-   "date": "2026-06-02",
-   "label": "June 2, 2026 - Finalized",
-   "note": "Re-finalized 2026-06-03 ~11:35 IST from live Stage 1/2 state (asOf 2026-06-02); supersedes earlier same-day carry-forward. Cumulative since Apr 1: 70 forms (29 qualified, 3 OOA, 38 spam/test) / 9 LSA (5 charged); combined 79 touches, 38 qualified. 3 Jun 2 spam-foldered roof leads (likely false positives) flagged for review. GA4/Clarity/GTM carried forward (no source tabs; ga4 unverified)."
-  },
-  {
-   "date": "2026-06-01",
-   "label": "June 1, 2026 - Finalized",
-   "note": "Day-of finalized 2026-06-02 ~10:55 IST. Leads+ads live from Stage 1/2 state (asOf 2026-06-01). 3 new spam/test submissions, no new qualified. Cumulative since Apr 1: 69 forms (31 qualified, 3 OOA, 35 spam/test) / 9 LSA (5 charged); combined 78 touches, 40 qualified. GA4/Clarity/GTM carried forward (no operator source tabs this run; GA4 unverified)."
-  },
-  {
-   "date": "2026-05-31",
-   "label": "May 31, 2026 - Backfill",
-   "note": "Backfilled 2026-06-02 from Stage 1/2 state (prior latest history was 2026-05-30). 1 new spam submission. Cumulative since Apr 1: 67 forms (31 qualified, 3 OOA, 33 spam/test) / 9 LSA (5 charged); combined 76 touches, 40 qualified. GA4/Clarity carried; ads windows/adsDaily reflect 2026-06-01 capture."
-  },
-  {
-   "date": "2026-05-30",
-   "label": "May 30, 2026",
-   "note": "Daily snapshot - finalized"
-  },
-  {
-   "date": "2026-05-29",
-   "label": "May 29, 2026",
-   "note": "Daily snapshot"
-  },
-  {
-   "date": "2026-05-28",
-   "label": "May 28, 2026 - Finalized (degraded)",
-   "note": "Day-of finalized 2026-05-29 ~11:1x IST in DEGRADED mode: upstream Stage 1 (leads) and Stage 2 (ads) state files were missing, so no fresh data was gathered. Carried forward from 2026-05-27 and flagged stale: leads, ads/windows, adsDaily, cost90d, GA4, GTM, Clarity, PostHog. Cumulative since Apr 1 unchanged: 71 forms (30 qualified, 4 OOA, 37 spam/test) / 9 LSA (5 charged); combined 80 touches, 35 qualified."
-  },
-  {
-   "date": "2026-05-27",
-   "label": "May 27, 2026 - Finalized",
-   "note": "Day-of finalized 2026-05-28 ~10:38 IST. Cumulative since Apr 1: 71 forms (30 qualified, 4 OOA, 37 spam/test) / 9 LSA (5 charged); combined 80 touches, 35 qualified. New on May 27: 1 LSA charged Madison phone lead [redacted]) at 2:17 AM Central; no qualified Flamingo forms (5 spam-folder entries - 2 B2B pitches, 2 Franchise Creator duplicates, 1 attribution test). Carried forward and marked stale: GA4, GTM, Clarity, PostHog (US-only 56 sessions thru May 26), Ads windows/grid/adsDaily (operator did not refresh Ads tabs today; Ads data complete through May 25). costPerQualified now ~$131 (~$4,590 90-day spend / 35 qualified)."
-  },
-  {
-   "date": "2026-05-26",
-   "label": "May 26, 2026 - Finalized",
-   "note": "Re-finalized 2026-05-27 10:39 IST: PostHog engagement refreshed to May 26 (US-only, 56 sessions); active campaign Leads - Roofing (PC) metrics refreshed; GA4/Clarity and Ads grid detail carried forward (Ads complete through May 25)."
-  },
-  {
-   "date": "2026-05-25",
-   "label": "May 25, 2026 - Finalized",
-   "note": "Day-of finalized May 26 at 10:55 IST. Cumulative since Apr 1: 64 forms (29 qualified, 4 OOA, 31 spam/test) / 8 LSA (4 charged); combined 72 touches, 37 qualified. No new leads on May 25 - Flamingo inbox and spam both empty after May 22, and 0 new LSA calls (latest LSA was a charged Madison roof-repair on May 19). 30-day Ads cost $281 (58 clicks, 2,510 impr, 2.3% CTR, $4.84 CPC); 90-day account spend ~$4,590 (371 clicks, 15.9K impr, $12.38 CPC). Active campaign Leads - Roofing (PC): only Local Madison Area ad group enabled, 0 tracked conversions. Carried forward and marked stale: GA4, GTM, Clarity, PostHog, adsDaily series, full campaign and keyword grids, Ads w7 window."
-  },
-  {
-   "date": "2026-05-24",
-   "label": "May 24, 2026 - Daily finalize",
-   "note": "Quiet day - no new web or call leads since May 21. PostHog US engagement refreshed (27 visitors, 43 views). Google Ads, GA4, GTM carried forward (Ads grid blocked by ad-blocker)."
-  },
-  {
-   "date": "2026-05-23",
-   "label": "May 23, 2026 - Finalized",
-   "note": "Finalized day-of."
-  },
-  {
-   "date": "2026-05-22",
-   "label": "May 22, 2026 - Finalized",
-   "note": "Day-of finalized May 23 at 10:54 IST. Cumulative since Apr 1: 64 forms (29 qualified, 4 OOA, 31 spam/test) / 8 LSA (4 charged); combined 72 touches, 37 qualified. No new genuine leads on May 22 - only 2 internal QA test submissions and 0 new LSA calls. Active campaign Leads - Roofing (PC) served 27 impressions but spent $0 (0 clicks) - reach-limited. 30-day Ads cost $391.73 (77 clicks, 2,882 impr, 2.7% CTR, $5.09 CPC); 90-day account spend $4,583.36. Ad Performance: 4 ad groups in Leads-Roofing(PC) paused 2026-05-22 - only Local Madison Area active now."
-  },
-  {
-   "date": "2026-05-21",
-   "label": "May 21, 2026 - Finalized",
-   "note": "Day-of finalized May 22 at 10:48 IST. Cumulative since Apr 1: 62 forms (29 qualified, 4 OOA, 29 spam/test) / 8 LSA (4 charged); combined 70 touches, 37 qualified. 2 new qualified Madison roofing leads (hotel storm siding/facia repair; north-Madison metal roof redo) and 0 new LSA calls. Active campaign Leads - Roofing (PC) served 93 impressions but spent $0 (0 clicks) on May 21 - reach-limited by bid setting. Opt score 90.0%; 90-day account spend $4,583.36."
-  },
-  {
-   "date": "2026-05-20",
-   "label": "May 20, 2026 - Finalized",
-   "note": "Day-of finalized May 21 at 10:35 IST. Cumulative since Apr 1: 60 forms (26 qualified, 5 OOA) / 8 LSA (4 charged); combined 68 touches, 34 qualified. Quiet day: 1 inbound form (Cambria WI, out-of-area) and 0 new LSA calls; the May 19 LSA roof-repair lead moved In review -> Charged. Active campaign 0 conversions on $4,583.36 90-day spend. Opt score 90.0%."
-  },
-  {
-   "date": "2026-05-19",
-   "label": "May 19, 2026 - Finalized",
-   "note": "Day-of finalized May 20 at 07:05 IST (manual run). Cumulative since Apr 1: 59 forms (26 qualified) / 8 LSA (3 charged). Busiest lead day in weeks: 2 qualified Madison leads + 2 LSA calls. Opt score 90.0%."
-  },
-  {
-   "date": "2026-05-18",
-   "label": "May 18, 2026 - Finalized",
-   "note": "Day-of finalized May 19 at 13:05 IST. Cumulative since Apr 1: 55 form submissions / 6 LSA (3 charged). 1 new spam-folder entry from Ashley Brown (AI sales pitch) classified spamTest. Opt score climbed to 90.0%."
-  },
-  {
-   "date": "2026-05-17",
-   "label": "May 17, 2026 - Finalized",
-   "note": "Day-of finalized May 18 at 11:00 IST. Cumulative since Apr 1: 54 form submissions / 6 LSA (3 charged). Dennis Dominguez (Rockford, IL) submitted on May 17 classified OOA. Opt score 86.1%."
-  },
-  {
-   "date": "2026-05-16",
-   "label": "May 16, 2026 - Finalized",
-   "note": "Day-of finalized May 17 at 10:35 IST. Cumulative since Apr 1: 52 form submissions / 6 LSA (3 charged). Active Leads-Roofing(PC) 119 clicks / $1,140.71. Opt score slipped to 84.8%. Zero new submissions in the May 16 to May 17 morning window."
-  },
-  {
-   "date": "2026-05-15",
-   "label": "May 15, 2026 - Daily refresh",
-   "note": "Full live capture - all 6 sources. Flamingo now captured live: form quiet streak ~7 days. 90-day spend $4,538.93, 812 GA4 sessions."
-  },
-  {
-   "date": "2026-05-14",
-   "label": "May 14, 2026 - Daily refresh",
-   "note": "Ads/GA4/LSA/Clarity/GTM captured live; Flamingo carried forward (login wall). Opt score 87.1%. 90-day spend $4,538.93."
-  },
-  {
-   "date": "2026-05-13",
-   "label": "May 13, 2026  -  Live multi-source refresh",
-   "note": "Latest  -  fresh Ads/GA4/LSA/Clarity capture. Conversion tracking degrading (8 no-recent, 1 recording). Opt score 87.1%."
-  },
-  {
-   "date": "2026-05-12",
-   "label": "May 12, 2026  -  Backfill",
-   "note": "Auto-backfilled during May 13 refresh."
-  },
-  {
-   "date": "2026-05-11",
-   "label": "May 11, 2026 - Phone goal repaired",
-   "note": "Latest - all 6 account-default goals Active. GFN Click to call demoted to Secondary."
-  },
-  {
-   "date": "2026-05-10",
-   "label": "May 10, 2026 - Fresh 90-day pull",
-   "note": "Post-tag-install. GA4 Key Events firing. Account totals 349 clicks / $4,483.82."
-  },
-  {
-   "date": "2026-05-08",
-   "label": "May 8, 2026 - Pre-tag-install",
-   "note": "Original audit. 0 GA4 Key Events. Phone call lead goal in 'Needs attention'."
-  }
- ]
+  "latest": "2026-06-05",
+  "dates": [
+    {
+      "date": "2026-06-05",
+      "label": "June 5, 2026 - Finalized",
+      "note": "Day-of finalized 2026-06-06 IST via buckshot-dashboard-daily orchestrator (single pass). 1 new qualified form (existing-customer service complaint), 0 OOA, 23 spam/test (mostly page-form wiring tests); 0 new LSA calls. Cumulative since Apr 1: 99 forms (31 qualified, 3 OOA, 65 spam/test) / 9 LSA (5 charged); combined 108 touches, 40 qualified. Ads: w7 $1,245.69, w30 $1,610.79, 90d $6,093.29 (425 clicks, 4 phone-call conversions). GA4 carried forward from 2026-06-04; Clarity/GTM skipped per override."
+    },
+    {
+      "date": "2026-06-04",
+      "label": "June 4, 2026 - Finalized",
+      "note": "Day-of finalized 2026-06-05 IST via buckshot-dashboard-daily orchestrator (single pass). Quiet day: 2 test submissions in Flamingo inbox (spam/test), 0 new qualified forms, 0 new LSA calls. Cumulative since Apr 1: 75 forms (30 qualified, 3 OOA, 42 spam/test) / 9 LSA (5 charged); combined 84 touches, 39 qualified. Ads 90-day $5,962.75 (4 phone-call conversions); 7-day pace $194.31/day, 7-day CPC $27.76. GA4 read LIVE (90-day 1,487 sessions: Direct 661 / Organic 527 / Paid 141). Clarity/GTM skipped per override."
+    },
+    {
+      "date": "2026-06-03",
+      "label": "June 3, 2026 - Finalized",
+      "note": "Finalized 2026-06-04 IST via manual operator-requested run (Stages 1+2+3 in one session) to complete the 2026-06-03 dashboard. 1 new qualified form (approved-insurance roof + siding, E Gorham St); 2 spam-foldered pitches. Cumulative since Apr 1: 73 forms (30 qualified, 3 OOA, 40 spam/test) / 9 LSA (5 charged); combined 82 touches, 39 qualified. Ads 90-day $5,869.25; 7-day pace $180.95/day. GA4/Clarity/GTM carried forward (no source tabs; ga4 unverified)."
+    },
+    {
+      "date": "2026-06-02",
+      "label": "June 2, 2026 - Finalized",
+      "note": "Re-finalized 2026-06-03 ~11:35 IST from live Stage 1/2 state (asOf 2026-06-02); supersedes earlier same-day carry-forward. Cumulative since Apr 1: 70 forms (29 qualified, 3 OOA, 38 spam/test) / 9 LSA (5 charged); combined 79 touches, 38 qualified. 3 Jun 2 spam-foldered roof leads (likely false positives) flagged for review. GA4/Clarity/GTM carried forward (no source tabs; ga4 unverified)."
+    },
+    {
+      "date": "2026-06-01",
+      "label": "June 1, 2026 - Finalized",
+      "note": "Day-of finalized 2026-06-02 ~10:55 IST. Leads+ads live from Stage 1/2 state (asOf 2026-06-01). 3 new spam/test submissions, no new qualified. Cumulative since Apr 1: 69 forms (31 qualified, 3 OOA, 35 spam/test) / 9 LSA (5 charged); combined 78 touches, 40 qualified. GA4/Clarity/GTM carried forward (no operator source tabs this run; GA4 unverified)."
+    },
+    {
+      "date": "2026-05-31",
+      "label": "May 31, 2026 - Backfill",
+      "note": "Backfilled 2026-06-02 from Stage 1/2 state (prior latest history was 2026-05-30). 1 new spam submission. Cumulative since Apr 1: 67 forms (31 qualified, 3 OOA, 33 spam/test) / 9 LSA (5 charged); combined 76 touches, 40 qualified. GA4/Clarity carried; ads windows/adsDaily reflect 2026-06-01 capture."
+    },
+    {
+      "date": "2026-05-30",
+      "label": "May 30, 2026",
+      "note": "Daily snapshot - finalized"
+    },
+    {
+      "date": "2026-05-29",
+      "label": "May 29, 2026",
+      "note": "Daily snapshot"
+    },
+    {
+      "date": "2026-05-28",
+      "label": "May 28, 2026 - Finalized (degraded)",
+      "note": "Day-of finalized 2026-05-29 ~11:1x IST in DEGRADED mode: upstream Stage 1 (leads) and Stage 2 (ads) state files were missing, so no fresh data was gathered. Carried forward from 2026-05-27 and flagged stale: leads, ads/windows, adsDaily, cost90d, GA4, GTM, Clarity, PostHog. Cumulative since Apr 1 unchanged: 71 forms (30 qualified, 4 OOA, 37 spam/test) / 9 LSA (5 charged); combined 80 touches, 35 qualified."
+    },
+    {
+      "date": "2026-05-27",
+      "label": "May 27, 2026 - Finalized",
+      "note": "Day-of finalized 2026-05-28 ~10:38 IST. Cumulative since Apr 1: 71 forms (30 qualified, 4 OOA, 37 spam/test) / 9 LSA (5 charged); combined 80 touches, 35 qualified. New on May 27: 1 LSA charged Madison phone lead [redacted]) at 2:17 AM Central; no qualified Flamingo forms (5 spam-folder entries - 2 B2B pitches, 2 Franchise Creator duplicates, 1 attribution test). Carried forward and marked stale: GA4, GTM, Clarity, PostHog (US-only 56 sessions thru May 26), Ads windows/grid/adsDaily (operator did not refresh Ads tabs today; Ads data complete through May 25). costPerQualified now ~$131 (~$4,590 90-day spend / 35 qualified)."
+    },
+    {
+      "date": "2026-05-26",
+      "label": "May 26, 2026 - Finalized",
+      "note": "Re-finalized 2026-05-27 10:39 IST: PostHog engagement refreshed to May 26 (US-only, 56 sessions); active campaign Leads - Roofing (PC) metrics refreshed; GA4/Clarity and Ads grid detail carried forward (Ads complete through May 25)."
+    },
+    {
+      "date": "2026-05-25",
+      "label": "May 25, 2026 - Finalized",
+      "note": "Day-of finalized May 26 at 10:55 IST. Cumulative since Apr 1: 64 forms (29 qualified, 4 OOA, 31 spam/test) / 8 LSA (4 charged); combined 72 touches, 37 qualified. No new leads on May 25 - Flamingo inbox and spam both empty after May 22, and 0 new LSA calls (latest LSA was a charged Madison roof-repair on May 19). 30-day Ads cost $281 (58 clicks, 2,510 impr, 2.3% CTR, $4.84 CPC); 90-day account spend ~$4,590 (371 clicks, 15.9K impr, $12.38 CPC). Active campaign Leads - Roofing (PC): only Local Madison Area ad group enabled, 0 tracked conversions. Carried forward and marked stale: GA4, GTM, Clarity, PostHog, adsDaily series, full campaign and keyword grids, Ads w7 window."
+    },
+    {
+      "date": "2026-05-24",
+      "label": "May 24, 2026 - Daily finalize",
+      "note": "Quiet day - no new web or call leads since May 21. PostHog US engagement refreshed (27 visitors, 43 views). Google Ads, GA4, GTM carried forward (Ads grid blocked by ad-blocker)."
+    },
+    {
+      "date": "2026-05-23",
+      "label": "May 23, 2026 - Finalized",
+      "note": "Finalized day-of."
+    },
+    {
+      "date": "2026-05-22",
+      "label": "May 22, 2026 - Finalized",
+      "note": "Day-of finalized May 23 at 10:54 IST. Cumulative since Apr 1: 64 forms (29 qualified, 4 OOA, 31 spam/test) / 8 LSA (4 charged); combined 72 touches, 37 qualified. No new genuine leads on May 22 - only 2 internal QA test submissions and 0 new LSA calls. Active campaign Leads - Roofing (PC) served 27 impressions but spent $0 (0 clicks) - reach-limited. 30-day Ads cost $391.73 (77 clicks, 2,882 impr, 2.7% CTR, $5.09 CPC); 90-day account spend $4,583.36. Ad Performance: 4 ad groups in Leads-Roofing(PC) paused 2026-05-22 - only Local Madison Area active now."
+    },
+    {
+      "date": "2026-05-21",
+      "label": "May 21, 2026 - Finalized",
+      "note": "Day-of finalized May 22 at 10:48 IST. Cumulative since Apr 1: 62 forms (29 qualified, 4 OOA, 29 spam/test) / 8 LSA (4 charged); combined 70 touches, 37 qualified. 2 new qualified Madison roofing leads (hotel storm siding/facia repair; north-Madison metal roof redo) and 0 new LSA calls. Active campaign Leads - Roofing (PC) served 93 impressions but spent $0 (0 clicks) on May 21 - reach-limited by bid setting. Opt score 90.0%; 90-day account spend $4,583.36."
+    },
+    {
+      "date": "2026-05-20",
+      "label": "May 20, 2026 - Finalized",
+      "note": "Day-of finalized May 21 at 10:35 IST. Cumulative since Apr 1: 60 forms (26 qualified, 5 OOA) / 8 LSA (4 charged); combined 68 touches, 34 qualified. Quiet day: 1 inbound form (Cambria WI, out-of-area) and 0 new LSA calls; the May 19 LSA roof-repair lead moved In review -> Charged. Active campaign 0 conversions on $4,583.36 90-day spend. Opt score 90.0%."
+    },
+    {
+      "date": "2026-05-19",
+      "label": "May 19, 2026 - Finalized",
+      "note": "Day-of finalized May 20 at 07:05 IST (manual run). Cumulative since Apr 1: 59 forms (26 qualified) / 8 LSA (3 charged). Busiest lead day in weeks: 2 qualified Madison leads + 2 LSA calls. Opt score 90.0%."
+    },
+    {
+      "date": "2026-05-18",
+      "label": "May 18, 2026 - Finalized",
+      "note": "Day-of finalized May 19 at 13:05 IST. Cumulative since Apr 1: 55 form submissions / 6 LSA (3 charged). 1 new spam-folder entry from Ashley Brown (AI sales pitch) classified spamTest. Opt score climbed to 90.0%."
+    },
+    {
+      "date": "2026-05-17",
+      "label": "May 17, 2026 - Finalized",
+      "note": "Day-of finalized May 18 at 11:00 IST. Cumulative since Apr 1: 54 form submissions / 6 LSA (3 charged). Dennis Dominguez (Rockford, IL) submitted on May 17 classified OOA. Opt score 86.1%."
+    },
+    {
+      "date": "2026-05-16",
+      "label": "May 16, 2026 - Finalized",
+      "note": "Day-of finalized May 17 at 10:35 IST. Cumulative since Apr 1: 52 form submissions / 6 LSA (3 charged). Active Leads-Roofing(PC) 119 clicks / $1,140.71. Opt score slipped to 84.8%. Zero new submissions in the May 16 to May 17 morning window."
+    },
+    {
+      "date": "2026-05-15",
+      "label": "May 15, 2026 - Daily refresh",
+      "note": "Full live capture - all 6 sources. Flamingo now captured live: form quiet streak ~7 days. 90-day spend $4,538.93, 812 GA4 sessions."
+    },
+    {
+      "date": "2026-05-14",
+      "label": "May 14, 2026 - Daily refresh",
+      "note": "Ads/GA4/LSA/Clarity/GTM captured live; Flamingo carried forward (login wall). Opt score 87.1%. 90-day spend $4,538.93."
+    },
+    {
+      "date": "2026-05-13",
+      "label": "May 13, 2026  -  Live multi-source refresh",
+      "note": "Latest  -  fresh Ads/GA4/LSA/Clarity capture. Conversion tracking degrading (8 no-recent, 1 recording). Opt score 87.1%."
+    },
+    {
+      "date": "2026-05-12",
+      "label": "May 12, 2026  -  Backfill",
+      "note": "Auto-backfilled during May 13 refresh."
+    },
+    {
+      "date": "2026-05-11",
+      "label": "May 11, 2026 - Phone goal repaired",
+      "note": "Latest - all 6 account-default goals Active. GFN Click to call demoted to Secondary."
+    },
+    {
+      "date": "2026-05-10",
+      "label": "May 10, 2026 - Fresh 90-day pull",
+      "note": "Post-tag-install. GA4 Key Events firing. Account totals 349 clicks / $4,483.82."
+    },
+    {
+      "date": "2026-05-08",
+      "label": "May 8, 2026 - Pre-tag-install",
+      "note": "Original audit. 0 GA4 Key Events. Phone call lead goal in 'Needs attention'."
+    }
+  ]
 }
