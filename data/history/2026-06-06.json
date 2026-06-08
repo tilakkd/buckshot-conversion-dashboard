@@ -1,12 +1,12 @@
 {
-  "snapshot_date": "2026-06-07",
+  "snapshot_date": "2026-06-06",
   "period_start": "2026-04-01",
-  "period_end": "2026-06-07",
-  "captured_at": "2026-06-08T11:06:36.166169+05:30",
+  "period_end": "2026-06-06",
+  "captured_at": "2026-06-08T11:06:36.160152+05:30",
   "version": 9,
   "kpis": {
-    "formSubmissions": 179,
-    "qualifiedForms": 32,
+    "formSubmissions": 178,
+    "qualifiedForms": 31,
     "ooaForms": 3,
     "spamTestForms": 144,
     "lsaCharged": 5,
@@ -21,8 +21,8 @@
   },
   "enquiries": {
     "lead": {
-      "total": 179,
-      "qualified": 32,
+      "total": 178,
+      "qualified": 31,
       "ooa": 3,
       "spamTest": 144,
       "label": "Form enquiries"
@@ -33,18 +33,24 @@
       "label": "LSA calls"
     },
     "combined": {
-      "total": 188,
-      "qualified": 41,
-      "formToCallRatio": "179 : 9",
-      "costPerQualified": "~$159"
+      "total": 187,
+      "qualified": 40,
+      "formToCallRatio": "178 : 9",
+      "costPerQualified": "~$163"
     }
   },
   "daily": {
-    "rangeStart": "2026-05-09",
-    "rangeEnd": "2026-06-07",
-    "dateWindow": "Rolling 30 days (2026-05-09 to 2026-06-07)",
-    "note": "Day-of counts; newest = 2026-06-07. Forms from Flamingo Inbox+Spam; calls from LSA.",
+    "rangeStart": "2026-05-08",
+    "rangeEnd": "2026-06-06",
+    "dateWindow": "Rolling 30 days (2026-05-08 to 2026-06-06)",
+    "note": "Day-of counts; newest = 2026-06-06. Forms from Flamingo Inbox+Spam; calls from LSA.",
     "forms": [
+      {
+        "date": "2026-05-08",
+        "qualified": 1,
+        "ooa": 0,
+        "spamTest": 1
+      },
       {
         "date": "2026-05-09",
         "qualified": 0,
@@ -218,15 +224,14 @@
         "qualified": 0,
         "ooa": 0,
         "spamTest": 79
-      },
-      {
-        "date": "2026-06-07",
-        "qualified": 1,
-        "ooa": 0,
-        "spamTest": 0
       }
     ],
     "calls": [
+      {
+        "date": "2026-05-08",
+        "lsaCharged": 0,
+        "lsaTotal": 0
+      },
       {
         "date": "2026-05-09",
         "lsaCharged": 0,
@@ -371,11 +376,6 @@
         "date": "2026-06-06",
         "lsaCharged": 0,
         "lsaTotal": 0
-      },
-      {
-        "date": "2026-06-07",
-        "lsaCharged": 0,
-        "lsaTotal": 0
       }
     ]
   },
@@ -470,12 +470,6 @@
       "impressions": 66,
       "clicks": 1,
       "cost": 75.55
-    },
-    {
-      "date": "2026-06-07",
-      "impressions": 29,
-      "clicks": 4,
-      "cost": 355.81
     }
   ],
   "adPerformance": {
@@ -705,6 +699,20 @@
     "lsa": 9
   },
   "leadDetails": [
+    {
+      "date": "2026-05-08",
+      "name": "Cara L",
+      "city": "",
+      "cat": "spam",
+      "note": "VA system pitch (vettedvas/MAVIS)"
+    },
+    {
+      "date": "2026-05-08",
+      "name": "Nicole P",
+      "city": "Janesville",
+      "cat": "qualified",
+      "note": "Roof hail damage inspection"
+    },
     {
       "date": "2026-05-14",
       "name": "test",
@@ -1698,13 +1706,6 @@
       "city": "",
       "cat": "spam",
       "note": "test body (test [email redacted])"
-    },
-    {
-      "date": "2026-06-07",
-      "name": "Darlene H",
-      "city": "Madison",
-      "cat": "qualified",
-      "note": "Roof inspection request; Madison landing page (residential-roofing-madison-wi)"
     }
   ],
   "callDetails": [
@@ -1725,16 +1726,6 @@
     }
   ],
   "leadTimeline": [
-    {
-      "date": "2026-06-07",
-      "time": "11:49 AM",
-      "sort": "2026-06-07 11:49",
-      "src": "form",
-      "form": "Quick Contact",
-      "city": "Madison",
-      "cat": "qualified",
-      "note": "Roof inspection request; Madison landing page (residential-roofing-madison-wi)"
-    },
     {
       "date": "2026-06-05",
       "time": "7:45 AM",
@@ -1874,6 +1865,16 @@
       "city": "",
       "cat": "qualified",
       "note": "Whole-home remodel incl flooring/roofing (out of core scope)"
+    },
+    {
+      "date": "2026-05-08",
+      "time": "9:17 AM",
+      "sort": "2026-05-08 09:17",
+      "src": "form",
+      "form": "Quick Contact",
+      "city": "Janesville",
+      "cat": "qualified",
+      "note": "Roof hail damage inspection"
     }
   ],
   "prior": {
@@ -1884,11 +1885,11 @@
       "qualified": 8
     },
     "w30": {
-      "qualified": 26
+      "qualified": 25
     }
   },
   "spamCounts": {
-    "inbox": 0,
+    "inbox": 79,
     "spam": 0
   },
   "campaignState": {
@@ -1906,7 +1907,7 @@
     "googleAds": true,
     "lsa": true
   },
-  "headline_state": "Finalized 2026-06-07 via buckshot-dashboard-daily orchestrator (single daily pass, Monday full ads scrape). Day-of 2026-06-07: 1 qualified form(s), 0 OOA, 0 spam/test; 0 LSA call(s) (0 charged). Cumulative since Apr 1: 179 forms (32 qualified, 3 OOA, 144 spam/test) / 9 LSA (5 charged); combined 188 touches, 41 qualified. Ads w7 $1202.35 ($171.76/day), w30 $2042.15, 90d $6524.65 (430 clicks, 4 conversions). GA4 carried forward from 2026-06-04 (missing permissions on operator account).",
+  "headline_state": "Finalized 2026-06-06 via buckshot-dashboard-daily orchestrator (single daily pass, Monday full ads scrape). Day-of 2026-06-06: 0 qualified form(s), 0 OOA, 79 spam/test; 0 LSA call(s) (0 charged). Cumulative since Apr 1: 178 forms (31 qualified, 3 OOA, 144 spam/test) / 9 LSA (5 charged); combined 187 touches, 40 qualified. Ads w7 $1202.35 ($171.76/day), w30 $2042.15, 90d $6524.65 (430 clicks, 4 conversions). GA4 carried forward from 2026-06-04 (missing permissions on operator account).",
   "insights": [
     {
       "headline": "One active campaign carries all spend",
@@ -1922,15 +1923,15 @@
     },
     {
       "headline": "Spam floods the form channel",
-      "body": "Day-of 2026-06-07 logged 0 spam/test form submissions versus 1 qualified, underscoring weak form spam defenses."
+      "body": "Day-of 2026-06-06 logged 79 spam/test form submissions versus 0 qualified, underscoring weak form spam defenses."
     },
     {
       "headline": "LSA drives the qualified pipeline",
-      "body": "Cumulative since Apr 1: 9 LSA calls (5 charged) alongside 32 qualified forms; combined 41 qualified touches."
+      "body": "Cumulative since Apr 1: 9 LSA calls (5 charged) alongside 31 qualified forms; combined 40 qualified touches."
     },
     {
       "headline": "Cost per qualified holds near target",
-      "body": "At $6524.65 90-day spend over 41 qualified touches, cost per qualified lead is ~$159."
+      "body": "At $6524.65 90-day spend over 40 qualified touches, cost per qualified lead is ~$163."
     },
     {
       "headline": "Optimization score is strong",
@@ -1938,13 +1939,15 @@
     }
   ],
   "stale_sources": [
+    "backfill: 2026-06-06 backfilled because last published snapshot was 2026-06-05; lead counts exact day-of, ads windows/90d use the 2026-06-07-ending capture as a near-static approximation (5 of 6 campaigns paused).",
     "ga4-carryforward: GA4 NOT read this run (operator Google account shows Missing permissions on property 533585540); trafficSources, sourceChart channel mix and kpis.totalSessions carried forward, numbers are as of 2026-06-04. verified.ga4=false.",
     "clarity-skip: Microsoft Clarity intentionally NOT opened (orchestrator override).",
     "gtm-skip: GTM intentionally NOT opened (orchestrator override).",
     "ads-windows-method: 7/14/30 via account scorecard presets ending 2026-06-07; cost90d Mar9-Jun7 = $6524.65.",
     "ads-monday-full-scrape: adGroups (19) and keywords (50, clicks>=1 of 291) FULLY re-scraped this Monday per orchestrator override.",
-    "adsDaily: 11 entries through 2026-06-07; Jun6/Jun7 captured via single-day scorecards, earlier carried forward; last7 reconciles to w7.",
+    "adsDaily: 10 entries through 2026-06-06; Jun6/Jun7 captured via single-day scorecards, earlier carried forward; last7 reconciles to w7.",
     "conversions: scorecard reflects Phone call leads (Call from Ads) goal filter; 90-day total 4.",
-    "run: Stage 3 executed by buckshot-dashboard-daily orchestrator; published via git push."
+    "run: Stage 3 executed by buckshot-dashboard-daily orchestrator; published via git push.",
+    "prior-w30-edge: prior.w30 window starts 2026-04-08 but lead history begins 2026-04-09; 2026-04-08 treated as zero."
   ]
 }
