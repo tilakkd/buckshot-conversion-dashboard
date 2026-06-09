@@ -1,6 +1,11 @@
 {
-  "latest": "2026-06-07",
+  "latest": "2026-06-08",
   "dates": [
+    {
+      "date": "2026-06-08",
+      "label": "June 8, 2026 - Finalized",
+      "note": "Day-of: 1 qualified, 0 OOA, 289 spam/test forms (automated test flood); 0 LSA (0 charged). Non-Monday - adGroups/keywords carried forward; cumulative 469 forms / 9 LSA. GA4 as of 2026-06-04."
+    },
     {
       "date": "2026-06-07",
       "label": "June 7, 2026 - Finalized",
