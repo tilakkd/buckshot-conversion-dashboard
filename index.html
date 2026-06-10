@@ -626,7 +626,14 @@ table.perf .status.eligible{background:var(--green-bg);color:var(--green)}
     var leads = leadsInWindow(win);
     var counts = { organic:0, direct:0, paid:0, lsa:0, referral:0, unassigned:0 };
     leads.forEach(function(l){
-      if (l.src === 'call') counts.lsa += 1;
+      if (l.src === 'call' || l.src === 'lsa') { counts.lsa += 1; return; }
+      var ch = (l.chan || l.source || '').toLowerCase();
+      if (ch === 'paid') counts.paid += 1;
+      else if (ch === 'organic') counts.organic += 1;
+      else if (ch === 'referral') counts.referral += 1;
+      else if (ch === 'direct') counts.direct += 1;
+      // fallback heuristics when no explicit channel is tagged
+      else if (l.note && /gclid|gbraid|utm_medium=cpc|paid search|google ads|\bppc\b/i.test(l.note)) counts.paid += 1;
       else if (l.note && /organic/i.test(l.note)) counts.organic += 1;
       else counts.direct += 1; // default form leads not otherwise classified
     });

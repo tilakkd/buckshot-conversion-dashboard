@@ -716,6 +716,7 @@
    "name": "Dennis D",
    "city": "",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Whole-home remodel incl flooring/roofing (out of core scope)"
   },
   {
@@ -723,6 +724,7 @@
    "name": "Vaughn P",
    "city": "",
    "cat": "qualified",
+   "chan": "direct",
    "note": "New roof, siding, gutters"
   },
   {
@@ -730,6 +732,7 @@
    "name": "Daniel W",
    "city": "",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Vague service inquiry; mismatched reply email"
   },
   {
@@ -737,6 +740,7 @@
    "name": "Lisa L",
    "city": "",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Roof + garage replacement, gutters, shed; insurance approved"
   },
   {
@@ -744,6 +748,7 @@
    "name": "Steven M",
    "city": "",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Roof repair, leaks"
   },
   {
@@ -751,6 +756,7 @@
    "name": "Dan B",
    "city": "Madison",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Metal roof redo quote, north Madison"
   },
   {
@@ -758,6 +764,7 @@
    "name": "Aaron P",
    "city": "Madison",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Hotel siding/fascia wind damage estimate (Country Inn, Madison)"
   },
   {
@@ -765,6 +772,7 @@
    "name": "Ron W",
    "city": "",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Roof + garage replacement, asphalt shingles"
   },
   {
@@ -772,6 +780,7 @@
    "name": "Judy J",
    "city": "",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Existing customer complaint re missed/no-show appointments"
   },
   {
@@ -779,6 +788,7 @@
    "name": "Emily S",
    "city": "",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Approved insurance claim; roof + siding replacement; 733 E Gorham St (Madison)"
   },
   {
@@ -786,6 +796,7 @@
    "name": "Scott U",
    "city": "",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Existing customer complaint re completed roof job; wants direct call from Chad"
   },
   {
@@ -793,6 +804,7 @@
    "name": "Darlene H",
    "city": "Madison",
    "cat": "qualified",
+   "chan": "paid",
    "note": "Roof inspection request; Madison landing page (residential-roofing-madison-wi)"
   },
   {
@@ -800,6 +812,7 @@
    "name": "(name n",
    "city": "",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Downspout repair request - two bent downspouts not draining properly; location not stated"
   },
   {
@@ -807,6 +820,7 @@
    "name": "Amy K",
    "city": "Monona",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Follow-up: requesting yesterday's estimate, deciding who to go with (Monona WI, Dane County)"
   },
   {
@@ -814,6 +828,7 @@
    "name": "Megan L",
    "city": "Madison",
    "cat": "qualified",
+   "chan": "paid",
    "note": "Roof repair + replacement estimate, two single-story buildings (Madison roof repair landing page, gclid present)"
   }
  ],
@@ -843,6 +858,7 @@
    "form": "Quick Contact",
    "city": "Madison",
    "cat": "qualified",
+   "chan": "paid",
    "note": "Roof repair + replacement estimate, two single-story buildings (Madison roof repair landing page, gclid present)"
   },
   {
@@ -853,6 +869,7 @@
    "form": "Quick Contact",
    "city": "Monona",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Follow-up: requesting yesterday's estimate, deciding who to go with (Monona WI, Dane County)"
   },
   {
@@ -863,6 +880,7 @@
    "form": "Home New Form",
    "city": "",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Downspout repair request - two bent downspouts not draining properly; location not stated"
   },
   {
@@ -873,6 +891,7 @@
    "form": "Quick Contact",
    "city": "Madison",
    "cat": "qualified",
+   "chan": "paid",
    "note": "Roof inspection request; Madison landing page (residential-roofing-madison-wi)"
   },
   {
@@ -883,6 +902,7 @@
    "form": "Quick Contact",
    "city": "",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Existing customer complaint re completed roof job; wants direct call from Chad"
   },
   {
@@ -893,6 +913,7 @@
    "form": "Quick Contact",
    "city": "",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Approved insurance claim; roof + siding replacement; 733 E Gorham St (Madison)"
   },
   {
@@ -903,17 +924,19 @@
    "form": "Quick Contact",
    "city": "",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Existing customer complaint re missed/no-show appointments"
   },
   {
    "date": "2026-05-27",
    "time": "2:17 AM",
    "sort": "2026-05-27 02:17",
-   "src": "lsa",
+   "src": "call",
    "form": "LSA call",
    "city": "Madison",
-   "cat": "qualified",
-   "note": "LSA Charged Madison"
+   "cat": "charged",
+   "chan": "lsa",
+   "note": "LSA call - Madison"
   },
   {
    "date": "2026-05-26",
@@ -923,6 +946,7 @@
    "form": "Quick Contact",
    "city": "",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Roof + garage replacement, asphalt shingles"
   },
   {
@@ -933,6 +957,7 @@
    "form": "Quick Contact",
    "city": "Madison",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Hotel siding/fascia wind damage estimate (Country Inn, Madison)"
   },
   {
@@ -943,6 +968,7 @@
    "form": "Quick Contact",
    "city": "Madison",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Metal roof redo quote, north Madison"
   },
   {
@@ -953,27 +979,30 @@
    "form": "Free Estimate",
    "city": "",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Roof repair, leaks"
   },
   {
    "date": "2026-05-19",
    "time": "9:20 PM",
    "sort": "2026-05-19 21:20",
-   "src": "lsa",
+   "src": "call",
    "form": "LSA call",
    "city": "Madison",
-   "cat": "call",
-   "note": "LSA Not charged Madison"
+   "cat": "notcharged",
+   "chan": "lsa",
+   "note": "LSA call - Madison"
   },
   {
    "date": "2026-05-19",
    "time": "8:24 PM",
    "sort": "2026-05-19 20:24",
-   "src": "lsa",
+   "src": "call",
    "form": "LSA Roof repair",
    "city": "Madison",
-   "cat": "qualified",
-   "note": "LSA Charged Madison"
+   "cat": "charged",
+   "chan": "lsa",
+   "note": "LSA call - Madison"
   },
   {
    "date": "2026-05-19",
@@ -983,6 +1012,7 @@
    "form": "Quick Contact",
    "city": "",
    "cat": "qualified",
+   "chan": "direct",
    "note": "Roof + garage replacement, gutters, shed; insurance approved"
   }
  ],
