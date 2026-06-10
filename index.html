@@ -723,6 +723,22 @@ table.perf .status.eligible{background:var(--green-bg);color:var(--green)}
     return matches.length ? matches[0].name : '';
   }
 
+  function sourceLabel(l){
+    if (l.src === 'call' || l.src === 'lsa') {
+      var st = l.cat === 'charged' ? ' (charged)' : (l.cat === 'notcharged' ? ' (not charged)' : '');
+      return 'LSA call' + st;
+    }
+    var ch = (l.chan || l.source || '').toLowerCase();
+    var map = { paid:'Paid Search', direct:'Direct', organic:'Organic', referral:'Referral', unassigned:'Other' };
+    var label = map[ch];
+    if (!label){
+      if (l.note && /gclid|gbraid|utm_medium=cpc|paid search|google ads/i.test(l.note)) label = 'Paid Search';
+      else if (l.note && /organic/i.test(l.note)) label = 'Organic';
+      else label = 'Direct';
+    }
+    return label + (l.form ? ' \u00b7 ' + l.form : '');
+  }
+
   function renderLeads(){
     var win = state.window;
     document.getElementById('leadsWin').textContent = win + 'D';
@@ -740,7 +756,14 @@ table.perf .status.eligible{background:var(--green-bg);color:var(--green)}
         ? '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5c-1.2 0-2.5-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.4-1.1-.6-2.4-.6-3.6 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1z"/></svg>'
         : '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>';
       var name = lookupLeadName(l);
-      var subtitle = l.src === 'call' ? 'LSA Charged Call' : ((l.form || 'Form') + (l.city ? ' - ' + l.city : ''));
+      var chanShort = '';
+      if (l.src !== 'call' && l.src !== 'lsa') {
+        var c = (l.chan || l.source || '').toLowerCase();
+        chanShort = ({paid:'Paid', direct:'Direct', organic:'Organic', referral:'Referral'})[c] || '';
+        if (!chanShort && l.note && /gclid|gbraid|utm_medium=cpc/i.test(l.note)) chanShort = 'Paid';
+        if (!chanShort) chanShort = 'Direct';
+      }
+      var subtitle = l.src === 'call' ? 'LSA Charged Call' : (chanShort + ' \u00b7 ' + (l.form || 'Form') + (l.city ? ' - ' + l.city : ''));
       var title = name || subtitle;
       var subLine = name ? subtitle : '';
       var when = fmtDateShort(l.date);
@@ -756,7 +779,7 @@ table.perf .status.eligible{background:var(--green-bg);color:var(--green)}
         '<div class="detail">' +
           (name ? '<div class="row"><span class="k">Name</span><span>' + escapeHtml(name) + '</span></div>' : '') +
           '<div class="row"><span class="k">When</span><span>' + escapeHtml(l.date + ' ' + (l.time || '')) + '</span></div>' +
-          '<div class="row"><span class="k">Source</span><span>' + escapeHtml(l.src === 'call' ? 'LSA call (charged)' : 'Form: ' + (l.form || '-')) + '</span></div>' +
+          '<div class="row"><span class="k">Source</span><span>' + escapeHtml(sourceLabel(l)) + '</span></div>' +
           (l.city ? '<div class="row"><span class="k">City</span><span>' + escapeHtml(l.city) + '</span></div>' : '') +
           '<div class="row"><span class="k">Notes</span><span>' + escapeHtml(l.note || '-') + '</span></div>' +
         '</div>' +
