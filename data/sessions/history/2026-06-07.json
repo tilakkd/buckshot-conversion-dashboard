@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-06-07",
+  "timezone": "America/Chicago",
+  "day_window": "2026-06-07 00:00 to 23:59 US Central",
+  "captured_at": "2026-06-11T15:45:00+05:30",
+  "scope": "Paid (Google Ads) visits only. US visitors. Internal/test visits excluded.",
+  "method": "Based on PostHog session recordings for paid (Google Ads) visitors: each visit's start time, landing page, clicks, form activity and outcome. Anything unusual (such as an odd click pattern) is flagged for review and confirmed before being reported as an issue, rather than assumed.",
+  "posthog": {
+    "project": 435721,
+    "replay_base": "https://us.posthog.com/project/435721/replay/",
+    "filter": "Paid Search channel, US, test visits excluded"
+  },
+  "kpis": {
+    "adsPaidClicks": 4,
+    "paidSessionsRecorded": 4,
+    "formStarts": 1,
+    "formAbandons": 0,
+    "submissions": 1,
+    "phoneTaps": 0,
+    "frictionConfirmed": 0
+  },
+  "reconciliation": {
+    "adsPaidClicks_06_10": 4,
+    "posthogPaidSessions_06_10": 4,
+    "delta": 0,
+    "note": "Google Ads recorded 4 paid click(s); 4 paid visit(s) were recorded on June 7. Recording coverage is partial, so visit counts can sit below click counts.",
+    "verified": false
+  },
+  "sessions": [
+    {
+      "label": "Visit 1",
+      "session_id": "019ea24e-13a7-7f46-94ed-100a8469a731",
+      "replay_url": "https://us.posthog.com/project/435721/replay/019ea24e-13a7-7f46-94ed-100a8469a731",
+      "start_ct": "08:38 CT",
+      "device": "-",
+      "duration_label": "05:25",
+      "clicks": 0,
+      "keystrokes": 0,
+      "errors": 0,
+      "entry_lp": "/residential-roofing-madison-wi/",
+      "form_started": false,
+      "submitted": false,
+      "verdict": "Arrived on the page but didn't interact - no clicks and no form activity (a bounce).",
+      "flags": []
+    },
+    {
+      "label": "Visit 2",
+      "session_id": "019ea299-4e02-7881-b8a0-1ed995c1c50d",
+      "replay_url": "https://us.posthog.com/project/435721/replay/019ea299-4e02-7881-b8a0-1ed995c1c50d",
+      "start_ct": "10:00 CT",
+      "device": "-",
+      "duration_label": "00:05",
+      "clicks": 0,
+      "keystrokes": 0,
+      "errors": 0,
+      "entry_lp": "/commercial-roofing/",
+      "form_started": false,
+      "submitted": false,
+      "verdict": "Arrived on the page but didn't interact - no clicks and no form activity (a bounce).",
+      "flags": []
+    },
+    {
+      "label": "Visit 3",
+      "session_id": "019ea2fb-7ca8-7a16-b6be-9b1f0a26e471",
+      "replay_url": "https://us.posthog.com/project/435721/replay/019ea2fb-7ca8-7a16-b6be-9b1f0a26e471",
+      "start_ct": "11:47 CT",
+      "device": "-",
+      "duration_label": "02:02",
+      "clicks": 8,
+      "keystrokes": 59,
+      "errors": 0,
+      "entry_lp": "/residential-roofing-madison-wi/",
+      "form_started": true,
+      "submitted": true,
+      "verdict": "Filled in and submitted the contact form - a converting visit.",
+      "flags": [],
+      "note": "Matched to the conversion dashboard's June 7 paid lead (Madison landing page, 11:49 AM) on timing, landing page and form activity."
+    },
+    {
+      "label": "Visit 4",
+      "session_id": "019ea331-828b-7627-9421-6a7797763d94",
+      "replay_url": "https://us.posthog.com/project/435721/replay/019ea331-828b-7627-9421-6a7797763d94",
+      "start_ct": "12:46 CT",
+      "device": "-",
+      "duration_label": "00:07",
+      "clicks": 0,
+      "keystrokes": 0,
+      "errors": 0,
+      "entry_lp": "/residential-roofing-madison-wi/",
+      "form_started": false,
+      "submitted": false,
+      "verdict": "Arrived on the page but didn't interact - no clicks and no form activity (a bounce).",
+      "flags": []
+    }
+  ],
+  "daily": [
+    {
+      "date": "2026-06-04",
+      "adsPaidClicks": 3,
+      "paidSessions": 0,
+      "formStarts": 0,
+      "formAbandons": 0,
+      "submissions": 0,
+      "phoneTaps": 0,
+      "frictionConfirmed": 0
+    },
+    {
+      "date": "2026-06-05",
+      "adsPaidClicks": 3,
+      "paidSessions": 2,
+      "formStarts": 0,
+      "formAbandons": 0,
+      "submissions": 0,
+      "phoneTaps": 0,
+      "frictionConfirmed": 0
+    },
+    {
+      "date": "2026-06-06",
+      "adsPaidClicks": 1,
+      "paidSessions": 0,
+      "formStarts": 0,
+      "formAbandons": 0,
+      "submissions": 0,
+      "phoneTaps": 0,
+      "frictionConfirmed": 0
+    },
+    {
+      "date": "2026-06-07",
+      "adsPaidClicks": 4,
+      "paidSessions": 4,
+      "formStarts": 1,
+      "formAbandons": 0,
+      "submissions": 1,
+      "phoneTaps": 0,
+      "frictionConfirmed": 0
+    },
+    {
+      "date": "2026-06-08",
+      "adsPaidClicks": 5,
+      "paidSessions": 4,
+      "formStarts": 0,
+      "formAbandons": 0,
+      "submissions": 0,
+      "phoneTaps": 0,
+      "frictionConfirmed": 0
+    },
+    {
+      "date": "2026-06-09",
+      "adsPaidClicks": 5,
+      "paidSessions": 5,
+      "formStarts": 1,
+      "formAbandons": 0,
+      "submissions": 1,
+      "phoneTaps": 0,
+      "frictionConfirmed": 0
+    },
+    {
+      "date": "2026-06-10",
+      "adsPaidClicks": 1,
+      "paidSessions": 2,
+      "formStarts": 0,
+      "formAbandons": 0,
+      "submissions": 0,
+      "phoneTaps": 0,
+      "frictionConfirmed": 0
+    }
+  ],
+  "insights": [
+    {
+      "headline": "One paid visitor submitted the form",
+      "body": "A paid visitor filled in and submitted the contact form on June 7. This matches the paid lead recorded in the conversion dashboard for the same day."
+    },
+    {
+      "headline": "3 of 4 paid visits showed no activity",
+      "body": "Of 4 recorded paid visits, 3 had no clicks and no form activity. The only paid visits that converted this week were the two where the visitor actually filled in the form."
+    }
+  ],
+  "data_notes": [
+    "Window: June 4-10, 2026 (US Central), matching the conversion dashboard's last-7-days view.",
+    "Each visit is dated by its exact start time in US Central time.",
+    "Scope: paid (Google Ads) visits only, US visitors, internal and test visits excluded.",
+    "Privacy: visitor names and emails are not shown. Visits are referenced by anonymous labels and recording links only.",
+    "Submissions counted: 2 (June 7 and June 9), both matched to the paid leads in the conversion dashboard. Phone taps and friction are reported as 0 - they are only counted once confirmed.",
+    "Paid-click counts come from the conversion dashboard (3, 3, 1, 4, 5, 5, 1 = 22 for June 4-10)."
+  ],
+  "verified": {
+    "posthog_paid_sessions": true,
+    "date_scoping": true,
+    "ads_click_reconciliation": false,
+    "submissions_matched": true
+  },
+  "week_summary": {
+    "window": "2026-06-04 to 2026-06-10",
+    "adsPaidClicks": 22,
+    "paidSessions": 17,
+    "formStarts": 2,
+    "submissions": 2,
+    "noFormActivityVisits": 15,
+    "captureRate": "77%"
+  },
+  "headline_state": "June 7 (US Central): 4 paid click(s), 4 recorded paid visit(s), 1 form start(s), 1 submission(s)."
+}
