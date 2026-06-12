@@ -3,7 +3,7 @@
  "snapshot_date": "2026-06-11",
  "period_start": "2026-04-01",
  "period_end": "2026-06-11",
- "captured_at": "2026-06-12T10:42:54.376956+05:30",
+ "captured_at": "2026-06-12T11:14:20.853633+05:30",
  "kpis": {
   "formSubmissions": 1328,
   "qualifiedForms": 35,
@@ -12,42 +12,42 @@
   "lsaCharged": 5,
   "lsaTotal": 9,
   "totalSessions": 1704,
-  "adsImpressions": "2,937",
-  "adsClicks": 86,
+  "adsImpressions": "3,068",
+  "adsClicks": 89,
   "adsCtr": "2.9%",
-  "adsCpc": "$30.40",
-  "adsCost90d": 7118.31,
-  "adsCostDaily": "$79.09/day"
+  "adsCpc": "$32.46",
+  "adsCost90d": 7327.27,
+  "adsCostDaily": "$81.41/day"
  },
  "windows": {
-  "asOf": "2026-06-10",
-  "note": "Account scorecard, 7/14/30 ending 2026-06-10 (Last 7 = Jun4-Jun10, Last 14 = May28-Jun10, Last 30 = May12-Jun10).",
+  "asOf": "2026-06-11",
+  "note": "Account scorecard, 7/14/30 ending 2026-06-11 (Last 7 = Jun5-Jun11, Last 14 = May29-Jun11, Last 30 = May13-Jun11).",
   "w7": {
    "days": 7,
-   "impressions": "970",
-   "clicks": 22,
-   "ctr": "2.3%",
-   "cpc": "$57.20",
-   "adsCost": 1258.33,
-   "adsCostDaily": "$179.76/day"
+   "impressions": "1,019",
+   "clicks": 26,
+   "ctr": "2.6%",
+   "cpc": "$56.19",
+   "adsCost": 1460.87,
+   "adsCostDaily": "$208.70/day"
   },
   "w14": {
    "days": 14,
-   "impressions": "1,967",
-   "clicks": 68,
+   "impressions": "2,128",
+   "clicks": 75,
    "ctr": "3.5%",
-   "cpc": "$37.13",
-   "adsCost": 2524.98,
-   "adsCostDaily": "$180.36/day"
+   "cpc": "$37.61",
+   "adsCost": 2821.01,
+   "adsCostDaily": "$201.50/day"
   },
   "w30": {
    "days": 30,
-   "impressions": "2,937",
-   "clicks": 86,
+   "impressions": "3,068",
+   "clicks": 89,
    "ctr": "2.9%",
-   "cpc": "$30.40",
-   "adsCost": 2614.52,
-   "adsCostDaily": "$87.15/day"
+   "cpc": "$32.46",
+   "adsCost": 2889.39,
+   "adsCostDaily": "$96.31/day"
   }
  },
  "enquiries": {
@@ -67,7 +67,7 @@
    "total": 1337,
    "qualified": 44,
    "formToCallRatio": "1328 : 9",
-   "costPerQualified": "~$162"
+   "costPerQualified": "~$167"
   }
  },
  "daily": {
@@ -421,23 +421,23 @@
     "name": "Leads - Roofing (PC)",
     "status": "Active",
     "type": "Search",
-    "clicks": 198,
-    "CTR": "3.32%",
+    "clicks": 205,
+    "CTR": "3.33%",
     "conversions": 5,
-    "cost": 3719.51,
-    "avgCPC": "$18.79",
-    "impressions": 5958
+    "cost": 4015.54,
+    "avgCPC": "$19.59",
+    "impressions": 6163
    },
    {
     "name": "Website traffic-Search-1",
     "status": "Paused",
     "type": "Search",
-    "clicks": 173,
-    "CTR": "1.89%",
+    "clicks": 155,
+    "CTR": "2.05%",
     "conversions": 0,
-    "cost": 716.72,
-    "avgCPC": "$4.14",
-    "impressions": 9132
+    "cost": 629.65,
+    "avgCPC": "$4.06",
+    "impressions": 7556
    },
    {
     "name": "Website traffic-Search-Roofing",
@@ -853,6 +853,12 @@
    "impressions": 239,
    "clicks": 1,
    "cost": 57.4
+  },
+  {
+   "date": "2026-06-11",
+   "impressions": 206,
+   "clicks": 7,
+   "cost": 296.03
   }
  ],
  "prior": {
@@ -1049,30 +1055,30 @@
  "verified": {
   "flamingo": true,
   "ga4": false,
-  "googleAds": false,
+  "googleAds": true,
   "lsa": true
  },
- "headline_state": "Finalized 2026-06-11 via buckshot-dashboard-daily orchestrator (single daily pass, non-Monday: adGroups/keywords carried forward; GA4 carried forward as of 2026-06-09 - missing permissions; Google Ads carried forward as of 2026-06-10 - ad-blocker blocked the account on this unattended run; Clarity/GTM skipped). Day-of 2026-06-11: 0 qualified, 0 OOA, 2 spam/test forms; 0 LSA calls. Cumulative since Apr 1: 1328 forms (35 qualified, 3 OOA, 1290 spam/test) / 9 LSA (5 charged); combined 1337 touches, 44 qualified. Ads w7 $1258.33 ($179.76/day), w30 $2614.52, 90d $7118.31 (as of 2026-06-10). GA4 90-day sessions 1704 (as of 2026-06-09). Per operator: test mails ignored, only genuine submissions tracked individually.",
+ "headline_state": "Finalized 2026-06-11 via buckshot-dashboard-daily orchestrator (single daily pass, non-Monday: adGroups/keywords carried forward; GA4 carried forward as of 2026-06-09 - missing permissions; Google Ads refreshed live via operator tab; Clarity/GTM skipped). Day-of 2026-06-11: 0 qualified, 0 OOA, 2 spam/test forms; 0 LSA calls; ads $296.03 on 7 clicks. Cumulative since Apr 1: 1328 forms (35 qualified, 3 OOA, 1290 spam/test) / 9 LSA (5 charged); combined 1337 touches, 44 qualified. Ads w7 $1460.87 ($208.70/day), w14 $2821.01, w30 $2889.39, 90d $7327.27 (Mar 14 - Jun 11). GA4 90-day sessions 1704 (as of 2026-06-09). Cost per qualified ~$167. Per operator: test mails ignored, only genuine submissions tracked individually.",
  "insights": [
   {
    "headline": "Quiet day: only spam landed on June 11",
-   "body": "No genuine form submissions and no LSA calls on 2026-06-11 - just 2 spam/SEO outreach messages (both auto-filtered to the spam folder). Cumulative since April 1 holds at 35 qualified forms and 9 LSA calls (5 charged)."
+   "body": "No genuine form submissions and no LSA calls on 2026-06-11 - just 2 spam/SEO outreach messages (both auto-filtered to the spam folder). Cumulative since April 1 holds at 35 qualified forms and 9 LSA calls (5 charged). Paid spend continued: $296.03 on 7 clicks for the day."
   },
   {
-   "headline": "Weekly spend pace more than double the 90-day average",
-   "body": "Last 7 days cost $1,258.33 ($179.76/day) versus a 90-day average of $79.09/day. The active Leads - Roofing (PC) campaign is carrying all current spend."
+   "headline": "Weekly spend pace well above the 90-day average",
+   "body": "Last 7 days cost $1,460.87 ($208.70/day) versus a 90-day average of $81.41/day. The active Leads - Roofing (PC) campaign is carrying all current spend."
   },
   {
-   "headline": "CPC nearly doubled in the last week",
-   "body": "7-day avg CPC is $57.20 on 22 clicks versus $30.40 over 30 days. Impressions held (970 in 7 days) but click-through slipped to 2.3%."
+   "headline": "CPC elevated in the last week",
+   "body": "7-day avg CPC is $56.19 on 26 clicks versus $32.46 over 30 days. Impressions held (1,019 in 7 days) and click-through was 2.6%."
   },
   {
-   "headline": "90-day account: 437 clicks, 7 conversions, $7,118 spend",
-   "body": "17,948 impressions and 437 clicks over 90 days at $16.29 avg CPC. All 7 tracked conversions are phone-call leads (5 Leads - Roofing, 2 Residential)."
+   "headline": "90-day account: 426 clicks, 7 conversions, $7,327 spend",
+   "body": "16,577 impressions and 426 clicks over 90 days (Mar 14 - Jun 11) at $17.20 avg CPC. All 7 tracked conversions are phone-call leads (5 Leads - Roofing, 2 Residential)."
   },
   {
-   "headline": "Cost per qualified lead now about $162",
-   "body": "44 combined qualified touches (35 qualified forms + 9 LSA calls) against $7,118.31 of 90-day spend works out to roughly $162 per qualified lead."
+   "headline": "Cost per qualified lead now about $167",
+   "body": "44 combined qualified touches (35 qualified forms + 9 LSA calls) against $7,327.27 of 90-day spend works out to roughly $167 per qualified lead."
   },
   {
    "headline": "Qualified pace steady versus prior 7-day window",
@@ -1085,10 +1091,10 @@
  ],
  "stale_sources": [
   "ga4-carryforward: operator account has Missing permissions on GA4 property 533585540; trafficSources/sourceChart/totalSessions carried forward from the 2026-06-09 snapshot (1704 sessions); verified.ga4=false. GA4 numbers are as of 2026-06-09.",
-  "ads-carryforward: Google Ads (104-571-5646) was blocked by the browser ad-blocker bot-check on this unattended run (entered via a fresh MCP tab rather than the operator's pre-opened tab). ALL ads metrics - overview, campaigns, adGroups, keywords, scorecard windows 7/14/30, cost90d, and adsDaily - are carried forward unchanged as of 2026-06-10; verified.googleAds=false. No new 2026-06-11 adsDaily row was added.",
+  "adGroups-keywords-carryforward (non-Monday): adPerformance.adGroups and keywords carried forward unchanged (5 of 6 campaigns paused; near-static). Campaigns, 90-day overview, 7/14/30 scorecards, cost90d and adsDaily refreshed live for 2026-06-11.",
   "skipped: Microsoft Clarity and GTM not opened (per orchestrator override).",
   "spam-aggregate (operator instruction): the 2026-06-08 and 2026-06-09 test-mail floods remain day-of aggregate counts, NOT individual genuine rows; leadDetails/leadTimeline restricted to genuine leads only.",
-  "windows-method: 7/14/30 scorecard and 90-day overview end 2026-06-10 (ads carried forward); adsDaily last-7 ($1258.34) reconciles with w7 adsCost $1258.33.",
+  "windows-method: 7/14/30 scorecard ends 2026-06-11 (Last 7 = Jun5-Jun11); 90-day overview custom range Mar 14 - Jun 11; adsDaily last-7 ($1460.87) reconciles with w7 adsCost $1460.87.",
   "day-of 2026-06-11: 2 new spam-folder messages (B2B outreach + review-removal/SEO pitch), 0 inbox forms, 0 LSA leads (LSA inbox newest lead is 2026-05-27)."
  ]
 }
