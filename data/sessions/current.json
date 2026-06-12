@@ -3,7 +3,7 @@
   "snapshot_date": "2026-06-11",
   "timezone": "America/Chicago",
   "day_window": "2026-06-11 00:00 to 23:59 US Central",
-  "captured_at": "2026-06-12T10:19:00+05:30",
+  "captured_at": "2026-06-12T11:46:00+05:30",
   "scope": "Paid (Google Ads) visits only. US visitors. Internal/test visits excluded.",
   "method": "Based on PostHog session recordings for paid (Google Ads) visitors: each visit's start time, landing page, clicks, form activity and outcome. Anything unusual (such as an odd click pattern) is flagged for review and confirmed before being reported as an issue, rather than assumed.",
   "posthog": {
@@ -12,7 +12,7 @@
     "filter": "Paid Search channel, US, test visits excluded"
   },
   "kpis": {
-    "adsPaidClicks": null,
+    "adsPaidClicks": 7,
     "paidSessionsRecorded": 4,
     "formStarts": 0,
     "formAbandons": 0,
@@ -21,11 +21,11 @@
     "frictionConfirmed": 0
   },
   "reconciliation": {
-    "adsPaidClicks_06_11": null,
+    "adsPaidClicks_06_11": 7,
     "posthogPaidSessions_06_11": 4,
-    "delta": null,
-    "note": "Paid-click count for June 11 is not yet available - the conversion dashboard's latest published day is June 10 and its paid-clicks (adsDaily) series does not include June 11. Reconciliation pending the next conversion-dashboard update.",
-    "verified": false
+    "delta": -3,
+    "note": "June 11 had 7 paid clicks (Google Ads) and 4 recorded paid visits. Recording coverage captured 4 of the 7 clicks (about 57%); the remaining 3 clicks did not produce a recorded visit, which is the usual gap between paid clicks and recorded replays. No form submissions on the day, matching 0 paid leads in the conversion dashboard for June 11.",
+    "verified": true
   },
   "sessions": [
     {
@@ -156,7 +156,7 @@
     },
     {
       "date": "2026-06-11",
-      "adsPaidClicks": null,
+      "adsPaidClicks": 7,
       "paidSessions": 4,
       "formStarts": 0,
       "formAbandons": 0,
@@ -167,43 +167,42 @@
   ],
   "insights": [
     {
-      "headline": "4 recorded paid visits on June 11, no form submissions",
-      "body": "PostHog captured 4 paid (Google Ads) visits from US visitors on June 11. None of them started or submitted the contact form."
+      "headline": "7 paid clicks, 4 recorded paid visits on June 11, no submissions",
+      "body": "Google Ads recorded 7 paid clicks from US visitors on June 11. PostHog captured 4 of those as recorded visits (about 57%). None of the recorded visits started or submitted the contact form."
     },
     {
       "headline": "Every recorded visit was a quick bounce",
-      "body": "All four visits were short (7 to 54 seconds) and involved no form typing. Three left within about 20 seconds; the longest visit browsed and scrolled the page for under a minute before leaving."
+      "body": "All four recorded visits were short (7 to 54 seconds) and involved no form typing. Three left within about 20 seconds; the longest visit browsed and scrolled the page for under a minute before leaving."
     },
     {
       "headline": "Mostly mobile traffic",
-      "body": "Three of the four visits were on mobile phones and one was on desktop, all landing on the Madison residential roofing page."
+      "body": "Three of the four recorded visits were on mobile phones and one was on desktop, all landing on the Madison residential roofing page."
     },
     {
-      "headline": "Paid-click comparison pending",
-      "body": "The Google Ads paid-click count for June 11 has not been published by the conversion dashboard yet (its latest day is June 10), so the click-to-visit comparison for June 11 will be reconciled on the next update."
+      "headline": "Fewer recorded visits than paid clicks",
+      "body": "4 of the 7 paid clicks showed up as recorded visits. The gap is normal - not every paid click produces a recorded replay (very short visits, ad-blockers or recording sampling)."
     }
   ],
   "data_notes": [
     "Window: June 11, 2026 (US Central). Each visit is dated by its exact start time in US Central time.",
     "Scope: paid (Google Ads) visits only, US visitors, internal and test visits excluded.",
     "Privacy: visitor names and emails are not shown. Visits are referenced by anonymous labels and recording links only.",
-    "All four visits had no form typing, no clicks and no errors - there were no form starts, submissions, phone taps or confirmed friction on June 11.",
-    "Paid-click count for June 11 is pending: the conversion dashboard's latest published day is June 10, so June 11 paid clicks and the click-to-visit reconciliation are not yet available.",
-    "Weekly totals and capture rate are shown on the days where paid clicks are available (June 5-10); June 11 clicks are excluded until published."
+    "All four recorded visits had no form typing, no clicks and no errors - there were no form starts, submissions, phone taps or confirmed friction on June 11.",
+    "Paid clicks for June 11: 7 (from the conversion dashboard's Google Ads daily series). 4 of the 7 clicks were captured as recorded visits (about 57%).",
+    "Weekly totals (June 5-11): 26 paid clicks, 21 recorded visits, 2 form submissions; capture rate about 81%."
   ],
   "week_summary": {
     "window": "2026-06-05 to 2026-06-11",
-    "adsPaidClicks": 19,
-    "adsPaidClicksNote": "June 5-10 only; June 11 pending",
+    "adsPaidClicks": 26,
     "paidSessions": 21,
     "formStarts": 2,
     "submissions": 2,
     "noFormActivityVisits": 19,
-    "captureRate": "89% (June 5-10 basis; June 11 paid clicks pending)"
+    "captureRate": "81%"
   },
-  "headline_state": "Paid visitor sessions for June 11 (US Central). 4 recorded paid visits, all quick bounces with no form typing, and 0 form submissions. No visits flagged for review. Paid-click count for June 11 is pending (the conversion dashboard's latest day is June 10), so the click-to-visit comparison will be reconciled on the next update.",
+  "headline_state": "Paid visitor sessions for June 11 (US Central). 7 paid clicks and 4 recorded paid visits (about 57% captured), all quick bounces with no form typing, and 0 form submissions. No visits flagged for review. June 11 paid clicks are now reconciled against the conversion dashboard.",
   "verified": {
-    "ads_click_reconciliation": false,
+    "ads_click_reconciliation": true,
     "date_scoping": true,
     "posthog_paid_sessions": true,
     "submissions_matched": true
