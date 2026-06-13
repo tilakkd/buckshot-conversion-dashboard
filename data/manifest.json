@@ -1,6 +1,11 @@
 {
- "latest": "2026-06-11",
+ "latest": "2026-06-12",
  "dates": [
+  {
+   "date": "2026-06-12",
+   "label": "June 12, 2026 - Finalized",
+   "note": "Day-of: 0 qualified, 0 OOA, 2 spam/test forms (1 inbox + 1 spam); 0 LSA (0 charged); ads $156.48 on 3 clicks (215 impr). GA4 read live (90d = 1877 sessions). Non-Monday - adGroups/keywords carried forward; 90-day ads overview/campaigns carried forward (ad-blocker on fresh nav); scorecard windows + adsDaily refreshed live."
+  },
   {
    "date": "2026-06-11",
    "label": "June 11, 2026 - Finalized",
