@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "snapshot_date": "2026-06-12",
+  "snapshot_date": "2026-06-13",
   "timezone": "America/Chicago",
-  "day_window": "2026-06-12 00:00 to 23:59 US Central",
-  "captured_at": "2026-06-13T11:54:00+05:30",
+  "day_window": "2026-06-13 00:00 to 23:59 US Central",
+  "captured_at": "2026-06-14T11:11:02+05:30",
   "scope": "Paid (Google Ads) visits only. US visitors. Internal/test visits excluded.",
   "method": "Based on PostHog session recordings for paid (Google Ads) visitors: each visit's start time, landing page, clicks, form activity and outcome. Anything unusual (such as an odd click pattern) is flagged for review and confirmed before being reported as an issue, rather than assumed.",
   "posthog": {
@@ -13,7 +13,7 @@
   },
   "kpis": {
     "adsPaidClicks": 3,
-    "paidSessionsRecorded": 3,
+    "paidSessionsRecorded": 1,
     "formStarts": 0,
     "formAbandons": 0,
     "submissions": 0,
@@ -21,73 +21,31 @@
     "frictionConfirmed": 0
   },
   "reconciliation": {
-    "adsPaidClicks_06_12": 3,
-    "posthogPaidSessions_06_12": 3,
-    "delta": 0,
-    "note": "June 12 had 3 paid clicks (Google Ads) and 3 recorded paid visits - full coverage (100%). All three recorded visits landed on the Madison residential roofing page. No form submissions on the day, matching 0 paid leads in the conversion dashboard for June 12.",
+    "adsPaidClicks_06_13": 3,
+    "posthogPaidSessions_06_13": 1,
+    "delta": 2,
+    "note": "June 13 had 3 paid clicks (Google Ads) and 1 recorded paid visit (33% coverage). Not every paid click is captured as a recorded visit - very short or instant bounces fall away once the under-1-second filter and recorder load are accounted for. The single recorded visit landed on the Madison residential roofing page, browsed briefly and left. No form submissions on the day, matching 0 qualified paid leads in the conversion dashboard for June 13.",
     "verified": true
   },
   "sessions": [
     {
       "label": "Visit 1",
-      "session_id": "019ebccc-635f-7be0-b1bf-c3f27851b678",
-      "replay_url": "https://us.posthog.com/project/435721/replay/019ebccc-635f-7be0-b1bf-c3f27851b678",
-      "start_ct": "12:06 CT",
+      "session_id": "019ec3c7-6970-72da-a92d-048b4bbe74f8",
+      "replay_url": "https://us.posthog.com/project/435721/replay/019ec3c7-6970-72da-a92d-048b4bbe74f8",
+      "start_ct": "20:38 CT",
       "device": "Mobile",
-      "duration_label": "00:40",
+      "duration_label": "00:36",
       "clicks": 0,
       "keystrokes": 0,
       "errors": 0,
       "entry_lp": "/residential-roofing-madison-wi/",
       "form_started": false,
       "submitted": false,
-      "verdict": "Browsed and scrolled the page but didn't start or submit the form (a bounce).",
-      "flags": []
-    },
-    {
-      "label": "Visit 2",
-      "session_id": "019ebd2c-3839-7f41-b721-e8f43033a84f",
-      "replay_url": "https://us.posthog.com/project/435721/replay/019ebd2c-3839-7f41-b721-e8f43033a84f",
-      "start_ct": "13:50 CT",
-      "device": "Mobile",
-      "duration_label": "00:27",
-      "clicks": 0,
-      "keystrokes": 0,
-      "errors": 0,
-      "entry_lp": "/residential-roofing-madison-wi/",
-      "form_started": false,
-      "submitted": false,
-      "verdict": "Arrived on the page but didn't interact - no clicks and no form typing (a bounce).",
-      "flags": []
-    },
-    {
-      "label": "Visit 3",
-      "session_id": "019ebef3-7a06-767d-a58f-81272f9a4091",
-      "replay_url": "https://us.posthog.com/project/435721/replay/019ebef3-7a06-767d-a58f-81272f9a4091",
-      "start_ct": "22:08 CT",
-      "device": "Mobile",
-      "duration_label": "00:23",
-      "clicks": 0,
-      "keystrokes": 0,
-      "errors": 0,
-      "entry_lp": "/residential-roofing-madison-wi/",
-      "form_started": false,
-      "submitted": false,
-      "verdict": "Arrived on the page but didn't interact - no clicks and no form typing (a bounce).",
+      "verdict": "Browsed the Madison residential roofing page for about half a minute, then left without starting or submitting the form (a bounce).",
       "flags": []
     }
   ],
   "daily": [
-    {
-      "date": "2026-06-06",
-      "adsPaidClicks": 1,
-      "paidSessions": 0,
-      "formStarts": 0,
-      "formAbandons": 0,
-      "submissions": 0,
-      "phoneTaps": 0,
-      "frictionConfirmed": 0
-    },
     {
       "date": "2026-06-07",
       "adsPaidClicks": 4,
@@ -147,43 +105,53 @@
       "submissions": 0,
       "phoneTaps": 0,
       "frictionConfirmed": 0
+    },
+    {
+      "date": "2026-06-13",
+      "adsPaidClicks": 3,
+      "paidSessions": 1,
+      "formStarts": 0,
+      "formAbandons": 0,
+      "submissions": 0,
+      "phoneTaps": 0,
+      "frictionConfirmed": 0
     }
   ],
   "insights": [
     {
-      "headline": "3 paid clicks, 3 recorded paid visits on June 12, no submissions",
-      "body": "Google Ads recorded 3 paid clicks from US visitors on June 12, and PostHog captured all 3 as recorded visits (full coverage). None of the recorded visits started or submitted the contact form."
+      "headline": "3 paid clicks, 1 recorded paid visit on June 13, no submissions",
+      "body": "Google Ads recorded 3 paid clicks from US visitors on June 13. PostHog captured 1 of them as a recorded visit (33% coverage); the other clicks were not captured, typical of very short or instant bounces. The recorded visit did not start or submit the contact form."
     },
     {
-      "headline": "Every recorded visit was a quick bounce",
-      "body": "All three recorded visits were short (about 23 to 40 seconds) and involved no form typing and no clicks. Each visitor browsed the Madison residential roofing page and left without making contact."
+      "headline": "The one recorded visit was a quick mobile bounce",
+      "body": "The single recorded visit was on a mobile phone from the Madison, Wisconsin area, landed on the Madison residential roofing page from a Google Ads search, browsed for about half a minute with no form typing and no clicks, and left."
     },
     {
-      "headline": "All visits were on mobile",
-      "body": "All three recorded visits were on mobile phones, landing on the Madison residential roofing page from Google Ads searches for Madison-area roofing terms."
+      "headline": "No form activity and nothing flagged",
+      "body": "There were no form starts, no submissions, no phone taps and no confirmed friction on June 13, and no visit showed an unusual pattern that needed a closer look."
     },
     {
-      "headline": "Full recording coverage on a quiet day",
-      "body": "Every paid click was captured as a recorded visit on June 12 - a lighter, lower-intent day with no form activity, consistent with weekend roofing traffic."
+      "headline": "A quiet, lower-intent day",
+      "body": "June 13 was a light traffic day with low paid volume and a single short recorded visit, consistent with quieter weekend roofing demand."
     }
   ],
   "data_notes": [
-    "Window: June 12, 2026 (US Central). Each visit is dated by its exact start time in US Central time.",
+    "Window: June 13, 2026 (US Central). The visit is dated by its exact start time in US Central time.",
     "Scope: paid (Google Ads) visits only, US visitors, internal and test visits excluded.",
-    "Privacy: visitor names and emails are not shown. Visits are referenced by anonymous labels and recording links only.",
-    "All three recorded visits had no form typing, no clicks and no errors - there were no form starts, submissions, phone taps or confirmed friction on June 12.",
-    "Paid clicks for June 12: 3 (from the conversion dashboard's Google Ads daily series). All 3 clicks were captured as recorded visits (100%).",
-    "Weekly totals (June 6-12): 26 paid clicks, 22 recorded visits, 2 form starts, 2 submissions."
+    "Privacy: visitor names and emails are not shown. The visit is referenced by an anonymous label and recording link only.",
+    "The recorded visit had no form typing, no clicks and no errors - there were no form starts, submissions, phone taps or confirmed friction on June 13.",
+    "Paid clicks for June 13: 3 (from the conversion dashboard's Google Ads daily series). 1 of the 3 clicks was captured as a recorded visit (33%); not every paid click results in a recording.",
+    "Weekly totals (June 7-13): 28 paid clicks, 23 recorded visits, 2 form starts, 2 submissions."
   ],
   "week_summary": {
-    "window": "2026-06-06 to 2026-06-12",
-    "adsPaidClicks": 26,
-    "paidSessions": 22,
+    "window": "2026-06-07 to 2026-06-13",
+    "adsPaidClicks": 28,
+    "paidSessions": 23,
     "formStarts": 2,
     "submissions": 2,
-    "noFormActivityVisits": 20,
-    "captureRate": "85%"
+    "noFormActivityVisits": 21,
+    "captureRate": "82%"
   },
-  "headline_state": "Paid visitor sessions for June 12 (US Central). 3 paid clicks and 3 recorded paid visits (full coverage), all quick bounces with no form typing, and 0 form submissions. No visits flagged for review. June 12 paid clicks are reconciled against the conversion dashboard.",
+  "headline_state": "Paid visitor sessions for June 13 (US Central). 3 paid clicks and 1 recorded paid visit (33% coverage), a single quick mobile bounce with no form typing, and 0 form submissions. No visits flagged for review. June 13 paid clicks are reconciled against the conversion dashboard.",
   "verified": true
 }
