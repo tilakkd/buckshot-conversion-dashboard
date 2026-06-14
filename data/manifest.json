@@ -1,6 +1,11 @@
 {
- "latest": "2026-06-12",
+ "latest": "2026-06-13",
  "dates": [
+  {
+   "date": "2026-06-13",
+   "label": "June 13, 2026 - Finalized",
+   "note": "Day-of: 0 qualified, 0 OOA, 1 spam/test form (spam folder - Roof Replacement LP hero-form test); 0 LSA (0 charged); ads $152.30 on 3 clicks (74 impr, 0 conv). Sunday non-Monday - adGroups/keywords carried forward; 90-day overview, 6 campaigns, 7/14/30 scorecards + single-day Jun13 all refreshed live. GA4 read LIVE (90d Mar16-Jun13 = 1915 sessions). Clarity/GTM skipped. Ads w7 $1563.56 ($223.37/day), w14 $2724.67, w30 $3198.18, 90d $7281.38. Cumulative 1331 forms / 9 LSA; 44 qualified; cost/qualified ~$165."
+  },
   {
    "date": "2026-06-12",
    "label": "June 12, 2026 - Finalized",
