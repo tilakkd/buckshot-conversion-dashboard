@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "snapshot_date": "2026-06-13",
+  "snapshot_date": "2026-06-14",
   "timezone": "America/Chicago",
-  "day_window": "2026-06-13 00:00 to 23:59 US Central",
-  "captured_at": "2026-06-14T11:11:02+05:30",
+  "day_window": "2026-06-14 00:00 to 23:59 US Central",
+  "captured_at": "2026-06-15T11:30:00+05:30",
   "scope": "Paid (Google Ads) visits only. US visitors. Internal/test visits excluded.",
   "method": "Based on PostHog session recordings for paid (Google Ads) visitors: each visit's start time, landing page, clicks, form activity and outcome. Anything unusual (such as an odd click pattern) is flagged for review and confirmed before being reported as an issue, rather than assumed.",
   "posthog": {
@@ -13,49 +13,57 @@
   },
   "kpis": {
     "adsPaidClicks": 3,
-    "paidSessionsRecorded": 1,
-    "formStarts": 0,
-    "formAbandons": 0,
+    "paidSessionsRecorded": 2,
+    "formStarts": 1,
+    "formAbandons": 1,
     "submissions": 0,
     "phoneTaps": 0,
     "frictionConfirmed": 0
   },
   "reconciliation": {
-    "adsPaidClicks_06_13": 3,
-    "posthogPaidSessions_06_13": 1,
-    "delta": 2,
-    "note": "June 13 had 3 paid clicks (Google Ads) and 1 recorded paid visit (33% coverage). Not every paid click is captured as a recorded visit - very short or instant bounces fall away once the under-1-second filter and recorder load are accounted for. The single recorded visit landed on the Madison residential roofing page, browsed briefly and left. No form submissions on the day, matching 0 qualified paid leads in the conversion dashboard for June 13.",
+    "adsPaidClicks_06_14": 3,
+    "posthogPaidSessions_06_14": 2,
+    "delta": 1,
+    "note": "June 14 had 3 paid clicks (Google Ads) and 2 recorded paid visits (67% coverage). One paid click was not captured as a recording, typical of a very short or instant bounce. Both recorded visits landed on the Madison residential roofing page. One visit filled out the contact form and tapped the submit button several times near the end, but its recording did not fully upload and no matching paid lead appears in the conversion dashboard for that time, so the submission could not be confirmed - it is logged as a form started but not confirmed as sent and flagged for a closer look. The other visit was a quick bounce. The day's single qualified web lead (late afternoon) did not line up with either recorded paid visit. 0 confirmed paid form submissions on June 14.",
     "verified": true
   },
   "sessions": [
     {
       "label": "Visit 1",
-      "session_id": "019ec3c7-6970-72da-a92d-048b4bbe74f8",
-      "replay_url": "https://us.posthog.com/project/435721/replay/019ec3c7-6970-72da-a92d-048b4bbe74f8",
-      "start_ct": "20:38 CT",
+      "session_id": "019ec69b-8a8d-7d44-946c-f313d0def69c",
+      "replay_url": "https://us.posthog.com/project/435721/replay/019ec69b-8a8d-7d44-946c-f313d0def69c",
+      "start_ct": "09:49 CT",
       "device": "Mobile",
-      "duration_label": "00:36",
+      "duration_label": "01:21",
+      "clicks": 14,
+      "keystrokes": 61,
+      "errors": 0,
+      "entry_lp": "/residential-roofing-madison-wi/",
+      "form_started": true,
+      "submitted": false,
+      "verdict": "Came in from a Google ad to the Madison residential roofing page, opened the contact form and filled in their details and a short message, then tapped the 'Book My Free Inspection' button several times near the end. This visit's recording did not fully upload, so the send could not be confirmed on screen, and no matching paid lead appears in the conversion dashboard for this time - so it is recorded as a form that was started but not confirmed as sent, and flagged for a closer look.",
+      "flags": [
+        "Tapped the 'Book My Free Inspection' button several times at the end without the form appearing to send, and this visit's recording did not fully upload - flagged for a closer look to confirm whether the form was actually submitted."
+      ]
+    },
+    {
+      "label": "Visit 2",
+      "session_id": "019ec6cc-ba54-7430-ac2b-3c3c8679ded1",
+      "replay_url": "https://us.posthog.com/project/435721/replay/019ec6cc-ba54-7430-ac2b-3c3c8679ded1",
+      "start_ct": "10:42 CT",
+      "device": "Mobile",
+      "duration_label": "00:07",
       "clicks": 0,
       "keystrokes": 0,
       "errors": 0,
       "entry_lp": "/residential-roofing-madison-wi/",
       "form_started": false,
       "submitted": false,
-      "verdict": "Browsed the Madison residential roofing page for about half a minute, then left without starting or submitting the form (a bounce).",
+      "verdict": "Came in from a Google ad to the Madison residential roofing page, browsed for about seven seconds with no form typing and no clicks, then left (a bounce).",
       "flags": []
     }
   ],
   "daily": [
-    {
-      "date": "2026-06-07",
-      "adsPaidClicks": 4,
-      "paidSessions": 4,
-      "formStarts": 1,
-      "formAbandons": 0,
-      "submissions": 1,
-      "phoneTaps": 0,
-      "frictionConfirmed": 0
-    },
     {
       "date": "2026-06-08",
       "adsPaidClicks": 5,
@@ -115,43 +123,53 @@
       "submissions": 0,
       "phoneTaps": 0,
       "frictionConfirmed": 0
+    },
+    {
+      "date": "2026-06-14",
+      "adsPaidClicks": 3,
+      "paidSessions": 2,
+      "formStarts": 1,
+      "formAbandons": 1,
+      "submissions": 0,
+      "phoneTaps": 0,
+      "frictionConfirmed": 0
     }
   ],
   "insights": [
     {
-      "headline": "3 paid clicks, 1 recorded paid visit on June 13, no submissions",
-      "body": "Google Ads recorded 3 paid clicks from US visitors on June 13. PostHog captured 1 of them as a recorded visit (33% coverage); the other clicks were not captured, typical of very short or instant bounces. The recorded visit did not start or submit the contact form."
+      "headline": "3 paid clicks and 2 recorded paid visits on June 14, no confirmed submissions",
+      "body": "Google Ads recorded 3 paid clicks from US visitors on June 14. PostHog captured 2 of them as recorded visits (67% coverage); the third was not captured, typical of a very short or instant bounce. Neither visit produced a confirmed contact-form submission."
     },
     {
-      "headline": "The one recorded visit was a quick mobile bounce",
-      "body": "The single recorded visit was on a mobile phone from the Madison, Wisconsin area, landed on the Madison residential roofing page from a Google Ads search, browsed for about half a minute with no form typing and no clicks, and left."
+      "headline": "One visit filled the form but the submission could not be confirmed",
+      "body": "A visitor from a Google ad opened the contact form on the Madison residential roofing page, entered their details and a short message, then tapped the 'Book My Free Inspection' button several times near the end. The visit's recording did not fully upload and no matching paid lead appears in the conversion dashboard for this time, so it is recorded as a form started but not confirmed as sent, and flagged for a closer look."
     },
     {
-      "headline": "No form activity and nothing flagged",
-      "body": "There were no form starts, no submissions, no phone taps and no confirmed friction on June 13, and no visit showed an unusual pattern that needed a closer look."
+      "headline": "The other visit was a quick mobile bounce",
+      "body": "The second recorded visit was on a mobile phone, landed on the Madison residential roofing page from a Google ad, browsed for about seven seconds with no form typing, and left."
     },
     {
-      "headline": "A quiet, lower-intent day",
-      "body": "June 13 was a light traffic day with low paid volume and a single short recorded visit, consistent with quieter weekend roofing demand."
+      "headline": "The day's one web lead was not from a recorded paid visit",
+      "body": "The conversion dashboard shows one qualified web lead on June 14 (late afternoon), but it does not line up with either recorded paid visit, so there were no confirmed paid form submissions on the day."
     }
   ],
   "data_notes": [
-    "Window: June 13, 2026 (US Central). The visit is dated by its exact start time in US Central time.",
+    "Window: June 14, 2026 (US Central). Each visit is dated by its exact start time in US Central time.",
     "Scope: paid (Google Ads) visits only, US visitors, internal and test visits excluded.",
-    "Privacy: visitor names and emails are not shown. The visit is referenced by an anonymous label and recording link only.",
-    "The recorded visit had no form typing, no clicks and no errors - there were no form starts, submissions, phone taps or confirmed friction on June 13.",
-    "Paid clicks for June 13: 3 (from the conversion dashboard's Google Ads daily series). 1 of the 3 clicks was captured as a recorded visit (33%); not every paid click results in a recording.",
-    "Weekly totals (June 7-13): 28 paid clicks, 23 recorded visits, 2 form starts, 2 submissions."
+    "Privacy: visitor names and emails are not shown. Visits are referenced by anonymous labels and recording links only.",
+    "Paid clicks for June 14: 3 (from the conversion dashboard's Google Ads daily series). 2 of the 3 clicks were captured as recorded visits (67%); not every paid click results in a recording.",
+    "One visit filled out the contact form and tapped the submit button several times at the end, but the recording did not fully upload and no matching paid lead was found for that time, so the submission could not be confirmed - it is logged as a form started but not confirmed as sent and flagged for a closer look. No phone taps and no confirmed friction were verified.",
+    "Weekly totals (June 8-14): 27 paid clicks, 21 recorded visits, 2 form starts, 1 submission."
   ],
   "week_summary": {
-    "window": "2026-06-07 to 2026-06-13",
-    "adsPaidClicks": 28,
-    "paidSessions": 23,
+    "window": "2026-06-08 to 2026-06-14",
+    "adsPaidClicks": 27,
+    "paidSessions": 21,
     "formStarts": 2,
-    "submissions": 2,
-    "noFormActivityVisits": 21,
-    "captureRate": "82%"
+    "submissions": 1,
+    "noFormActivityVisits": 19,
+    "captureRate": "78%"
   },
-  "headline_state": "Paid visitor sessions for June 13 (US Central). 3 paid clicks and 1 recorded paid visit (33% coverage), a single quick mobile bounce with no form typing, and 0 form submissions. No visits flagged for review. June 13 paid clicks are reconciled against the conversion dashboard.",
+  "headline_state": "Paid visitor sessions for June 14 (US Central). 3 paid clicks and 2 recorded paid visits (67% coverage). One visit filled out the contact form and tapped the submit button several times near the end, but the recording did not fully upload and no matching paid lead was found, so it is logged as a form started but not confirmed as sent and flagged for a closer look; the other visit was a quick mobile bounce. 0 confirmed paid form submissions. June 14 paid clicks are reconciled against the conversion dashboard.",
   "verified": true
 }
