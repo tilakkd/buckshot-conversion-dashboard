@@ -1,9 +1,14 @@
 {
-  "latest": "2026-06-14",
+  "latest": "2026-06-15",
   "dates": [
     {
+      "date": "2026-06-15",
+      "label": "June 15, 2026 - Latest",
+      "note": "6 paid click(s), 4 recorded visit(s), 0 submission(s)."
+    },
+    {
       "date": "2026-06-14",
-      "label": "June 14, 2026 - Latest",
+      "label": "June 14, 2026",
       "note": "3 paid click(s), 2 recorded visit(s), 0 submission(s)."
     },
     {
