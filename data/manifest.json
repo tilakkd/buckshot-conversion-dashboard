@@ -1,6 +1,11 @@
 {
-  "latest": "2026-06-14",
+  "latest": "2026-06-15",
   "dates": [
+    {
+      "date": "2026-06-15",
+      "label": "June 15, 2026 - Finalized",
+      "note": "Day-of: 0 qualified, 0 OOA, 0 spam/test forms; 0 LSA (0 charged); ads $256.86 on 6 clicks (147 impr, 0 conv). Tuesday non-Monday - adGroups/keywords carried forward; 90-day overview, 6 campaigns, 7/14/30 scorecards + single-day Jun15 refreshed live. GA4 carried forward (as of Jun14 = 1929 sessions). Clarity/GTM skipped. Ads w7 $1297.45 ($185.35/day), w14 $2618.60, w30 $3615.76, 90d $7511.66. Cumulative 1335 forms / 9 LSA; 45 qualified; cost/qualified ~$167."
+    },
     {
       "date": "2026-06-14",
       "label": "June 14, 2026 - Finalized",
