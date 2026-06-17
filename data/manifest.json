@@ -1,6 +1,11 @@
 {
-  "latest": "2026-06-15",
+  "latest": "2026-06-16",
   "dates": [
+    {
+      "date": "2026-06-16",
+      "label": "June 16, 2026 - Finalized (carry-forward)",
+      "note": "Day-of: no new data captured - ALL live sources carried forward on unattended run (operator Chrome browser not auto-selectable; Flamingo/LSA/Google Ads/GA4 not read live). Figures as of Jun 15 (GA4 as of Jun 14). Cumulative unchanged: 1335 forms / 9 LSA; 45 qualified; ads w7 $1297.45, w30 $3615.76, 90d $7511.66; cost/qualified ~$167. Clarity/GTM skipped. verified: all false."
+    },
     {
       "date": "2026-06-15",
       "label": "June 15, 2026 - Finalized",
