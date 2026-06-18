@@ -1,73 +1,73 @@
 {
   "version": 9,
   "snapshot_date": "2026-06-17",
-  "period_start": "2026-03-19",
-  "period_end": "2026-06-16",
-  "captured_at": "2026-06-18T10:36:00+05:30",
+  "period_start": "2026-03-20",
+  "period_end": "2026-06-17",
+  "captured_at": "2026-06-18T11:05:00+05:30",
   "kpis": {
-    "formSubmissions": 1335,
-    "qualifiedForms": 36,
-    "ooaForms": 3,
-    "spamTestForms": 1296,
-    "lsaCharged": 5,
-    "lsaTotal": 9,
-    "totalSessions": 1929,
-    "adsImpressions": "3,239",
-    "adsClicks": 102,
-    "adsCtr": "3.1%",
-    "adsCpc": "$35.45",
-    "adsCost90d": 7511.66,
-    "adsCostDaily": "$83.46/day"
+    "formSubmissions": "1336",
+    "qualifiedForms": "36",
+    "ooaForms": "3",
+    "spamTestForms": "1297",
+    "lsaCharged": "5",
+    "lsaTotal": "9",
+    "totalSessions": "2,092",
+    "adsImpressions": "3,302",
+    "adsClicks": "110",
+    "adsCtr": "3.3%",
+    "adsCpc": "$35.85",
+    "adsCost90d": "7748.97",
+    "adsCostDaily": "$86.10/day"
   },
   "windows": {
-    "asOf": "2026-06-15",
-    "note": "Account scorecard, 7/14/30 ending 2026-06-15",
+    "asOf": "2026-06-17",
+    "note": "Account scorecard, 7/14/30 ending 2026-06-17",
     "w7": {
       "days": 7,
-      "impressions": "1,039",
-      "clicks": 28,
-      "ctr": "2.7%",
-      "cpc": "$46.34",
-      "adsCost": 1297.45,
-      "adsCostDaily": "$185.35/day"
+      "impressions": "830",
+      "clicks": 31,
+      "ctr": "3.7%",
+      "cpc": "$44.03",
+      "adsCost": 1365.03,
+      "adsCostDaily": "$195.00/day"
     },
     "w14": {
       "days": 14,
-      "impressions": "1,952",
-      "clicks": 54,
-      "ctr": "2.8%",
-      "cpc": "$48.49",
-      "adsCost": 2618.6,
-      "adsCostDaily": "$187.04/day"
+      "impressions": "1,800",
+      "clicks": 53,
+      "ctr": "2.9%",
+      "cpc": "$49.50",
+      "adsCost": 2623.37,
+      "adsCostDaily": "$187.38/day"
     },
     "w30": {
       "days": 30,
-      "impressions": "3,239",
-      "clicks": 102,
-      "ctr": "3.1%",
-      "cpc": "$35.45",
-      "adsCost": 3615.76,
-      "adsCostDaily": "$120.53/day"
+      "impressions": "3,302",
+      "clicks": 110,
+      "ctr": "3.3%",
+      "cpc": "$35.85",
+      "adsCost": 3943.64,
+      "adsCostDaily": "$131.45/day"
     }
   },
   "enquiries": {
     "lead": {
-      "total": 1335,
-      "qualified": 36,
-      "ooa": 3,
-      "spamTest": 1296,
+      "total": "1336",
+      "qualified": "36",
+      "ooa": "3",
+      "spamTest": "1297",
       "label": "Form enquiries"
     },
     "call": {
-      "total": 9,
-      "charged": 5,
+      "total": "9",
+      "charged": "5",
       "label": "LSA calls"
     },
     "combined": {
-      "total": 1344,
-      "qualified": 45,
-      "formToCallRatio": "1335 : 9",
-      "costPerQualified": "~$167"
+      "total": "1345",
+      "qualified": "45",
+      "formToCallRatio": "1336 : 9",
+      "costPerQualified": "~$172"
     }
   },
   "daily": {
@@ -400,7 +400,7 @@
         "date": "2026-06-16",
         "qualified": 0,
         "ooa": 0,
-        "spamTest": 0
+        "spamTest": 1
       },
       {
         "date": "2026-06-17",
@@ -411,7 +411,7 @@
     ]
   },
   "adPerformance": {
-    "scope": "Active only",
+    "scope": "All campaigns (90d)",
     "activeCampaign": "Leads - Roofing (PC)",
     "activeAdGroupsCount": 2,
     "window": "(90 days)",
@@ -420,11 +420,11 @@
       {
         "name": "Leads - Roofing (PC)",
         "status": "Active",
-        "clicks": 220,
-        "ctr": "3.32%",
+        "clicks": 229,
+        "ctr": "3.37%",
         "conversions": 5,
-        "cost": 4751.76,
-        "avgCPC": "$21.60"
+        "cost": 5084.54,
+        "avgCPC": "$22.20"
       },
       {
         "name": "Residential Roofing - Leads (PC)",
@@ -436,22 +436,13 @@
         "avgCPC": "$53.02"
       },
       {
-        "name": "Website traffic-Search-1",
-        "status": "Paused",
-        "clicks": 27,
-        "ctr": "1.85%",
-        "conversions": 0,
-        "cost": 77.81,
-        "avgCPC": "$2.88"
-      },
-      {
         "name": "Website traffic-Search-Roofing",
         "status": "Paused",
-        "clicks": 15,
-        "ctr": "4.64%",
+        "clicks": 12,
+        "ctr": "4.11%",
         "conversions": 0,
-        "cost": 181.99,
-        "avgCPC": "$12.13"
+        "cost": 164.34,
+        "avgCPC": "$13.70"
       },
       {
         "name": "Buckshot - Storm Damage - Madison Area",
@@ -463,13 +454,22 @@
         "avgCPC": "$27.51"
       },
       {
+        "name": "Website traffic-Search-1",
+        "status": "Paused",
+        "clicks": 0,
+        "ctr": "0%",
+        "conversions": 0,
+        "cost": 0,
+        "avgCPC": "$0.00"
+      },
+      {
         "name": "Leads-PMax Roofing",
         "status": "Paused",
         "clicks": 0,
-        "ctr": "-",
+        "ctr": "0%",
         "conversions": 0,
-        "cost": 0.0,
-        "avgCPC": "-"
+        "cost": 0,
+        "avgCPC": "$0.00"
       }
     ],
     "adGroups": [
@@ -1311,45 +1311,42 @@
   },
   "trafficSources": {
     "window": "90 days",
-    "totalSessions": 1929,
+    "totalSessions": "2,092",
     "channels": [
       {
         "name": "Direct",
-        "sessions": 897
+        "sessions": 984
       },
       {
         "name": "Organic Search",
-        "sessions": 649
+        "sessions": 703
       },
       {
         "name": "Paid Search",
-        "sessions": 175
+        "sessions": 186
       },
       {
         "name": "Referral",
-        "sessions": 102
+        "sessions": 106
       },
       {
         "name": "Organic Social",
-        "sessions": 78
+        "sessions": 79
       },
       {
         "name": "Unassigned",
-        "sessions": 26
-      },
-      {
-        "name": "Cross-network",
-        "sessions": 2
+        "sessions": 52
       }
     ]
   },
   "sourceChart": {
-    "paid": 175,
-    "organic": 649,
-    "direct": 897,
-    "referral": 102,
-    "unassigned": 26,
-    "lsa": 9
+    "paid": "186",
+    "organic": "703",
+    "direct": "984",
+    "referral": "106",
+    "organicSocial": "79",
+    "unassigned": "52",
+    "lsa": "9"
   },
   "leadDetails": [
     {
@@ -1477,18 +1474,6 @@
   ],
   "adsDaily": [
     {
-      "date": "2026-05-31",
-      "impressions": 122,
-      "clicks": 10,
-      "cost": 314.57
-    },
-    {
-      "date": "2026-06-01",
-      "impressions": 234,
-      "clicks": 7,
-      "cost": 218.94
-    },
-    {
       "date": "2026-06-02",
       "impressions": 199,
       "clicks": 6,
@@ -1574,6 +1559,20 @@
       "impressions": 147,
       "clicks": 6,
       "cost": 256.86,
+      "conversions": 0
+    },
+    {
+      "date": "2026-06-16",
+      "impressions": 69,
+      "clicks": 5,
+      "cost": 219.09,
+      "conversions": 0
+    },
+    {
+      "date": "2026-06-17",
+      "impressions": 101,
+      "clicks": 4,
+      "cost": 113.69,
       "conversions": 0
     }
   ],
@@ -1742,8 +1741,8 @@
   ],
   "campaignState": {
     "active": "Leads - Roofing (PC)",
-    "activeAdGroups": 2,
-    "pausedCampaigns": 5
+    "activeAdGroups": "2",
+    "pausedCampaigns": "5"
   },
   "trackingState": {
     "leadGoalActive": false,
@@ -1754,49 +1753,43 @@
     "spam": "0"
   },
   "verified": {
-    "flamingo": "False",
-    "ga4": "False",
-    "googleAds": "False",
-    "lsa": "False"
+    "flamingo": "True",
+    "ga4": "True",
+    "googleAds": "True",
+    "lsa": "True"
   },
-  "headline_state": "Finalized 2026-06-17 via buckshot-dashboard-daily (live sources carried forward - unattended run)",
+  "headline_state": "Finalized 2026-06-17 via buckshot-dashboard-daily (all sources read live)",
   "insights": [
     {
-      "headline": "Jun 17 data carried forward - sources not refreshed",
-      "body": "On the Jun 17 unattended run the live sources (Flamingo forms, LSA calls, Google Ads, GA4) could not be read because operator Chrome browser selection was unavailable (3 browsers connected, none auto-selectable). All figures are carried forward from the last live reads: Flamingo/LSA/Google Ads as of Jun 15, GA4 as of Jun 14. Cumulative totals are unchanged (no day-of additions)."
+      "headline": "All sources refreshed live on Jun 18 run",
+      "body": "Flamingo forms, LSA calls, Google Ads (104-571-5646) and GA4 were all read live for the Jun 17 close. No carry-forward except 90-day ad-group/keyword detail (non-Monday)."
+    },
+    {
+      "headline": "No new web leads; one B2B spam on Jun 16",
+      "body": "No new Free Estimate or Quick Contact submissions since the Jun 14 Madison hail-storm estimate. The only new form was a Jun 16 B2B permit-drawing/rendering outsourcing pitch (classified spam)."
     },
     {
       "headline": "Only Leads-Roofing(PC) is spending",
-      "body": "5 of 6 campaigns remain paused; the single active Search campaign drove all 220 clicks and $4,751.76 over the last 90 days."
+      "body": "5 of 6 campaigns remain paused; the single active Search campaign drove 229 of 292 clicks and $5,084.54 of $7,748.97 over the last 90 days."
     },
     {
-      "headline": "Spend pace eased toward $185/day",
-      "body": "Last-7-day cost was $1,297.45 ($185.35/day), while the 90-day average sits at $83.46/day."
+      "headline": "90-day ad spend $7,748.97 at 7 conversions",
+      "body": "Over Mar 20 - Jun 17 the account logged 9,614 impressions, 292 clicks (3.04% CTR), $26.54 avg CPC and 7 conversions - about $1,107 cost per conversion."
     },
     {
-      "headline": "No new web form leads since Jun 14",
-      "body": "No new Free Estimate or Quick Contact submissions have been captured since the Jun 14 Madison hail-storm estimate request, which remains the most recent qualified web lead (Flamingo not re-read since Jun 15)."
+      "headline": "Spend pace ~$195/day last week",
+      "body": "Last-7-day cost was $1,365.03 ($195.00/day), above the 14-day ($187.38/day) and 90-day ($86.10/day) averages; Jun 16 $219.09, Jun 17 $113.69."
     },
     {
-      "headline": "madison roof repair carries the account",
-      "body": "The phrase keyword 'madison roof repair' spent $1,052.79 on 28 clicks (3 conversions) - the top performer among 6 active keywords (90-day keyword detail carried forward)."
-    },
-    {
-      "headline": "No new LSA calls in the last week",
-      "body": "Local Services Ads produced no new charged or unbilled calls; the most recent LSA lead remains May 27 (charged). LSA inbox not re-read on this unattended run."
+      "headline": "No new LSA calls",
+      "body": "Local Services Ads produced no new charged or unbilled calls; the most recent LSA lead remains May 27 (charged). Cumulative 9 leads / 5 charged."
     },
     {
       "headline": "Paid search is a small slice of traffic",
-      "body": "Over 90 days GA4 shows 175 Paid Search sessions of 1,929 total; Direct (897) and Organic Search (649) dominate site visits (GA4 as of Jun 14)."
+      "body": "Over 90 days GA4 shows 186 Paid Search sessions of 2,092 total; Direct (984) and Organic Search (703) dominate site visits."
     }
   ],
   "stale_sources": [
-    "ALL-SOURCES-CARRYFORWARD 2026-06-17: live browser sources could not be read on this unattended run (operator Chrome browser selection required; 3 browsers connected, none auto-selectable). Figures carried forward.",
-    "flamingo-forms-carryforward: as of 2026-06-15",
-    "lsa-carryforward: as of 2026-06-15",
-    "googleAds-carryforward: as of 2026-06-15 (90-day overview, 6 campaign rows, 7/14/30 scorecards, adsDaily all carried forward)",
-    "adGroups-keywords-carryforward (non-Monday)",
-    "ga4-carryforward: as of 2026-06-14 (property 533585540 Missing permissions)",
-    "clarity/gtm: skipped per override"
+    "adGroups-keywords-carryforward (non-Monday): 90-day ad-group/keyword detail not re-scraped (5 of 6 campaigns paused, near-static)"
   ]
 }

@@ -3,8 +3,8 @@
   "dates": [
     {
       "date": "2026-06-17",
-      "label": "June 17, 2026 - Finalized (carry-forward)",
-      "note": "Day-of: no new data captured - ALL live sources carried forward on unattended run (operator Chrome browser not auto-selectable; 3 browsers connected; Flamingo/LSA/Google Ads/GA4 not read live). Figures as of Jun 15 (GA4 as of Jun 14). Cumulative unchanged: 1335 forms / 9 LSA; 45 qualified; ads w7 $1297.45, w14 $2618.60, w30 $3615.76, 90d $7511.66; cost/qualified ~$167. Clarity/GTM skipped. verified: all false."
+      "label": "June 17, 2026 - Finalized (live)",
+      "note": "Day-of (Jun 17): 0 qualified / 0 OOA / 0 spam forms; 0 LSA. ALL sources read LIVE this run (Flamingo, LSA, Google Ads 104-571-5646, GA4). One new B2B spam form on Jun 16. Ads 90d (Mar20-Jun17): 9,614 impr / 292 clk / $7,748.97 / 7 conv; w7 $1,365.03, w14 $2,623.37, w30 $3,943.64. GA4 90d: 2,092 sessions (Direct 984 / Organic 703 / Paid 186). Cumulative 1,336 forms / 9 LSA; 45 qualified; cost/qualified ~$172. verified: all true. adGroups/keywords carried (non-Monday)."
     },
     {
       "date": "2026-06-16",
