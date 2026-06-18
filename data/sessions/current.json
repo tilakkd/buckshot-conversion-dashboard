@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "snapshot_date": "2026-06-16",
+  "snapshot_date": "2026-06-17",
   "timezone": "America/Chicago",
-  "day_window": "2026-06-16 00:00 to 23:59 US Central",
-  "captured_at": "2026-06-17T16:50:17+05:30",
+  "day_window": "2026-06-17 00:00 to 23:59 US Central",
+  "captured_at": "2026-06-18T11:11:08+05:30",
   "scope": "Paid (Google Ads) visits only. US visitors. Internal/test visits excluded.",
   "method": "Based on PostHog session recordings for paid (Google Ads) visitors: each visit's start time, landing page, clicks, form activity and outcome. Anything unusual (such as an odd click pattern) is flagged for review and confirmed before being reported as an issue, rather than assumed.",
   "posthog": {
@@ -13,7 +13,7 @@
   },
   "kpis": {
     "adsPaidClicks": null,
-    "paidSessionsRecorded": 2,
+    "paidSessionsRecorded": 1,
     "formStarts": 0,
     "formAbandons": 0,
     "submissions": 0,
@@ -21,19 +21,19 @@
     "frictionConfirmed": 0
   },
   "reconciliation": {
-    "adsPaidClicks_06_16": null,
-    "posthogPaidSessions_06_16": 2,
+    "adsPaidClicks_06_17": null,
+    "posthogPaidSessions_06_17": 1,
     "delta": null,
-    "note": "Google Ads paid-click figures for June 16 were not yet available at capture time: the conversion dashboard's June 16 update ran unattended and carried all sources (including the Google Ads daily series) forward from June 15, so June 16 has no posted paid-click count yet. PostHog recorded 2 paid US visits on June 16, both landing on the Madison residential roofing page on mobile - one 6-second bounce and one visitor who browsed for about a minute and opened several FAQ answers, with no contact-form typing. No form starts and no submissions. Paid-click coverage for June 16 will reconcile on a later run once Google Ads posts the day.",
+    "note": "Google Ads paid-click figures for June 17 were not yet available at capture time: the conversion dashboard's June 17 update ran unattended and carried all sources (including the Google Ads daily series) forward from June 15, so neither June 16 nor June 17 has a posted paid-click count yet. PostHog recorded 1 paid US visit on June 17 - a 6-second bounce that landed on the Madison residential roofing page on desktop from a Google ad, with no form typing. No form starts and no submissions. Paid-click coverage for June 17 will reconcile on a later run once Google Ads posts the day.",
     "verified": true
   },
   "sessions": [
     {
       "label": "Visit 1",
-      "session_id": "019ed05c-6285-7abb-976b-0c6000d9925e",
-      "replay_url": "https://us.posthog.com/project/435721/replay/019ed05c-6285-7abb-976b-0c6000d9925e",
-      "start_ct": "07:16 CT",
-      "device": "Mobile",
+      "session_id": "019ed694-ad44-75d4-b91b-b84f28efef99",
+      "replay_url": "https://us.posthog.com/project/435721/replay/019ed694-ad44-75d4-b91b-b84f28efef99",
+      "start_ct": "12:15 CT",
+      "device": "Desktop",
       "duration_label": "00:06",
       "clicks": 0,
       "keystrokes": 0,
@@ -41,39 +41,11 @@
       "entry_lp": "/residential-roofing-madison-wi/",
       "form_started": false,
       "submitted": false,
-      "verdict": "Came in from a Google ad to the Madison residential roofing page on a mobile device, stayed about 6 seconds with no taps or form typing, then left (a quick bounce).",
+      "verdict": "Came in from a Google ad to the Madison residential roofing page on a desktop computer, stayed about 6 seconds with no clicks or form typing, then left (a quick bounce).",
       "flags": []
-    },
-    {
-      "label": "Visit 2",
-      "session_id": "019ed246-9f20-7fc5-b5c7-d2cb56047d72",
-      "replay_url": "https://us.posthog.com/project/435721/replay/019ed246-9f20-7fc5-b5c7-d2cb56047d72",
-      "start_ct": "16:11 CT",
-      "device": "Mobile",
-      "duration_label": "01:08",
-      "clicks": 13,
-      "keystrokes": 0,
-      "errors": 0,
-      "entry_lp": "/residential-roofing-madison-wi/",
-      "form_started": false,
-      "submitted": false,
-      "verdict": "Came in from a Google ad to the Madison residential roofing page on a mobile device and browsed for about a minute, opening several of the page's FAQ answers. No contact-form typing and no submission before leaving.",
-      "flags": [
-        "Higher number of taps (13) with no form typing - reviewed in the recording: the taps were the visitor opening FAQ answers on the page (engaged reading), not a sign of friction. No phone tap or error observed."
-      ]
     }
   ],
   "daily": [
-    {
-      "date": "2026-06-10",
-      "adsPaidClicks": 1,
-      "paidSessions": 2,
-      "formStarts": 0,
-      "formAbandons": 0,
-      "submissions": 0,
-      "phoneTaps": 0,
-      "frictionConfirmed": 0
-    },
     {
       "date": "2026-06-11",
       "adsPaidClicks": 7,
@@ -133,43 +105,53 @@
       "submissions": 0,
       "phoneTaps": 0,
       "frictionConfirmed": 0
+    },
+    {
+      "date": "2026-06-17",
+      "adsPaidClicks": null,
+      "paidSessions": 1,
+      "formStarts": 0,
+      "formAbandons": 0,
+      "submissions": 0,
+      "phoneTaps": 0,
+      "frictionConfirmed": 0
     }
   ],
   "insights": [
     {
-      "headline": "2 recorded paid visits on June 16, no form activity",
-      "body": "PostHog captured 2 paid US visits on June 16, both arriving from Google Ads to the Madison residential roofing page on mobile. One was a 6-second bounce; the other browsed for about a minute and opened several FAQ answers. Neither started or submitted the contact form."
+      "headline": "1 recorded paid visit on June 17, a quick bounce",
+      "body": "PostHog captured a single paid US visit on June 17, arriving from Google Ads to the Madison residential roofing page on a desktop computer. It was a 6-second bounce with no clicks and no form typing."
     },
     {
-      "headline": "Google Ads click count for June 16 not yet posted",
-      "body": "The conversion dashboard's June 16 update ran unattended and carried the Google Ads daily series forward from June 15, so there is no posted paid-click figure for June 16 yet. Paid-click coverage for the day will reconcile on a later run."
+      "headline": "Google Ads click count for June 17 not yet posted",
+      "body": "The conversion dashboard's June 17 update ran unattended and carried the Google Ads daily series forward from June 15, so there is no posted paid-click figure for June 16 or June 17 yet. Paid-click coverage for both days will reconcile on a later run."
     },
     {
-      "headline": "Both visits landed on the Madison residential roofing page",
-      "body": "Every recorded paid visit on June 16 came from a Google ad to the Madison residential roofing page on a mobile device - one quick bounce and one engaged browse of about a minute."
+      "headline": "The visit landed on the Madison residential roofing page",
+      "body": "As on recent days, the recorded paid visit came from a Google ad to the Madison residential roofing page - this time on desktop rather than mobile - and left quickly without engaging."
     },
     {
-      "headline": "One visit flagged and cleared",
-      "body": "The longer visit showed a higher number of taps (13) with no form typing. Reviewed in the recording, the taps were the visitor opening the page's FAQ answers (engaged reading), not friction. No submissions, phone taps or confirmed friction on June 16."
+      "headline": "No form activity and nothing flagged",
+      "body": "There were no form starts, submissions, phone taps or confirmed friction on June 17, and no visit needed flagging for a closer look."
     }
   ],
   "data_notes": [
-    "Window: June 16, 2026 (US Central). Each visit is dated by its exact start time in US Central time.",
+    "Window: June 17, 2026 (US Central). The visit is dated by its exact start time in US Central time.",
     "Scope: paid (Google Ads) visits only, US visitors, internal and test visits excluded.",
     "Privacy: visitor names and emails are not shown. Visits are referenced by anonymous labels and recording links only.",
-    "Paid clicks for June 16: not yet available. The conversion dashboard's June 16 update ran unattended and carried the Google Ads daily series forward from June 15, so no June 16 paid-click figure is posted yet; it will reconcile on a later run.",
-    "Both recorded visits browsed on mobile and left with no form typing; there were no form starts, submissions, phone taps or confirmed friction on June 16. The longer visit's taps were FAQ openings (reviewed and cleared).",
-    "Weekly totals (June 10-16): 23 paid clicks across June 10-15 (June 16 not yet posted), 18 recorded visits, 0 form starts, 0 submissions."
+    "Paid clicks for June 17: not yet available. The conversion dashboard's June 17 update ran unattended and carried the Google Ads daily series forward from June 15, so no June 16 or June 17 paid-click figure is posted yet; both will reconcile on a later run.",
+    "The single recorded visit browsed on desktop and left with no form typing; there were no form starts, submissions, phone taps or confirmed friction on June 17.",
+    "Weekly totals (June 11-17): 22 paid clicks across June 11-15 (June 16-17 not yet posted), 17 recorded visits, 1 form start, 0 submissions."
   ],
   "week_summary": {
-    "window": "2026-06-10 to 2026-06-16",
-    "adsPaidClicks": 23,
-    "paidSessions": 18,
-    "formStarts": 0,
+    "window": "2026-06-11 to 2026-06-17",
+    "adsPaidClicks": 22,
+    "paidSessions": 17,
+    "formStarts": 1,
     "submissions": 0,
-    "noFormActivityVisits": 18,
-    "captureRate": "70% (June 10-15; June 16 paid clicks not yet posted)"
+    "noFormActivityVisits": 16,
+    "captureRate": "64% (June 11-15; June 16-17 paid clicks not yet posted)"
   },
-  "headline_state": "Paid visitor sessions for June 16 (US Central). 2 recorded paid visits, both on the Madison residential roofing page on mobile - one 6-second bounce and one ~1-minute browse that opened several FAQ answers - with no form typing and 0 submissions. One visit was flagged for a closer look (more taps, no typing) and cleared as FAQ reading. Google Ads paid-click count for June 16 was not yet posted (conversion dashboard carried it forward from June 15) and will reconcile on a later run.",
+  "headline_state": "Paid visitor sessions for June 17 (US Central). 1 recorded paid visit - a 6-second bounce on the Madison residential roofing page on desktop, from a Google ad - with no form typing and 0 submissions. Nothing flagged for review. Google Ads paid-click count for June 17 was not yet posted (conversion dashboard carried it forward from June 15) and will reconcile on a later run.",
   "verified": true
 }
