@@ -1,15 +1,20 @@
 {
-  "latest": "2026-06-17",
+  "latest": "2026-06-18",
   "dates": [
     {
+      "date": "2026-06-18",
+      "label": "June 18, 2026 - Latest",
+      "note": "5 paid click(s), 3 recorded visit(s), 0 submission(s)."
+    },
+    {
       "date": "2026-06-17",
-      "label": "June 17, 2026 - Latest",
-      "note": "Paid clicks pending (June 17 not yet posted); 1 recorded visit(s), 0 submission(s)."
+      "label": "June 17, 2026",
+      "note": "4 paid click(s), 1 recorded visit(s), 0 submission(s)."
     },
     {
       "date": "2026-06-16",
       "label": "June 16, 2026",
-      "note": "Paid clicks pending (June 16 not yet posted); 2 recorded visit(s), 0 submission(s)."
+      "note": "5 paid click(s), 2 recorded visit(s), 0 submission(s)."
     },
     {
       "date": "2026-06-15",
