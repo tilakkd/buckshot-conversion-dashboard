@@ -1,6 +1,11 @@
 {
- "latest": "2026-06-18",
+ "latest": "2026-06-19",
  "dates": [
+  {
+   "date": "2026-06-19",
+   "label": "June 19, 2026 - Finalized (fully live)",
+   "note": "Day-of (Jun 19): 0 qualified / 0 OOA / 1 spam form (inbox); 0 LSA. ALL sources read LIVE (Flamingo, LSA, GA4, Google Ads incl 90-day overview/campaigns/cost90d via precise custom range). Only new form was a B2B estimating-service pitch (Joshua C.), classified spamTest. NEW 7th Google Ads campaign now enabled: BGC | SKAG | Roofing Contractor Madison WI (6 impr / 0 clk / $0 over 90d, Limited by bid strategy). Ads windows ending Jun 19: w7 $1,108.33, w14 $2,595.14, w30 $4,105.07; 90d $7,893.63 (9,659 impr / 292 clk / 7 conv). GA4 90d (Mar22-Jun19): 2,212 sessions (Direct 1,047 / Organic 741 / Paid 194 / Referral 115 / Organic Social 79 / Unassigned 53). Cumulative 1,341 forms / 9 LSA; 46 qualified; cost/qualified ~$172. verified: all true. adGroups/keywords carried (non-Monday)."
+  },
   {
    "date": "2026-06-18",
    "label": "June 18, 2026 - Finalized (live; ads 90d carried)",
