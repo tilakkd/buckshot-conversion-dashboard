@@ -873,10 +873,4 @@ table.perf .status.eligible{background:var(--green-bg);color:var(--green)}
 </script>
 </body>
 </html>
-<script id="paid-sessions-navlink-init">
-(function(){function add(){if(document.getElementById("paid-sessions-navlink"))return;var hd=document.querySelector(".topbar");if(!hd){return setTimeout(add,300);}var w=document.createElement("div");w.id="paid-sessions-navlink";w.style.cssText="display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Inter,sans-serif;";w.innerHTML='<span style="padding:6px 13px;border-radius:7px;font-size:12px;font-weight:700;border:1px solid rgba(127,127,127,.3);background:rgba(127,127,127,.14);color:inherit;">Conversion dashboard</span><a href="./sessions.html" style="padding:6px 13px;border-radius:7px;font-size:12px;font-weight:600;border:1px solid rgba(127,127,127,.3);background:transparent;color:inherit;text-decoration:none;">Paid visitor sessions →</a>';hd.parentNode.insertBefore(w,hd);}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",add);}else{add();}})();
-</script>
 
-<script id="paid-sessions-navlink-heal">
-(function(){function add(){if(document.getElementById("paid-sessions-navlink"))return;var hd=document.querySelector(".topbar");if(!hd)return;var w=document.createElement("div");w.id="paid-sessions-navlink";w.style.cssText="display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Inter,sans-serif;";w.innerHTML='<span style="padding:6px 13px;border-radius:7px;font-size:12px;font-weight:700;border:1px solid rgba(127,127,127,.3);background:rgba(127,127,127,.14);color:inherit;">Conversion dashboard</span><a href="./sessions.html" style="padding:6px 13px;border-radius:7px;font-size:12px;font-weight:600;border:1px solid rgba(127,127,127,.3);background:transparent;color:inherit;text-decoration:none;">Paid visitor sessions →</a>';hd.parentNode.insertBefore(w,hd);}setInterval(add,1200);add();})();
-</script>
