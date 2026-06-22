@@ -1,6 +1,11 @@
 {
- "latest": "2026-06-19",
+ "latest": "2026-06-21",
  "dates": [
+  {
+   "date": "2026-06-21",
+   "label": "June 21, 2026 - Finalized (fully live, Monday full re-scrape)",
+   "note": "Day-of (Jun 21): 0 qualified / 0 OOA / 0 spam forms; 0 LSA. Weekend gap (Jun 20-21) filled. Jun 20 had 1 inbox spamTest (test@test.com CF7 placeholder). ALL sources read LIVE (Flamingo, LSA, GA4, Google Ads). MONDAY full re-scrape of ad groups (18) and keywords (top 50 of 294). Ads windows ending Jun 21: w7 $1,347.43, w14 $2,725.76, w30 $4,667.04; 90d $8,363.83 (9,539 impr / 295 clk / 7 conv). GA4 90d (Mar24-Jun21): 2,273 sessions (Direct 1,089 / Organic 763 / Paid 197 / Referral 116 / Organic Social 79 / Unassigned 29 / Cross-network 2). Cumulative 1,342 forms / 9 LSA; 46 qualified; cost/qualified ~$182. verified: all true."
+  },
   {
    "date": "2026-06-19",
    "label": "June 19, 2026 - Finalized (fully live)",
