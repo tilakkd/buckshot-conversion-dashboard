@@ -1,6 +1,11 @@
 {
- "latest": "2026-06-21",
+ "latest": "2026-06-22",
  "dates": [
+  {
+   "date": "2026-06-22",
+   "label": "June 22, 2026 - Finalized (Flamingo/LSA/Google Ads live; GA4 carried)",
+   "note": "Day-of (Jun 22): 1 qualified / 0 OOA / 0 spam forms; 0 LSA. New qualified web lead: Brian S. (Madison, Quick Contact, roof hail-damage inspection) - first qualified since Jun 18. Flamingo, LSA and Google Ads (7/14/30-day + single-day + 90-day overview/campaigns/cost90d) read LIVE. GA4 carried forward from Jun 21 (signed-in profile lacked access to property 533585540 today), verified.ga4=false: 2,273 sessions (Direct 1,089 / Organic 763 / Paid 197 / Referral 116 / Organic Social 79 / Unassigned 29 / Cross-network 2). adGroups (18) / keywords (50) carried (non-Monday). Ads windows ending Jun 22: w7 $1,260.73, w14 $2,558.18, w30 $4,837.20; 90d $8,512.58 (9,725 impr / 297 clk / 8 conv). Cumulative 1,343 forms / 9 LSA; 47 qualified; cost/qualified ~$181. Customer street addresses redacted from lead notes."
+  },
   {
    "date": "2026-06-21",
    "label": "June 21, 2026 - Finalized (fully live, Monday full re-scrape)",
